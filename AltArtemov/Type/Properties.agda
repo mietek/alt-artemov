@@ -20,6 +20,7 @@ lev : ∀ A → ℕ
 lev ⊥      = 0
 lev (A ⊃ B) = 0
 lev (t ∶ A) = suc (lev A)
+lev (A ≑ B) = 0
 
 
 -- Asserting a type increments its level.
@@ -37,6 +38,7 @@ lower : ∀ A (z<′l : zero <′ lev A) → Ty
 lower ⊥      ()
 lower (A ⊃ B) ()
 lower (t ∶ A) z<′l = A
+lower (A ≑ B) ()
 
 
 -- Lowering a type assertion gives the asserted type.
@@ -49,6 +51,7 @@ tm : ∀ A (z<′l : zero <′ lev A) → Tm
 tm ⊥      ()
 tm (A ⊃ B) ()
 tm (t ∶ A) z<′l = t
+tm (A ≑ B) ()
 
 
 -- Type equality is decidable.
@@ -56,18 +59,28 @@ _≟_ : Decidable {A = Ty} _≡_
 ⊥      ≟ ⊥        = yes refl
 ⊥      ≟ (_ ⊃ _)   = no λ ()
 ⊥      ≟ (_ ∶ _)   = no λ ()
+⊥      ≟ (_ ≑ _)   = no λ ()
 (_ ⊃ _) ≟ ⊥        = no λ ()
 (A ⊃ B) ≟ (A′ ⊃ B′) with A ≟ A′ | B ≟ B′
 (A ⊃ B) ≟ (.A ⊃ .B) | yes refl | yes refl = yes refl
 ...                 | no  A≢A′ | _        = no (A≢A′ ∘ ⊃-inv-A)
 ...                 | _        | no  B≢B′ = no (B≢B′ ∘ ⊃-inv-B)
 (_ ⊃ _) ≟ (_ ∶ _)   = no λ ()
+(_ ⊃ _) ≟ (_ ≑ _)   = no λ ()
 (_ ∶ _) ≟ ⊥        = no λ ()
 (_ ∶ _) ≟ (_ ⊃ _)   = no λ ()
 (t ∶ A) ≟ (t′ ∶ A′) with t Tm≟ t′ | A ≟ A′
 (t ∶ A) ≟ (.t ∶ .A) | yes refl | yes refl = yes refl
 ...                 | no  t≢t′ | _        = no (t≢t′ ∘ ∶-inv-t)
 ...                 | _        | no  A≢A′ = no (A≢A′ ∘ ∶-inv-A)
+(_ ∶ _) ≟ (_ ≑ _)   = no λ ()
+(_ ≑ _) ≟ ⊥        = no λ ()
+(_ ≑ _) ≟ (_ ⊃ _)   = no λ ()
+(_ ≑ _) ≟ (_ ∶ _)   = no λ ()
+(A ≑ B) ≟ (A′ ≑ B′) with A ≟ A′ | B ≟ B′
+(A ≑ B) ≟ (.A ≑ .B) | yes refl | yes refl = yes refl
+...                 | no  A≢A′ | _        = no (A≢A′ ∘ ≑-inv-A)
+...                 | _        | no  B≢B′ = no (B≢B′ ∘ ≑-inv-B)
 
 
 -- TODO
@@ -76,6 +89,7 @@ can-lower : ∀ A → Maybe Ty
 can-lower ⊥      = nothing
 can-lower (A ⊃ B) = nothing
 can-lower (t ∶ A) = just A
+can-lower (A ≑ B) = nothing
 
 HighTy : ∀ A → Set
 HighTy A with can-lower A

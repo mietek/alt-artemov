@@ -16,7 +16,14 @@ data Ty : Set where
   -- Type assertion.
   _∶_ : (t : Tm) → (A : Ty) → Ty
 
+  -- Type equality.
+  _≑_ : (A B : Ty) → Ty
+
 
 -- Negation.
 ¬_ : Ty → Ty
 ¬ A = A ⊃ ⊥
+
+-- Negation of type equality.
+_≠_ : (A B : Ty) → Ty
+A ≠ B = ¬ (A ≑ B)

@@ -21,6 +21,9 @@ DOWN³ t₃ = DOWN[ 2 ] t₃
 BOOM³ : ∀ t₃ → Tm
 BOOM³ t₃ = BOOM[ 2 ] t₃
 
+EQ³ : ∀ t₃ s₃ → Tm
+EQ³ t₃ s₃ = EQ[ 2 ] t₃ s₃
+
 
 V0³ : Tm
 V0³ = VAR³ 0
