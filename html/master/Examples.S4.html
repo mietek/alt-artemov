@@ -1,0 +1,2136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >Examples.S4</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="Examples.S4.html#1" class="Module"
+      >Examples.S4</a
+      ><a name="19"
+      > </a
+      ><a name="20" class="Keyword"
+      >where</a
+      ><a name="25"
+      >
+
+</a
+      ><a name="27" class="Keyword"
+      >open</a
+      ><a name="31"
+      > </a
+      ><a name="32" class="Keyword"
+      >import</a
+      ><a name="38"
+      > </a
+      ><a name="39" href="S4.html#1" class="Module"
+      >S4</a
+      ><a name="41"
+      >
+
+
+</a
+      ><a name="44" class="Comment"
+      >-- Some theorems of propositional logic.</a
+      ><a name="84"
+      >
+
+</a
+      ><a name="86" href="Examples.S4.html#86" class="Function"
+      >I</a
+      ><a name="87"
+      > </a
+      ><a name="88" class="Symbol"
+      >:</a
+      ><a name="89"
+      > </a
+      ><a name="90" class="Symbol"
+      >&#8704;</a
+      ><a name="91"
+      > </a
+      ><a name="92" class="Symbol"
+      >{</a
+      ><a name="93" href="Examples.S4.html#93" class="Bound"
+      >A</a
+      ><a name="94" class="Symbol"
+      >}</a
+      ><a name="95"
+      > </a
+      ><a name="96" class="Symbol"
+      >&#8594;</a
+      ><a name="97"
+      > </a
+      ><a name="98" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="99"
+      > </a
+      ><a name="100" href="Examples.S4.html#93" class="Bound"
+      >A</a
+      ><a name="101"
+      > </a
+      ><a name="102" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="103"
+      > </a
+      ><a name="104" href="Examples.S4.html#93" class="Bound"
+      >A</a
+      ><a name="105"
+      >
+</a
+      ><a name="106" href="Examples.S4.html#86" class="Function"
+      >I</a
+      ><a name="107"
+      > </a
+      ><a name="108" class="Symbol"
+      >=</a
+      ><a name="109"
+      > </a
+      ><a name="110" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="113"
+      > </a
+      ><a name="114" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="116"
+      >
+
+</a
+      ><a name="118" href="Examples.S4.html#118" class="Function"
+      >K</a
+      ><a name="119"
+      > </a
+      ><a name="120" class="Symbol"
+      >:</a
+      ><a name="121"
+      > </a
+      ><a name="122" class="Symbol"
+      >&#8704;</a
+      ><a name="123"
+      > </a
+      ><a name="124" class="Symbol"
+      >{</a
+      ><a name="125" href="Examples.S4.html#125" class="Bound"
+      >A</a
+      ><a name="126"
+      > </a
+      ><a name="127" href="Examples.S4.html#127" class="Bound"
+      >B</a
+      ><a name="128" class="Symbol"
+      >}</a
+      ><a name="129"
+      > </a
+      ><a name="130" class="Symbol"
+      >&#8594;</a
+      ><a name="131"
+      > </a
+      ><a name="132" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="133"
+      > </a
+      ><a name="134" href="Examples.S4.html#125" class="Bound"
+      >A</a
+      ><a name="135"
+      > </a
+      ><a name="136" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="137"
+      > </a
+      ><a name="138" href="Examples.S4.html#127" class="Bound"
+      >B</a
+      ><a name="139"
+      > </a
+      ><a name="140" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="141"
+      > </a
+      ><a name="142" href="Examples.S4.html#125" class="Bound"
+      >A</a
+      ><a name="143"
+      >
+</a
+      ><a name="144" href="Examples.S4.html#118" class="Function"
+      >K</a
+      ><a name="145"
+      > </a
+      ><a name="146" class="Symbol"
+      >=</a
+      ><a name="147"
+      > </a
+      ><a name="148" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="151"
+      > </a
+      ><a name="152" class="Symbol"
+      >(</a
+      ><a name="153" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="156"
+      > </a
+      ><a name="157" href="S4.Derivation.Notation.html#139" class="Function"
+      >v1</a
+      ><a name="159" class="Symbol"
+      >)</a
+      ><a name="160"
+      >
+
+</a
+      ><a name="162" href="Examples.S4.html#162" class="Function"
+      >S</a
+      ><a name="163"
+      > </a
+      ><a name="164" class="Symbol"
+      >:</a
+      ><a name="165"
+      > </a
+      ><a name="166" class="Symbol"
+      >&#8704;</a
+      ><a name="167"
+      > </a
+      ><a name="168" class="Symbol"
+      >{</a
+      ><a name="169" href="Examples.S4.html#169" class="Bound"
+      >A</a
+      ><a name="170"
+      > </a
+      ><a name="171" href="Examples.S4.html#171" class="Bound"
+      >B</a
+      ><a name="172"
+      > </a
+      ><a name="173" href="Examples.S4.html#173" class="Bound"
+      >C</a
+      ><a name="174" class="Symbol"
+      >}</a
+      ><a name="175"
+      > </a
+      ><a name="176" class="Symbol"
+      >&#8594;</a
+      ><a name="177"
+      > </a
+      ><a name="178" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="179"
+      > </a
+      ><a name="180" class="Symbol"
+      >(</a
+      ><a name="181" href="Examples.S4.html#169" class="Bound"
+      >A</a
+      ><a name="182"
+      > </a
+      ><a name="183" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="184"
+      > </a
+      ><a name="185" href="Examples.S4.html#171" class="Bound"
+      >B</a
+      ><a name="186"
+      > </a
+      ><a name="187" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="188"
+      > </a
+      ><a name="189" href="Examples.S4.html#173" class="Bound"
+      >C</a
+      ><a name="190" class="Symbol"
+      >)</a
+      ><a name="191"
+      > </a
+      ><a name="192" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="193"
+      > </a
+      ><a name="194" class="Symbol"
+      >(</a
+      ><a name="195" href="Examples.S4.html#169" class="Bound"
+      >A</a
+      ><a name="196"
+      > </a
+      ><a name="197" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="198"
+      > </a
+      ><a name="199" href="Examples.S4.html#171" class="Bound"
+      >B</a
+      ><a name="200" class="Symbol"
+      >)</a
+      ><a name="201"
+      > </a
+      ><a name="202" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="203"
+      > </a
+      ><a name="204" href="Examples.S4.html#169" class="Bound"
+      >A</a
+      ><a name="205"
+      > </a
+      ><a name="206" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="207"
+      > </a
+      ><a name="208" href="Examples.S4.html#173" class="Bound"
+      >C</a
+      ><a name="209"
+      >
+</a
+      ><a name="210" href="Examples.S4.html#162" class="Function"
+      >S</a
+      ><a name="211"
+      > </a
+      ><a name="212" class="Symbol"
+      >=</a
+      ><a name="213"
+      > </a
+      ><a name="214" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="217"
+      > </a
+      ><a name="218" class="Symbol"
+      >(</a
+      ><a name="219" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="222"
+      > </a
+      ><a name="223" class="Symbol"
+      >(</a
+      ><a name="224" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="227"
+      > </a
+      ><a name="228" class="Symbol"
+      >(</a
+      ><a name="229" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="232"
+      > </a
+      ><a name="233" class="Symbol"
+      >(</a
+      ><a name="234" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="237"
+      > </a
+      ><a name="238" href="S4.Derivation.Notation.html#190" class="Function"
+      >v2</a
+      ><a name="240"
+      > </a
+      ><a name="241" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="243" class="Symbol"
+      >)</a
+      ><a name="244"
+      > </a
+      ><a name="245" class="Symbol"
+      >(</a
+      ><a name="246" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="249"
+      > </a
+      ><a name="250" href="S4.Derivation.Notation.html#139" class="Function"
+      >v1</a
+      ><a name="252"
+      > </a
+      ><a name="253" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="255" class="Symbol"
+      >))))</a
+      ><a name="259"
+      >
+
+
+</a
+      ><a name="262" class="Comment"
+      >-- Some modalised theorems of propositional logic.</a
+      ><a name="312"
+      >
+
+</a
+      ><a name="314" href="Examples.S4.html#314" class="Function"
+      >&#9633;I</a
+      ><a name="316"
+      > </a
+      ><a name="317" class="Symbol"
+      >:</a
+      ><a name="318"
+      > </a
+      ><a name="319" class="Symbol"
+      >&#8704;</a
+      ><a name="320"
+      > </a
+      ><a name="321" class="Symbol"
+      >{</a
+      ><a name="322" href="Examples.S4.html#322" class="Bound"
+      >A</a
+      ><a name="323" class="Symbol"
+      >}</a
+      ><a name="324"
+      > </a
+      ><a name="325" class="Symbol"
+      >&#8594;</a
+      ><a name="326"
+      > </a
+      ><a name="327" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="328"
+      > </a
+      ><a name="329" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="330"
+      > </a
+      ><a name="331" class="Symbol"
+      >(</a
+      ><a name="332" href="Examples.S4.html#322" class="Bound"
+      >A</a
+      ><a name="333"
+      > </a
+      ><a name="334" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="335"
+      > </a
+      ><a name="336" href="Examples.S4.html#322" class="Bound"
+      >A</a
+      ><a name="337" class="Symbol"
+      >)</a
+      ><a name="338"
+      >
+</a
+      ><a name="339" href="Examples.S4.html#314" class="Function"
+      >&#9633;I</a
+      ><a name="341"
+      > </a
+      ><a name="342" class="Symbol"
+      >=</a
+      ><a name="343"
+      > </a
+      ><a name="344" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="347"
+      > </a
+      ><a name="348" class="Symbol"
+      >(</a
+      ><a name="349" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="352"
+      > </a
+      ><a name="353" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="355" class="Symbol"
+      >)</a
+      ><a name="356"
+      >
+
+</a
+      ><a name="358" href="Examples.S4.html#358" class="Function"
+      >&#9633;K</a
+      ><a name="360"
+      > </a
+      ><a name="361" class="Symbol"
+      >:</a
+      ><a name="362"
+      > </a
+      ><a name="363" class="Symbol"
+      >&#8704;</a
+      ><a name="364"
+      > </a
+      ><a name="365" class="Symbol"
+      >{</a
+      ><a name="366" href="Examples.S4.html#366" class="Bound"
+      >A</a
+      ><a name="367"
+      > </a
+      ><a name="368" href="Examples.S4.html#368" class="Bound"
+      >B</a
+      ><a name="369" class="Symbol"
+      >}</a
+      ><a name="370"
+      > </a
+      ><a name="371" class="Symbol"
+      >&#8594;</a
+      ><a name="372"
+      > </a
+      ><a name="373" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="374"
+      > </a
+      ><a name="375" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="376"
+      > </a
+      ><a name="377" class="Symbol"
+      >(</a
+      ><a name="378" href="Examples.S4.html#366" class="Bound"
+      >A</a
+      ><a name="379"
+      > </a
+      ><a name="380" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="381"
+      > </a
+      ><a name="382" href="Examples.S4.html#368" class="Bound"
+      >B</a
+      ><a name="383"
+      > </a
+      ><a name="384" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="385"
+      > </a
+      ><a name="386" href="Examples.S4.html#366" class="Bound"
+      >A</a
+      ><a name="387" class="Symbol"
+      >)</a
+      ><a name="388"
+      >
+</a
+      ><a name="389" href="Examples.S4.html#358" class="Function"
+      >&#9633;K</a
+      ><a name="391"
+      > </a
+      ><a name="392" class="Symbol"
+      >=</a
+      ><a name="393"
+      > </a
+      ><a name="394" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="397"
+      > </a
+      ><a name="398" class="Symbol"
+      >(</a
+      ><a name="399" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="402"
+      > </a
+      ><a name="403" class="Symbol"
+      >(</a
+      ><a name="404" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="407"
+      > </a
+      ><a name="408" href="S4.Derivation.Notation.html#139" class="Function"
+      >v1</a
+      ><a name="410" class="Symbol"
+      >))</a
+      ><a name="412"
+      >
+
+</a
+      ><a name="414" href="Examples.S4.html#414" class="Function"
+      >&#9633;S</a
+      ><a name="416"
+      > </a
+      ><a name="417" class="Symbol"
+      >:</a
+      ><a name="418"
+      > </a
+      ><a name="419" class="Symbol"
+      >&#8704;</a
+      ><a name="420"
+      > </a
+      ><a name="421" class="Symbol"
+      >{</a
+      ><a name="422" href="Examples.S4.html#422" class="Bound"
+      >A</a
+      ><a name="423"
+      > </a
+      ><a name="424" href="Examples.S4.html#424" class="Bound"
+      >B</a
+      ><a name="425"
+      > </a
+      ><a name="426" href="Examples.S4.html#426" class="Bound"
+      >C</a
+      ><a name="427" class="Symbol"
+      >}</a
+      ><a name="428"
+      > </a
+      ><a name="429" class="Symbol"
+      >&#8594;</a
+      ><a name="430"
+      > </a
+      ><a name="431" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="432"
+      > </a
+      ><a name="433" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="434"
+      > </a
+      ><a name="435" class="Symbol"
+      >((</a
+      ><a name="437" href="Examples.S4.html#422" class="Bound"
+      >A</a
+      ><a name="438"
+      > </a
+      ><a name="439" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="440"
+      > </a
+      ><a name="441" href="Examples.S4.html#424" class="Bound"
+      >B</a
+      ><a name="442"
+      > </a
+      ><a name="443" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="444"
+      > </a
+      ><a name="445" href="Examples.S4.html#426" class="Bound"
+      >C</a
+      ><a name="446" class="Symbol"
+      >)</a
+      ><a name="447"
+      > </a
+      ><a name="448" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="449"
+      > </a
+      ><a name="450" class="Symbol"
+      >(</a
+      ><a name="451" href="Examples.S4.html#422" class="Bound"
+      >A</a
+      ><a name="452"
+      > </a
+      ><a name="453" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="454"
+      > </a
+      ><a name="455" href="Examples.S4.html#424" class="Bound"
+      >B</a
+      ><a name="456" class="Symbol"
+      >)</a
+      ><a name="457"
+      > </a
+      ><a name="458" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="459"
+      > </a
+      ><a name="460" href="Examples.S4.html#422" class="Bound"
+      >A</a
+      ><a name="461"
+      > </a
+      ><a name="462" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="463"
+      > </a
+      ><a name="464" href="Examples.S4.html#426" class="Bound"
+      >C</a
+      ><a name="465" class="Symbol"
+      >)</a
+      ><a name="466"
+      >
+</a
+      ><a name="467" href="Examples.S4.html#414" class="Function"
+      >&#9633;S</a
+      ><a name="469"
+      > </a
+      ><a name="470" class="Symbol"
+      >=</a
+      ><a name="471"
+      > </a
+      ><a name="472" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="475"
+      > </a
+      ><a name="476" class="Symbol"
+      >(</a
+      ><a name="477" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="480"
+      > </a
+      ><a name="481" class="Symbol"
+      >(</a
+      ><a name="482" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="485"
+      > </a
+      ><a name="486" class="Symbol"
+      >(</a
+      ><a name="487" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="490"
+      > </a
+      ><a name="491" class="Symbol"
+      >(</a
+      ><a name="492" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="495"
+      > </a
+      ><a name="496" class="Symbol"
+      >(</a
+      ><a name="497" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="500"
+      > </a
+      ><a name="501" href="S4.Derivation.Notation.html#190" class="Function"
+      >v2</a
+      ><a name="503"
+      > </a
+      ><a name="504" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="506" class="Symbol"
+      >)</a
+      ><a name="507"
+      > </a
+      ><a name="508" class="Symbol"
+      >(</a
+      ><a name="509" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="512"
+      > </a
+      ><a name="513" href="S4.Derivation.Notation.html#139" class="Function"
+      >v1</a
+      ><a name="515"
+      > </a
+      ><a name="516" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="518" class="Symbol"
+      >)))))</a
+      ><a name="523"
+      >
+
+
+</a
+      ><a name="526" class="Comment"
+      >-- Some twice-modalised theorems of propositional logic.</a
+      ><a name="582"
+      >
+
+</a
+      ><a name="584" href="Examples.S4.html#584" class="Function"
+      >&#9633;&#9633;I</a
+      ><a name="587"
+      > </a
+      ><a name="588" class="Symbol"
+      >:</a
+      ><a name="589"
+      > </a
+      ><a name="590" class="Symbol"
+      >&#8704;</a
+      ><a name="591"
+      > </a
+      ><a name="592" class="Symbol"
+      >{</a
+      ><a name="593" href="Examples.S4.html#593" class="Bound"
+      >A</a
+      ><a name="594" class="Symbol"
+      >}</a
+      ><a name="595"
+      > </a
+      ><a name="596" class="Symbol"
+      >&#8594;</a
+      ><a name="597"
+      > </a
+      ><a name="598" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="599"
+      > </a
+      ><a name="600" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="601"
+      > </a
+      ><a name="602" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="603"
+      > </a
+      ><a name="604" class="Symbol"
+      >(</a
+      ><a name="605" href="Examples.S4.html#593" class="Bound"
+      >A</a
+      ><a name="606"
+      > </a
+      ><a name="607" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="608"
+      > </a
+      ><a name="609" href="Examples.S4.html#593" class="Bound"
+      >A</a
+      ><a name="610" class="Symbol"
+      >)</a
+      ><a name="611"
+      >
+</a
+      ><a name="612" href="Examples.S4.html#584" class="Function"
+      >&#9633;&#9633;I</a
+      ><a name="615"
+      > </a
+      ><a name="616" class="Symbol"
+      >=</a
+      ><a name="617"
+      > </a
+      ><a name="618" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="621"
+      > </a
+      ><a name="622" class="Symbol"
+      >(</a
+      ><a name="623" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="626"
+      > </a
+      ><a name="627" class="Symbol"
+      >(</a
+      ><a name="628" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="631"
+      > </a
+      ><a name="632" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="634" class="Symbol"
+      >))</a
+      ><a name="636"
+      >
+
+</a
+      ><a name="638" href="Examples.S4.html#638" class="Function"
+      >&#9633;&#9633;K</a
+      ><a name="641"
+      > </a
+      ><a name="642" class="Symbol"
+      >:</a
+      ><a name="643"
+      > </a
+      ><a name="644" class="Symbol"
+      >&#8704;</a
+      ><a name="645"
+      > </a
+      ><a name="646" class="Symbol"
+      >{</a
+      ><a name="647" href="Examples.S4.html#647" class="Bound"
+      >A</a
+      ><a name="648"
+      > </a
+      ><a name="649" href="Examples.S4.html#649" class="Bound"
+      >B</a
+      ><a name="650" class="Symbol"
+      >}</a
+      ><a name="651"
+      > </a
+      ><a name="652" class="Symbol"
+      >&#8594;</a
+      ><a name="653"
+      > </a
+      ><a name="654" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="655"
+      > </a
+      ><a name="656" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="657"
+      > </a
+      ><a name="658" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="659"
+      > </a
+      ><a name="660" class="Symbol"
+      >(</a
+      ><a name="661" href="Examples.S4.html#647" class="Bound"
+      >A</a
+      ><a name="662"
+      > </a
+      ><a name="663" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="664"
+      > </a
+      ><a name="665" href="Examples.S4.html#649" class="Bound"
+      >B</a
+      ><a name="666"
+      > </a
+      ><a name="667" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="668"
+      > </a
+      ><a name="669" href="Examples.S4.html#647" class="Bound"
+      >A</a
+      ><a name="670" class="Symbol"
+      >)</a
+      ><a name="671"
+      >
+</a
+      ><a name="672" href="Examples.S4.html#638" class="Function"
+      >&#9633;&#9633;K</a
+      ><a name="675"
+      > </a
+      ><a name="676" class="Symbol"
+      >=</a
+      ><a name="677"
+      > </a
+      ><a name="678" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="681"
+      > </a
+      ><a name="682" class="Symbol"
+      >(</a
+      ><a name="683" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="686"
+      > </a
+      ><a name="687" class="Symbol"
+      >(</a
+      ><a name="688" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="691"
+      > </a
+      ><a name="692" class="Symbol"
+      >(</a
+      ><a name="693" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="696"
+      > </a
+      ><a name="697" href="S4.Derivation.Notation.html#139" class="Function"
+      >v1</a
+      ><a name="699" class="Symbol"
+      >)))</a
+      ><a name="702"
+      >
+
+</a
+      ><a name="704" href="Examples.S4.html#704" class="Function"
+      >&#9633;&#9633;S</a
+      ><a name="707"
+      > </a
+      ><a name="708" class="Symbol"
+      >:</a
+      ><a name="709"
+      > </a
+      ><a name="710" class="Symbol"
+      >&#8704;</a
+      ><a name="711"
+      > </a
+      ><a name="712" class="Symbol"
+      >{</a
+      ><a name="713" href="Examples.S4.html#713" class="Bound"
+      >A</a
+      ><a name="714"
+      > </a
+      ><a name="715" href="Examples.S4.html#715" class="Bound"
+      >B</a
+      ><a name="716"
+      > </a
+      ><a name="717" href="Examples.S4.html#717" class="Bound"
+      >C</a
+      ><a name="718" class="Symbol"
+      >}</a
+      ><a name="719"
+      > </a
+      ><a name="720" class="Symbol"
+      >&#8594;</a
+      ><a name="721"
+      > </a
+      ><a name="722" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="723"
+      > </a
+      ><a name="724" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="725"
+      > </a
+      ><a name="726" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="727"
+      > </a
+      ><a name="728" class="Symbol"
+      >((</a
+      ><a name="730" href="Examples.S4.html#713" class="Bound"
+      >A</a
+      ><a name="731"
+      > </a
+      ><a name="732" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="733"
+      > </a
+      ><a name="734" href="Examples.S4.html#715" class="Bound"
+      >B</a
+      ><a name="735"
+      > </a
+      ><a name="736" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="737"
+      > </a
+      ><a name="738" href="Examples.S4.html#717" class="Bound"
+      >C</a
+      ><a name="739" class="Symbol"
+      >)</a
+      ><a name="740"
+      > </a
+      ><a name="741" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="742"
+      > </a
+      ><a name="743" class="Symbol"
+      >(</a
+      ><a name="744" href="Examples.S4.html#713" class="Bound"
+      >A</a
+      ><a name="745"
+      > </a
+      ><a name="746" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="747"
+      > </a
+      ><a name="748" href="Examples.S4.html#715" class="Bound"
+      >B</a
+      ><a name="749" class="Symbol"
+      >)</a
+      ><a name="750"
+      > </a
+      ><a name="751" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="752"
+      > </a
+      ><a name="753" href="Examples.S4.html#713" class="Bound"
+      >A</a
+      ><a name="754"
+      > </a
+      ><a name="755" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="756"
+      > </a
+      ><a name="757" href="Examples.S4.html#717" class="Bound"
+      >C</a
+      ><a name="758" class="Symbol"
+      >)</a
+      ><a name="759"
+      >
+</a
+      ><a name="760" href="Examples.S4.html#704" class="Function"
+      >&#9633;&#9633;S</a
+      ><a name="763"
+      > </a
+      ><a name="764" class="Symbol"
+      >=</a
+      ><a name="765"
+      > </a
+      ><a name="766" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="769"
+      > </a
+      ><a name="770" class="Symbol"
+      >(</a
+      ><a name="771" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="774"
+      > </a
+      ><a name="775" class="Symbol"
+      >(</a
+      ><a name="776" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="779"
+      > </a
+      ><a name="780" class="Symbol"
+      >(</a
+      ><a name="781" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="784"
+      > </a
+      ><a name="785" class="Symbol"
+      >(</a
+      ><a name="786" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="789"
+      > </a
+      ><a name="790" class="Symbol"
+      >(</a
+      ><a name="791" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="794"
+      > </a
+      ><a name="795" class="Symbol"
+      >(</a
+      ><a name="796" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="799"
+      > </a
+      ><a name="800" href="S4.Derivation.Notation.html#190" class="Function"
+      >v2</a
+      ><a name="802"
+      > </a
+      ><a name="803" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="805" class="Symbol"
+      >)</a
+      ><a name="806"
+      > </a
+      ><a name="807" class="Symbol"
+      >(</a
+      ><a name="808" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="811"
+      > </a
+      ><a name="812" href="S4.Derivation.Notation.html#139" class="Function"
+      >v1</a
+      ><a name="814"
+      > </a
+      ><a name="815" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="817" class="Symbol"
+      >))))))</a
+      ><a name="823"
+      >
+
+
+</a
+      ><a name="826" class="Comment"
+      >-- Some theorems of the modal logic S4.</a
+      ><a name="865"
+      >
+
+</a
+      ><a name="867" href="Examples.S4.html#867" class="Function"
+      >D</a
+      ><a name="868"
+      > </a
+      ><a name="869" class="Symbol"
+      >:</a
+      ><a name="870"
+      > </a
+      ><a name="871" class="Symbol"
+      >&#8704;</a
+      ><a name="872"
+      > </a
+      ><a name="873" class="Symbol"
+      >{</a
+      ><a name="874" href="Examples.S4.html#874" class="Bound"
+      >A</a
+      ><a name="875"
+      > </a
+      ><a name="876" href="Examples.S4.html#876" class="Bound"
+      >B</a
+      ><a name="877" class="Symbol"
+      >}</a
+      ><a name="878"
+      > </a
+      ><a name="879" class="Symbol"
+      >&#8594;</a
+      ><a name="880"
+      > </a
+      ><a name="881" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="882"
+      > </a
+      ><a name="883" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="884"
+      > </a
+      ><a name="885" class="Symbol"
+      >(</a
+      ><a name="886" href="Examples.S4.html#874" class="Bound"
+      >A</a
+      ><a name="887"
+      > </a
+      ><a name="888" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="889"
+      > </a
+      ><a name="890" href="Examples.S4.html#876" class="Bound"
+      >B</a
+      ><a name="891" class="Symbol"
+      >)</a
+      ><a name="892"
+      > </a
+      ><a name="893" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="894"
+      > </a
+      ><a name="895" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="896"
+      > </a
+      ><a name="897" href="Examples.S4.html#874" class="Bound"
+      >A</a
+      ><a name="898"
+      > </a
+      ><a name="899" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="900"
+      > </a
+      ><a name="901" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="902"
+      > </a
+      ><a name="903" href="Examples.S4.html#876" class="Bound"
+      >B</a
+      ><a name="904"
+      >
+</a
+      ><a name="905" href="Examples.S4.html#867" class="Function"
+      >D</a
+      ><a name="906"
+      > </a
+      ><a name="907" class="Symbol"
+      >=</a
+      ><a name="908"
+      > </a
+      ><a name="909" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="912"
+      > </a
+      ><a name="913" class="Symbol"
+      >(</a
+      ><a name="914" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="917"
+      > </a
+      ><a name="918" class="Symbol"
+      >(</a
+      ><a name="919" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="924"
+      > </a
+      ><a name="925" href="S4.Derivation.Notation.html#139" class="Function"
+      >v1</a
+      ><a name="927"
+      > </a
+      ><a name="928" class="Symbol"
+      >(</a
+      ><a name="929" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="934"
+      > </a
+      ><a name="935" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="937"
+      > </a
+      ><a name="938" class="Symbol"
+      >(</a
+      ><a name="939" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="942"
+      > </a
+      ><a name="943" class="Symbol"
+      >(</a
+      ><a name="944" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="947"
+      > </a
+      ><a name="948" href="S4.Derivation.Notation.html#863" class="Function"
+      >v1*</a
+      ><a name="951"
+      > </a
+      ><a name="952" href="S4.Derivation.Notation.html#815" class="Function"
+      >v0*</a
+      ><a name="955" class="Symbol"
+      >)))))</a
+      ><a name="960"
+      >
+
+</a
+      ><a name="962" href="Examples.S4.html#962" class="Function"
+      >T</a
+      ><a name="963"
+      > </a
+      ><a name="964" class="Symbol"
+      >:</a
+      ><a name="965"
+      > </a
+      ><a name="966" class="Symbol"
+      >&#8704;</a
+      ><a name="967"
+      > </a
+      ><a name="968" class="Symbol"
+      >{</a
+      ><a name="969" href="Examples.S4.html#969" class="Bound"
+      >A</a
+      ><a name="970" class="Symbol"
+      >}</a
+      ><a name="971"
+      > </a
+      ><a name="972" class="Symbol"
+      >&#8594;</a
+      ><a name="973"
+      > </a
+      ><a name="974" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="975"
+      > </a
+      ><a name="976" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="977"
+      > </a
+      ><a name="978" href="Examples.S4.html#969" class="Bound"
+      >A</a
+      ><a name="979"
+      > </a
+      ><a name="980" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="981"
+      > </a
+      ><a name="982" href="Examples.S4.html#969" class="Bound"
+      >A</a
+      ><a name="983"
+      >
+</a
+      ><a name="984" href="Examples.S4.html#962" class="Function"
+      >T</a
+      ><a name="985"
+      > </a
+      ><a name="986" class="Symbol"
+      >=</a
+      ><a name="987"
+      > </a
+      ><a name="988" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="991"
+      > </a
+      ><a name="992" class="Symbol"
+      >(</a
+      ><a name="993" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="998"
+      > </a
+      ><a name="999" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="1001"
+      > </a
+      ><a name="1002" href="S4.Derivation.Notation.html#815" class="Function"
+      >v0*</a
+      ><a name="1005" class="Symbol"
+      >)</a
+      ><a name="1006"
+      >
+
+</a
+      ><a name="1008" href="Examples.S4.html#1008" class="Function"
+      >#4</a
+      ><a name="1010"
+      > </a
+      ><a name="1011" class="Symbol"
+      >:</a
+      ><a name="1012"
+      > </a
+      ><a name="1013" class="Symbol"
+      >&#8704;</a
+      ><a name="1014"
+      > </a
+      ><a name="1015" class="Symbol"
+      >{</a
+      ><a name="1016" href="Examples.S4.html#1016" class="Bound"
+      >A</a
+      ><a name="1017" class="Symbol"
+      >}</a
+      ><a name="1018"
+      > </a
+      ><a name="1019" class="Symbol"
+      >&#8594;</a
+      ><a name="1020"
+      > </a
+      ><a name="1021" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="1022"
+      > </a
+      ><a name="1023" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1024"
+      > </a
+      ><a name="1025" href="Examples.S4.html#1016" class="Bound"
+      >A</a
+      ><a name="1026"
+      > </a
+      ><a name="1027" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1028"
+      > </a
+      ><a name="1029" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1030"
+      > </a
+      ><a name="1031" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1032"
+      > </a
+      ><a name="1033" href="Examples.S4.html#1016" class="Bound"
+      >A</a
+      ><a name="1034"
+      >
+</a
+      ><a name="1035" href="Examples.S4.html#1008" class="Function"
+      >#4</a
+      ><a name="1037"
+      > </a
+      ><a name="1038" class="Symbol"
+      >=</a
+      ><a name="1039"
+      > </a
+      ><a name="1040" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="1043"
+      > </a
+      ><a name="1044" class="Symbol"
+      >(</a
+      ><a name="1045" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="1050"
+      > </a
+      ><a name="1051" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="1053"
+      > </a
+      ><a name="1054" class="Symbol"
+      >(</a
+      ><a name="1055" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1058"
+      > </a
+      ><a name="1059" class="Symbol"
+      >(</a
+      ><a name="1060" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1063"
+      > </a
+      ><a name="1064" href="S4.Derivation.Notation.html#815" class="Function"
+      >v0*</a
+      ><a name="1067" class="Symbol"
+      >)))</a
+      ><a name="1070"
+      >
+
+
+</a
+      ><a name="1073" class="Comment"
+      >-- Some modalised theorems of the modal logic S4.</a
+      ><a name="1122"
+      >
+
+</a
+      ><a name="1124" href="Examples.S4.html#1124" class="Function"
+      >&#9633;D</a
+      ><a name="1126"
+      > </a
+      ><a name="1127" class="Symbol"
+      >:</a
+      ><a name="1128"
+      > </a
+      ><a name="1129" class="Symbol"
+      >&#8704;</a
+      ><a name="1130"
+      > </a
+      ><a name="1131" class="Symbol"
+      >{</a
+      ><a name="1132" href="Examples.S4.html#1132" class="Bound"
+      >A</a
+      ><a name="1133"
+      > </a
+      ><a name="1134" href="Examples.S4.html#1134" class="Bound"
+      >B</a
+      ><a name="1135" class="Symbol"
+      >}</a
+      ><a name="1136"
+      > </a
+      ><a name="1137" class="Symbol"
+      >&#8594;</a
+      ><a name="1138"
+      > </a
+      ><a name="1139" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="1140"
+      > </a
+      ><a name="1141" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1142"
+      > </a
+      ><a name="1143" class="Symbol"
+      >(</a
+      ><a name="1144" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1145"
+      > </a
+      ><a name="1146" class="Symbol"
+      >(</a
+      ><a name="1147" href="Examples.S4.html#1132" class="Bound"
+      >A</a
+      ><a name="1148"
+      > </a
+      ><a name="1149" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1150"
+      > </a
+      ><a name="1151" href="Examples.S4.html#1134" class="Bound"
+      >B</a
+      ><a name="1152" class="Symbol"
+      >)</a
+      ><a name="1153"
+      > </a
+      ><a name="1154" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1155"
+      > </a
+      ><a name="1156" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1157"
+      > </a
+      ><a name="1158" href="Examples.S4.html#1132" class="Bound"
+      >A</a
+      ><a name="1159"
+      > </a
+      ><a name="1160" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1161"
+      > </a
+      ><a name="1162" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1163"
+      > </a
+      ><a name="1164" href="Examples.S4.html#1134" class="Bound"
+      >B</a
+      ><a name="1165" class="Symbol"
+      >)</a
+      ><a name="1166"
+      >
+</a
+      ><a name="1167" href="Examples.S4.html#1124" class="Function"
+      >&#9633;D</a
+      ><a name="1169"
+      > </a
+      ><a name="1170" class="Symbol"
+      >=</a
+      ><a name="1171"
+      > </a
+      ><a name="1172" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1175"
+      > </a
+      ><a name="1176" class="Symbol"
+      >(</a
+      ><a name="1177" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="1180"
+      > </a
+      ><a name="1181" class="Symbol"
+      >(</a
+      ><a name="1182" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="1185"
+      > </a
+      ><a name="1186" class="Symbol"
+      >(</a
+      ><a name="1187" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="1192"
+      > </a
+      ><a name="1193" href="S4.Derivation.Notation.html#139" class="Function"
+      >v1</a
+      ><a name="1195"
+      > </a
+      ><a name="1196" class="Symbol"
+      >(</a
+      ><a name="1197" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="1202"
+      > </a
+      ><a name="1203" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="1205"
+      > </a
+      ><a name="1206" class="Symbol"
+      >(</a
+      ><a name="1207" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1210"
+      > </a
+      ><a name="1211" class="Symbol"
+      >(</a
+      ><a name="1212" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="1215"
+      > </a
+      ><a name="1216" href="S4.Derivation.Notation.html#863" class="Function"
+      >v1*</a
+      ><a name="1219"
+      > </a
+      ><a name="1220" href="S4.Derivation.Notation.html#815" class="Function"
+      >v0*</a
+      ><a name="1223" class="Symbol"
+      >))))))</a
+      ><a name="1229"
+      >
+
+</a
+      ><a name="1231" href="Examples.S4.html#1231" class="Function"
+      >&#9633;T</a
+      ><a name="1233"
+      > </a
+      ><a name="1234" class="Symbol"
+      >:</a
+      ><a name="1235"
+      > </a
+      ><a name="1236" class="Symbol"
+      >&#8704;</a
+      ><a name="1237"
+      > </a
+      ><a name="1238" class="Symbol"
+      >{</a
+      ><a name="1239" href="Examples.S4.html#1239" class="Bound"
+      >A</a
+      ><a name="1240" class="Symbol"
+      >}</a
+      ><a name="1241"
+      > </a
+      ><a name="1242" class="Symbol"
+      >&#8594;</a
+      ><a name="1243"
+      > </a
+      ><a name="1244" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="1245"
+      > </a
+      ><a name="1246" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1247"
+      > </a
+      ><a name="1248" class="Symbol"
+      >(</a
+      ><a name="1249" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1250"
+      > </a
+      ><a name="1251" href="Examples.S4.html#1239" class="Bound"
+      >A</a
+      ><a name="1252"
+      > </a
+      ><a name="1253" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1254"
+      > </a
+      ><a name="1255" href="Examples.S4.html#1239" class="Bound"
+      >A</a
+      ><a name="1256" class="Symbol"
+      >)</a
+      ><a name="1257"
+      >
+</a
+      ><a name="1258" href="Examples.S4.html#1231" class="Function"
+      >&#9633;T</a
+      ><a name="1260"
+      > </a
+      ><a name="1261" class="Symbol"
+      >=</a
+      ><a name="1262"
+      > </a
+      ><a name="1263" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1266"
+      > </a
+      ><a name="1267" class="Symbol"
+      >(</a
+      ><a name="1268" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="1271"
+      > </a
+      ><a name="1272" class="Symbol"
+      >(</a
+      ><a name="1273" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="1278"
+      > </a
+      ><a name="1279" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="1281"
+      > </a
+      ><a name="1282" href="S4.Derivation.Notation.html#815" class="Function"
+      >v0*</a
+      ><a name="1285" class="Symbol"
+      >))</a
+      ><a name="1287"
+      >
+
+</a
+      ><a name="1289" href="Examples.S4.html#1289" class="Function"
+      >&#9633;#4</a
+      ><a name="1292"
+      > </a
+      ><a name="1293" class="Symbol"
+      >:</a
+      ><a name="1294"
+      > </a
+      ><a name="1295" class="Symbol"
+      >&#8704;</a
+      ><a name="1296"
+      > </a
+      ><a name="1297" class="Symbol"
+      >{</a
+      ><a name="1298" href="Examples.S4.html#1298" class="Bound"
+      >A</a
+      ><a name="1299" class="Symbol"
+      >}</a
+      ><a name="1300"
+      > </a
+      ><a name="1301" class="Symbol"
+      >&#8594;</a
+      ><a name="1302"
+      > </a
+      ><a name="1303" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="1304"
+      > </a
+      ><a name="1305" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1306"
+      > </a
+      ><a name="1307" class="Symbol"
+      >(</a
+      ><a name="1308" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1309"
+      > </a
+      ><a name="1310" href="Examples.S4.html#1298" class="Bound"
+      >A</a
+      ><a name="1311"
+      > </a
+      ><a name="1312" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1313"
+      > </a
+      ><a name="1314" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1315"
+      > </a
+      ><a name="1316" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1317"
+      > </a
+      ><a name="1318" href="Examples.S4.html#1298" class="Bound"
+      >A</a
+      ><a name="1319" class="Symbol"
+      >)</a
+      ><a name="1320"
+      >
+</a
+      ><a name="1321" href="Examples.S4.html#1289" class="Function"
+      >&#9633;#4</a
+      ><a name="1324"
+      > </a
+      ><a name="1325" class="Symbol"
+      >=</a
+      ><a name="1326"
+      > </a
+      ><a name="1327" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1330"
+      > </a
+      ><a name="1331" class="Symbol"
+      >(</a
+      ><a name="1332" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="1335"
+      > </a
+      ><a name="1336" class="Symbol"
+      >(</a
+      ><a name="1337" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="1342"
+      > </a
+      ><a name="1343" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="1345"
+      > </a
+      ><a name="1346" class="Symbol"
+      >(</a
+      ><a name="1347" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1350"
+      > </a
+      ><a name="1351" class="Symbol"
+      >(</a
+      ><a name="1352" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1355"
+      > </a
+      ><a name="1356" href="S4.Derivation.Notation.html#815" class="Function"
+      >v0*</a
+      ><a name="1359" class="Symbol"
+      >))))</a
+      ><a name="1363"
+      >
+
+
+</a
+      ><a name="1366" class="Comment"
+      >-- Some twice-modalised theorems of the modal logic S4.</a
+      ><a name="1421"
+      >
+
+</a
+      ><a name="1423" href="Examples.S4.html#1423" class="Function"
+      >&#9633;&#9633;D</a
+      ><a name="1426"
+      > </a
+      ><a name="1427" class="Symbol"
+      >:</a
+      ><a name="1428"
+      > </a
+      ><a name="1429" class="Symbol"
+      >&#8704;</a
+      ><a name="1430"
+      > </a
+      ><a name="1431" class="Symbol"
+      >{</a
+      ><a name="1432" href="Examples.S4.html#1432" class="Bound"
+      >A</a
+      ><a name="1433"
+      > </a
+      ><a name="1434" href="Examples.S4.html#1434" class="Bound"
+      >B</a
+      ><a name="1435" class="Symbol"
+      >}</a
+      ><a name="1436"
+      > </a
+      ><a name="1437" class="Symbol"
+      >&#8594;</a
+      ><a name="1438"
+      > </a
+      ><a name="1439" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="1440"
+      > </a
+      ><a name="1441" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1442"
+      > </a
+      ><a name="1443" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1444"
+      > </a
+      ><a name="1445" class="Symbol"
+      >(</a
+      ><a name="1446" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1447"
+      > </a
+      ><a name="1448" class="Symbol"
+      >(</a
+      ><a name="1449" href="Examples.S4.html#1432" class="Bound"
+      >A</a
+      ><a name="1450"
+      > </a
+      ><a name="1451" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1452"
+      > </a
+      ><a name="1453" href="Examples.S4.html#1434" class="Bound"
+      >B</a
+      ><a name="1454" class="Symbol"
+      >)</a
+      ><a name="1455"
+      > </a
+      ><a name="1456" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1457"
+      > </a
+      ><a name="1458" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1459"
+      > </a
+      ><a name="1460" href="Examples.S4.html#1432" class="Bound"
+      >A</a
+      ><a name="1461"
+      > </a
+      ><a name="1462" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1463"
+      > </a
+      ><a name="1464" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1465"
+      > </a
+      ><a name="1466" href="Examples.S4.html#1434" class="Bound"
+      >B</a
+      ><a name="1467" class="Symbol"
+      >)</a
+      ><a name="1468"
+      >
+</a
+      ><a name="1469" href="Examples.S4.html#1423" class="Function"
+      >&#9633;&#9633;D</a
+      ><a name="1472"
+      > </a
+      ><a name="1473" class="Symbol"
+      >=</a
+      ><a name="1474"
+      > </a
+      ><a name="1475" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1478"
+      > </a
+      ><a name="1479" class="Symbol"
+      >(</a
+      ><a name="1480" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1483"
+      > </a
+      ><a name="1484" class="Symbol"
+      >(</a
+      ><a name="1485" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="1488"
+      > </a
+      ><a name="1489" class="Symbol"
+      >(</a
+      ><a name="1490" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="1493"
+      > </a
+      ><a name="1494" class="Symbol"
+      >(</a
+      ><a name="1495" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="1500"
+      > </a
+      ><a name="1501" href="S4.Derivation.Notation.html#139" class="Function"
+      >v1</a
+      ><a name="1503"
+      > </a
+      ><a name="1504" class="Symbol"
+      >(</a
+      ><a name="1505" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="1510"
+      > </a
+      ><a name="1511" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="1513"
+      > </a
+      ><a name="1514" class="Symbol"
+      >(</a
+      ><a name="1515" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1518"
+      > </a
+      ><a name="1519" class="Symbol"
+      >(</a
+      ><a name="1520" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="1523"
+      > </a
+      ><a name="1524" href="S4.Derivation.Notation.html#863" class="Function"
+      >v1*</a
+      ><a name="1527"
+      > </a
+      ><a name="1528" href="S4.Derivation.Notation.html#815" class="Function"
+      >v0*</a
+      ><a name="1531" class="Symbol"
+      >)))))))</a
+      ><a name="1538"
+      >
+
+</a
+      ><a name="1540" href="Examples.S4.html#1540" class="Function"
+      >&#9633;&#9633;T</a
+      ><a name="1543"
+      > </a
+      ><a name="1544" class="Symbol"
+      >:</a
+      ><a name="1545"
+      > </a
+      ><a name="1546" class="Symbol"
+      >&#8704;</a
+      ><a name="1547"
+      > </a
+      ><a name="1548" class="Symbol"
+      >{</a
+      ><a name="1549" href="Examples.S4.html#1549" class="Bound"
+      >A</a
+      ><a name="1550" class="Symbol"
+      >}</a
+      ><a name="1551"
+      > </a
+      ><a name="1552" class="Symbol"
+      >&#8594;</a
+      ><a name="1553"
+      > </a
+      ><a name="1554" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="1555"
+      > </a
+      ><a name="1556" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1557"
+      > </a
+      ><a name="1558" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1559"
+      > </a
+      ><a name="1560" class="Symbol"
+      >(</a
+      ><a name="1561" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1562"
+      > </a
+      ><a name="1563" href="Examples.S4.html#1549" class="Bound"
+      >A</a
+      ><a name="1564"
+      > </a
+      ><a name="1565" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1566"
+      > </a
+      ><a name="1567" href="Examples.S4.html#1549" class="Bound"
+      >A</a
+      ><a name="1568" class="Symbol"
+      >)</a
+      ><a name="1569"
+      >
+</a
+      ><a name="1570" href="Examples.S4.html#1540" class="Function"
+      >&#9633;&#9633;T</a
+      ><a name="1573"
+      > </a
+      ><a name="1574" class="Symbol"
+      >=</a
+      ><a name="1575"
+      > </a
+      ><a name="1576" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1579"
+      > </a
+      ><a name="1580" class="Symbol"
+      >(</a
+      ><a name="1581" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1584"
+      > </a
+      ><a name="1585" class="Symbol"
+      >(</a
+      ><a name="1586" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="1589"
+      > </a
+      ><a name="1590" class="Symbol"
+      >(</a
+      ><a name="1591" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="1596"
+      > </a
+      ><a name="1597" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="1599"
+      > </a
+      ><a name="1600" href="S4.Derivation.Notation.html#815" class="Function"
+      >v0*</a
+      ><a name="1603" class="Symbol"
+      >)))</a
+      ><a name="1606"
+      >
+
+</a
+      ><a name="1608" href="Examples.S4.html#1608" class="Function"
+      >&#9633;&#9633;#4</a
+      ><a name="1612"
+      > </a
+      ><a name="1613" class="Symbol"
+      >:</a
+      ><a name="1614"
+      > </a
+      ><a name="1615" class="Symbol"
+      >&#8704;</a
+      ><a name="1616"
+      > </a
+      ><a name="1617" class="Symbol"
+      >{</a
+      ><a name="1618" href="Examples.S4.html#1618" class="Bound"
+      >A</a
+      ><a name="1619" class="Symbol"
+      >}</a
+      ><a name="1620"
+      > </a
+      ><a name="1621" class="Symbol"
+      >&#8594;</a
+      ><a name="1622"
+      > </a
+      ><a name="1623" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="1624"
+      > </a
+      ><a name="1625" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1626"
+      > </a
+      ><a name="1627" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1628"
+      > </a
+      ><a name="1629" class="Symbol"
+      >(</a
+      ><a name="1630" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1631"
+      > </a
+      ><a name="1632" href="Examples.S4.html#1618" class="Bound"
+      >A</a
+      ><a name="1633"
+      > </a
+      ><a name="1634" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1635"
+      > </a
+      ><a name="1636" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1637"
+      > </a
+      ><a name="1638" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="1639"
+      > </a
+      ><a name="1640" href="Examples.S4.html#1618" class="Bound"
+      >A</a
+      ><a name="1641" class="Symbol"
+      >)</a
+      ><a name="1642"
+      >
+</a
+      ><a name="1643" href="Examples.S4.html#1608" class="Function"
+      >&#9633;&#9633;#4</a
+      ><a name="1647"
+      > </a
+      ><a name="1648" class="Symbol"
+      >=</a
+      ><a name="1649"
+      > </a
+      ><a name="1650" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1653"
+      > </a
+      ><a name="1654" class="Symbol"
+      >(</a
+      ><a name="1655" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1658"
+      > </a
+      ><a name="1659" class="Symbol"
+      >(</a
+      ><a name="1660" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="1663"
+      > </a
+      ><a name="1664" class="Symbol"
+      >(</a
+      ><a name="1665" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="1670"
+      > </a
+      ><a name="1671" href="S4.Derivation.Notation.html#94" class="Function"
+      >v0</a
+      ><a name="1673"
+      > </a
+      ><a name="1674" class="Symbol"
+      >(</a
+      ><a name="1675" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1678"
+      > </a
+      ><a name="1679" class="Symbol"
+      >(</a
+      ><a name="1680" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="1683"
+      > </a
+      ><a name="1684" href="S4.Derivation.Notation.html#815" class="Function"
+      >v0*</a
+      ><a name="1687" class="Symbol"
+      >)))))</a
+      ><a name="1692"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

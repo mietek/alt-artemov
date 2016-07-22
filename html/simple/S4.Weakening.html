@@ -1,0 +1,1193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >S4.Weakening</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="S4.Weakening.html#1" class="Module"
+      >S4.Weakening</a
+      ><a name="20"
+      > </a
+      ><a name="21" class="Keyword"
+      >where</a
+      ><a name="26"
+      >
+
+</a
+      ><a name="28" class="Keyword"
+      >open</a
+      ><a name="32"
+      > </a
+      ><a name="33" class="Keyword"
+      >import</a
+      ><a name="39"
+      > </a
+      ><a name="40" href="S4.Core.html#1" class="Module"
+      >S4.Core</a
+      ><a name="47"
+      > </a
+      ><a name="48" class="Keyword"
+      >public</a
+      ><a name="54"
+      >
+
+
+</a
+      ><a name="57" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="63"
+      > </a
+      ><a name="64" class="Symbol"
+      >:</a
+      ><a name="65"
+      > </a
+      ><a name="66" class="Symbol"
+      >&#8704;</a
+      ><a name="67"
+      > </a
+      ><a name="68" class="Symbol"
+      >{</a
+      ><a name="69" href="S4.Weakening.html#69" class="Bound"
+      >&#915;</a
+      ><a name="70"
+      > </a
+      ><a name="71" href="S4.Weakening.html#71" class="Bound"
+      >&#916;</a
+      ><a name="72"
+      > </a
+      ><a name="73" href="S4.Weakening.html#73" class="Bound"
+      >A</a
+      ><a name="74"
+      > </a
+      ><a name="75" href="S4.Weakening.html#75" class="Bound"
+      >B</a
+      ><a name="76" class="Symbol"
+      >}</a
+      ><a name="77"
+      > </a
+      ><a name="78" class="Symbol"
+      >&#8594;</a
+      ><a name="79"
+      > </a
+      ><a name="80" class="Symbol"
+      >(</a
+      ><a name="81" href="S4.Weakening.html#81" class="Bound"
+      >x</a
+      ><a name="82"
+      > </a
+      ><a name="83" class="Symbol"
+      >:</a
+      ><a name="84"
+      > </a
+      ><a name="85" href="Common.Variable.html#89" class="Datatype"
+      >Var</a
+      ><a name="88"
+      > </a
+      ><a name="89" href="S4.Core.html#65" class="Datatype"
+      >Ty</a
+      ><a name="91"
+      > </a
+      ><a name="92" href="S4.Weakening.html#69" class="Bound"
+      >&#915;</a
+      ><a name="93"
+      > </a
+      ><a name="94" href="S4.Weakening.html#73" class="Bound"
+      >A</a
+      ><a name="95" class="Symbol"
+      >)</a
+      ><a name="96"
+      > </a
+      ><a name="97" class="Symbol"
+      >&#8594;</a
+      ><a name="98"
+      > </a
+      ><a name="99" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="101"
+      > </a
+      ><a name="102" class="Symbol"
+      >(</a
+      ><a name="103" href="S4.Weakening.html#69" class="Bound"
+      >&#915;</a
+      ><a name="104"
+      > </a
+      ><a name="105" href="Common.Variable.html#471" class="Function Operator"
+      >-</a
+      ><a name="106"
+      > </a
+      ><a name="107" href="S4.Weakening.html#81" class="Bound"
+      >x</a
+      ><a name="108" class="Symbol"
+      >)</a
+      ><a name="109"
+      > </a
+      ><a name="110" href="S4.Weakening.html#71" class="Bound"
+      >&#916;</a
+      ><a name="111"
+      > </a
+      ><a name="112" href="S4.Weakening.html#75" class="Bound"
+      >B</a
+      ><a name="113"
+      > </a
+      ><a name="114" class="Symbol"
+      >&#8594;</a
+      ><a name="115"
+      > </a
+      ><a name="116" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="118"
+      > </a
+      ><a name="119" href="S4.Weakening.html#69" class="Bound"
+      >&#915;</a
+      ><a name="120"
+      > </a
+      ><a name="121" href="S4.Weakening.html#71" class="Bound"
+      >&#916;</a
+      ><a name="122"
+      > </a
+      ><a name="123" href="S4.Weakening.html#75" class="Bound"
+      >B</a
+      ><a name="124"
+      >
+</a
+      ><a name="125" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="131"
+      > </a
+      ><a name="132" href="S4.Weakening.html#132" class="Bound"
+      >x</a
+      ><a name="133"
+      > </a
+      ><a name="134" class="Symbol"
+      >(</a
+      ><a name="135" href="S4.Core.html#190" class="InductiveConstructor"
+      >var</a
+      ><a name="138"
+      > </a
+      ><a name="139" href="S4.Weakening.html#139" class="Bound"
+      >v</a
+      ><a name="140" class="Symbol"
+      >)</a
+      ><a name="141"
+      >      </a
+      ><a name="147" class="Symbol"
+      >=</a
+      ><a name="148"
+      > </a
+      ><a name="149" href="S4.Core.html#190" class="InductiveConstructor"
+      >var</a
+      ><a name="152"
+      > </a
+      ><a name="153" class="Symbol"
+      >(</a
+      ><a name="154" href="Common.Variable.html#584" class="Function"
+      >wk-var&#8315;</a
+      ><a name="161"
+      > </a
+      ><a name="162" href="S4.Weakening.html#132" class="Bound"
+      >x</a
+      ><a name="163"
+      > </a
+      ><a name="164" href="S4.Weakening.html#139" class="Bound"
+      >v</a
+      ><a name="165" class="Symbol"
+      >)</a
+      ><a name="166"
+      >
+</a
+      ><a name="167" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="173"
+      > </a
+      ><a name="174" href="S4.Weakening.html#174" class="Bound"
+      >x</a
+      ><a name="175"
+      > </a
+      ><a name="176" class="Symbol"
+      >(</a
+      ><a name="177" href="S4.Core.html#229" class="InductiveConstructor"
+      >lam</a
+      ><a name="180"
+      > </a
+      ><a name="181" href="S4.Weakening.html#181" class="Bound"
+      >t</a
+      ><a name="182" class="Symbol"
+      >)</a
+      ><a name="183"
+      >      </a
+      ><a name="189" class="Symbol"
+      >=</a
+      ><a name="190"
+      > </a
+      ><a name="191" href="S4.Core.html#229" class="InductiveConstructor"
+      >lam</a
+      ><a name="194"
+      > </a
+      ><a name="195" class="Symbol"
+      >(</a
+      ><a name="196" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="202"
+      > </a
+      ><a name="203" class="Symbol"
+      >(</a
+      ><a name="204" href="Common.Variable.html#162" class="InductiveConstructor"
+      >pop</a
+      ><a name="207"
+      > </a
+      ><a name="208" href="S4.Weakening.html#174" class="Bound"
+      >x</a
+      ><a name="209" class="Symbol"
+      >)</a
+      ><a name="210"
+      > </a
+      ><a name="211" href="S4.Weakening.html#181" class="Bound"
+      >t</a
+      ><a name="212" class="Symbol"
+      >)</a
+      ><a name="213"
+      >
+</a
+      ><a name="214" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="220"
+      > </a
+      ><a name="221" href="S4.Weakening.html#221" class="Bound"
+      >x</a
+      ><a name="222"
+      > </a
+      ><a name="223" class="Symbol"
+      >(</a
+      ><a name="224" href="S4.Core.html#280" class="InductiveConstructor"
+      >app</a
+      ><a name="227"
+      > </a
+      ><a name="228" href="S4.Weakening.html#228" class="Bound"
+      >t&#8321;</a
+      ><a name="230"
+      > </a
+      ><a name="231" href="S4.Weakening.html#231" class="Bound"
+      >t&#8322;</a
+      ><a name="233" class="Symbol"
+      >)</a
+      ><a name="234"
+      >  </a
+      ><a name="236" class="Symbol"
+      >=</a
+      ><a name="237"
+      > </a
+      ><a name="238" href="S4.Core.html#280" class="InductiveConstructor"
+      >app</a
+      ><a name="241"
+      > </a
+      ><a name="242" class="Symbol"
+      >(</a
+      ><a name="243" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="249"
+      > </a
+      ><a name="250" href="S4.Weakening.html#221" class="Bound"
+      >x</a
+      ><a name="251"
+      > </a
+      ><a name="252" href="S4.Weakening.html#228" class="Bound"
+      >t&#8321;</a
+      ><a name="254" class="Symbol"
+      >)</a
+      ><a name="255"
+      > </a
+      ><a name="256" class="Symbol"
+      >(</a
+      ><a name="257" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="263"
+      > </a
+      ><a name="264" href="S4.Weakening.html#221" class="Bound"
+      >x</a
+      ><a name="265"
+      > </a
+      ><a name="266" href="S4.Weakening.html#231" class="Bound"
+      >t&#8322;</a
+      ><a name="268" class="Symbol"
+      >)</a
+      ><a name="269"
+      >
+</a
+      ><a name="270" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="276"
+      > </a
+      ><a name="277" href="S4.Weakening.html#277" class="Bound"
+      >x</a
+      ><a name="278"
+      > </a
+      ><a name="279" class="Symbol"
+      >(</a
+      ><a name="280" href="S4.Core.html#336" class="InductiveConstructor"
+      >*var</a
+      ><a name="284"
+      > </a
+      ><a name="285" href="S4.Weakening.html#285" class="Bound"
+      >v</a
+      ><a name="286" class="Symbol"
+      >)</a
+      ><a name="287"
+      >     </a
+      ><a name="292" class="Symbol"
+      >=</a
+      ><a name="293"
+      > </a
+      ><a name="294" href="S4.Core.html#336" class="InductiveConstructor"
+      >*var</a
+      ><a name="298"
+      > </a
+      ><a name="299" href="S4.Weakening.html#285" class="Bound"
+      >v</a
+      ><a name="300"
+      >
+</a
+      ><a name="301" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="307"
+      > </a
+      ><a name="308" href="S4.Weakening.html#308" class="Bound"
+      >x</a
+      ><a name="309"
+      > </a
+      ><a name="310" class="Symbol"
+      >(</a
+      ><a name="311" href="S4.Core.html#375" class="InductiveConstructor"
+      >up</a
+      ><a name="313"
+      > </a
+      ><a name="314" href="S4.Weakening.html#314" class="Bound"
+      >t</a
+      ><a name="315" class="Symbol"
+      >)</a
+      ><a name="316"
+      >       </a
+      ><a name="323" class="Symbol"
+      >=</a
+      ><a name="324"
+      > </a
+      ><a name="325" href="S4.Core.html#375" class="InductiveConstructor"
+      >up</a
+      ><a name="327"
+      > </a
+      ><a name="328" href="S4.Weakening.html#314" class="Bound"
+      >t</a
+      ><a name="329"
+      >
+</a
+      ><a name="330" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="336"
+      > </a
+      ><a name="337" href="S4.Weakening.html#337" class="Bound"
+      >x</a
+      ><a name="338"
+      > </a
+      ><a name="339" class="Symbol"
+      >(</a
+      ><a name="340" href="S4.Core.html#416" class="InductiveConstructor"
+      >down</a
+      ><a name="344"
+      > </a
+      ><a name="345" href="S4.Weakening.html#345" class="Bound"
+      >t&#8321;</a
+      ><a name="347"
+      > </a
+      ><a name="348" href="S4.Weakening.html#348" class="Bound"
+      >t&#8322;</a
+      ><a name="350" class="Symbol"
+      >)</a
+      ><a name="351"
+      > </a
+      ><a name="352" class="Symbol"
+      >=</a
+      ><a name="353"
+      > </a
+      ><a name="354" href="S4.Core.html#416" class="InductiveConstructor"
+      >down</a
+      ><a name="358"
+      > </a
+      ><a name="359" class="Symbol"
+      >(</a
+      ><a name="360" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="366"
+      > </a
+      ><a name="367" href="S4.Weakening.html#337" class="Bound"
+      >x</a
+      ><a name="368"
+      > </a
+      ><a name="369" href="S4.Weakening.html#345" class="Bound"
+      >t&#8321;</a
+      ><a name="371" class="Symbol"
+      >)</a
+      ><a name="372"
+      > </a
+      ><a name="373" class="Symbol"
+      >(</a
+      ><a name="374" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="380"
+      > </a
+      ><a name="381" href="S4.Weakening.html#337" class="Bound"
+      >x</a
+      ><a name="382"
+      > </a
+      ><a name="383" href="S4.Weakening.html#348" class="Bound"
+      >t&#8322;</a
+      ><a name="385" class="Symbol"
+      >)</a
+      ><a name="386"
+      >
+</a
+      ><a name="387" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="393"
+      > </a
+      ><a name="394" href="S4.Weakening.html#394" class="Bound"
+      >x</a
+      ><a name="395"
+      > </a
+      ><a name="396" class="Symbol"
+      >(</a
+      ><a name="397" href="S4.Core.html#476" class="InductiveConstructor"
+      >pair</a
+      ><a name="401"
+      > </a
+      ><a name="402" href="S4.Weakening.html#402" class="Bound"
+      >t&#8321;</a
+      ><a name="404"
+      > </a
+      ><a name="405" href="S4.Weakening.html#405" class="Bound"
+      >t&#8322;</a
+      ><a name="407" class="Symbol"
+      >)</a
+      ><a name="408"
+      > </a
+      ><a name="409" class="Symbol"
+      >=</a
+      ><a name="410"
+      > </a
+      ><a name="411" href="S4.Core.html#476" class="InductiveConstructor"
+      >pair</a
+      ><a name="415"
+      > </a
+      ><a name="416" class="Symbol"
+      >(</a
+      ><a name="417" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="423"
+      > </a
+      ><a name="424" href="S4.Weakening.html#394" class="Bound"
+      >x</a
+      ><a name="425"
+      > </a
+      ><a name="426" href="S4.Weakening.html#402" class="Bound"
+      >t&#8321;</a
+      ><a name="428" class="Symbol"
+      >)</a
+      ><a name="429"
+      > </a
+      ><a name="430" class="Symbol"
+      >(</a
+      ><a name="431" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="437"
+      > </a
+      ><a name="438" href="S4.Weakening.html#394" class="Bound"
+      >x</a
+      ><a name="439"
+      > </a
+      ><a name="440" href="S4.Weakening.html#405" class="Bound"
+      >t&#8322;</a
+      ><a name="442" class="Symbol"
+      >)</a
+      ><a name="443"
+      >
+</a
+      ><a name="444" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="450"
+      > </a
+      ><a name="451" href="S4.Weakening.html#451" class="Bound"
+      >x</a
+      ><a name="452"
+      > </a
+      ><a name="453" class="Symbol"
+      >(</a
+      ><a name="454" href="S4.Core.html#532" class="InductiveConstructor"
+      >fst</a
+      ><a name="457"
+      > </a
+      ><a name="458" href="S4.Weakening.html#458" class="Bound"
+      >t</a
+      ><a name="459" class="Symbol"
+      >)</a
+      ><a name="460"
+      >      </a
+      ><a name="466" class="Symbol"
+      >=</a
+      ><a name="467"
+      > </a
+      ><a name="468" href="S4.Core.html#532" class="InductiveConstructor"
+      >fst</a
+      ><a name="471"
+      > </a
+      ><a name="472" class="Symbol"
+      >(</a
+      ><a name="473" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="479"
+      > </a
+      ><a name="480" href="S4.Weakening.html#451" class="Bound"
+      >x</a
+      ><a name="481"
+      > </a
+      ><a name="482" href="S4.Weakening.html#458" class="Bound"
+      >t</a
+      ><a name="483" class="Symbol"
+      >)</a
+      ><a name="484"
+      >
+</a
+      ><a name="485" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="491"
+      > </a
+      ><a name="492" href="S4.Weakening.html#492" class="Bound"
+      >x</a
+      ><a name="493"
+      > </a
+      ><a name="494" class="Symbol"
+      >(</a
+      ><a name="495" href="S4.Core.html#577" class="InductiveConstructor"
+      >snd</a
+      ><a name="498"
+      > </a
+      ><a name="499" href="S4.Weakening.html#499" class="Bound"
+      >t</a
+      ><a name="500" class="Symbol"
+      >)</a
+      ><a name="501"
+      >      </a
+      ><a name="507" class="Symbol"
+      >=</a
+      ><a name="508"
+      > </a
+      ><a name="509" href="S4.Core.html#577" class="InductiveConstructor"
+      >snd</a
+      ><a name="512"
+      > </a
+      ><a name="513" class="Symbol"
+      >(</a
+      ><a name="514" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="520"
+      > </a
+      ><a name="521" href="S4.Weakening.html#492" class="Bound"
+      >x</a
+      ><a name="522"
+      > </a
+      ><a name="523" href="S4.Weakening.html#499" class="Bound"
+      >t</a
+      ><a name="524" class="Symbol"
+      >)</a
+      ><a name="525"
+      >
+
+</a
+      ><a name="527" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="534"
+      > </a
+      ><a name="535" class="Symbol"
+      >:</a
+      ><a name="536"
+      > </a
+      ><a name="537" class="Symbol"
+      >&#8704;</a
+      ><a name="538"
+      > </a
+      ><a name="539" class="Symbol"
+      >{</a
+      ><a name="540" href="S4.Weakening.html#540" class="Bound"
+      >&#915;</a
+      ><a name="541"
+      > </a
+      ><a name="542" href="S4.Weakening.html#542" class="Bound"
+      >&#916;</a
+      ><a name="543"
+      > </a
+      ><a name="544" href="S4.Weakening.html#544" class="Bound"
+      >A</a
+      ><a name="545"
+      > </a
+      ><a name="546" href="S4.Weakening.html#546" class="Bound"
+      >B</a
+      ><a name="547" class="Symbol"
+      >}</a
+      ><a name="548"
+      > </a
+      ><a name="549" class="Symbol"
+      >&#8594;</a
+      ><a name="550"
+      > </a
+      ><a name="551" class="Symbol"
+      >(</a
+      ><a name="552" href="S4.Weakening.html#552" class="Bound"
+      >x</a
+      ><a name="553"
+      > </a
+      ><a name="554" class="Symbol"
+      >:</a
+      ><a name="555"
+      > </a
+      ><a name="556" href="Common.Variable.html#89" class="Datatype"
+      >Var</a
+      ><a name="559"
+      > </a
+      ><a name="560" href="S4.Core.html#65" class="Datatype"
+      >Ty</a
+      ><a name="562"
+      > </a
+      ><a name="563" href="S4.Weakening.html#542" class="Bound"
+      >&#916;</a
+      ><a name="564"
+      > </a
+      ><a name="565" href="S4.Weakening.html#544" class="Bound"
+      >A</a
+      ><a name="566" class="Symbol"
+      >)</a
+      ><a name="567"
+      > </a
+      ><a name="568" class="Symbol"
+      >&#8594;</a
+      ><a name="569"
+      > </a
+      ><a name="570" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="572"
+      > </a
+      ><a name="573" href="S4.Weakening.html#540" class="Bound"
+      >&#915;</a
+      ><a name="574"
+      > </a
+      ><a name="575" class="Symbol"
+      >(</a
+      ><a name="576" href="S4.Weakening.html#542" class="Bound"
+      >&#916;</a
+      ><a name="577"
+      > </a
+      ><a name="578" href="Common.Variable.html#471" class="Function Operator"
+      >-</a
+      ><a name="579"
+      > </a
+      ><a name="580" href="S4.Weakening.html#552" class="Bound"
+      >x</a
+      ><a name="581" class="Symbol"
+      >)</a
+      ><a name="582"
+      > </a
+      ><a name="583" href="S4.Weakening.html#546" class="Bound"
+      >B</a
+      ><a name="584"
+      > </a
+      ><a name="585" class="Symbol"
+      >&#8594;</a
+      ><a name="586"
+      > </a
+      ><a name="587" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="589"
+      > </a
+      ><a name="590" href="S4.Weakening.html#540" class="Bound"
+      >&#915;</a
+      ><a name="591"
+      > </a
+      ><a name="592" href="S4.Weakening.html#542" class="Bound"
+      >&#916;</a
+      ><a name="593"
+      > </a
+      ><a name="594" href="S4.Weakening.html#546" class="Bound"
+      >B</a
+      ><a name="595"
+      >
+</a
+      ><a name="596" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="603"
+      > </a
+      ><a name="604" href="S4.Weakening.html#604" class="Bound"
+      >x</a
+      ><a name="605"
+      > </a
+      ><a name="606" class="Symbol"
+      >(</a
+      ><a name="607" href="S4.Core.html#190" class="InductiveConstructor"
+      >var</a
+      ><a name="610"
+      > </a
+      ><a name="611" href="S4.Weakening.html#611" class="Bound"
+      >v</a
+      ><a name="612" class="Symbol"
+      >)</a
+      ><a name="613"
+      >      </a
+      ><a name="619" class="Symbol"
+      >=</a
+      ><a name="620"
+      > </a
+      ><a name="621" href="S4.Core.html#190" class="InductiveConstructor"
+      >var</a
+      ><a name="624"
+      > </a
+      ><a name="625" href="S4.Weakening.html#611" class="Bound"
+      >v</a
+      ><a name="626"
+      >
+</a
+      ><a name="627" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="634"
+      > </a
+      ><a name="635" href="S4.Weakening.html#635" class="Bound"
+      >x</a
+      ><a name="636"
+      > </a
+      ><a name="637" class="Symbol"
+      >(</a
+      ><a name="638" href="S4.Core.html#229" class="InductiveConstructor"
+      >lam</a
+      ><a name="641"
+      > </a
+      ><a name="642" href="S4.Weakening.html#642" class="Bound"
+      >t</a
+      ><a name="643" class="Symbol"
+      >)</a
+      ><a name="644"
+      >      </a
+      ><a name="650" class="Symbol"
+      >=</a
+      ><a name="651"
+      > </a
+      ><a name="652" href="S4.Core.html#229" class="InductiveConstructor"
+      >lam</a
+      ><a name="655"
+      > </a
+      ><a name="656" class="Symbol"
+      >(</a
+      ><a name="657" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="664"
+      > </a
+      ><a name="665" href="S4.Weakening.html#635" class="Bound"
+      >x</a
+      ><a name="666"
+      > </a
+      ><a name="667" href="S4.Weakening.html#642" class="Bound"
+      >t</a
+      ><a name="668" class="Symbol"
+      >)</a
+      ><a name="669"
+      >
+</a
+      ><a name="670" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="677"
+      > </a
+      ><a name="678" href="S4.Weakening.html#678" class="Bound"
+      >x</a
+      ><a name="679"
+      > </a
+      ><a name="680" class="Symbol"
+      >(</a
+      ><a name="681" href="S4.Core.html#280" class="InductiveConstructor"
+      >app</a
+      ><a name="684"
+      > </a
+      ><a name="685" href="S4.Weakening.html#685" class="Bound"
+      >t&#8321;</a
+      ><a name="687"
+      > </a
+      ><a name="688" href="S4.Weakening.html#688" class="Bound"
+      >t&#8322;</a
+      ><a name="690" class="Symbol"
+      >)</a
+      ><a name="691"
+      >  </a
+      ><a name="693" class="Symbol"
+      >=</a
+      ><a name="694"
+      > </a
+      ><a name="695" href="S4.Core.html#280" class="InductiveConstructor"
+      >app</a
+      ><a name="698"
+      > </a
+      ><a name="699" class="Symbol"
+      >(</a
+      ><a name="700" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="707"
+      > </a
+      ><a name="708" href="S4.Weakening.html#678" class="Bound"
+      >x</a
+      ><a name="709"
+      > </a
+      ><a name="710" href="S4.Weakening.html#685" class="Bound"
+      >t&#8321;</a
+      ><a name="712" class="Symbol"
+      >)</a
+      ><a name="713"
+      > </a
+      ><a name="714" class="Symbol"
+      >(</a
+      ><a name="715" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="722"
+      > </a
+      ><a name="723" href="S4.Weakening.html#678" class="Bound"
+      >x</a
+      ><a name="724"
+      > </a
+      ><a name="725" href="S4.Weakening.html#688" class="Bound"
+      >t&#8322;</a
+      ><a name="727" class="Symbol"
+      >)</a
+      ><a name="728"
+      >
+</a
+      ><a name="729" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="736"
+      > </a
+      ><a name="737" href="S4.Weakening.html#737" class="Bound"
+      >x</a
+      ><a name="738"
+      > </a
+      ><a name="739" class="Symbol"
+      >(</a
+      ><a name="740" href="S4.Core.html#336" class="InductiveConstructor"
+      >*var</a
+      ><a name="744"
+      > </a
+      ><a name="745" href="S4.Weakening.html#745" class="Bound"
+      >v</a
+      ><a name="746" class="Symbol"
+      >)</a
+      ><a name="747"
+      >     </a
+      ><a name="752" class="Symbol"
+      >=</a
+      ><a name="753"
+      > </a
+      ><a name="754" href="S4.Core.html#336" class="InductiveConstructor"
+      >*var</a
+      ><a name="758"
+      > </a
+      ><a name="759" class="Symbol"
+      >(</a
+      ><a name="760" href="Common.Variable.html#584" class="Function"
+      >wk-var&#8315;</a
+      ><a name="767"
+      > </a
+      ><a name="768" href="S4.Weakening.html#737" class="Bound"
+      >x</a
+      ><a name="769"
+      > </a
+      ><a name="770" href="S4.Weakening.html#745" class="Bound"
+      >v</a
+      ><a name="771" class="Symbol"
+      >)</a
+      ><a name="772"
+      >
+</a
+      ><a name="773" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="780"
+      > </a
+      ><a name="781" href="S4.Weakening.html#781" class="Bound"
+      >x</a
+      ><a name="782"
+      > </a
+      ><a name="783" class="Symbol"
+      >(</a
+      ><a name="784" href="S4.Core.html#375" class="InductiveConstructor"
+      >up</a
+      ><a name="786"
+      > </a
+      ><a name="787" href="S4.Weakening.html#787" class="Bound"
+      >t</a
+      ><a name="788" class="Symbol"
+      >)</a
+      ><a name="789"
+      >       </a
+      ><a name="796" class="Symbol"
+      >=</a
+      ><a name="797"
+      > </a
+      ><a name="798" href="S4.Core.html#375" class="InductiveConstructor"
+      >up</a
+      ><a name="800"
+      > </a
+      ><a name="801" class="Symbol"
+      >(</a
+      ><a name="802" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="809"
+      > </a
+      ><a name="810" href="S4.Weakening.html#781" class="Bound"
+      >x</a
+      ><a name="811"
+      > </a
+      ><a name="812" href="S4.Weakening.html#787" class="Bound"
+      >t</a
+      ><a name="813" class="Symbol"
+      >)</a
+      ><a name="814"
+      >
+</a
+      ><a name="815" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="822"
+      > </a
+      ><a name="823" href="S4.Weakening.html#823" class="Bound"
+      >x</a
+      ><a name="824"
+      > </a
+      ><a name="825" class="Symbol"
+      >(</a
+      ><a name="826" href="S4.Core.html#416" class="InductiveConstructor"
+      >down</a
+      ><a name="830"
+      > </a
+      ><a name="831" href="S4.Weakening.html#831" class="Bound"
+      >t&#8321;</a
+      ><a name="833"
+      > </a
+      ><a name="834" href="S4.Weakening.html#834" class="Bound"
+      >t&#8322;</a
+      ><a name="836" class="Symbol"
+      >)</a
+      ><a name="837"
+      > </a
+      ><a name="838" class="Symbol"
+      >=</a
+      ><a name="839"
+      > </a
+      ><a name="840" href="S4.Core.html#416" class="InductiveConstructor"
+      >down</a
+      ><a name="844"
+      > </a
+      ><a name="845" class="Symbol"
+      >(</a
+      ><a name="846" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="853"
+      > </a
+      ><a name="854" href="S4.Weakening.html#823" class="Bound"
+      >x</a
+      ><a name="855"
+      > </a
+      ><a name="856" href="S4.Weakening.html#831" class="Bound"
+      >t&#8321;</a
+      ><a name="858" class="Symbol"
+      >)</a
+      ><a name="859"
+      > </a
+      ><a name="860" class="Symbol"
+      >(</a
+      ><a name="861" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="868"
+      > </a
+      ><a name="869" class="Symbol"
+      >(</a
+      ><a name="870" href="Common.Variable.html#162" class="InductiveConstructor"
+      >pop</a
+      ><a name="873"
+      > </a
+      ><a name="874" href="S4.Weakening.html#823" class="Bound"
+      >x</a
+      ><a name="875" class="Symbol"
+      >)</a
+      ><a name="876"
+      > </a
+      ><a name="877" href="S4.Weakening.html#834" class="Bound"
+      >t&#8322;</a
+      ><a name="879" class="Symbol"
+      >)</a
+      ><a name="880"
+      >
+</a
+      ><a name="881" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="888"
+      > </a
+      ><a name="889" href="S4.Weakening.html#889" class="Bound"
+      >x</a
+      ><a name="890"
+      > </a
+      ><a name="891" class="Symbol"
+      >(</a
+      ><a name="892" href="S4.Core.html#476" class="InductiveConstructor"
+      >pair</a
+      ><a name="896"
+      > </a
+      ><a name="897" href="S4.Weakening.html#897" class="Bound"
+      >t&#8321;</a
+      ><a name="899"
+      > </a
+      ><a name="900" href="S4.Weakening.html#900" class="Bound"
+      >t&#8322;</a
+      ><a name="902" class="Symbol"
+      >)</a
+      ><a name="903"
+      > </a
+      ><a name="904" class="Symbol"
+      >=</a
+      ><a name="905"
+      > </a
+      ><a name="906" href="S4.Core.html#476" class="InductiveConstructor"
+      >pair</a
+      ><a name="910"
+      > </a
+      ><a name="911" class="Symbol"
+      >(</a
+      ><a name="912" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="919"
+      > </a
+      ><a name="920" href="S4.Weakening.html#889" class="Bound"
+      >x</a
+      ><a name="921"
+      > </a
+      ><a name="922" href="S4.Weakening.html#897" class="Bound"
+      >t&#8321;</a
+      ><a name="924" class="Symbol"
+      >)</a
+      ><a name="925"
+      > </a
+      ><a name="926" class="Symbol"
+      >(</a
+      ><a name="927" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="934"
+      > </a
+      ><a name="935" href="S4.Weakening.html#889" class="Bound"
+      >x</a
+      ><a name="936"
+      > </a
+      ><a name="937" href="S4.Weakening.html#900" class="Bound"
+      >t&#8322;</a
+      ><a name="939" class="Symbol"
+      >)</a
+      ><a name="940"
+      >
+</a
+      ><a name="941" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="948"
+      > </a
+      ><a name="949" href="S4.Weakening.html#949" class="Bound"
+      >x</a
+      ><a name="950"
+      > </a
+      ><a name="951" class="Symbol"
+      >(</a
+      ><a name="952" href="S4.Core.html#532" class="InductiveConstructor"
+      >fst</a
+      ><a name="955"
+      > </a
+      ><a name="956" href="S4.Weakening.html#956" class="Bound"
+      >t</a
+      ><a name="957" class="Symbol"
+      >)</a
+      ><a name="958"
+      >      </a
+      ><a name="964" class="Symbol"
+      >=</a
+      ><a name="965"
+      > </a
+      ><a name="966" href="S4.Core.html#532" class="InductiveConstructor"
+      >fst</a
+      ><a name="969"
+      > </a
+      ><a name="970" class="Symbol"
+      >(</a
+      ><a name="971" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="978"
+      > </a
+      ><a name="979" href="S4.Weakening.html#949" class="Bound"
+      >x</a
+      ><a name="980"
+      > </a
+      ><a name="981" href="S4.Weakening.html#956" class="Bound"
+      >t</a
+      ><a name="982" class="Symbol"
+      >)</a
+      ><a name="983"
+      >
+</a
+      ><a name="984" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="991"
+      > </a
+      ><a name="992" href="S4.Weakening.html#992" class="Bound"
+      >x</a
+      ><a name="993"
+      > </a
+      ><a name="994" class="Symbol"
+      >(</a
+      ><a name="995" href="S4.Core.html#577" class="InductiveConstructor"
+      >snd</a
+      ><a name="998"
+      > </a
+      ><a name="999" href="S4.Weakening.html#999" class="Bound"
+      >t</a
+      ><a name="1000" class="Symbol"
+      >)</a
+      ><a name="1001"
+      >      </a
+      ><a name="1007" class="Symbol"
+      >=</a
+      ><a name="1008"
+      > </a
+      ><a name="1009" href="S4.Core.html#577" class="InductiveConstructor"
+      >snd</a
+      ><a name="1012"
+      > </a
+      ><a name="1013" class="Symbol"
+      >(</a
+      ><a name="1014" href="S4.Weakening.html#527" class="Function"
+      >*wk-tm&#8315;</a
+      ><a name="1021"
+      > </a
+      ><a name="1022" href="S4.Weakening.html#992" class="Bound"
+      >x</a
+      ><a name="1023"
+      > </a
+      ><a name="1024" href="S4.Weakening.html#999" class="Bound"
+      >t</a
+      ><a name="1025" class="Symbol"
+      >)</a
+      ><a name="1026"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

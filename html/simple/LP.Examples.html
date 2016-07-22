@@ -1,0 +1,1476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >LP.Examples</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="LP.Examples.html#1" class="Module"
+      >LP.Examples</a
+      ><a name="19"
+      > </a
+      ><a name="20" class="Keyword"
+      >where</a
+      ><a name="25"
+      >
+
+</a
+      ><a name="27" class="Keyword"
+      >open</a
+      ><a name="31"
+      > </a
+      ><a name="32" class="Keyword"
+      >import</a
+      ><a name="38"
+      > </a
+      ><a name="39" href="LP.Core.html#1" class="Module"
+      >LP.Core</a
+      ><a name="46"
+      > </a
+      ><a name="47" class="Keyword"
+      >public</a
+      ><a name="53"
+      >
+
+
+</a
+      ><a name="56" href="LP.Examples.html#56" class="Function"
+      >I</a
+      ><a name="57"
+      > </a
+      ><a name="58" class="Symbol"
+      >:</a
+      ><a name="59"
+      > </a
+      ><a name="60" class="Symbol"
+      >&#8704;</a
+      ><a name="61"
+      > </a
+      ><a name="62" class="Symbol"
+      >{</a
+      ><a name="63" href="LP.Examples.html#63" class="Bound"
+      >&#915;</a
+      ><a name="64"
+      > </a
+      ><a name="65" href="LP.Examples.html#65" class="Bound"
+      >&#916;</a
+      ><a name="66"
+      > </a
+      ><a name="67" href="LP.Examples.html#67" class="Bound"
+      >A</a
+      ><a name="68" class="Symbol"
+      >}</a
+      ><a name="69"
+      > </a
+      ><a name="70" class="Symbol"
+      >&#8594;</a
+      ><a name="71"
+      > </a
+      ><a name="72" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="74"
+      > </a
+      ><a name="75" href="LP.Examples.html#63" class="Bound"
+      >&#915;</a
+      ><a name="76"
+      > </a
+      ><a name="77" href="LP.Examples.html#65" class="Bound"
+      >&#916;</a
+      ><a name="78"
+      > </a
+      ><a name="79" class="Symbol"
+      >(</a
+      ><a name="80" href="LP.Examples.html#67" class="Bound"
+      >A</a
+      ><a name="81"
+      > </a
+      ><a name="82" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="83"
+      > </a
+      ><a name="84" href="LP.Examples.html#67" class="Bound"
+      >A</a
+      ><a name="85" class="Symbol"
+      >)</a
+      ><a name="86"
+      >
+</a
+      ><a name="87" href="LP.Examples.html#56" class="Function"
+      >I</a
+      ><a name="88"
+      > </a
+      ><a name="89" class="Symbol"
+      >=</a
+      ><a name="90"
+      > </a
+      ><a name="91" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="94"
+      > </a
+      ><a name="95" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="97"
+      >
+
+</a
+      ><a name="99" href="LP.Examples.html#99" class="Function"
+      >K</a
+      ><a name="100"
+      > </a
+      ><a name="101" class="Symbol"
+      >:</a
+      ><a name="102"
+      > </a
+      ><a name="103" class="Symbol"
+      >&#8704;</a
+      ><a name="104"
+      > </a
+      ><a name="105" class="Symbol"
+      >{</a
+      ><a name="106" href="LP.Examples.html#106" class="Bound"
+      >&#915;</a
+      ><a name="107"
+      > </a
+      ><a name="108" href="LP.Examples.html#108" class="Bound"
+      >&#916;</a
+      ><a name="109"
+      > </a
+      ><a name="110" href="LP.Examples.html#110" class="Bound"
+      >A</a
+      ><a name="111"
+      > </a
+      ><a name="112" href="LP.Examples.html#112" class="Bound"
+      >B</a
+      ><a name="113" class="Symbol"
+      >}</a
+      ><a name="114"
+      > </a
+      ><a name="115" class="Symbol"
+      >&#8594;</a
+      ><a name="116"
+      > </a
+      ><a name="117" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="119"
+      > </a
+      ><a name="120" href="LP.Examples.html#106" class="Bound"
+      >&#915;</a
+      ><a name="121"
+      > </a
+      ><a name="122" href="LP.Examples.html#108" class="Bound"
+      >&#916;</a
+      ><a name="123"
+      > </a
+      ><a name="124" class="Symbol"
+      >(</a
+      ><a name="125" href="LP.Examples.html#110" class="Bound"
+      >A</a
+      ><a name="126"
+      > </a
+      ><a name="127" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="128"
+      > </a
+      ><a name="129" href="LP.Examples.html#112" class="Bound"
+      >B</a
+      ><a name="130"
+      > </a
+      ><a name="131" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="132"
+      > </a
+      ><a name="133" href="LP.Examples.html#110" class="Bound"
+      >A</a
+      ><a name="134" class="Symbol"
+      >)</a
+      ><a name="135"
+      >
+</a
+      ><a name="136" href="LP.Examples.html#99" class="Function"
+      >K</a
+      ><a name="137"
+      > </a
+      ><a name="138" class="Symbol"
+      >=</a
+      ><a name="139"
+      > </a
+      ><a name="140" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="143"
+      > </a
+      ><a name="144" class="Symbol"
+      >(</a
+      ><a name="145" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="148"
+      > </a
+      ><a name="149" href="LP.Core.html#999" class="Function"
+      >v&#8321;</a
+      ><a name="151" class="Symbol"
+      >)</a
+      ><a name="152"
+      >
+
+</a
+      ><a name="154" href="LP.Examples.html#154" class="Function"
+      >S</a
+      ><a name="155"
+      > </a
+      ><a name="156" class="Symbol"
+      >:</a
+      ><a name="157"
+      > </a
+      ><a name="158" class="Symbol"
+      >&#8704;</a
+      ><a name="159"
+      > </a
+      ><a name="160" class="Symbol"
+      >{</a
+      ><a name="161" href="LP.Examples.html#161" class="Bound"
+      >&#915;</a
+      ><a name="162"
+      > </a
+      ><a name="163" href="LP.Examples.html#163" class="Bound"
+      >&#916;</a
+      ><a name="164"
+      > </a
+      ><a name="165" href="LP.Examples.html#165" class="Bound"
+      >A</a
+      ><a name="166"
+      > </a
+      ><a name="167" href="LP.Examples.html#167" class="Bound"
+      >B</a
+      ><a name="168"
+      > </a
+      ><a name="169" href="LP.Examples.html#169" class="Bound"
+      >C</a
+      ><a name="170" class="Symbol"
+      >}</a
+      ><a name="171"
+      > </a
+      ><a name="172" class="Symbol"
+      >&#8594;</a
+      ><a name="173"
+      > </a
+      ><a name="174" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="176"
+      > </a
+      ><a name="177" href="LP.Examples.html#161" class="Bound"
+      >&#915;</a
+      ><a name="178"
+      > </a
+      ><a name="179" href="LP.Examples.html#163" class="Bound"
+      >&#916;</a
+      ><a name="180"
+      > </a
+      ><a name="181" class="Symbol"
+      >((</a
+      ><a name="183" href="LP.Examples.html#165" class="Bound"
+      >A</a
+      ><a name="184"
+      > </a
+      ><a name="185" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="186"
+      > </a
+      ><a name="187" href="LP.Examples.html#167" class="Bound"
+      >B</a
+      ><a name="188"
+      > </a
+      ><a name="189" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="190"
+      > </a
+      ><a name="191" href="LP.Examples.html#169" class="Bound"
+      >C</a
+      ><a name="192" class="Symbol"
+      >)</a
+      ><a name="193"
+      > </a
+      ><a name="194" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="195"
+      > </a
+      ><a name="196" class="Symbol"
+      >(</a
+      ><a name="197" href="LP.Examples.html#165" class="Bound"
+      >A</a
+      ><a name="198"
+      > </a
+      ><a name="199" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="200"
+      > </a
+      ><a name="201" href="LP.Examples.html#167" class="Bound"
+      >B</a
+      ><a name="202" class="Symbol"
+      >)</a
+      ><a name="203"
+      > </a
+      ><a name="204" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="205"
+      > </a
+      ><a name="206" href="LP.Examples.html#165" class="Bound"
+      >A</a
+      ><a name="207"
+      > </a
+      ><a name="208" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="209"
+      > </a
+      ><a name="210" href="LP.Examples.html#169" class="Bound"
+      >C</a
+      ><a name="211" class="Symbol"
+      >)</a
+      ><a name="212"
+      >
+</a
+      ><a name="213" href="LP.Examples.html#154" class="Function"
+      >S</a
+      ><a name="214"
+      > </a
+      ><a name="215" class="Symbol"
+      >=</a
+      ><a name="216"
+      > </a
+      ><a name="217" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="220"
+      > </a
+      ><a name="221" class="Symbol"
+      >(</a
+      ><a name="222" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="225"
+      > </a
+      ><a name="226" class="Symbol"
+      >(</a
+      ><a name="227" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="230"
+      > </a
+      ><a name="231" class="Symbol"
+      >(</a
+      ><a name="232" href="LP.Core.html#326" class="InductiveConstructor"
+      >app</a
+      ><a name="235"
+      > </a
+      ><a name="236" class="Symbol"
+      >(</a
+      ><a name="237" href="LP.Core.html#326" class="InductiveConstructor"
+      >app</a
+      ><a name="240"
+      > </a
+      ><a name="241" href="LP.Core.html#1052" class="Function"
+      >v&#8322;</a
+      ><a name="243"
+      > </a
+      ><a name="244" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="246" class="Symbol"
+      >)</a
+      ><a name="247"
+      > </a
+      ><a name="248" class="Symbol"
+      >(</a
+      ><a name="249" href="LP.Core.html#326" class="InductiveConstructor"
+      >app</a
+      ><a name="252"
+      > </a
+      ><a name="253" href="LP.Core.html#999" class="Function"
+      >v&#8321;</a
+      ><a name="255"
+      > </a
+      ><a name="256" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="258" class="Symbol"
+      >))))</a
+      ><a name="262"
+      >
+
+
+</a
+      ><a name="265" href="LP.Examples.html#265" class="Function"
+      >D</a
+      ><a name="266"
+      > </a
+      ><a name="267" class="Symbol"
+      >:</a
+      ><a name="268"
+      > </a
+      ><a name="269" class="Symbol"
+      >&#8704;</a
+      ><a name="270"
+      > </a
+      ><a name="271" class="Symbol"
+      >{</a
+      ><a name="272" href="LP.Examples.html#272" class="Bound"
+      >&#915;</a
+      ><a name="273"
+      > </a
+      ><a name="274" href="LP.Examples.html#274" class="Bound"
+      >&#916;</a
+      ><a name="275"
+      > </a
+      ><a name="276" href="LP.Examples.html#276" class="Bound"
+      >A</a
+      ><a name="277"
+      > </a
+      ><a name="278" href="LP.Examples.html#278" class="Bound"
+      >B</a
+      ><a name="279" class="Symbol"
+      >}</a
+      ><a name="280"
+      > </a
+      ><a name="281" class="Symbol"
+      >&#8594;</a
+      ><a name="282"
+      > </a
+      ><a name="283" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="285"
+      > </a
+      ><a name="286" href="LP.Examples.html#272" class="Bound"
+      >&#915;</a
+      ><a name="287"
+      > </a
+      ><a name="288" href="LP.Examples.html#274" class="Bound"
+      >&#916;</a
+      ><a name="289"
+      > </a
+      ><a name="290" class="Symbol"
+      >(</a
+      ><a name="291" href="LP.Core.html#1283" class="Function Operator"
+      >[v&#7522;]</a
+      ><a name="295"
+      > </a
+      ><a name="296" class="Symbol"
+      >(</a
+      ><a name="297" href="LP.Examples.html#276" class="Bound"
+      >A</a
+      ><a name="298"
+      > </a
+      ><a name="299" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="300"
+      > </a
+      ><a name="301" href="LP.Examples.html#278" class="Bound"
+      >B</a
+      ><a name="302" class="Symbol"
+      >)</a
+      ><a name="303"
+      > </a
+      ><a name="304" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="305"
+      > </a
+      ><a name="306" href="LP.Core.html#1283" class="Function Operator"
+      >[v&#7522;]</a
+      ><a name="310"
+      > </a
+      ><a name="311" href="LP.Examples.html#276" class="Bound"
+      >A</a
+      ><a name="312"
+      > </a
+      ><a name="313" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="314"
+      > </a
+      ><a name="315" class="Symbol"
+      >(</a
+      ><a name="316" href="LP.Core.html#326" class="InductiveConstructor"
+      >app</a
+      ><a name="319"
+      > </a
+      ><a name="320" href="LP.Core.html#1162" class="Function"
+      >*v&#8321;</a
+      ><a name="323"
+      > </a
+      ><a name="324" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="327"
+      > </a
+      ><a name="328" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="329"
+      > </a
+      ><a name="330" href="LP.Examples.html#278" class="Bound"
+      >B</a
+      ><a name="331" class="Symbol"
+      >))</a
+      ><a name="333"
+      >
+</a
+      ><a name="334" href="LP.Examples.html#265" class="Function"
+      >D</a
+      ><a name="335"
+      > </a
+      ><a name="336" class="Symbol"
+      >=</a
+      ><a name="337"
+      > </a
+      ><a name="338" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="341"
+      > </a
+      ><a name="342" class="Symbol"
+      >(</a
+      ><a name="343" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="346"
+      > </a
+      ><a name="347" class="Symbol"
+      >(</a
+      ><a name="348" href="LP.Core.html#476" class="InductiveConstructor"
+      >down</a
+      ><a name="352"
+      > </a
+      ><a name="353" href="LP.Core.html#999" class="Function"
+      >v&#8321;</a
+      ><a name="355"
+      > </a
+      ><a name="356" class="Symbol"
+      >(</a
+      ><a name="357" href="LP.Core.html#476" class="InductiveConstructor"
+      >down</a
+      ><a name="361"
+      > </a
+      ><a name="362" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="364"
+      > </a
+      ><a name="365" class="Symbol"
+      >(</a
+      ><a name="366" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="368"
+      > </a
+      ><a name="369" class="Symbol"
+      >(</a
+      ><a name="370" href="LP.Core.html#326" class="InductiveConstructor"
+      >app</a
+      ><a name="373"
+      > </a
+      ><a name="374" href="LP.Core.html#1162" class="Function"
+      >*v&#8321;</a
+      ><a name="377"
+      > </a
+      ><a name="378" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="381" class="Symbol"
+      >)))))</a
+      ><a name="386"
+      >
+
+</a
+      ><a name="388" href="LP.Examples.html#388" class="Function"
+      >T</a
+      ><a name="389"
+      > </a
+      ><a name="390" class="Symbol"
+      >:</a
+      ><a name="391"
+      > </a
+      ><a name="392" class="Symbol"
+      >&#8704;</a
+      ><a name="393"
+      > </a
+      ><a name="394" class="Symbol"
+      >{</a
+      ><a name="395" href="LP.Examples.html#395" class="Bound"
+      >&#915;</a
+      ><a name="396"
+      > </a
+      ><a name="397" href="LP.Examples.html#397" class="Bound"
+      >&#916;</a
+      ><a name="398"
+      > </a
+      ><a name="399" href="LP.Examples.html#399" class="Bound"
+      >A</a
+      ><a name="400" class="Symbol"
+      >}</a
+      ><a name="401"
+      > </a
+      ><a name="402" class="Symbol"
+      >&#8594;</a
+      ><a name="403"
+      > </a
+      ><a name="404" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="406"
+      > </a
+      ><a name="407" href="LP.Examples.html#395" class="Bound"
+      >&#915;</a
+      ><a name="408"
+      > </a
+      ><a name="409" href="LP.Examples.html#397" class="Bound"
+      >&#916;</a
+      ><a name="410"
+      > </a
+      ><a name="411" class="Symbol"
+      >(</a
+      ><a name="412" href="LP.Core.html#1283" class="Function Operator"
+      >[v&#7522;]</a
+      ><a name="416"
+      > </a
+      ><a name="417" href="LP.Examples.html#399" class="Bound"
+      >A</a
+      ><a name="418"
+      > </a
+      ><a name="419" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="420"
+      > </a
+      ><a name="421" href="LP.Examples.html#399" class="Bound"
+      >A</a
+      ><a name="422" class="Symbol"
+      >)</a
+      ><a name="423"
+      >
+</a
+      ><a name="424" href="LP.Examples.html#388" class="Function"
+      >T</a
+      ><a name="425"
+      > </a
+      ><a name="426" class="Symbol"
+      >=</a
+      ><a name="427"
+      > </a
+      ><a name="428" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="431"
+      > </a
+      ><a name="432" class="Symbol"
+      >(</a
+      ><a name="433" href="LP.Core.html#476" class="InductiveConstructor"
+      >down</a
+      ><a name="437"
+      > </a
+      ><a name="438" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="440"
+      > </a
+      ><a name="441" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="444" class="Symbol"
+      >)</a
+      ><a name="445"
+      >
+
+</a
+      ><a name="447" href="LP.Examples.html#447" class="Function"
+      >#4</a
+      ><a name="449"
+      > </a
+      ><a name="450" class="Symbol"
+      >:</a
+      ><a name="451"
+      > </a
+      ><a name="452" class="Symbol"
+      >&#8704;</a
+      ><a name="453"
+      > </a
+      ><a name="454" class="Symbol"
+      >{</a
+      ><a name="455" href="LP.Examples.html#455" class="Bound"
+      >&#915;</a
+      ><a name="456"
+      > </a
+      ><a name="457" href="LP.Examples.html#457" class="Bound"
+      >&#916;</a
+      ><a name="458"
+      > </a
+      ><a name="459" href="LP.Examples.html#459" class="Bound"
+      >A</a
+      ><a name="460" class="Symbol"
+      >}</a
+      ><a name="461"
+      > </a
+      ><a name="462" class="Symbol"
+      >&#8594;</a
+      ><a name="463"
+      > </a
+      ><a name="464" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="466"
+      > </a
+      ><a name="467" href="LP.Examples.html#455" class="Bound"
+      >&#915;</a
+      ><a name="468"
+      > </a
+      ><a name="469" href="LP.Examples.html#457" class="Bound"
+      >&#916;</a
+      ><a name="470"
+      > </a
+      ><a name="471" class="Symbol"
+      >(</a
+      ><a name="472" href="LP.Core.html#1283" class="Function Operator"
+      >[v&#7522;]</a
+      ><a name="476"
+      > </a
+      ><a name="477" href="LP.Examples.html#459" class="Bound"
+      >A</a
+      ><a name="478"
+      > </a
+      ><a name="479" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="480"
+      > </a
+      ><a name="481" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="483"
+      > </a
+      ><a name="484" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="487"
+      > </a
+      ><a name="488" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="489"
+      > </a
+      ><a name="490" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="493"
+      > </a
+      ><a name="494" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="495"
+      > </a
+      ><a name="496" href="LP.Examples.html#459" class="Bound"
+      >A</a
+      ><a name="497" class="Symbol"
+      >)</a
+      ><a name="498"
+      >
+</a
+      ><a name="499" href="LP.Examples.html#447" class="Function"
+      >#4</a
+      ><a name="501"
+      > </a
+      ><a name="502" class="Symbol"
+      >=</a
+      ><a name="503"
+      > </a
+      ><a name="504" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="507"
+      > </a
+      ><a name="508" class="Symbol"
+      >(</a
+      ><a name="509" href="LP.Core.html#476" class="InductiveConstructor"
+      >down</a
+      ><a name="513"
+      > </a
+      ><a name="514" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="516"
+      > </a
+      ><a name="517" class="Symbol"
+      >(</a
+      ><a name="518" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="520"
+      > </a
+      ><a name="521" class="Symbol"
+      >(</a
+      ><a name="522" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="524"
+      > </a
+      ><a name="525" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="528" class="Symbol"
+      >)))</a
+      ><a name="531"
+      >
+
+
+</a
+      ><a name="534" href="LP.Examples.html#534" class="Function"
+      >E1</a
+      ><a name="536"
+      > </a
+      ><a name="537" class="Symbol"
+      >:</a
+      ><a name="538"
+      > </a
+      ><a name="539" class="Symbol"
+      >&#8704;</a
+      ><a name="540"
+      > </a
+      ><a name="541" class="Symbol"
+      >{</a
+      ><a name="542" href="LP.Examples.html#542" class="Bound"
+      >&#915;</a
+      ><a name="543"
+      > </a
+      ><a name="544" href="LP.Examples.html#544" class="Bound"
+      >&#916;</a
+      ><a name="545"
+      > </a
+      ><a name="546" href="LP.Examples.html#546" class="Bound"
+      >A</a
+      ><a name="547" class="Symbol"
+      >}</a
+      ><a name="548"
+      > </a
+      ><a name="549" class="Symbol"
+      >&#8594;</a
+      ><a name="550"
+      > </a
+      ><a name="551" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="553"
+      > </a
+      ><a name="554" href="LP.Examples.html#542" class="Bound"
+      >&#915;</a
+      ><a name="555"
+      > </a
+      ><a name="556" href="LP.Examples.html#544" class="Bound"
+      >&#916;</a
+      ><a name="557"
+      > </a
+      ><a name="558" class="Symbol"
+      >(</a
+      ><a name="559" href="LP.Examples.html#388" class="Function"
+      >T</a
+      ><a name="560"
+      > </a
+      ><a name="561" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="562"
+      > </a
+      ><a name="563" class="Symbol"
+      >(</a
+      ><a name="564" href="LP.Core.html#1283" class="Function Operator"
+      >[v&#7522;]</a
+      ><a name="568"
+      > </a
+      ><a name="569" href="LP.Examples.html#546" class="Bound"
+      >A</a
+      ><a name="570"
+      > </a
+      ><a name="571" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="572"
+      > </a
+      ><a name="573" href="LP.Examples.html#546" class="Bound"
+      >A</a
+      ><a name="574" class="Symbol"
+      >))</a
+      ><a name="576"
+      >
+</a
+      ><a name="577" href="LP.Examples.html#534" class="Function"
+      >E1</a
+      ><a name="579"
+      > </a
+      ><a name="580" class="Symbol"
+      >=</a
+      ><a name="581"
+      > </a
+      ><a name="582" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="584"
+      > </a
+      ><a name="585" href="LP.Examples.html#388" class="Function"
+      >T</a
+      ><a name="586"
+      >
+
+</a
+      ><a name="588" href="LP.Examples.html#588" class="Function"
+      >E2</a
+      ><a name="590"
+      > </a
+      ><a name="591" class="Symbol"
+      >:</a
+      ><a name="592"
+      > </a
+      ><a name="593" class="Symbol"
+      >&#8704;</a
+      ><a name="594"
+      > </a
+      ><a name="595" class="Symbol"
+      >{</a
+      ><a name="596" href="LP.Examples.html#596" class="Bound"
+      >&#915;</a
+      ><a name="597"
+      > </a
+      ><a name="598" href="LP.Examples.html#598" class="Bound"
+      >&#916;</a
+      ><a name="599"
+      > </a
+      ><a name="600" href="LP.Examples.html#600" class="Bound"
+      >A</a
+      ><a name="601" class="Symbol"
+      >}</a
+      ><a name="602"
+      > </a
+      ><a name="603" class="Symbol"
+      >&#8594;</a
+      ><a name="604"
+      > </a
+      ><a name="605" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="607"
+      > </a
+      ><a name="608" href="LP.Examples.html#596" class="Bound"
+      >&#915;</a
+      ><a name="609"
+      > </a
+      ><a name="610" href="LP.Examples.html#598" class="Bound"
+      >&#916;</a
+      ><a name="611"
+      > </a
+      ><a name="612" class="Symbol"
+      >(</a
+      ><a name="613" href="LP.Examples.html#447" class="Function"
+      >#4</a
+      ><a name="615"
+      > </a
+      ><a name="616" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="617"
+      > </a
+      ><a name="618" class="Symbol"
+      >(</a
+      ><a name="619" href="LP.Core.html#1283" class="Function Operator"
+      >[v&#7522;]</a
+      ><a name="623"
+      > </a
+      ><a name="624" href="LP.Examples.html#600" class="Bound"
+      >A</a
+      ><a name="625"
+      > </a
+      ><a name="626" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="627"
+      > </a
+      ><a name="628" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="630"
+      > </a
+      ><a name="631" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="634"
+      > </a
+      ><a name="635" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="636"
+      > </a
+      ><a name="637" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="640"
+      > </a
+      ><a name="641" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="642"
+      > </a
+      ><a name="643" href="LP.Examples.html#600" class="Bound"
+      >A</a
+      ><a name="644" class="Symbol"
+      >))</a
+      ><a name="646"
+      >
+</a
+      ><a name="647" href="LP.Examples.html#588" class="Function"
+      >E2</a
+      ><a name="649"
+      > </a
+      ><a name="650" class="Symbol"
+      >=</a
+      ><a name="651"
+      > </a
+      ><a name="652" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="654"
+      > </a
+      ><a name="655" href="LP.Examples.html#447" class="Function"
+      >#4</a
+      ><a name="657"
+      >
+
+</a
+      ><a name="659" href="LP.Examples.html#659" class="Function"
+      >E3</a
+      ><a name="661"
+      > </a
+      ><a name="662" class="Symbol"
+      >:</a
+      ><a name="663"
+      > </a
+      ><a name="664" class="Symbol"
+      >&#8704;</a
+      ><a name="665"
+      > </a
+      ><a name="666" class="Symbol"
+      >{</a
+      ><a name="667" href="LP.Examples.html#667" class="Bound"
+      >&#915;</a
+      ><a name="668"
+      > </a
+      ><a name="669" href="LP.Examples.html#669" class="Bound"
+      >&#916;</a
+      ><a name="670"
+      > </a
+      ><a name="671" href="LP.Examples.html#671" class="Bound"
+      >A</a
+      ><a name="672"
+      > </a
+      ><a name="673" href="LP.Examples.html#673" class="Bound"
+      >B</a
+      ><a name="674" class="Symbol"
+      >}</a
+      ><a name="675"
+      > </a
+      ><a name="676" class="Symbol"
+      >&#8594;</a
+      ><a name="677"
+      >
+     </a
+      ><a name="683" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="685"
+      > </a
+      ><a name="686" href="LP.Examples.html#667" class="Bound"
+      >&#915;</a
+      ><a name="687"
+      > </a
+      ><a name="688" href="LP.Examples.html#669" class="Bound"
+      >&#916;</a
+      ><a name="689"
+      > </a
+      ><a name="690" class="Symbol"
+      >(</a
+      ><a name="691" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="693"
+      > </a
+      ><a name="694" class="Symbol"
+      >(</a
+      ><a name="695" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="698"
+      > </a
+      ><a name="699" class="Symbol"
+      >(</a
+      ><a name="700" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="703"
+      > </a
+      ><a name="704" class="Symbol"
+      >(</a
+      ><a name="705" href="LP.Core.html#557" class="InductiveConstructor"
+      >pair</a
+      ><a name="709"
+      > </a
+      ><a name="710" href="LP.Core.html#999" class="Function"
+      >v&#8321;</a
+      ><a name="712"
+      > </a
+      ><a name="713" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="715" class="Symbol"
+      >)))</a
+      ><a name="718"
+      > </a
+      ><a name="719" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="720"
+      > </a
+      ><a name="721" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="724"
+      > </a
+      ><a name="725" class="Symbol"
+      >(</a
+      ><a name="726" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="729"
+      > </a
+      ><a name="730" class="Symbol"
+      >(</a
+      ><a name="731" href="LP.Core.html#557" class="InductiveConstructor"
+      >pair</a
+      ><a name="735"
+      > </a
+      ><a name="736" href="LP.Core.html#999" class="Function"
+      >v&#8321;</a
+      ><a name="738"
+      > </a
+      ><a name="739" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="741" class="Symbol"
+      >))</a
+      ><a name="743"
+      > </a
+      ><a name="744" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="745"
+      > </a
+      ><a name="746" class="Symbol"
+      >(</a
+      ><a name="747" href="LP.Examples.html#671" class="Bound"
+      >A</a
+      ><a name="748"
+      > </a
+      ><a name="749" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="750"
+      > </a
+      ><a name="751" href="LP.Examples.html#673" class="Bound"
+      >B</a
+      ><a name="752"
+      > </a
+      ><a name="753" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="754"
+      > </a
+      ><a name="755" href="LP.Examples.html#671" class="Bound"
+      >A</a
+      ><a name="756"
+      > </a
+      ><a name="757" href="LP.Core.html#167" class="InductiveConstructor Operator"
+      >&#8743;</a
+      ><a name="758"
+      > </a
+      ><a name="759" href="LP.Examples.html#673" class="Bound"
+      >B</a
+      ><a name="760" class="Symbol"
+      >))</a
+      ><a name="762"
+      >
+</a
+      ><a name="763" href="LP.Examples.html#659" class="Function"
+      >E3</a
+      ><a name="765"
+      > </a
+      ><a name="766" class="Symbol"
+      >=</a
+      ><a name="767"
+      > </a
+      ><a name="768" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="770"
+      > </a
+      ><a name="771" class="Symbol"
+      >(</a
+      ><a name="772" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="774"
+      > </a
+      ><a name="775" class="Symbol"
+      >(</a
+      ><a name="776" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="779"
+      > </a
+      ><a name="780" class="Symbol"
+      >(</a
+      ><a name="781" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="784"
+      > </a
+      ><a name="785" class="Symbol"
+      >(</a
+      ><a name="786" href="LP.Core.html#557" class="InductiveConstructor"
+      >pair</a
+      ><a name="790"
+      > </a
+      ><a name="791" href="LP.Core.html#999" class="Function"
+      >v&#8321;</a
+      ><a name="793"
+      > </a
+      ><a name="794" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="796" class="Symbol"
+      >))))</a
+      ><a name="800"
+      >
+
+</a
+      ><a name="802" href="LP.Examples.html#802" class="Function"
+      >E4</a
+      ><a name="804"
+      > </a
+      ><a name="805" class="Symbol"
+      >:</a
+      ><a name="806"
+      > </a
+      ><a name="807" class="Symbol"
+      >&#8704;</a
+      ><a name="808"
+      > </a
+      ><a name="809" class="Symbol"
+      >{</a
+      ><a name="810" href="LP.Examples.html#810" class="Bound"
+      >&#915;</a
+      ><a name="811"
+      > </a
+      ><a name="812" href="LP.Examples.html#812" class="Bound"
+      >&#916;</a
+      ><a name="813"
+      > </a
+      ><a name="814" href="LP.Examples.html#814" class="Bound"
+      >A</a
+      ><a name="815"
+      > </a
+      ><a name="816" href="LP.Examples.html#816" class="Bound"
+      >B</a
+      ><a name="817" class="Symbol"
+      >}</a
+      ><a name="818"
+      > </a
+      ><a name="819" class="Symbol"
+      >&#8594;</a
+      ><a name="820"
+      >
+     </a
+      ><a name="826" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="828"
+      > </a
+      ><a name="829" href="LP.Examples.html#810" class="Bound"
+      >&#915;</a
+      ><a name="830"
+      > </a
+      ><a name="831" href="LP.Examples.html#812" class="Bound"
+      >&#916;</a
+      ><a name="832"
+      > </a
+      ><a name="833" class="Symbol"
+      >(</a
+      ><a name="834" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="837"
+      > </a
+      ><a name="838" class="Symbol"
+      >(</a
+      ><a name="839" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="842"
+      > </a
+      ><a name="843" class="Symbol"
+      >(</a
+      ><a name="844" href="LP.Core.html#476" class="InductiveConstructor"
+      >down</a
+      ><a name="848"
+      > </a
+      ><a name="849" href="LP.Core.html#999" class="Function"
+      >v&#8321;</a
+      ><a name="851"
+      > </a
+      ><a name="852" class="Symbol"
+      >(</a
+      ><a name="853" href="LP.Core.html#476" class="InductiveConstructor"
+      >down</a
+      ><a name="857"
+      > </a
+      ><a name="858" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="860"
+      > </a
+      ><a name="861" class="Symbol"
+      >(</a
+      ><a name="862" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="864"
+      > </a
+      ><a name="865" class="Symbol"
+      >(</a
+      ><a name="866" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="868"
+      > </a
+      ><a name="869" class="Symbol"
+      >(</a
+      ><a name="870" href="LP.Core.html#557" class="InductiveConstructor"
+      >pair</a
+      ><a name="874"
+      > </a
+      ><a name="875" href="LP.Core.html#1162" class="Function"
+      >*v&#8321;</a
+      ><a name="878"
+      > </a
+      ><a name="879" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="882" class="Symbol"
+      >))))))</a
+      ><a name="888"
+      > </a
+      ><a name="889" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="890"
+      >
+            </a
+      ><a name="903" class="Symbol"
+      >(</a
+      ><a name="904" href="LP.Core.html#1283" class="Function Operator"
+      >[v&#7522;]</a
+      ><a name="908"
+      > </a
+      ><a name="909" href="LP.Examples.html#814" class="Bound"
+      >A</a
+      ><a name="910"
+      > </a
+      ><a name="911" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="912"
+      > </a
+      ><a name="913" href="LP.Core.html#1283" class="Function Operator"
+      >[v&#7522;]</a
+      ><a name="917"
+      > </a
+      ><a name="918" href="LP.Examples.html#816" class="Bound"
+      >B</a
+      ><a name="919"
+      > </a
+      ><a name="920" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="921"
+      > </a
+      ><a name="922" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="924"
+      > </a
+      ><a name="925" class="Symbol"
+      >(</a
+      ><a name="926" href="LP.Core.html#557" class="InductiveConstructor"
+      >pair</a
+      ><a name="930"
+      > </a
+      ><a name="931" href="LP.Core.html#1162" class="Function"
+      >*v&#8321;</a
+      ><a name="934"
+      > </a
+      ><a name="935" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="938" class="Symbol"
+      >)</a
+      ><a name="939"
+      > </a
+      ><a name="940" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="941"
+      > </a
+      ><a name="942" href="LP.Core.html#557" class="InductiveConstructor"
+      >pair</a
+      ><a name="946"
+      > </a
+      ><a name="947" href="LP.Core.html#1162" class="Function"
+      >*v&#8321;</a
+      ><a name="950"
+      > </a
+      ><a name="951" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="954"
+      > </a
+      ><a name="955" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="956"
+      > </a
+      ><a name="957" class="Symbol"
+      >(</a
+      ><a name="958" href="LP.Examples.html#814" class="Bound"
+      >A</a
+      ><a name="959"
+      > </a
+      ><a name="960" href="LP.Core.html#167" class="InductiveConstructor Operator"
+      >&#8743;</a
+      ><a name="961"
+      > </a
+      ><a name="962" href="LP.Examples.html#816" class="Bound"
+      >B</a
+      ><a name="963" class="Symbol"
+      >)))</a
+      ><a name="966"
+      >
+</a
+      ><a name="967" href="LP.Examples.html#802" class="Function"
+      >E4</a
+      ><a name="969"
+      > </a
+      ><a name="970" class="Symbol"
+      >=</a
+      ><a name="971"
+      > </a
+      ><a name="972" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="974"
+      > </a
+      ><a name="975" class="Symbol"
+      >(</a
+      ><a name="976" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="979"
+      > </a
+      ><a name="980" class="Symbol"
+      >(</a
+      ><a name="981" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="984"
+      > </a
+      ><a name="985" class="Symbol"
+      >(</a
+      ><a name="986" href="LP.Core.html#476" class="InductiveConstructor"
+      >down</a
+      ><a name="990"
+      > </a
+      ><a name="991" href="LP.Core.html#999" class="Function"
+      >v&#8321;</a
+      ><a name="993"
+      > </a
+      ><a name="994" class="Symbol"
+      >(</a
+      ><a name="995" href="LP.Core.html#476" class="InductiveConstructor"
+      >down</a
+      ><a name="999"
+      > </a
+      ><a name="1000" href="LP.Core.html#954" class="Function"
+      >v&#8320;</a
+      ><a name="1002"
+      > </a
+      ><a name="1003" class="Symbol"
+      >(</a
+      ><a name="1004" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="1006"
+      > </a
+      ><a name="1007" class="Symbol"
+      >(</a
+      ><a name="1008" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="1010"
+      > </a
+      ><a name="1011" class="Symbol"
+      >(</a
+      ><a name="1012" href="LP.Core.html#557" class="InductiveConstructor"
+      >pair</a
+      ><a name="1016"
+      > </a
+      ><a name="1017" href="LP.Core.html#1162" class="Function"
+      >*v&#8321;</a
+      ><a name="1020"
+      > </a
+      ><a name="1021" href="LP.Core.html#1114" class="Function"
+      >*v&#8320;</a
+      ><a name="1024" class="Symbol"
+      >)))))))</a
+      ><a name="1031"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

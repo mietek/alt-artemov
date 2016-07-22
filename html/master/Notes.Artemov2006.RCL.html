@@ -1,0 +1,1500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >Notes.Artemov2006.RCL</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="Notes.Artemov2006.RCL.html#1" class="Module"
+      >Notes.Artemov2006.RCL</a
+      ><a name="29"
+      > </a
+      ><a name="30" class="Keyword"
+      >where</a
+      ><a name="35"
+      >
+
+</a
+      ><a name="37" class="Keyword"
+      >open</a
+      ><a name="41"
+      > </a
+      ><a name="42" class="Keyword"
+      >import</a
+      ><a name="48"
+      > </a
+      ><a name="49" href="AltArtemov.html#1" class="Module"
+      >AltArtemov</a
+      ><a name="59"
+      >
+
+
+</a
+      ><a name="62" class="Comment"
+      >{-
+
+S. Artemov (2006) &#8220;On two models of provability&#8221;, pp. 36-38
+
+
+3.8.  Applications
+
+4.  Reflection in typed combinatory logic and &#955;-calculus
+
+Typed &#955;-calculi and Combinatory Logic are mathematical prototypes of
+functional programming languages with types (cf., for example,
+[62]).  There are reasons to believe that this area would benefit
+from extending &#955;-calculi and Combinatory Logic by self-referential
+capacities which enable systems to simultaneously operate with
+related objects of different abstraction levels: functions, their high
+level programs, their low level codes, etc.  Reflexive Combinatory
+Logic RCL ([17]) was invented to meet these kinds of expectations.
+RCL introduces a reflexivity mechanism into Combinatory Logic,
+hence to &#955;-calculus.  RCL has the implicative intuitionistic (minimal)
+logic as a type system, a rigid typing.  Reflexive combinatory terms
+are built from variables, &#8216;old&#8217; combinators  k  and  s,  and new
+combinators  d,  o,  and  c.   The principles of RCL are:
+
+-}</a
+      ><a name="1068"
+      >
+
+
+</a
+      ><a name="1071" class="Comment"
+      >-- A1.  t &#8758; A &#8594; A</a
+      ><a name="1088"
+      >
+
+</a
+      ><a name="1090" href="Notes.Artemov2006.RCL.html#1090" class="Function"
+      >A1</a
+      ><a name="1092"
+      > </a
+      ><a name="1093" class="Symbol"
+      >:</a
+      ><a name="1094"
+      > </a
+      ><a name="1095" class="Symbol"
+      >&#8704;</a
+      ><a name="1096"
+      > </a
+      ><a name="1097" class="Symbol"
+      >{</a
+      ><a name="1098" href="Notes.Artemov2006.RCL.html#1098" class="Bound"
+      >t</a
+      ><a name="1099"
+      > </a
+      ><a name="1100" href="Notes.Artemov2006.RCL.html#1100" class="Bound"
+      >A</a
+      ><a name="1101" class="Symbol"
+      >}</a
+      ><a name="1102"
+      > </a
+      ><a name="1103" class="Symbol"
+      >&#8594;</a
+      ><a name="1104"
+      > </a
+      ><a name="1105" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="1106"
+      > </a
+      ><a name="1107" href="Notes.Artemov2006.RCL.html#1098" class="Bound"
+      >t</a
+      ><a name="1108"
+      > </a
+      ><a name="1109" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1110"
+      > </a
+      ><a name="1111" href="Notes.Artemov2006.RCL.html#1100" class="Bound"
+      >A</a
+      ><a name="1112"
+      > </a
+      ><a name="1113" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1114"
+      > </a
+      ><a name="1115" href="Notes.Artemov2006.RCL.html#1100" class="Bound"
+      >A</a
+      ><a name="1116"
+      >
+</a
+      ><a name="1117" href="Notes.Artemov2006.RCL.html#1090" class="Function"
+      >A1</a
+      ><a name="1119"
+      > </a
+      ><a name="1120" class="Symbol"
+      >=</a
+      ><a name="1121"
+      > </a
+      ><a name="1122" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="1125"
+      > </a
+      ><a name="1126" class="Symbol"
+      >(</a
+      ><a name="1127" href="AltArtemov.Derivation.Notation.Level1.html#517" class="Function"
+      >down</a
+      ><a name="1131"
+      > </a
+      ><a name="1132" href="AltArtemov.Derivation.Notation.Level1.html#658" class="Function"
+      >v0</a
+      ><a name="1134" class="Symbol"
+      >)</a
+      ><a name="1135"
+      >
+
+
+</a
+      ><a name="1138" class="Comment"
+      >-- A2.  k &#8758; (A &#8594; (B &#8594; A))</a
+      ><a name="1163"
+      >
+
+</a
+      ><a name="1165" href="Notes.Artemov2006.RCL.html#1165" class="Function"
+      >k</a
+      ><a name="1166"
+      > </a
+      ><a name="1167" class="Symbol"
+      >:</a
+      ><a name="1168"
+      > </a
+      ><a name="1169" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="1171"
+      >
+</a
+      ><a name="1172" href="Notes.Artemov2006.RCL.html#1165" class="Function"
+      >k</a
+      ><a name="1173"
+      > </a
+      ><a name="1174" class="Symbol"
+      >=</a
+      ><a name="1175"
+      > </a
+      ><a name="1176" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="1179"
+      > </a
+      ><a name="1180" class="Symbol"
+      >(</a
+      ><a name="1181" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="1184"
+      > </a
+      ><a name="1185" href="AltArtemov.Term.Notation.Level1.html#322" class="Function"
+      >V1</a
+      ><a name="1187" class="Symbol"
+      >)</a
+      ><a name="1188"
+      >
+
+</a
+      ><a name="1190" href="Notes.Artemov2006.RCL.html#1190" class="Function"
+      >A2</a
+      ><a name="1192"
+      > </a
+      ><a name="1193" class="Symbol"
+      >:</a
+      ><a name="1194"
+      > </a
+      ><a name="1195" class="Symbol"
+      >&#8704;</a
+      ><a name="1196"
+      > </a
+      ><a name="1197" class="Symbol"
+      >{</a
+      ><a name="1198" href="Notes.Artemov2006.RCL.html#1198" class="Bound"
+      >A</a
+      ><a name="1199"
+      > </a
+      ><a name="1200" href="Notes.Artemov2006.RCL.html#1200" class="Bound"
+      >B</a
+      ><a name="1201" class="Symbol"
+      >}</a
+      ><a name="1202"
+      > </a
+      ><a name="1203" class="Symbol"
+      >&#8594;</a
+      ><a name="1204"
+      > </a
+      ><a name="1205" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="1206"
+      > </a
+      ><a name="1207" href="Notes.Artemov2006.RCL.html#1165" class="Function"
+      >k</a
+      ><a name="1208"
+      > </a
+      ><a name="1209" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1210"
+      > </a
+      ><a name="1211" class="Symbol"
+      >(</a
+      ><a name="1212" href="Notes.Artemov2006.RCL.html#1198" class="Bound"
+      >A</a
+      ><a name="1213"
+      > </a
+      ><a name="1214" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1215"
+      > </a
+      ><a name="1216" href="Notes.Artemov2006.RCL.html#1200" class="Bound"
+      >B</a
+      ><a name="1217"
+      > </a
+      ><a name="1218" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1219"
+      > </a
+      ><a name="1220" href="Notes.Artemov2006.RCL.html#1198" class="Bound"
+      >A</a
+      ><a name="1221" class="Symbol"
+      >)</a
+      ><a name="1222"
+      >
+</a
+      ><a name="1223" href="Notes.Artemov2006.RCL.html#1190" class="Function"
+      >A2</a
+      ><a name="1225"
+      > </a
+      ><a name="1226" class="Symbol"
+      >=</a
+      ><a name="1227"
+      > </a
+      ><a name="1228" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="1232"
+      > </a
+      ><a name="1233" class="Symbol"
+      >(</a
+      ><a name="1234" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="1238"
+      > </a
+      ><a name="1239" href="AltArtemov.Derivation.Notation.Level2.html#868" class="Function"
+      >v1&#178;</a
+      ><a name="1242" class="Symbol"
+      >)</a
+      ><a name="1243"
+      >
+
+
+</a
+      ><a name="1246" class="Comment"
+      >-- A3.  s &#8758; ((A &#8594; (B &#8594; C)) &#8594; ((A &#8594; B) &#8594; (A &#8594; C)))</a
+      ><a name="1295"
+      >
+
+</a
+      ><a name="1297" href="Notes.Artemov2006.RCL.html#1297" class="Function"
+      >s</a
+      ><a name="1298"
+      > </a
+      ><a name="1299" class="Symbol"
+      >:</a
+      ><a name="1300"
+      > </a
+      ><a name="1301" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="1303"
+      >
+</a
+      ><a name="1304" href="Notes.Artemov2006.RCL.html#1297" class="Function"
+      >s</a
+      ><a name="1305"
+      > </a
+      ><a name="1306" class="Symbol"
+      >=</a
+      ><a name="1307"
+      > </a
+      ><a name="1308" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="1311"
+      > </a
+      ><a name="1312" class="Symbol"
+      >(</a
+      ><a name="1313" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="1316"
+      > </a
+      ><a name="1317" class="Symbol"
+      >(</a
+      ><a name="1318" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="1321"
+      > </a
+      ><a name="1322" class="Symbol"
+      >(</a
+      ><a name="1323" href="AltArtemov.Term.Notation.Level1.html#152" class="Function"
+      >APP</a
+      ><a name="1326"
+      > </a
+      ><a name="1327" class="Symbol"
+      >(</a
+      ><a name="1328" href="AltArtemov.Term.Notation.Level1.html#152" class="Function"
+      >APP</a
+      ><a name="1331"
+      > </a
+      ><a name="1332" href="AltArtemov.Term.Notation.Level1.html#342" class="Function"
+      >V2</a
+      ><a name="1334"
+      > </a
+      ><a name="1335" href="AltArtemov.Term.Notation.Level1.html#302" class="Function"
+      >V0</a
+      ><a name="1337" class="Symbol"
+      >)</a
+      ><a name="1338"
+      > </a
+      ><a name="1339" class="Symbol"
+      >(</a
+      ><a name="1340" href="AltArtemov.Term.Notation.Level1.html#152" class="Function"
+      >APP</a
+      ><a name="1343"
+      > </a
+      ><a name="1344" href="AltArtemov.Term.Notation.Level1.html#322" class="Function"
+      >V1</a
+      ><a name="1346"
+      > </a
+      ><a name="1347" href="AltArtemov.Term.Notation.Level1.html#302" class="Function"
+      >V0</a
+      ><a name="1349" class="Symbol"
+      >))))</a
+      ><a name="1353"
+      >
+
+</a
+      ><a name="1355" href="Notes.Artemov2006.RCL.html#1355" class="Function"
+      >A3</a
+      ><a name="1357"
+      > </a
+      ><a name="1358" class="Symbol"
+      >:</a
+      ><a name="1359"
+      > </a
+      ><a name="1360" class="Symbol"
+      >&#8704;</a
+      ><a name="1361"
+      > </a
+      ><a name="1362" class="Symbol"
+      >{</a
+      ><a name="1363" href="Notes.Artemov2006.RCL.html#1363" class="Bound"
+      >A</a
+      ><a name="1364"
+      > </a
+      ><a name="1365" href="Notes.Artemov2006.RCL.html#1365" class="Bound"
+      >B</a
+      ><a name="1366"
+      > </a
+      ><a name="1367" href="Notes.Artemov2006.RCL.html#1367" class="Bound"
+      >C</a
+      ><a name="1368" class="Symbol"
+      >}</a
+      ><a name="1369"
+      > </a
+      ><a name="1370" class="Symbol"
+      >&#8594;</a
+      ><a name="1371"
+      > </a
+      ><a name="1372" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="1373"
+      > </a
+      ><a name="1374" href="Notes.Artemov2006.RCL.html#1297" class="Function"
+      >s</a
+      ><a name="1375"
+      > </a
+      ><a name="1376" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1377"
+      > </a
+      ><a name="1378" class="Symbol"
+      >((</a
+      ><a name="1380" href="Notes.Artemov2006.RCL.html#1363" class="Bound"
+      >A</a
+      ><a name="1381"
+      > </a
+      ><a name="1382" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1383"
+      > </a
+      ><a name="1384" href="Notes.Artemov2006.RCL.html#1365" class="Bound"
+      >B</a
+      ><a name="1385"
+      > </a
+      ><a name="1386" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1387"
+      > </a
+      ><a name="1388" href="Notes.Artemov2006.RCL.html#1367" class="Bound"
+      >C</a
+      ><a name="1389" class="Symbol"
+      >)</a
+      ><a name="1390"
+      > </a
+      ><a name="1391" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1392"
+      > </a
+      ><a name="1393" class="Symbol"
+      >(</a
+      ><a name="1394" href="Notes.Artemov2006.RCL.html#1363" class="Bound"
+      >A</a
+      ><a name="1395"
+      > </a
+      ><a name="1396" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1397"
+      > </a
+      ><a name="1398" href="Notes.Artemov2006.RCL.html#1365" class="Bound"
+      >B</a
+      ><a name="1399" class="Symbol"
+      >)</a
+      ><a name="1400"
+      > </a
+      ><a name="1401" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1402"
+      > </a
+      ><a name="1403" href="Notes.Artemov2006.RCL.html#1363" class="Bound"
+      >A</a
+      ><a name="1404"
+      > </a
+      ><a name="1405" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1406"
+      > </a
+      ><a name="1407" href="Notes.Artemov2006.RCL.html#1367" class="Bound"
+      >C</a
+      ><a name="1408" class="Symbol"
+      >)</a
+      ><a name="1409"
+      >
+</a
+      ><a name="1410" href="Notes.Artemov2006.RCL.html#1355" class="Function"
+      >A3</a
+      ><a name="1412"
+      > </a
+      ><a name="1413" class="Symbol"
+      >=</a
+      ><a name="1414"
+      > </a
+      ><a name="1415" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="1419"
+      > </a
+      ><a name="1420" class="Symbol"
+      >(</a
+      ><a name="1421" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="1425"
+      > </a
+      ><a name="1426" class="Symbol"
+      >(</a
+      ><a name="1427" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="1431"
+      > </a
+      ><a name="1432" class="Symbol"
+      >(</a
+      ><a name="1433" href="AltArtemov.Derivation.Notation.Level2.html#394" class="Function"
+      >app&#178;</a
+      ><a name="1437"
+      > </a
+      ><a name="1438" class="Symbol"
+      >(</a
+      ><a name="1439" href="AltArtemov.Derivation.Notation.Level2.html#394" class="Function"
+      >app&#178;</a
+      ><a name="1443"
+      > </a
+      ><a name="1444" href="AltArtemov.Derivation.Notation.Level2.html#921" class="Function"
+      >v2&#178;</a
+      ><a name="1447"
+      > </a
+      ><a name="1448" href="AltArtemov.Derivation.Notation.Level2.html#821" class="Function"
+      >v0&#178;</a
+      ><a name="1451" class="Symbol"
+      >)</a
+      ><a name="1452"
+      > </a
+      ><a name="1453" class="Symbol"
+      >(</a
+      ><a name="1454" href="AltArtemov.Derivation.Notation.Level2.html#394" class="Function"
+      >app&#178;</a
+      ><a name="1458"
+      > </a
+      ><a name="1459" href="AltArtemov.Derivation.Notation.Level2.html#868" class="Function"
+      >v1&#178;</a
+      ><a name="1462"
+      > </a
+      ><a name="1463" href="AltArtemov.Derivation.Notation.Level2.html#821" class="Function"
+      >v0&#178;</a
+      ><a name="1466" class="Symbol"
+      >))))</a
+      ><a name="1470"
+      >
+
+
+</a
+      ><a name="1473" class="Comment"
+      >-- A4.  d &#8758; (t &#8758; A &#8594; A)</a
+      ><a name="1496"
+      >
+
+</a
+      ><a name="1498" href="Notes.Artemov2006.RCL.html#1498" class="Function"
+      >d</a
+      ><a name="1499"
+      > </a
+      ><a name="1500" class="Symbol"
+      >:</a
+      ><a name="1501"
+      > </a
+      ><a name="1502" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="1504"
+      >
+</a
+      ><a name="1505" href="Notes.Artemov2006.RCL.html#1498" class="Function"
+      >d</a
+      ><a name="1506"
+      > </a
+      ><a name="1507" class="Symbol"
+      >=</a
+      ><a name="1508"
+      > </a
+      ><a name="1509" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="1512"
+      > </a
+      ><a name="1513" class="Symbol"
+      >(</a
+      ><a name="1514" href="AltArtemov.Term.Notation.Level1.html#225" class="Function"
+      >DOWN</a
+      ><a name="1518"
+      > </a
+      ><a name="1519" href="AltArtemov.Term.Notation.Level1.html#302" class="Function"
+      >V0</a
+      ><a name="1521" class="Symbol"
+      >)</a
+      ><a name="1522"
+      >
+
+</a
+      ><a name="1524" href="Notes.Artemov2006.RCL.html#1524" class="Function"
+      >A4</a
+      ><a name="1526"
+      > </a
+      ><a name="1527" class="Symbol"
+      >:</a
+      ><a name="1528"
+      > </a
+      ><a name="1529" class="Symbol"
+      >&#8704;</a
+      ><a name="1530"
+      > </a
+      ><a name="1531" class="Symbol"
+      >{</a
+      ><a name="1532" href="Notes.Artemov2006.RCL.html#1532" class="Bound"
+      >t</a
+      ><a name="1533"
+      > </a
+      ><a name="1534" href="Notes.Artemov2006.RCL.html#1534" class="Bound"
+      >A</a
+      ><a name="1535" class="Symbol"
+      >}</a
+      ><a name="1536"
+      > </a
+      ><a name="1537" class="Symbol"
+      >&#8594;</a
+      ><a name="1538"
+      > </a
+      ><a name="1539" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="1540"
+      > </a
+      ><a name="1541" href="Notes.Artemov2006.RCL.html#1498" class="Function"
+      >d</a
+      ><a name="1542"
+      > </a
+      ><a name="1543" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1544"
+      > </a
+      ><a name="1545" class="Symbol"
+      >(</a
+      ><a name="1546" href="Notes.Artemov2006.RCL.html#1532" class="Bound"
+      >t</a
+      ><a name="1547"
+      > </a
+      ><a name="1548" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1549"
+      > </a
+      ><a name="1550" href="Notes.Artemov2006.RCL.html#1534" class="Bound"
+      >A</a
+      ><a name="1551"
+      > </a
+      ><a name="1552" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1553"
+      > </a
+      ><a name="1554" href="Notes.Artemov2006.RCL.html#1534" class="Bound"
+      >A</a
+      ><a name="1555" class="Symbol"
+      >)</a
+      ><a name="1556"
+      >
+</a
+      ><a name="1557" href="Notes.Artemov2006.RCL.html#1524" class="Function"
+      >A4</a
+      ><a name="1559"
+      > </a
+      ><a name="1560" class="Symbol"
+      >=</a
+      ><a name="1561"
+      > </a
+      ><a name="1562" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="1566"
+      > </a
+      ><a name="1567" class="Symbol"
+      >(</a
+      ><a name="1568" href="AltArtemov.Derivation.Notation.Level2.html#630" class="Function"
+      >down&#178;</a
+      ><a name="1573"
+      > </a
+      ><a name="1574" href="AltArtemov.Derivation.Notation.Level2.html#821" class="Function"
+      >v0&#178;</a
+      ><a name="1577" class="Symbol"
+      >)</a
+      ><a name="1578"
+      >
+
+
+</a
+      ><a name="1581" class="Comment"
+      >-- A5.  o &#8758; (u &#8758; (A &#8594; B) &#8594; (v &#8758; A &#8594; (u &#8729; v) &#8758; B))</a
+      ><a name="1630"
+      >
+
+</a
+      ><a name="1632" href="Notes.Artemov2006.RCL.html#1632" class="Function"
+      >o</a
+      ><a name="1633"
+      > </a
+      ><a name="1634" class="Symbol"
+      >:</a
+      ><a name="1635"
+      > </a
+      ><a name="1636" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="1638"
+      >
+</a
+      ><a name="1639" href="Notes.Artemov2006.RCL.html#1632" class="Function"
+      >o</a
+      ><a name="1640"
+      > </a
+      ><a name="1641" class="Symbol"
+      >=</a
+      ><a name="1642"
+      > </a
+      ><a name="1643" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="1646"
+      > </a
+      ><a name="1647" class="Symbol"
+      >(</a
+      ><a name="1648" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="1651"
+      > </a
+      ><a name="1652" class="Symbol"
+      >(</a
+      ><a name="1653" href="AltArtemov.Term.Notation.Level2.html#161" class="Function"
+      >APP&#178;</a
+      ><a name="1657"
+      > </a
+      ><a name="1658" href="AltArtemov.Term.Notation.Level1.html#322" class="Function"
+      >V1</a
+      ><a name="1660"
+      > </a
+      ><a name="1661" href="AltArtemov.Term.Notation.Level1.html#302" class="Function"
+      >V0</a
+      ><a name="1663" class="Symbol"
+      >))</a
+      ><a name="1665"
+      >
+
+</a
+      ><a name="1667" href="Notes.Artemov2006.RCL.html#1667" class="Function"
+      >A5</a
+      ><a name="1669"
+      > </a
+      ><a name="1670" class="Symbol"
+      >:</a
+      ><a name="1671"
+      > </a
+      ><a name="1672" class="Symbol"
+      >&#8704;</a
+      ><a name="1673"
+      > </a
+      ><a name="1674" class="Symbol"
+      >{</a
+      ><a name="1675" href="Notes.Artemov2006.RCL.html#1675" class="Bound"
+      >u</a
+      ><a name="1676"
+      > </a
+      ><a name="1677" href="Notes.Artemov2006.RCL.html#1677" class="Bound"
+      >v</a
+      ><a name="1678"
+      > </a
+      ><a name="1679" href="Notes.Artemov2006.RCL.html#1679" class="Bound"
+      >A</a
+      ><a name="1680"
+      > </a
+      ><a name="1681" href="Notes.Artemov2006.RCL.html#1681" class="Bound"
+      >B</a
+      ><a name="1682" class="Symbol"
+      >}</a
+      ><a name="1683"
+      > </a
+      ><a name="1684" class="Symbol"
+      >&#8594;</a
+      ><a name="1685"
+      > </a
+      ><a name="1686" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="1687"
+      > </a
+      ><a name="1688" href="Notes.Artemov2006.RCL.html#1632" class="Function"
+      >o</a
+      ><a name="1689"
+      > </a
+      ><a name="1690" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1691"
+      > </a
+      ><a name="1692" class="Symbol"
+      >(</a
+      ><a name="1693" href="Notes.Artemov2006.RCL.html#1675" class="Bound"
+      >u</a
+      ><a name="1694"
+      > </a
+      ><a name="1695" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1696"
+      > </a
+      ><a name="1697" class="Symbol"
+      >(</a
+      ><a name="1698" href="Notes.Artemov2006.RCL.html#1679" class="Bound"
+      >A</a
+      ><a name="1699"
+      > </a
+      ><a name="1700" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1701"
+      > </a
+      ><a name="1702" href="Notes.Artemov2006.RCL.html#1681" class="Bound"
+      >B</a
+      ><a name="1703" class="Symbol"
+      >)</a
+      ><a name="1704"
+      > </a
+      ><a name="1705" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1706"
+      > </a
+      ><a name="1707" href="Notes.Artemov2006.RCL.html#1677" class="Bound"
+      >v</a
+      ><a name="1708"
+      > </a
+      ><a name="1709" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1710"
+      > </a
+      ><a name="1711" href="Notes.Artemov2006.RCL.html#1679" class="Bound"
+      >A</a
+      ><a name="1712"
+      > </a
+      ><a name="1713" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1714"
+      > </a
+      ><a name="1715" class="Symbol"
+      >(</a
+      ><a name="1716" href="AltArtemov.Term.Notation.Level1.html#152" class="Function"
+      >APP</a
+      ><a name="1719"
+      > </a
+      ><a name="1720" href="Notes.Artemov2006.RCL.html#1675" class="Bound"
+      >u</a
+      ><a name="1721"
+      > </a
+      ><a name="1722" href="Notes.Artemov2006.RCL.html#1677" class="Bound"
+      >v</a
+      ><a name="1723" class="Symbol"
+      >)</a
+      ><a name="1724"
+      > </a
+      ><a name="1725" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1726"
+      > </a
+      ><a name="1727" href="Notes.Artemov2006.RCL.html#1681" class="Bound"
+      >B</a
+      ><a name="1728" class="Symbol"
+      >)</a
+      ><a name="1729"
+      >
+</a
+      ><a name="1730" href="Notes.Artemov2006.RCL.html#1667" class="Function"
+      >A5</a
+      ><a name="1732"
+      > </a
+      ><a name="1733" class="Symbol"
+      >=</a
+      ><a name="1734"
+      > </a
+      ><a name="1735" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="1739"
+      > </a
+      ><a name="1740" class="Symbol"
+      >(</a
+      ><a name="1741" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="1745"
+      > </a
+      ><a name="1746" class="Symbol"
+      >(</a
+      ><a name="1747" href="AltArtemov.Derivation.Notation.Level3.html#436" class="Function"
+      >app&#179;</a
+      ><a name="1751"
+      > </a
+      ><a name="1752" href="AltArtemov.Derivation.Notation.Level2.html#868" class="Function"
+      >v1&#178;</a
+      ><a name="1755"
+      > </a
+      ><a name="1756" href="AltArtemov.Derivation.Notation.Level2.html#821" class="Function"
+      >v0&#178;</a
+      ><a name="1759" class="Symbol"
+      >))</a
+      ><a name="1761"
+      >
+
+
+</a
+      ><a name="1764" class="Comment"
+      >-- A6.  c &#8758; (t &#8758; A &#8594; ! t &#8758; (t &#8758; A))</a
+      ><a name="1799"
+      >
+
+</a
+      ><a name="1801" href="Notes.Artemov2006.RCL.html#1801" class="Function"
+      >c</a
+      ><a name="1802"
+      > </a
+      ><a name="1803" class="Symbol"
+      >:</a
+      ><a name="1804"
+      > </a
+      ><a name="1805" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="1807"
+      >
+</a
+      ><a name="1808" href="Notes.Artemov2006.RCL.html#1801" class="Function"
+      >c</a
+      ><a name="1809"
+      > </a
+      ><a name="1810" class="Symbol"
+      >=</a
+      ><a name="1811"
+      > </a
+      ><a name="1812" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="1815"
+      > </a
+      ><a name="1816" class="Symbol"
+      >(</a
+      ><a name="1817" href="AltArtemov.Term.Notation.Level1.html#193" class="Function"
+      >UP</a
+      ><a name="1819"
+      > </a
+      ><a name="1820" href="AltArtemov.Term.Notation.Level1.html#302" class="Function"
+      >V0</a
+      ><a name="1822" class="Symbol"
+      >)</a
+      ><a name="1823"
+      >
+
+</a
+      ><a name="1825" href="Notes.Artemov2006.RCL.html#1825" class="Function"
+      >A6</a
+      ><a name="1827"
+      > </a
+      ><a name="1828" class="Symbol"
+      >:</a
+      ><a name="1829"
+      > </a
+      ><a name="1830" class="Symbol"
+      >&#8704;</a
+      ><a name="1831"
+      > </a
+      ><a name="1832" class="Symbol"
+      >{</a
+      ><a name="1833" href="Notes.Artemov2006.RCL.html#1833" class="Bound"
+      >t</a
+      ><a name="1834"
+      > </a
+      ><a name="1835" href="Notes.Artemov2006.RCL.html#1835" class="Bound"
+      >A</a
+      ><a name="1836" class="Symbol"
+      >}</a
+      ><a name="1837"
+      > </a
+      ><a name="1838" class="Symbol"
+      >&#8594;</a
+      ><a name="1839"
+      > </a
+      ><a name="1840" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="1841"
+      > </a
+      ><a name="1842" href="Notes.Artemov2006.RCL.html#1801" class="Function"
+      >c</a
+      ><a name="1843"
+      > </a
+      ><a name="1844" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1845"
+      > </a
+      ><a name="1846" class="Symbol"
+      >(</a
+      ><a name="1847" href="Notes.Artemov2006.RCL.html#1833" class="Bound"
+      >t</a
+      ><a name="1848"
+      > </a
+      ><a name="1849" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1850"
+      > </a
+      ><a name="1851" href="Notes.Artemov2006.RCL.html#1835" class="Bound"
+      >A</a
+      ><a name="1852"
+      > </a
+      ><a name="1853" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1854"
+      > </a
+      ><a name="1855" href="AltArtemov.Term.Properties.html#843" class="Function"
+      >quo</a
+      ><a name="1858"
+      > </a
+      ><a name="1859" href="Notes.Artemov2006.RCL.html#1833" class="Bound"
+      >t</a
+      ><a name="1860"
+      > </a
+      ><a name="1861" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1862"
+      > </a
+      ><a name="1863" href="Notes.Artemov2006.RCL.html#1833" class="Bound"
+      >t</a
+      ><a name="1864"
+      > </a
+      ><a name="1865" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1866"
+      > </a
+      ><a name="1867" href="Notes.Artemov2006.RCL.html#1835" class="Bound"
+      >A</a
+      ><a name="1868" class="Symbol"
+      >)</a
+      ><a name="1869"
+      >
+</a
+      ><a name="1870" href="Notes.Artemov2006.RCL.html#1825" class="Function"
+      >A6</a
+      ><a name="1872"
+      > </a
+      ><a name="1873" class="Symbol"
+      >=</a
+      ><a name="1874"
+      > </a
+      ><a name="1875" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="1879"
+      > </a
+      ><a name="1880" class="Symbol"
+      >(</a
+      ><a name="1881" href="AltArtemov.Derivation.Notation.Level2.html#528" class="Function"
+      >up&#178;</a
+      ><a name="1884"
+      > </a
+      ><a name="1885" href="AltArtemov.Derivation.Notation.Level2.html#821" class="Function"
+      >v0&#178;</a
+      ><a name="1888" class="Symbol"
+      >)</a
+      ><a name="1889"
+      >
+
+
+</a
+      ><a name="1892" class="Comment"
+      >-- Rule modus ponens,</a
+      ><a name="1913"
+      >
+</a
+      ><a name="1914" class="Comment"
+      >--                         A &#8594; B    A</a
+      ><a name="1951"
+      >
+</a
+      ><a name="1952" class="Comment"
+      >--                         -----------.</a
+      ><a name="1991"
+      >
+</a
+      ><a name="1992" class="Comment"
+      >--                              B</a
+      ><a name="2025"
+      >
+
+</a
+      ><a name="2027" href="Notes.Artemov2006.RCL.html#2027" class="Function"
+      >MP</a
+      ><a name="2029"
+      > </a
+      ><a name="2030" class="Symbol"
+      >:</a
+      ><a name="2031"
+      > </a
+      ><a name="2032" class="Symbol"
+      >&#8704;</a
+      ><a name="2033"
+      > </a
+      ><a name="2034" class="Symbol"
+      >{</a
+      ><a name="2035" href="Notes.Artemov2006.RCL.html#2035" class="Bound"
+      >A</a
+      ><a name="2036"
+      > </a
+      ><a name="2037" href="Notes.Artemov2006.RCL.html#2037" class="Bound"
+      >B</a
+      ><a name="2038" class="Symbol"
+      >}</a
+      ><a name="2039"
+      > </a
+      ><a name="2040" class="Symbol"
+      >&#8594;</a
+      ><a name="2041"
+      > </a
+      ><a name="2042" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="2043"
+      > </a
+      ><a name="2044" href="Notes.Artemov2006.RCL.html#2035" class="Bound"
+      >A</a
+      ><a name="2045"
+      > </a
+      ><a name="2046" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="2047"
+      > </a
+      ><a name="2048" href="Notes.Artemov2006.RCL.html#2037" class="Bound"
+      >B</a
+      ><a name="2049"
+      > </a
+      ><a name="2050" class="Symbol"
+      >&#8594;</a
+      ><a name="2051"
+      > </a
+      ><a name="2052" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="2053"
+      > </a
+      ><a name="2054" href="Notes.Artemov2006.RCL.html#2035" class="Bound"
+      >A</a
+      ><a name="2055"
+      > </a
+      ><a name="2056" class="Symbol"
+      >&#8594;</a
+      ><a name="2057"
+      > </a
+      ><a name="2058" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="2059"
+      > </a
+      ><a name="2060" href="Notes.Artemov2006.RCL.html#2037" class="Bound"
+      >B</a
+      ><a name="2061"
+      >
+</a
+      ><a name="2062" href="Notes.Artemov2006.RCL.html#2027" class="Function"
+      >MP</a
+      ><a name="2064"
+      > </a
+      ><a name="2065" href="Notes.Artemov2006.RCL.html#2065" class="Bound"
+      >f</a
+      ><a name="2066"
+      > </a
+      ><a name="2067" href="Notes.Artemov2006.RCL.html#2067" class="Bound"
+      >x</a
+      ><a name="2068"
+      > </a
+      ><a name="2069" class="Symbol"
+      >=</a
+      ><a name="2070"
+      > </a
+      ><a name="2071" href="AltArtemov.Derivation.Notation.Level1.html#347" class="Function"
+      >app</a
+      ><a name="2074"
+      > </a
+      ><a name="2075" href="Notes.Artemov2006.RCL.html#2065" class="Bound"
+      >f</a
+      ><a name="2076"
+      > </a
+      ><a name="2077" href="Notes.Artemov2006.RCL.html#2067" class="Bound"
+      >x</a
+      ><a name="2078"
+      >
+
+
+</a
+      ><a name="2081" class="Comment"
+      >{-
+
+RCL has a natural provability semantics inherited from LP.  Combi-
+natory terms stand for proofs in PA or in intuitionistic arithmetic
+HA.  Formulas  t &#8758; F  are interpreted as arithmetical statements about
+provability,  Proof(t , F),  combinators  k,  s,  d,  o,  and  c
+denote terms corresponding to proofs of arithmetical translations of
+axioms A2-A6.
+    RCL evidently contains implicative intuitionistic logic,
+ordinary Combinatory Logic CL&#8594;, and is closed under the combinatory
+application rule
+                    u &#8758; (A &#8594; B)    v &#8758; A
+                    ---------------------.
+                         (u &#8729; v) &#8758; B
+
+-}</a
+      ><a name="2709"
+      >
+
+</a
+      ><a name="2711" href="Notes.Artemov2006.RCL.html#2711" class="Function"
+      >X1</a
+      ><a name="2713"
+      > </a
+      ><a name="2714" class="Symbol"
+      >:</a
+      ><a name="2715"
+      > </a
+      ><a name="2716" class="Symbol"
+      >&#8704;</a
+      ><a name="2717"
+      > </a
+      ><a name="2718" class="Symbol"
+      >{</a
+      ><a name="2719" href="Notes.Artemov2006.RCL.html#2719" class="Bound"
+      >u</a
+      ><a name="2720"
+      > </a
+      ><a name="2721" href="Notes.Artemov2006.RCL.html#2721" class="Bound"
+      >v</a
+      ><a name="2722"
+      > </a
+      ><a name="2723" href="Notes.Artemov2006.RCL.html#2723" class="Bound"
+      >A</a
+      ><a name="2724"
+      > </a
+      ><a name="2725" href="Notes.Artemov2006.RCL.html#2725" class="Bound"
+      >B</a
+      ><a name="2726" class="Symbol"
+      >}</a
+      ><a name="2727"
+      > </a
+      ><a name="2728" class="Symbol"
+      >&#8594;</a
+      ><a name="2729"
+      > </a
+      ><a name="2730" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="2731"
+      > </a
+      ><a name="2732" href="Notes.Artemov2006.RCL.html#2719" class="Bound"
+      >u</a
+      ><a name="2733"
+      > </a
+      ><a name="2734" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="2735"
+      > </a
+      ><a name="2736" class="Symbol"
+      >(</a
+      ><a name="2737" href="Notes.Artemov2006.RCL.html#2723" class="Bound"
+      >A</a
+      ><a name="2738"
+      > </a
+      ><a name="2739" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="2740"
+      > </a
+      ><a name="2741" href="Notes.Artemov2006.RCL.html#2725" class="Bound"
+      >B</a
+      ><a name="2742" class="Symbol"
+      >)</a
+      ><a name="2743"
+      > </a
+      ><a name="2744" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="2745"
+      > </a
+      ><a name="2746" href="Notes.Artemov2006.RCL.html#2721" class="Bound"
+      >v</a
+      ><a name="2747"
+      > </a
+      ><a name="2748" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="2749"
+      > </a
+      ><a name="2750" href="Notes.Artemov2006.RCL.html#2723" class="Bound"
+      >A</a
+      ><a name="2751"
+      > </a
+      ><a name="2752" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="2753"
+      > </a
+      ><a name="2754" class="Symbol"
+      >(</a
+      ><a name="2755" href="AltArtemov.Term.Notation.Level1.html#152" class="Function"
+      >APP</a
+      ><a name="2758"
+      > </a
+      ><a name="2759" href="Notes.Artemov2006.RCL.html#2719" class="Bound"
+      >u</a
+      ><a name="2760"
+      > </a
+      ><a name="2761" href="Notes.Artemov2006.RCL.html#2721" class="Bound"
+      >v</a
+      ><a name="2762" class="Symbol"
+      >)</a
+      ><a name="2763"
+      > </a
+      ><a name="2764" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="2765"
+      > </a
+      ><a name="2766" href="Notes.Artemov2006.RCL.html#2725" class="Bound"
+      >B</a
+      ><a name="2767"
+      >
+</a
+      ><a name="2768" href="Notes.Artemov2006.RCL.html#2711" class="Function"
+      >X1</a
+      ><a name="2770"
+      > </a
+      ><a name="2771" class="Symbol"
+      >=</a
+      ><a name="2772"
+      > </a
+      ><a name="2773" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="2776"
+      > </a
+      ><a name="2777" class="Symbol"
+      >(</a
+      ><a name="2778" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="2781"
+      > </a
+      ><a name="2782" class="Symbol"
+      >(</a
+      ><a name="2783" href="AltArtemov.Derivation.Notation.Level2.html#394" class="Function"
+      >app&#178;</a
+      ><a name="2787"
+      > </a
+      ><a name="2788" href="AltArtemov.Derivation.Notation.Level1.html#697" class="Function"
+      >v1</a
+      ><a name="2790"
+      > </a
+      ><a name="2791" href="AltArtemov.Derivation.Notation.Level1.html#658" class="Function"
+      >v0</a
+      ><a name="2793" class="Symbol"
+      >))</a
+      ><a name="2795"
+      >
+
+
+</a
+      ><a name="2798" class="Comment"
+      >{-
+
+Furthermore, RCL enjoys the internalization property ([17]): if
+A&#8321;, &#8230;, A&#8345; &#8866; B  then for any set of variables  x&#8321;, &#8230;, x&#8345;  of respective
+types, it is possible to construct a term  t (x&#8321;, &#8230;, x&#8345;)  such that
+
+          x&#8321; &#8758; A&#8321;, &#8230;, x&#8345; &#8758; A&#8345; &#8866; t (x&#8321;, &#8230;, x&#8345;) &#8758; B.
+
+-}</a
+      ><a name="3060"
+      >
+
+</a
+      ><a name="3062" href="Notes.Artemov2006.RCL.html#3062" class="Function"
+      >X2</a
+      ><a name="3064"
+      > </a
+      ><a name="3065" class="Symbol"
+      >:</a
+      ><a name="3066"
+      > </a
+      ><a name="3067" class="Symbol"
+      >&#8704;</a
+      ><a name="3068"
+      > </a
+      ><a name="3069" class="Symbol"
+      >{</a
+      ><a name="3070" href="Notes.Artemov2006.RCL.html#3070" class="Bound"
+      >&#915;</a
+      ><a name="3071"
+      > </a
+      ><a name="3072" href="Notes.Artemov2006.RCL.html#3072" class="Bound"
+      >B</a
+      ><a name="3073" class="Symbol"
+      >}</a
+      ><a name="3074"
+      > </a
+      ><a name="3075" class="Symbol"
+      >(</a
+      ><a name="3076" href="Notes.Artemov2006.RCL.html#3076" class="Bound"
+      >d</a
+      ><a name="3077"
+      > </a
+      ><a name="3078" class="Symbol"
+      >:</a
+      ><a name="3079"
+      > </a
+      ><a name="3080" href="Notes.Artemov2006.RCL.html#3070" class="Bound"
+      >&#915;</a
+      ><a name="3081"
+      > </a
+      ><a name="3082" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="3083"
+      > </a
+      ><a name="3084" href="Notes.Artemov2006.RCL.html#3072" class="Bound"
+      >B</a
+      ><a name="3085" class="Symbol"
+      >)</a
+      ><a name="3086"
+      > </a
+      ><a name="3087" class="Symbol"
+      >&#8594;</a
+      ><a name="3088"
+      > </a
+      ><a name="3089" href="Notes.Artemov2006.RCL.html#3070" class="Bound"
+      >&#915;</a
+      ><a name="3090"
+      > </a
+      ><a name="3091" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="3092"
+      > </a
+      ><a name="3093" href="AltArtemov.Derivation.Properties.html#1133" class="Function"
+      >rep</a
+      ><a name="3096"
+      > </a
+      ><a name="3097" href="Notes.Artemov2006.RCL.html#3076" class="Bound"
+      >d</a
+      ><a name="3098"
+      > </a
+      ><a name="3099" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="3100"
+      > </a
+      ><a name="3101" href="Notes.Artemov2006.RCL.html#3072" class="Bound"
+      >B</a
+      ><a name="3102"
+      >
+</a
+      ><a name="3103" href="Notes.Artemov2006.RCL.html#3062" class="Function"
+      >X2</a
+      ><a name="3105"
+      > </a
+      ><a name="3106" class="Symbol"
+      >=</a
+      ><a name="3107"
+      > </a
+      ><a name="3108" href="AltArtemov.Derivation.Properties.html#1970" class="Function"
+      >int</a
+      ><a name="3111"
+      >
+
+
+</a
+      ><a name="3114" class="Comment"
+      >{-
+
+It is interesting to consider the following natural (though so far
+informal) computational semantics for combinators of RCL.  This
+semantics is based on the standard set-theoretic semantics of types,
+i.e., a type is a set and the implication type  U &#8594; V  is a set of
+functions from U to V.  Some elements of a given type may be
+constructive objects which have _names,_ i.e., computational
+programs.  Terms of RCL are names of constructive objects, some of
+them specific, e.g., combinators  k,  s,  d,  o,  or  c.  The type
+t &#8758; F  is interpreted as a set consisting of the object corresponding
+to term  t.
+    Basic combinators of RCL are understood as follows.  Combinators
+k  and  s  have the same meaning as in the combinatory logic CL&#8594;.
+For example,  k  maps an element  x &#8712; A  into the
+constant function  &#955; y. x  with  y  ranging over  B.  The _denotate_
+combinator  d &#8758; (t &#8758; F &#8594; F)  realizes the function which maps a
+name (program) into the object with the given name.  A primary
+example is the correspondence between indexes of computable
+functions and functions themselves.  The _interpreter_ combinator
+o &#8758; (u &#8758; (F &#8594; G) &#8594; (v &#8758; F &#8594; (u &#8729; v) &#8758; G))  realizes the program
+which maps program  u  and input  v  into the result of applying
+u  to  v.  The _coding_ combinator  c &#8758; (t &#8758; F &#8594; ! t &#8758; (t &#8758; F)) maps
+program  t  into its code  ! t  (alias, specific key in a database,
+etc.).
+    In the followup papers [109, 111], N. Krupski established that
+typability and type restoration can be done in polynomial time and
+that the derivability relation for RCL is decidable and PSPACE-
+complete.
+    In [1], some version of reflexive &#955;-calculus was considered that
+has an unrestricted internalization property.
+
+
+  [1]  J. Alt, S. Artemov (2001) &#8220;Reflective &#955;-calculus&#8221;
+ [17]  S. Artemov (2004) &#8220;Kolmogorov and G&#246;del&#8217;s approach to
+       intuitionistic logic: current developments&#8221;
+ [62]  R. Constable (1998) &#8220;Types in logic, mathematics and
+       programming&#8221;
+[109]  N. Krupski (2006) &#8220;Some algorithmic questions in formal
+       systems with internalization&#8221; (in Russian)
+[111]  N. Krupski (2006) &#8220;Typing in reflective combinatory logic&#8221;
+
+-}</a
+      ><a name="5259"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

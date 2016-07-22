@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >Notes.Artemov2004.AA</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="Notes.Artemov2004.AA.html#1" class="Module"
+      >Notes.Artemov2004.AA</a
+      ><a name="28"
+      > </a
+      ><a name="29" class="Keyword"
+      >where</a
+      ><a name="34"
+      >
+
+</a
+      ><a name="36" class="Keyword"
+      >open</a
+      ><a name="40"
+      > </a
+      ><a name="41" class="Keyword"
+      >import</a
+      ><a name="47"
+      > </a
+      ><a name="48" href="AltArtemov.html#1" class="Module"
+      >AltArtemov</a
+      ><a name="58"
+      >
+
+
+</a
+      ><a name="61" class="Comment"
+      >{-
+
+S. Artemov (2004) &#8220;Kolmogorov and G&#246;del&#8217; approach to
+intuitionistic logic: current developments&#8221;, pp. 220-221
+
+
+5.8.  Reflection in &#955;-calculi
+
+The Logic of Proofs naturally bridges two domains: the epistemic
+represented by modal logic and the computational represented by typed
+&#955;-calculi and combinatory logic.  LP may be considered both as a
+realized modal logic S4 and as a typed combinatory logic with added
+expressive power [21].  There is a natural analogy with the
+Curry-Howard isomorphism which states the identity of intuitionistic
+proofs and typed &#955;-terms understood as computational programs.  This
+analogy may be expressed in precise mathematical form as in [14],
+where the reflexive &#955;-calculus &#955;&#8734; was introduced.
+    For the purposes of compactness and closeness to the object under
+study, that is, the modal logic S4, the canonical formulation of LP
+was chosen to be in the typed combinatory logic CL&#8594; format rather than
+in the more common &#955;-calculus format.  Needless to say, LP can emulate
+the &#955;-abstraction operator [19], for example, in Curry style as is
+standard in combinatory logic CL&#8594; (see, for example, [84], p. 17).
+Still, the problem of translating LP and its fragments into the format
+of &#955;-terms is very important.  These studies are aimed at developing a
+new generation of &#955;-calculi, more expressible than their predecessors.
+Considering that &#955;-calculi have become a prototype of a certain class
+of programming languages, any progress in this direction also
+represents a special interest from that point of view.
+    LP has many features not typical of &#955;-calculi, such as
+polymorphism, self-referentiality, the classical logic in the
+background, the capability to internalize its own derivations, and so
+on.  The desire for the fundamental property of normalizability of
+terms makes it necessary to give up polymorphism of terms and adopt
+the approach that each term has a unique type.  Thus, self-
+referentiality in the language of &#955;-terms becomes impossible.  Indeed,
+the type of the outer occurrence of the variable  x  in  x &#8758; A (x)
+is syntactically different from the types of its inner occurrences.
+Recall that formulae of type  x &#8758; x &#8758; F  are quite legal in LP and may
+be easily interpreted in the standard provability semantics.  In [14]
+it was shown that the internalization property may be extended to the
+&#955;-calculus format.
+    A &#955;-calculus has been developed based on the implicative
+intuitionistic (minimal) logic as a type system.  In the system &#955;&#8734; in
+[14], the role of atoms is played by both the usual propositional
+variables (atomic types) and statements of the form  t &#8758; F,  where
+t  is a term and  F  is a type.  The &#8216;term &#8758; type&#8217; correspondence is a
+rigid typing &#8216;a l&#225; Church&#8217;.  The system &#955;&#8734; is based on the following
+principles:
+
+-}</a
+      ><a name="2845"
+      >
+
+
+</a
+      ><a name="2848" class="Comment"
+      >-- 1.  &#955;&#8734; contains the natural deduction system for implicative</a
+      ><a name="2911"
+      >
+</a
+      ><a name="2912" class="Comment"
+      >--     intuitionistic logic.</a
+      ><a name="2940"
+      >
+
+
+</a
+      ><a name="2943" class="Comment"
+      >-- 2.  &#955;&#8734; postulates the principle  x &#8758; A &#8866; A.  -}</a
+      ><a name="2993"
+      >
+
+</a
+      ><a name="2995" href="Notes.Artemov2004.AA.html#2995" class="Function"
+      >P2</a
+      ><a name="2997"
+      > </a
+      ><a name="2998" class="Symbol"
+      >:</a
+      ><a name="2999"
+      > </a
+      ><a name="3000" class="Symbol"
+      >&#8704;</a
+      ><a name="3001"
+      > </a
+      ><a name="3002" class="Symbol"
+      >{</a
+      ><a name="3003" href="Notes.Artemov2004.AA.html#3003" class="Bound"
+      >x</a
+      ><a name="3004"
+      > </a
+      ><a name="3005" href="Notes.Artemov2004.AA.html#3005" class="Bound"
+      >A</a
+      ><a name="3006" class="Symbol"
+      >}</a
+      ><a name="3007"
+      > </a
+      ><a name="3008" class="Symbol"
+      >&#8594;</a
+      ><a name="3009"
+      > </a
+      ><a name="3010" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="3011"
+      > </a
+      ><a name="3012" href="Notes.Artemov2004.AA.html#3003" class="Bound"
+      >x</a
+      ><a name="3013"
+      > </a
+      ><a name="3014" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="3015"
+      > </a
+      ><a name="3016" href="Notes.Artemov2004.AA.html#3005" class="Bound"
+      >A</a
+      ><a name="3017"
+      > </a
+      ><a name="3018" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="3019"
+      > </a
+      ><a name="3020" href="Notes.Artemov2004.AA.html#3005" class="Bound"
+      >A</a
+      ><a name="3021"
+      >
+</a
+      ><a name="3022" href="Notes.Artemov2004.AA.html#2995" class="Function"
+      >P2</a
+      ><a name="3024"
+      > </a
+      ><a name="3025" class="Symbol"
+      >=</a
+      ><a name="3026"
+      > </a
+      ><a name="3027" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="3030"
+      > </a
+      ><a name="3031" class="Symbol"
+      >(</a
+      ><a name="3032" href="AltArtemov.Derivation.Notation.Level1.html#517" class="Function"
+      >down</a
+      ><a name="3036"
+      > </a
+      ><a name="3037" href="AltArtemov.Derivation.Notation.Level1.html#658" class="Function"
+      >v0</a
+      ><a name="3039" class="Symbol"
+      >)</a
+      ><a name="3040"
+      >
+
+
+</a
+      ><a name="3043" class="Comment"
+      >-- 3.  &#955;&#8734; enjoys the internalization rule: if  A&#8321;, &#8230;, A&#8345; &#8866; B,  then</a
+      ><a name="3110"
+      >
+</a
+      ><a name="3111" class="Comment"
+      >--     for any set of fresh variables  x&#8321;, &#8230;, x&#8345;  of corresponding</a
+      ><a name="3177"
+      >
+</a
+      ><a name="3178" class="Comment"
+      >--     types it is possible to construct a &#955;-term  t (x&#8321;, &#8230;, x&#8345;)</a
+      ><a name="3242"
+      >
+</a
+      ><a name="3243" class="Comment"
+      >--     such that  x&#8321; &#8758; A&#8321;, &#8230;, x&#8345; &#8758; A&#8345; &#8866; t (x&#8321;, &#8230;, x&#8345;) &#8758; B.</a
+      ><a name="3301"
+      >
+
+</a
+      ><a name="3303" href="Notes.Artemov2004.AA.html#3303" class="Function"
+      >P3</a
+      ><a name="3305"
+      > </a
+      ><a name="3306" class="Symbol"
+      >:</a
+      ><a name="3307"
+      > </a
+      ><a name="3308" class="Symbol"
+      >&#8704;</a
+      ><a name="3309"
+      > </a
+      ><a name="3310" class="Symbol"
+      >{</a
+      ><a name="3311" href="Notes.Artemov2004.AA.html#3311" class="Bound"
+      >&#915;</a
+      ><a name="3312"
+      > </a
+      ><a name="3313" href="Notes.Artemov2004.AA.html#3313" class="Bound"
+      >B</a
+      ><a name="3314" class="Symbol"
+      >}</a
+      ><a name="3315"
+      > </a
+      ><a name="3316" class="Symbol"
+      >(</a
+      ><a name="3317" href="Notes.Artemov2004.AA.html#3317" class="Bound"
+      >d</a
+      ><a name="3318"
+      > </a
+      ><a name="3319" class="Symbol"
+      >:</a
+      ><a name="3320"
+      > </a
+      ><a name="3321" href="Notes.Artemov2004.AA.html#3311" class="Bound"
+      >&#915;</a
+      ><a name="3322"
+      > </a
+      ><a name="3323" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="3324"
+      > </a
+      ><a name="3325" href="Notes.Artemov2004.AA.html#3313" class="Bound"
+      >B</a
+      ><a name="3326" class="Symbol"
+      >)</a
+      ><a name="3327"
+      > </a
+      ><a name="3328" class="Symbol"
+      >&#8594;</a
+      ><a name="3329"
+      > </a
+      ><a name="3330" href="Notes.Artemov2004.AA.html#3311" class="Bound"
+      >&#915;</a
+      ><a name="3331"
+      > </a
+      ><a name="3332" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="3333"
+      > </a
+      ><a name="3334" href="AltArtemov.Derivation.Properties.html#1133" class="Function"
+      >rep</a
+      ><a name="3337"
+      > </a
+      ><a name="3338" href="Notes.Artemov2004.AA.html#3317" class="Bound"
+      >d</a
+      ><a name="3339"
+      > </a
+      ><a name="3340" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="3341"
+      > </a
+      ><a name="3342" href="Notes.Artemov2004.AA.html#3313" class="Bound"
+      >B</a
+      ><a name="3343"
+      >
+</a
+      ><a name="3344" href="Notes.Artemov2004.AA.html#3303" class="Function"
+      >P3</a
+      ><a name="3346"
+      > </a
+      ><a name="3347" class="Symbol"
+      >=</a
+      ><a name="3348"
+      > </a
+      ><a name="3349" href="AltArtemov.Derivation.Properties.html#1970" class="Function"
+      >int</a
+      ><a name="3352"
+      >
+
+
+</a
+      ><a name="3355" class="Comment"
+      >{-
+
+A full description of the system &#955;&#8734; may be found in the paper [14].
+    According to the formulation in [14], &#955;&#8734; has several countable
+series of term-building operations.  Admissibility of the
+internalization rule for &#955;&#8734; is proved as a metatheorem.  It would be
+interesting to give an alternative formulation of &#955;&#8734; with the
+postulated internalization rule added to rules 1 and 2, after which
+all specific operations would become instances of internalization.
+    Let the level of a &#955;&#8734;-formula  F  be the maximal depth of the
+typing operation in  F.  It is easy to see that the Curry-Howard
+isomorphism corresponds in &#955;&#8734; to internalization on level 0, which may
+give some idea about the new expressive abilities of the system &#955;&#8734;.
+    The choice of a reduction system and the existence and uniqueness
+of normal forms in &#955;&#8734; all turn out to be connected with the depth of
+type preservation during reductions, which is a new phenomenon
+compared to the ordinary &#955;-calculus.  This theory is currently under
+development.
+
+
+[14]  J. Alt, S. Artemov (2001) &#8220;Reflective &#955;-calculus&#8221;
+[19]  S. Artemov (2001) &#8220;Explicit provability and constructive
+      semantics&#8221;
+[21]  S. Artemov (2001) &#8220;Unified semantics for modality and lambda-
+      terms via proof polynomials&#8221;
+[84]  A. Troelstra, H. Schwichtenberg (1996) &#8220;Basic proof theory&#8221;
+
+-}</a
+      ><a name="4682"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

@@ -1,0 +1,1107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >AltArtemov.Derivation.Core</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="AltArtemov.Derivation.Core.html#1" class="Module"
+      >AltArtemov.Derivation.Core</a
+      ><a name="34"
+      > </a
+      ><a name="35" class="Keyword"
+      >where</a
+      ><a name="40"
+      >
+
+</a
+      ><a name="42" class="Keyword"
+      >open</a
+      ><a name="46"
+      > </a
+      ><a name="47" class="Keyword"
+      >import</a
+      ><a name="53"
+      > </a
+      ><a name="54" href="AltArtemov.Context.html#1" class="Module"
+      >AltArtemov.Context</a
+      ><a name="72"
+      >
+</a
+      ><a name="73" class="Keyword"
+      >open</a
+      ><a name="77"
+      > </a
+      ><a name="78" class="Keyword"
+      >import</a
+      ><a name="84"
+      > </a
+      ><a name="85" href="AltArtemov.Term.html#1" class="Module"
+      >AltArtemov.Term</a
+      ><a name="100"
+      >
+</a
+      ><a name="101" class="Keyword"
+      >open</a
+      ><a name="105"
+      > </a
+      ><a name="106" class="Keyword"
+      >import</a
+      ><a name="112"
+      > </a
+      ><a name="113" href="AltArtemov.TermVector.html#1" class="Module"
+      >AltArtemov.TermVector</a
+      ><a name="134"
+      >
+</a
+      ><a name="135" class="Keyword"
+      >open</a
+      ><a name="139"
+      > </a
+      ><a name="140" class="Keyword"
+      >import</a
+      ><a name="146"
+      > </a
+      ><a name="147" href="AltArtemov.Type.html#1" class="Module"
+      >AltArtemov.Type</a
+      ><a name="162"
+      >
+
+
+</a
+      ><a name="165" class="Keyword"
+      >infixr</a
+      ><a name="171"
+      > </a
+      ><a name="172" class="Number"
+      >0</a
+      ><a name="173"
+      > _&#8866;_
+
+</a
+      ><a name="179" class="Keyword"
+      >data</a
+      ><a name="183"
+      > </a
+      ><a name="184" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >_&#8866;_</a
+      ><a name="187"
+      > </a
+      ><a name="188" class="Symbol"
+      >(</a
+      ><a name="189" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="190"
+      > </a
+      ><a name="191" class="Symbol"
+      >:</a
+      ><a name="192"
+      > </a
+      ><a name="193" href="AltArtemov.Context.Core.html#101" class="Datatype"
+      >Cx</a
+      ><a name="195" class="Symbol"
+      >)</a
+      ><a name="196"
+      > </a
+      ><a name="197" class="Symbol"
+      >:</a
+      ><a name="198"
+      > </a
+      ><a name="199" class="Symbol"
+      >&#8704;</a
+      ><a name="200"
+      > </a
+      ><a name="201" class="Symbol"
+      >(</a
+      ><a name="202" href="AltArtemov.Derivation.Core.html#202" class="Bound"
+      >A</a
+      ><a name="203"
+      > </a
+      ><a name="204" class="Symbol"
+      >:</a
+      ><a name="205"
+      > </a
+      ><a name="206" href="AltArtemov.Type.Core.html#98" class="Datatype"
+      >Ty</a
+      ><a name="208" class="Symbol"
+      >)</a
+      ><a name="209"
+      > </a
+      ><a name="210" class="Symbol"
+      >&#8594;</a
+      ><a name="211"
+      > </a
+      ><a name="212" class="PrimitiveType"
+      >Set</a
+      ><a name="215"
+      > </a
+      ><a name="216" class="Keyword"
+      >where</a
+      ><a name="221"
+      >
+  </a
+      ><a name="224" class="Comment"
+      >-- Variable reference.</a
+      ><a name="246"
+      >
+  </a
+      ><a name="249" href="AltArtemov.Derivation.Core.html#249" class="InductiveConstructor Operator"
+      >var[_]</a
+      ><a name="255"
+      > </a
+      ><a name="256" class="Symbol"
+      >:</a
+      ><a name="257"
+      > </a
+      ><a name="258" class="Symbol"
+      >&#8704;</a
+      ><a name="259"
+      > </a
+      ><a name="260" href="AltArtemov.Derivation.Core.html#260" class="Bound"
+      >n</a
+      ><a name="261"
+      > </a
+      ><a name="262" class="Symbol"
+      >{</a
+      ><a name="263" href="AltArtemov.Derivation.Core.html#263" class="Bound"
+      >A</a
+      ><a name="264" class="Symbol"
+      >}</a
+      ><a name="265"
+      >
+      </a
+      ><a name="272" class="Symbol"
+      >&#8594;</a
+      ><a name="273"
+      > </a
+      ><a name="274" class="Symbol"
+      >(</a
+      ><a name="275" href="AltArtemov.Derivation.Core.html#275" class="Bound"
+      >i</a
+      ><a name="276"
+      > </a
+      ><a name="277" class="Symbol"
+      >:</a
+      ><a name="278"
+      > </a
+      ><a name="279" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="280"
+      > </a
+      ><a name="281" href="AltArtemov.Context.Core.html#173" class="Datatype Operator"
+      >&#8715;</a
+      ><a name="282"
+      > </a
+      ><a name="283" href="AltArtemov.Derivation.Core.html#263" class="Bound"
+      >A</a
+      ><a name="284" class="Symbol"
+      >)</a
+      ><a name="285"
+      >
+      </a
+      ><a name="292" class="Symbol"
+      >&#8594;</a
+      ><a name="293"
+      > </a
+      ><a name="294" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="295"
+      > </a
+      ><a name="296" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="297"
+      > </a
+      ><a name="298" href="AltArtemov.TermVector.Notation.html#350" class="Function Operator"
+      >VARs[</a
+      ><a name="303"
+      > </a
+      ><a name="304" href="AltArtemov.Derivation.Core.html#260" class="Bound"
+      >n</a
+      ><a name="305"
+      > </a
+      ><a name="306" href="AltArtemov.TermVector.Notation.html#350" class="Function Operator"
+      >]</a
+      ><a name="307"
+      > </a
+      ><a name="308" class="Symbol"
+      >(</a
+      ><a name="309" href="AltArtemov.Context.Properties.html#255" class="Function"
+      >ix</a
+      ><a name="311"
+      > </a
+      ><a name="312" href="AltArtemov.Derivation.Core.html#275" class="Bound"
+      >i</a
+      ><a name="313" class="Symbol"
+      >)</a
+      ><a name="314"
+      > </a
+      ><a name="315" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="318"
+      > </a
+      ><a name="319" href="AltArtemov.Derivation.Core.html#263" class="Bound"
+      >A</a
+      ><a name="320"
+      >
+
+  </a
+      ><a name="324" class="Comment"
+      >-- Lambda abstraction. (&#8835;I)</a
+      ><a name="351"
+      >
+  </a
+      ><a name="354" href="AltArtemov.Derivation.Core.html#354" class="InductiveConstructor Operator"
+      >lam[_]</a
+      ><a name="360"
+      > </a
+      ><a name="361" class="Symbol"
+      >:</a
+      ><a name="362"
+      > </a
+      ><a name="363" class="Symbol"
+      >&#8704;</a
+      ><a name="364"
+      > </a
+      ><a name="365" href="AltArtemov.Derivation.Core.html#365" class="Bound"
+      >n</a
+      ><a name="366"
+      > </a
+      ><a name="367" class="Symbol"
+      >{</a
+      ><a name="368" href="AltArtemov.Derivation.Core.html#368" class="Bound"
+      >ts</a
+      ><a name="370"
+      > </a
+      ><a name="371" class="Symbol"
+      >:</a
+      ><a name="372"
+      > </a
+      ><a name="373" href="AltArtemov.TermVector.Core.html#136" class="Datatype"
+      >Tms</a
+      ><a name="376"
+      > </a
+      ><a name="377" href="AltArtemov.Derivation.Core.html#365" class="Bound"
+      >n</a
+      ><a name="378" class="Symbol"
+      >}</a
+      ><a name="379"
+      > </a
+      ><a name="380" class="Symbol"
+      >{</a
+      ><a name="381" href="AltArtemov.Derivation.Core.html#381" class="Bound"
+      >A</a
+      ><a name="382"
+      > </a
+      ><a name="383" href="AltArtemov.Derivation.Core.html#383" class="Bound"
+      >B</a
+      ><a name="384" class="Symbol"
+      >}</a
+      ><a name="385"
+      >
+      </a
+      ><a name="392" class="Symbol"
+      >&#8594;</a
+      ><a name="393"
+      > </a
+      ><a name="394" class="Symbol"
+      >(</a
+      ><a name="395" href="AltArtemov.Derivation.Core.html#395" class="Bound"
+      >d</a
+      ><a name="396"
+      > </a
+      ><a name="397" class="Symbol"
+      >:</a
+      ><a name="398"
+      > </a
+      ><a name="399" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="400"
+      > </a
+      ><a name="401" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="402"
+      > </a
+      ><a name="403" href="AltArtemov.Derivation.Core.html#381" class="Bound"
+      >A</a
+      ><a name="404"
+      > </a
+      ><a name="405" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="406"
+      > </a
+      ><a name="407" href="AltArtemov.Derivation.Core.html#368" class="Bound"
+      >ts</a
+      ><a name="409"
+      > </a
+      ><a name="410" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="413"
+      > </a
+      ><a name="414" href="AltArtemov.Derivation.Core.html#383" class="Bound"
+      >B</a
+      ><a name="415" class="Symbol"
+      >)</a
+      ><a name="416"
+      >
+      </a
+      ><a name="423" class="Symbol"
+      >&#8594;</a
+      ><a name="424"
+      > </a
+      ><a name="425" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="426"
+      > </a
+      ><a name="427" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="428"
+      > </a
+      ><a name="429" href="AltArtemov.TermVector.Notation.html#483" class="Function Operator"
+      >LAMs[</a
+      ><a name="434"
+      > </a
+      ><a name="435" href="AltArtemov.Derivation.Core.html#365" class="Bound"
+      >n</a
+      ><a name="436"
+      > </a
+      ><a name="437" href="AltArtemov.TermVector.Notation.html#483" class="Function Operator"
+      >]</a
+      ><a name="438"
+      > </a
+      ><a name="439" href="AltArtemov.Derivation.Core.html#368" class="Bound"
+      >ts</a
+      ><a name="441"
+      > </a
+      ><a name="442" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="445"
+      > </a
+      ><a name="446" class="Symbol"
+      >(</a
+      ><a name="447" href="AltArtemov.Derivation.Core.html#381" class="Bound"
+      >A</a
+      ><a name="448"
+      > </a
+      ><a name="449" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="450"
+      > </a
+      ><a name="451" href="AltArtemov.Derivation.Core.html#383" class="Bound"
+      >B</a
+      ><a name="452" class="Symbol"
+      >)</a
+      ><a name="453"
+      >
+
+  </a
+      ><a name="457" class="Comment"
+      >-- Function application. (&#8835;E)</a
+      ><a name="486"
+      >
+  </a
+      ><a name="489" href="AltArtemov.Derivation.Core.html#489" class="InductiveConstructor Operator"
+      >app[_]</a
+      ><a name="495"
+      > </a
+      ><a name="496" class="Symbol"
+      >:</a
+      ><a name="497"
+      > </a
+      ><a name="498" class="Symbol"
+      >&#8704;</a
+      ><a name="499"
+      > </a
+      ><a name="500" href="AltArtemov.Derivation.Core.html#500" class="Bound"
+      >n</a
+      ><a name="501"
+      > </a
+      ><a name="502" class="Symbol"
+      >{</a
+      ><a name="503" href="AltArtemov.Derivation.Core.html#503" class="Bound"
+      >ts</a
+      ><a name="505"
+      > </a
+      ><a name="506" href="AltArtemov.Derivation.Core.html#506" class="Bound"
+      >ss</a
+      ><a name="508"
+      > </a
+      ><a name="509" class="Symbol"
+      >:</a
+      ><a name="510"
+      > </a
+      ><a name="511" href="AltArtemov.TermVector.Core.html#136" class="Datatype"
+      >Tms</a
+      ><a name="514"
+      > </a
+      ><a name="515" href="AltArtemov.Derivation.Core.html#500" class="Bound"
+      >n</a
+      ><a name="516" class="Symbol"
+      >}</a
+      ><a name="517"
+      > </a
+      ><a name="518" class="Symbol"
+      >{</a
+      ><a name="519" href="AltArtemov.Derivation.Core.html#519" class="Bound"
+      >A</a
+      ><a name="520"
+      > </a
+      ><a name="521" href="AltArtemov.Derivation.Core.html#521" class="Bound"
+      >B</a
+      ><a name="522" class="Symbol"
+      >}</a
+      ><a name="523"
+      >
+      </a
+      ><a name="530" class="Symbol"
+      >&#8594;</a
+      ><a name="531"
+      > </a
+      ><a name="532" class="Symbol"
+      >(</a
+      ><a name="533" href="AltArtemov.Derivation.Core.html#533" class="Bound"
+      >d</a
+      ><a name="534"
+      > </a
+      ><a name="535" class="Symbol"
+      >:</a
+      ><a name="536"
+      > </a
+      ><a name="537" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="538"
+      > </a
+      ><a name="539" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="540"
+      > </a
+      ><a name="541" href="AltArtemov.Derivation.Core.html#503" class="Bound"
+      >ts</a
+      ><a name="543"
+      > </a
+      ><a name="544" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="547"
+      > </a
+      ><a name="548" class="Symbol"
+      >(</a
+      ><a name="549" href="AltArtemov.Derivation.Core.html#519" class="Bound"
+      >A</a
+      ><a name="550"
+      > </a
+      ><a name="551" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="552"
+      > </a
+      ><a name="553" href="AltArtemov.Derivation.Core.html#521" class="Bound"
+      >B</a
+      ><a name="554" class="Symbol"
+      >))</a
+      ><a name="556"
+      >    </a
+      ><a name="560" class="Symbol"
+      >&#8594;</a
+      ><a name="561"
+      > </a
+      ><a name="562" class="Symbol"
+      >(</a
+      ><a name="563" href="AltArtemov.Derivation.Core.html#563" class="Bound"
+      >c</a
+      ><a name="564"
+      > </a
+      ><a name="565" class="Symbol"
+      >:</a
+      ><a name="566"
+      > </a
+      ><a name="567" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="568"
+      > </a
+      ><a name="569" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="570"
+      > </a
+      ><a name="571" href="AltArtemov.Derivation.Core.html#506" class="Bound"
+      >ss</a
+      ><a name="573"
+      > </a
+      ><a name="574" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="577"
+      > </a
+      ><a name="578" href="AltArtemov.Derivation.Core.html#519" class="Bound"
+      >A</a
+      ><a name="579" class="Symbol"
+      >)</a
+      ><a name="580"
+      >
+      </a
+      ><a name="587" class="Symbol"
+      >&#8594;</a
+      ><a name="588"
+      > </a
+      ><a name="589" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="590"
+      > </a
+      ><a name="591" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="592"
+      > </a
+      ><a name="593" href="AltArtemov.TermVector.Notation.html#646" class="Function Operator"
+      >APPs[</a
+      ><a name="598"
+      > </a
+      ><a name="599" href="AltArtemov.Derivation.Core.html#500" class="Bound"
+      >n</a
+      ><a name="600"
+      > </a
+      ><a name="601" href="AltArtemov.TermVector.Notation.html#646" class="Function Operator"
+      >]</a
+      ><a name="602"
+      > </a
+      ><a name="603" href="AltArtemov.Derivation.Core.html#503" class="Bound"
+      >ts</a
+      ><a name="605"
+      > </a
+      ><a name="606" href="AltArtemov.Derivation.Core.html#506" class="Bound"
+      >ss</a
+      ><a name="608"
+      > </a
+      ><a name="609" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="612"
+      > </a
+      ><a name="613" href="AltArtemov.Derivation.Core.html#521" class="Bound"
+      >B</a
+      ><a name="614"
+      >
+
+  </a
+      ><a name="618" class="Comment"
+      >-- Reification.</a
+      ><a name="633"
+      >
+  </a
+      ><a name="636" href="AltArtemov.Derivation.Core.html#636" class="InductiveConstructor Operator"
+      >up[_]</a
+      ><a name="641"
+      > </a
+      ><a name="642" class="Symbol"
+      >:</a
+      ><a name="643"
+      > </a
+      ><a name="644" class="Symbol"
+      >&#8704;</a
+      ><a name="645"
+      > </a
+      ><a name="646" href="AltArtemov.Derivation.Core.html#646" class="Bound"
+      >n</a
+      ><a name="647"
+      > </a
+      ><a name="648" class="Symbol"
+      >{</a
+      ><a name="649" href="AltArtemov.Derivation.Core.html#649" class="Bound"
+      >ts</a
+      ><a name="651"
+      > </a
+      ><a name="652" class="Symbol"
+      >:</a
+      ><a name="653"
+      > </a
+      ><a name="654" href="AltArtemov.TermVector.Core.html#136" class="Datatype"
+      >Tms</a
+      ><a name="657"
+      > </a
+      ><a name="658" href="AltArtemov.Derivation.Core.html#646" class="Bound"
+      >n</a
+      ><a name="659" class="Symbol"
+      >}</a
+      ><a name="660"
+      > </a
+      ><a name="661" class="Symbol"
+      >{</a
+      ><a name="662" href="AltArtemov.Derivation.Core.html#662" class="Bound"
+      >u</a
+      ><a name="663"
+      > </a
+      ><a name="664" href="AltArtemov.Derivation.Core.html#664" class="Bound"
+      >A</a
+      ><a name="665" class="Symbol"
+      >}</a
+      ><a name="666"
+      >
+      </a
+      ><a name="673" class="Symbol"
+      >&#8594;</a
+      ><a name="674"
+      > </a
+      ><a name="675" class="Symbol"
+      >(</a
+      ><a name="676" href="AltArtemov.Derivation.Core.html#676" class="Bound"
+      >d</a
+      ><a name="677"
+      > </a
+      ><a name="678" class="Symbol"
+      >:</a
+      ><a name="679"
+      > </a
+      ><a name="680" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="681"
+      > </a
+      ><a name="682" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="683"
+      > </a
+      ><a name="684" href="AltArtemov.Derivation.Core.html#649" class="Bound"
+      >ts</a
+      ><a name="686"
+      > </a
+      ><a name="687" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="690"
+      > </a
+      ><a name="691" href="AltArtemov.Derivation.Core.html#662" class="Bound"
+      >u</a
+      ><a name="692"
+      > </a
+      ><a name="693" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="694"
+      > </a
+      ><a name="695" href="AltArtemov.Derivation.Core.html#664" class="Bound"
+      >A</a
+      ><a name="696" class="Symbol"
+      >)</a
+      ><a name="697"
+      >
+      </a
+      ><a name="704" class="Symbol"
+      >&#8594;</a
+      ><a name="705"
+      > </a
+      ><a name="706" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="707"
+      > </a
+      ><a name="708" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="709"
+      > </a
+      ><a name="710" href="AltArtemov.TermVector.Notation.html#822" class="Function Operator"
+      >UPs[</a
+      ><a name="714"
+      > </a
+      ><a name="715" href="AltArtemov.Derivation.Core.html#646" class="Bound"
+      >n</a
+      ><a name="716"
+      > </a
+      ><a name="717" href="AltArtemov.TermVector.Notation.html#822" class="Function Operator"
+      >]</a
+      ><a name="718"
+      > </a
+      ><a name="719" href="AltArtemov.Derivation.Core.html#649" class="Bound"
+      >ts</a
+      ><a name="721"
+      > </a
+      ><a name="722" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="725"
+      > </a
+      ><a name="726" href="AltArtemov.Term.Properties.html#843" class="Function"
+      >quo</a
+      ><a name="729"
+      > </a
+      ><a name="730" href="AltArtemov.Derivation.Core.html#662" class="Bound"
+      >u</a
+      ><a name="731"
+      > </a
+      ><a name="732" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="733"
+      > </a
+      ><a name="734" href="AltArtemov.Derivation.Core.html#662" class="Bound"
+      >u</a
+      ><a name="735"
+      > </a
+      ><a name="736" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="737"
+      > </a
+      ><a name="738" href="AltArtemov.Derivation.Core.html#664" class="Bound"
+      >A</a
+      ><a name="739"
+      >
+
+  </a
+      ><a name="743" class="Comment"
+      >-- Reflection.</a
+      ><a name="757"
+      >
+  </a
+      ><a name="760" href="AltArtemov.Derivation.Core.html#760" class="InductiveConstructor Operator"
+      >down[_]</a
+      ><a name="767"
+      > </a
+      ><a name="768" class="Symbol"
+      >:</a
+      ><a name="769"
+      > </a
+      ><a name="770" class="Symbol"
+      >&#8704;</a
+      ><a name="771"
+      > </a
+      ><a name="772" href="AltArtemov.Derivation.Core.html#772" class="Bound"
+      >n</a
+      ><a name="773"
+      > </a
+      ><a name="774" class="Symbol"
+      >{</a
+      ><a name="775" href="AltArtemov.Derivation.Core.html#775" class="Bound"
+      >ts</a
+      ><a name="777"
+      > </a
+      ><a name="778" class="Symbol"
+      >:</a
+      ><a name="779"
+      > </a
+      ><a name="780" href="AltArtemov.TermVector.Core.html#136" class="Datatype"
+      >Tms</a
+      ><a name="783"
+      > </a
+      ><a name="784" href="AltArtemov.Derivation.Core.html#772" class="Bound"
+      >n</a
+      ><a name="785" class="Symbol"
+      >}</a
+      ><a name="786"
+      > </a
+      ><a name="787" class="Symbol"
+      >{</a
+      ><a name="788" href="AltArtemov.Derivation.Core.html#788" class="Bound"
+      >u</a
+      ><a name="789"
+      > </a
+      ><a name="790" href="AltArtemov.Derivation.Core.html#790" class="Bound"
+      >A</a
+      ><a name="791" class="Symbol"
+      >}</a
+      ><a name="792"
+      >
+      </a
+      ><a name="799" class="Symbol"
+      >&#8594;</a
+      ><a name="800"
+      > </a
+      ><a name="801" class="Symbol"
+      >(</a
+      ><a name="802" href="AltArtemov.Derivation.Core.html#802" class="Bound"
+      >d</a
+      ><a name="803"
+      > </a
+      ><a name="804" class="Symbol"
+      >:</a
+      ><a name="805"
+      > </a
+      ><a name="806" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="807"
+      > </a
+      ><a name="808" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="809"
+      > </a
+      ><a name="810" href="AltArtemov.Derivation.Core.html#775" class="Bound"
+      >ts</a
+      ><a name="812"
+      > </a
+      ><a name="813" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="816"
+      > </a
+      ><a name="817" href="AltArtemov.Derivation.Core.html#788" class="Bound"
+      >u</a
+      ><a name="818"
+      > </a
+      ><a name="819" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="820"
+      > </a
+      ><a name="821" href="AltArtemov.Derivation.Core.html#790" class="Bound"
+      >A</a
+      ><a name="822" class="Symbol"
+      >)</a
+      ><a name="823"
+      >
+      </a
+      ><a name="830" class="Symbol"
+      >&#8594;</a
+      ><a name="831"
+      > </a
+      ><a name="832" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="833"
+      > </a
+      ><a name="834" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="835"
+      > </a
+      ><a name="836" href="AltArtemov.TermVector.Notation.html#973" class="Function Operator"
+      >DOWNs[</a
+      ><a name="842"
+      > </a
+      ><a name="843" href="AltArtemov.Derivation.Core.html#772" class="Bound"
+      >n</a
+      ><a name="844"
+      > </a
+      ><a name="845" href="AltArtemov.TermVector.Notation.html#973" class="Function Operator"
+      >]</a
+      ><a name="846"
+      > </a
+      ><a name="847" href="AltArtemov.Derivation.Core.html#775" class="Bound"
+      >ts</a
+      ><a name="849"
+      > </a
+      ><a name="850" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="853"
+      > </a
+      ><a name="854" href="AltArtemov.Derivation.Core.html#790" class="Bound"
+      >A</a
+      ><a name="855"
+      >
+
+  </a
+      ><a name="859" class="Comment"
+      >-- Explosion. (&#8869;E)</a
+      ><a name="877"
+      >
+  </a
+      ><a name="880" href="AltArtemov.Derivation.Core.html#880" class="InductiveConstructor Operator"
+      >boom[_]</a
+      ><a name="887"
+      > </a
+      ><a name="888" class="Symbol"
+      >:</a
+      ><a name="889"
+      > </a
+      ><a name="890" class="Symbol"
+      >&#8704;</a
+      ><a name="891"
+      > </a
+      ><a name="892" href="AltArtemov.Derivation.Core.html#892" class="Bound"
+      >n</a
+      ><a name="893"
+      > </a
+      ><a name="894" class="Symbol"
+      >{</a
+      ><a name="895" href="AltArtemov.Derivation.Core.html#895" class="Bound"
+      >ts</a
+      ><a name="897"
+      > </a
+      ><a name="898" class="Symbol"
+      >:</a
+      ><a name="899"
+      > </a
+      ><a name="900" href="AltArtemov.TermVector.Core.html#136" class="Datatype"
+      >Tms</a
+      ><a name="903"
+      > </a
+      ><a name="904" href="AltArtemov.Derivation.Core.html#892" class="Bound"
+      >n</a
+      ><a name="905" class="Symbol"
+      >}</a
+      ><a name="906"
+      > </a
+      ><a name="907" class="Symbol"
+      >{</a
+      ><a name="908" href="AltArtemov.Derivation.Core.html#908" class="Bound"
+      >A</a
+      ><a name="909" class="Symbol"
+      >}</a
+      ><a name="910"
+      >
+      </a
+      ><a name="917" class="Symbol"
+      >&#8594;</a
+      ><a name="918"
+      > </a
+      ><a name="919" class="Symbol"
+      >(</a
+      ><a name="920" href="AltArtemov.Derivation.Core.html#920" class="Bound"
+      >d</a
+      ><a name="921"
+      > </a
+      ><a name="922" class="Symbol"
+      >:</a
+      ><a name="923"
+      > </a
+      ><a name="924" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="925"
+      > </a
+      ><a name="926" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="927"
+      > </a
+      ><a name="928" href="AltArtemov.Derivation.Core.html#895" class="Bound"
+      >ts</a
+      ><a name="930"
+      > </a
+      ><a name="931" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="934"
+      > </a
+      ><a name="935" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="936" class="Symbol"
+      >)</a
+      ><a name="937"
+      >
+      </a
+      ><a name="944" class="Symbol"
+      >&#8594;</a
+      ><a name="945"
+      > </a
+      ><a name="946" href="AltArtemov.Derivation.Core.html#189" class="Bound"
+      >&#915;</a
+      ><a name="947"
+      > </a
+      ><a name="948" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="949"
+      > </a
+      ><a name="950" href="AltArtemov.TermVector.Notation.html#1134" class="Function Operator"
+      >BOOMs[</a
+      ><a name="956"
+      > </a
+      ><a name="957" href="AltArtemov.Derivation.Core.html#892" class="Bound"
+      >n</a
+      ><a name="958"
+      > </a
+      ><a name="959" href="AltArtemov.TermVector.Notation.html#1134" class="Function Operator"
+      >]</a
+      ><a name="960"
+      > </a
+      ><a name="961" href="AltArtemov.Derivation.Core.html#895" class="Bound"
+      >ts</a
+      ><a name="963"
+      > </a
+      ><a name="964" href="AltArtemov.TermVector.Notation.html#229" class="Function Operator"
+      >&#8758;&#8943;&#8758;</a
+      ><a name="967"
+      > </a
+      ><a name="968" href="AltArtemov.Derivation.Core.html#908" class="Bound"
+      >A</a
+      ><a name="969"
+      >
+
+
+</a
+      ><a name="972" class="Keyword"
+      >infixr</a
+      ><a name="978"
+      > </a
+      ><a name="979" class="Number"
+      >0</a
+      ><a name="980"
+      > &#8873;_
+
+</a
+      ><a name="985" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;_</a
+      ><a name="987"
+      > </a
+      ><a name="988" class="Symbol"
+      >:</a
+      ><a name="989"
+      > </a
+      ><a name="990" class="Symbol"
+      >&#8704;</a
+      ><a name="991"
+      > </a
+      ><a name="992" class="Symbol"
+      >(</a
+      ><a name="993" href="AltArtemov.Derivation.Core.html#993" class="Bound"
+      >A</a
+      ><a name="994"
+      > </a
+      ><a name="995" class="Symbol"
+      >:</a
+      ><a name="996"
+      > </a
+      ><a name="997" href="AltArtemov.Type.Core.html#98" class="Datatype"
+      >Ty</a
+      ><a name="999" class="Symbol"
+      >)</a
+      ><a name="1000"
+      > </a
+      ><a name="1001" class="Symbol"
+      >&#8594;</a
+      ><a name="1002"
+      > </a
+      ><a name="1003" class="PrimitiveType"
+      >Set</a
+      ><a name="1006"
+      >
+</a
+      ><a name="1007" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="1008"
+      > </a
+      ><a name="1009" href="AltArtemov.Derivation.Core.html#1009" class="Bound"
+      >A</a
+      ><a name="1010"
+      > </a
+      ><a name="1011" class="Symbol"
+      >=</a
+      ><a name="1012"
+      > </a
+      ><a name="1013" class="Symbol"
+      >&#8704;</a
+      ><a name="1014"
+      > </a
+      ><a name="1015" class="Symbol"
+      >{{</a
+      ><a name="1017" href="AltArtemov.Derivation.Core.html#1017" class="Bound"
+      >&#915;</a
+      ><a name="1018"
+      > </a
+      ><a name="1019" class="Symbol"
+      >:</a
+      ><a name="1020"
+      > </a
+      ><a name="1021" href="AltArtemov.Context.Core.html#101" class="Datatype"
+      >Cx</a
+      ><a name="1023" class="Symbol"
+      >}}</a
+      ><a name="1025"
+      > </a
+      ><a name="1026" class="Symbol"
+      >&#8594;</a
+      ><a name="1027"
+      > </a
+      ><a name="1028" href="AltArtemov.Derivation.Core.html#1017" class="Bound"
+      >&#915;</a
+      ><a name="1029"
+      > </a
+      ><a name="1030" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="1031"
+      > </a
+      ><a name="1032" href="AltArtemov.Derivation.Core.html#1009" class="Bound"
+      >A</a
+      ><a name="1033"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

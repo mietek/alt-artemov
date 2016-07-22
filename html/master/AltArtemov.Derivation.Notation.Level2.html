@@ -1,0 +1,2340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >AltArtemov.Derivation.Notation.Level2</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="AltArtemov.Derivation.Notation.Level2.html#1" class="Module"
+      >AltArtemov.Derivation.Notation.Level2</a
+      ><a name="45"
+      > </a
+      ><a name="46" class="Keyword"
+      >where</a
+      ><a name="51"
+      >
+
+</a
+      ><a name="53" class="Keyword"
+      >open</a
+      ><a name="57"
+      > </a
+      ><a name="58" class="Keyword"
+      >import</a
+      ><a name="64"
+      > </a
+      ><a name="65" href="AltArtemov.Context.html#1" class="Module"
+      >AltArtemov.Context</a
+      ><a name="83"
+      >
+</a
+      ><a name="84" class="Keyword"
+      >open</a
+      ><a name="88"
+      > </a
+      ><a name="89" class="Keyword"
+      >import</a
+      ><a name="95"
+      > </a
+      ><a name="96" href="AltArtemov.Derivation.Core.html#1" class="Module"
+      >AltArtemov.Derivation.Core</a
+      ><a name="122"
+      >
+</a
+      ><a name="123" class="Keyword"
+      >open</a
+      ><a name="127"
+      > </a
+      ><a name="128" class="Keyword"
+      >import</a
+      ><a name="134"
+      > </a
+      ><a name="135" href="AltArtemov.Term.html#1" class="Module"
+      >AltArtemov.Term</a
+      ><a name="150"
+      >
+</a
+      ><a name="151" class="Keyword"
+      >open</a
+      ><a name="155"
+      > </a
+      ><a name="156" class="Keyword"
+      >import</a
+      ><a name="162"
+      > </a
+      ><a name="163" href="AltArtemov.TermVector.html#1" class="Module"
+      >AltArtemov.TermVector</a
+      ><a name="184"
+      >
+</a
+      ><a name="185" class="Keyword"
+      >open</a
+      ><a name="189"
+      > </a
+      ><a name="190" class="Keyword"
+      >import</a
+      ><a name="196"
+      > </a
+      ><a name="197" href="AltArtemov.Type.html#1" class="Module"
+      >AltArtemov.Type</a
+      ><a name="212"
+      >
+
+
+</a
+      ><a name="215" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="219"
+      > </a
+      ><a name="220" class="Symbol"
+      >:</a
+      ><a name="221"
+      > </a
+      ><a name="222" class="Symbol"
+      >&#8704;</a
+      ><a name="223"
+      > </a
+      ><a name="224" class="Symbol"
+      >{</a
+      ><a name="225" href="AltArtemov.Derivation.Notation.Level2.html#225" class="Bound"
+      >A</a
+      ><a name="226"
+      > </a
+      ><a name="227" href="AltArtemov.Derivation.Notation.Level2.html#227" class="Bound"
+      >&#915;</a
+      ><a name="228" class="Symbol"
+      >}</a
+      ><a name="229"
+      >
+    </a
+      ><a name="234" class="Symbol"
+      >&#8594;</a
+      ><a name="235"
+      > </a
+      ><a name="236" class="Symbol"
+      >(</a
+      ><a name="237" href="AltArtemov.Derivation.Notation.Level2.html#237" class="Bound"
+      >i</a
+      ><a name="238"
+      > </a
+      ><a name="239" class="Symbol"
+      >:</a
+      ><a name="240"
+      > </a
+      ><a name="241" href="AltArtemov.Derivation.Notation.Level2.html#227" class="Bound"
+      >&#915;</a
+      ><a name="242"
+      > </a
+      ><a name="243" href="AltArtemov.Context.Core.html#173" class="Datatype Operator"
+      >&#8715;</a
+      ><a name="244"
+      > </a
+      ><a name="245" href="AltArtemov.Derivation.Notation.Level2.html#225" class="Bound"
+      >A</a
+      ><a name="246" class="Symbol"
+      >)</a
+      ><a name="247"
+      >
+    </a
+      ><a name="252" class="Symbol"
+      >&#8594;</a
+      ><a name="253"
+      > </a
+      ><a name="254" href="AltArtemov.Derivation.Notation.Level2.html#227" class="Bound"
+      >&#915;</a
+      ><a name="255"
+      > </a
+      ><a name="256" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="257"
+      > </a
+      ><a name="258" href="AltArtemov.Term.Notation.Level1.html#82" class="Function"
+      >VAR</a
+      ><a name="261"
+      > </a
+      ><a name="262" class="Symbol"
+      >(</a
+      ><a name="263" href="AltArtemov.Context.Properties.html#255" class="Function"
+      >ix</a
+      ><a name="265"
+      > </a
+      ><a name="266" href="AltArtemov.Derivation.Notation.Level2.html#237" class="Bound"
+      >i</a
+      ><a name="267" class="Symbol"
+      >)</a
+      ><a name="268"
+      > </a
+      ><a name="269" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="270"
+      > </a
+      ><a name="271" href="AltArtemov.Derivation.Notation.Level2.html#225" class="Bound"
+      >A</a
+      ><a name="272"
+      >
+</a
+      ><a name="273" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="277"
+      > </a
+      ><a name="278" href="AltArtemov.Derivation.Notation.Level2.html#278" class="Bound"
+      >i</a
+      ><a name="279"
+      > </a
+      ><a name="280" class="Symbol"
+      >=</a
+      ><a name="281"
+      > </a
+      ><a name="282" href="AltArtemov.Derivation.Core.html#249" class="InductiveConstructor Operator"
+      >var[</a
+      ><a name="286"
+      > </a
+      ><a name="287" class="Number"
+      >1</a
+      ><a name="288"
+      > </a
+      ><a name="289" href="AltArtemov.Derivation.Core.html#249" class="InductiveConstructor Operator"
+      >]</a
+      ><a name="290"
+      > </a
+      ><a name="291" href="AltArtemov.Derivation.Notation.Level2.html#278" class="Bound"
+      >i</a
+      ><a name="292"
+      >
+
+</a
+      ><a name="294" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="298"
+      > </a
+      ><a name="299" class="Symbol"
+      >:</a
+      ><a name="300"
+      > </a
+      ><a name="301" class="Symbol"
+      >&#8704;</a
+      ><a name="302"
+      > </a
+      ><a name="303" class="Symbol"
+      >{</a
+      ><a name="304" href="AltArtemov.Derivation.Notation.Level2.html#304" class="Bound"
+      >t</a
+      ><a name="305"
+      > </a
+      ><a name="306" href="AltArtemov.Derivation.Notation.Level2.html#306" class="Bound"
+      >A</a
+      ><a name="307"
+      > </a
+      ><a name="308" href="AltArtemov.Derivation.Notation.Level2.html#308" class="Bound"
+      >B</a
+      ><a name="309"
+      > </a
+      ><a name="310" href="AltArtemov.Derivation.Notation.Level2.html#310" class="Bound"
+      >&#915;</a
+      ><a name="311" class="Symbol"
+      >}</a
+      ><a name="312"
+      >
+    </a
+      ><a name="317" class="Symbol"
+      >&#8594;</a
+      ><a name="318"
+      > </a
+      ><a name="319" href="AltArtemov.Derivation.Notation.Level2.html#310" class="Bound"
+      >&#915;</a
+      ><a name="320"
+      > </a
+      ><a name="321" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="322"
+      > </a
+      ><a name="323" href="AltArtemov.Derivation.Notation.Level2.html#306" class="Bound"
+      >A</a
+      ><a name="324"
+      > </a
+      ><a name="325" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="326"
+      > </a
+      ><a name="327" href="AltArtemov.Derivation.Notation.Level2.html#304" class="Bound"
+      >t</a
+      ><a name="328"
+      > </a
+      ><a name="329" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="330"
+      > </a
+      ><a name="331" href="AltArtemov.Derivation.Notation.Level2.html#308" class="Bound"
+      >B</a
+      ><a name="332"
+      >
+    </a
+      ><a name="337" class="Symbol"
+      >&#8594;</a
+      ><a name="338"
+      > </a
+      ><a name="339" href="AltArtemov.Derivation.Notation.Level2.html#310" class="Bound"
+      >&#915;</a
+      ><a name="340"
+      > </a
+      ><a name="341" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="342"
+      > </a
+      ><a name="343" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="346"
+      > </a
+      ><a name="347" href="AltArtemov.Derivation.Notation.Level2.html#304" class="Bound"
+      >t</a
+      ><a name="348"
+      > </a
+      ><a name="349" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="350"
+      > </a
+      ><a name="351" class="Symbol"
+      >(</a
+      ><a name="352" href="AltArtemov.Derivation.Notation.Level2.html#306" class="Bound"
+      >A</a
+      ><a name="353"
+      > </a
+      ><a name="354" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="355"
+      > </a
+      ><a name="356" href="AltArtemov.Derivation.Notation.Level2.html#308" class="Bound"
+      >B</a
+      ><a name="357" class="Symbol"
+      >)</a
+      ><a name="358"
+      >
+</a
+      ><a name="359" href="AltArtemov.Derivation.Notation.Level2.html#294" class="Function"
+      >lam&#178;</a
+      ><a name="363"
+      > </a
+      ><a name="364" class="Symbol"
+      >{</a
+      ><a name="365" href="AltArtemov.Derivation.Notation.Level2.html#365" class="Bound"
+      >t</a
+      ><a name="366" class="Symbol"
+      >}</a
+      ><a name="367"
+      > </a
+      ><a name="368" class="Symbol"
+      >=</a
+      ><a name="369"
+      > </a
+      ><a name="370" href="AltArtemov.Derivation.Core.html#354" class="InductiveConstructor Operator"
+      >lam[</a
+      ><a name="374"
+      > </a
+      ><a name="375" class="Number"
+      >1</a
+      ><a name="376"
+      > </a
+      ><a name="377" href="AltArtemov.Derivation.Core.html#354" class="InductiveConstructor Operator"
+      >]</a
+      ><a name="378"
+      > </a
+      ><a name="379" class="Symbol"
+      >{</a
+      ><a name="380" class="Argument"
+      >ts</a
+      ><a name="382"
+      > </a
+      ><a name="383" class="Symbol"
+      >=</a
+      ><a name="384"
+      > </a
+      ><a name="385" href="AltArtemov.Derivation.Notation.Level2.html#365" class="Bound"
+      >t</a
+      ><a name="386"
+      > </a
+      ><a name="387" href="AltArtemov.TermVector.Core.html#182" class="InductiveConstructor Operator"
+      >&#8759;</a
+      ><a name="388"
+      > </a
+      ><a name="389" href="AltArtemov.TermVector.Core.html#166" class="InductiveConstructor"
+      >[]</a
+      ><a name="391" class="Symbol"
+      >}</a
+      ><a name="392"
+      >
+
+</a
+      ><a name="394" href="AltArtemov.Derivation.Notation.Level2.html#394" class="Function"
+      >app&#178;</a
+      ><a name="398"
+      > </a
+      ><a name="399" class="Symbol"
+      >:</a
+      ><a name="400"
+      > </a
+      ><a name="401" class="Symbol"
+      >&#8704;</a
+      ><a name="402"
+      > </a
+      ><a name="403" class="Symbol"
+      >{</a
+      ><a name="404" href="AltArtemov.Derivation.Notation.Level2.html#404" class="Bound"
+      >t</a
+      ><a name="405"
+      > </a
+      ><a name="406" href="AltArtemov.Derivation.Notation.Level2.html#406" class="Bound"
+      >s</a
+      ><a name="407"
+      > </a
+      ><a name="408" href="AltArtemov.Derivation.Notation.Level2.html#408" class="Bound"
+      >A</a
+      ><a name="409"
+      > </a
+      ><a name="410" href="AltArtemov.Derivation.Notation.Level2.html#410" class="Bound"
+      >B</a
+      ><a name="411"
+      > </a
+      ><a name="412" href="AltArtemov.Derivation.Notation.Level2.html#412" class="Bound"
+      >&#915;</a
+      ><a name="413" class="Symbol"
+      >}</a
+      ><a name="414"
+      >
+    </a
+      ><a name="419" class="Symbol"
+      >&#8594;</a
+      ><a name="420"
+      > </a
+      ><a name="421" href="AltArtemov.Derivation.Notation.Level2.html#412" class="Bound"
+      >&#915;</a
+      ><a name="422"
+      > </a
+      ><a name="423" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="424"
+      > </a
+      ><a name="425" href="AltArtemov.Derivation.Notation.Level2.html#404" class="Bound"
+      >t</a
+      ><a name="426"
+      > </a
+      ><a name="427" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="428"
+      > </a
+      ><a name="429" class="Symbol"
+      >(</a
+      ><a name="430" href="AltArtemov.Derivation.Notation.Level2.html#408" class="Bound"
+      >A</a
+      ><a name="431"
+      > </a
+      ><a name="432" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="433"
+      > </a
+      ><a name="434" href="AltArtemov.Derivation.Notation.Level2.html#410" class="Bound"
+      >B</a
+      ><a name="435" class="Symbol"
+      >)</a
+      ><a name="436"
+      >    </a
+      ><a name="440" class="Symbol"
+      >&#8594;</a
+      ><a name="441"
+      > </a
+      ><a name="442" href="AltArtemov.Derivation.Notation.Level2.html#412" class="Bound"
+      >&#915;</a
+      ><a name="443"
+      > </a
+      ><a name="444" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="445"
+      > </a
+      ><a name="446" href="AltArtemov.Derivation.Notation.Level2.html#406" class="Bound"
+      >s</a
+      ><a name="447"
+      > </a
+      ><a name="448" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="449"
+      > </a
+      ><a name="450" href="AltArtemov.Derivation.Notation.Level2.html#408" class="Bound"
+      >A</a
+      ><a name="451"
+      >
+    </a
+      ><a name="456" class="Symbol"
+      >&#8594;</a
+      ><a name="457"
+      > </a
+      ><a name="458" href="AltArtemov.Derivation.Notation.Level2.html#412" class="Bound"
+      >&#915;</a
+      ><a name="459"
+      > </a
+      ><a name="460" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="461"
+      > </a
+      ><a name="462" href="AltArtemov.Term.Notation.Level1.html#152" class="Function"
+      >APP</a
+      ><a name="465"
+      > </a
+      ><a name="466" href="AltArtemov.Derivation.Notation.Level2.html#404" class="Bound"
+      >t</a
+      ><a name="467"
+      > </a
+      ><a name="468" href="AltArtemov.Derivation.Notation.Level2.html#406" class="Bound"
+      >s</a
+      ><a name="469"
+      > </a
+      ><a name="470" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="471"
+      > </a
+      ><a name="472" href="AltArtemov.Derivation.Notation.Level2.html#410" class="Bound"
+      >B</a
+      ><a name="473"
+      >
+</a
+      ><a name="474" href="AltArtemov.Derivation.Notation.Level2.html#394" class="Function"
+      >app&#178;</a
+      ><a name="478"
+      > </a
+      ><a name="479" class="Symbol"
+      >{</a
+      ><a name="480" href="AltArtemov.Derivation.Notation.Level2.html#480" class="Bound"
+      >t</a
+      ><a name="481" class="Symbol"
+      >}</a
+      ><a name="482"
+      > </a
+      ><a name="483" class="Symbol"
+      >{</a
+      ><a name="484" href="AltArtemov.Derivation.Notation.Level2.html#484" class="Bound"
+      >s</a
+      ><a name="485" class="Symbol"
+      >}</a
+      ><a name="486"
+      > </a
+      ><a name="487" class="Symbol"
+      >=</a
+      ><a name="488"
+      >  </a
+      ><a name="490" href="AltArtemov.Derivation.Core.html#489" class="InductiveConstructor Operator"
+      >app[</a
+      ><a name="494"
+      > </a
+      ><a name="495" class="Number"
+      >1</a
+      ><a name="496"
+      > </a
+      ><a name="497" href="AltArtemov.Derivation.Core.html#489" class="InductiveConstructor Operator"
+      >]</a
+      ><a name="498"
+      > </a
+      ><a name="499" class="Symbol"
+      >{</a
+      ><a name="500" class="Argument"
+      >ts</a
+      ><a name="502"
+      > </a
+      ><a name="503" class="Symbol"
+      >=</a
+      ><a name="504"
+      > </a
+      ><a name="505" href="AltArtemov.Derivation.Notation.Level2.html#480" class="Bound"
+      >t</a
+      ><a name="506"
+      > </a
+      ><a name="507" href="AltArtemov.TermVector.Core.html#182" class="InductiveConstructor Operator"
+      >&#8759;</a
+      ><a name="508"
+      > </a
+      ><a name="509" href="AltArtemov.TermVector.Core.html#166" class="InductiveConstructor"
+      >[]</a
+      ><a name="511" class="Symbol"
+      >}</a
+      ><a name="512"
+      > </a
+      ><a name="513" class="Symbol"
+      >{</a
+      ><a name="514" class="Argument"
+      >ss</a
+      ><a name="516"
+      > </a
+      ><a name="517" class="Symbol"
+      >=</a
+      ><a name="518"
+      > </a
+      ><a name="519" href="AltArtemov.Derivation.Notation.Level2.html#484" class="Bound"
+      >s</a
+      ><a name="520"
+      > </a
+      ><a name="521" href="AltArtemov.TermVector.Core.html#182" class="InductiveConstructor Operator"
+      >&#8759;</a
+      ><a name="522"
+      > </a
+      ><a name="523" href="AltArtemov.TermVector.Core.html#166" class="InductiveConstructor"
+      >[]</a
+      ><a name="525" class="Symbol"
+      >}</a
+      ><a name="526"
+      >
+
+</a
+      ><a name="528" href="AltArtemov.Derivation.Notation.Level2.html#528" class="Function"
+      >up&#178;</a
+      ><a name="531"
+      > </a
+      ><a name="532" class="Symbol"
+      >:</a
+      ><a name="533"
+      > </a
+      ><a name="534" class="Symbol"
+      >&#8704;</a
+      ><a name="535"
+      > </a
+      ><a name="536" class="Symbol"
+      >{</a
+      ><a name="537" href="AltArtemov.Derivation.Notation.Level2.html#537" class="Bound"
+      >t</a
+      ><a name="538"
+      > </a
+      ><a name="539" href="AltArtemov.Derivation.Notation.Level2.html#539" class="Bound"
+      >u</a
+      ><a name="540"
+      > </a
+      ><a name="541" href="AltArtemov.Derivation.Notation.Level2.html#541" class="Bound"
+      >A</a
+      ><a name="542"
+      > </a
+      ><a name="543" href="AltArtemov.Derivation.Notation.Level2.html#543" class="Bound"
+      >&#915;</a
+      ><a name="544" class="Symbol"
+      >}</a
+      ><a name="545"
+      >
+    </a
+      ><a name="550" class="Symbol"
+      >&#8594;</a
+      ><a name="551"
+      > </a
+      ><a name="552" href="AltArtemov.Derivation.Notation.Level2.html#543" class="Bound"
+      >&#915;</a
+      ><a name="553"
+      > </a
+      ><a name="554" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="555"
+      > </a
+      ><a name="556" href="AltArtemov.Derivation.Notation.Level2.html#537" class="Bound"
+      >t</a
+      ><a name="557"
+      > </a
+      ><a name="558" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="559"
+      > </a
+      ><a name="560" href="AltArtemov.Derivation.Notation.Level2.html#539" class="Bound"
+      >u</a
+      ><a name="561"
+      > </a
+      ><a name="562" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="563"
+      > </a
+      ><a name="564" href="AltArtemov.Derivation.Notation.Level2.html#541" class="Bound"
+      >A</a
+      ><a name="565"
+      >
+    </a
+      ><a name="570" class="Symbol"
+      >&#8594;</a
+      ><a name="571"
+      > </a
+      ><a name="572" href="AltArtemov.Derivation.Notation.Level2.html#543" class="Bound"
+      >&#915;</a
+      ><a name="573"
+      > </a
+      ><a name="574" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="575"
+      > </a
+      ><a name="576" href="AltArtemov.Term.Notation.Level1.html#193" class="Function"
+      >UP</a
+      ><a name="578"
+      > </a
+      ><a name="579" href="AltArtemov.Derivation.Notation.Level2.html#537" class="Bound"
+      >t</a
+      ><a name="580"
+      > </a
+      ><a name="581" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="582"
+      > </a
+      ><a name="583" href="AltArtemov.Term.Properties.html#843" class="Function"
+      >quo</a
+      ><a name="586"
+      > </a
+      ><a name="587" href="AltArtemov.Derivation.Notation.Level2.html#539" class="Bound"
+      >u</a
+      ><a name="588"
+      > </a
+      ><a name="589" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="590"
+      > </a
+      ><a name="591" href="AltArtemov.Derivation.Notation.Level2.html#539" class="Bound"
+      >u</a
+      ><a name="592"
+      > </a
+      ><a name="593" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="594"
+      > </a
+      ><a name="595" href="AltArtemov.Derivation.Notation.Level2.html#541" class="Bound"
+      >A</a
+      ><a name="596"
+      >
+</a
+      ><a name="597" href="AltArtemov.Derivation.Notation.Level2.html#528" class="Function"
+      >up&#178;</a
+      ><a name="600"
+      > </a
+      ><a name="601" class="Symbol"
+      >{</a
+      ><a name="602" href="AltArtemov.Derivation.Notation.Level2.html#602" class="Bound"
+      >t</a
+      ><a name="603" class="Symbol"
+      >}</a
+      ><a name="604"
+      > </a
+      ><a name="605" class="Symbol"
+      >=</a
+      ><a name="606"
+      > </a
+      ><a name="607" href="AltArtemov.Derivation.Core.html#636" class="InductiveConstructor Operator"
+      >up[</a
+      ><a name="610"
+      > </a
+      ><a name="611" class="Number"
+      >1</a
+      ><a name="612"
+      > </a
+      ><a name="613" href="AltArtemov.Derivation.Core.html#636" class="InductiveConstructor Operator"
+      >]</a
+      ><a name="614"
+      > </a
+      ><a name="615" class="Symbol"
+      >{</a
+      ><a name="616" class="Argument"
+      >ts</a
+      ><a name="618"
+      > </a
+      ><a name="619" class="Symbol"
+      >=</a
+      ><a name="620"
+      > </a
+      ><a name="621" href="AltArtemov.Derivation.Notation.Level2.html#602" class="Bound"
+      >t</a
+      ><a name="622"
+      > </a
+      ><a name="623" href="AltArtemov.TermVector.Core.html#182" class="InductiveConstructor Operator"
+      >&#8759;</a
+      ><a name="624"
+      > </a
+      ><a name="625" href="AltArtemov.TermVector.Core.html#166" class="InductiveConstructor"
+      >[]</a
+      ><a name="627" class="Symbol"
+      >}</a
+      ><a name="628"
+      >
+
+</a
+      ><a name="630" href="AltArtemov.Derivation.Notation.Level2.html#630" class="Function"
+      >down&#178;</a
+      ><a name="635"
+      > </a
+      ><a name="636" class="Symbol"
+      >:</a
+      ><a name="637"
+      > </a
+      ><a name="638" class="Symbol"
+      >&#8704;</a
+      ><a name="639"
+      > </a
+      ><a name="640" class="Symbol"
+      >{</a
+      ><a name="641" href="AltArtemov.Derivation.Notation.Level2.html#641" class="Bound"
+      >t</a
+      ><a name="642"
+      > </a
+      ><a name="643" href="AltArtemov.Derivation.Notation.Level2.html#643" class="Bound"
+      >u</a
+      ><a name="644"
+      > </a
+      ><a name="645" href="AltArtemov.Derivation.Notation.Level2.html#645" class="Bound"
+      >A</a
+      ><a name="646"
+      > </a
+      ><a name="647" href="AltArtemov.Derivation.Notation.Level2.html#647" class="Bound"
+      >&#915;</a
+      ><a name="648" class="Symbol"
+      >}</a
+      ><a name="649"
+      >
+    </a
+      ><a name="654" class="Symbol"
+      >&#8594;</a
+      ><a name="655"
+      > </a
+      ><a name="656" href="AltArtemov.Derivation.Notation.Level2.html#647" class="Bound"
+      >&#915;</a
+      ><a name="657"
+      > </a
+      ><a name="658" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="659"
+      > </a
+      ><a name="660" href="AltArtemov.Derivation.Notation.Level2.html#641" class="Bound"
+      >t</a
+      ><a name="661"
+      > </a
+      ><a name="662" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="663"
+      > </a
+      ><a name="664" href="AltArtemov.Derivation.Notation.Level2.html#643" class="Bound"
+      >u</a
+      ><a name="665"
+      > </a
+      ><a name="666" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="667"
+      > </a
+      ><a name="668" href="AltArtemov.Derivation.Notation.Level2.html#645" class="Bound"
+      >A</a
+      ><a name="669"
+      >
+    </a
+      ><a name="674" class="Symbol"
+      >&#8594;</a
+      ><a name="675"
+      > </a
+      ><a name="676" href="AltArtemov.Derivation.Notation.Level2.html#647" class="Bound"
+      >&#915;</a
+      ><a name="677"
+      > </a
+      ><a name="678" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="679"
+      > </a
+      ><a name="680" href="AltArtemov.Term.Notation.Level1.html#225" class="Function"
+      >DOWN</a
+      ><a name="684"
+      > </a
+      ><a name="685" href="AltArtemov.Derivation.Notation.Level2.html#641" class="Bound"
+      >t</a
+      ><a name="686"
+      > </a
+      ><a name="687" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="688"
+      > </a
+      ><a name="689" href="AltArtemov.Derivation.Notation.Level2.html#645" class="Bound"
+      >A</a
+      ><a name="690"
+      >
+</a
+      ><a name="691" href="AltArtemov.Derivation.Notation.Level2.html#630" class="Function"
+      >down&#178;</a
+      ><a name="696"
+      > </a
+      ><a name="697" class="Symbol"
+      >{</a
+      ><a name="698" href="AltArtemov.Derivation.Notation.Level2.html#698" class="Bound"
+      >t</a
+      ><a name="699" class="Symbol"
+      >}</a
+      ><a name="700"
+      > </a
+      ><a name="701" class="Symbol"
+      >=</a
+      ><a name="702"
+      > </a
+      ><a name="703" href="AltArtemov.Derivation.Core.html#760" class="InductiveConstructor Operator"
+      >down[</a
+      ><a name="708"
+      > </a
+      ><a name="709" class="Number"
+      >1</a
+      ><a name="710"
+      > </a
+      ><a name="711" href="AltArtemov.Derivation.Core.html#760" class="InductiveConstructor Operator"
+      >]</a
+      ><a name="712"
+      > </a
+      ><a name="713" class="Symbol"
+      >{</a
+      ><a name="714" class="Argument"
+      >ts</a
+      ><a name="716"
+      > </a
+      ><a name="717" class="Symbol"
+      >=</a
+      ><a name="718"
+      > </a
+      ><a name="719" href="AltArtemov.Derivation.Notation.Level2.html#698" class="Bound"
+      >t</a
+      ><a name="720"
+      > </a
+      ><a name="721" href="AltArtemov.TermVector.Core.html#182" class="InductiveConstructor Operator"
+      >&#8759;</a
+      ><a name="722"
+      > </a
+      ><a name="723" href="AltArtemov.TermVector.Core.html#166" class="InductiveConstructor"
+      >[]</a
+      ><a name="725" class="Symbol"
+      >}</a
+      ><a name="726"
+      >
+
+</a
+      ><a name="728" href="AltArtemov.Derivation.Notation.Level2.html#728" class="Function"
+      >boom&#178;</a
+      ><a name="733"
+      > </a
+      ><a name="734" class="Symbol"
+      >:</a
+      ><a name="735"
+      > </a
+      ><a name="736" class="Symbol"
+      >&#8704;</a
+      ><a name="737"
+      > </a
+      ><a name="738" class="Symbol"
+      >{</a
+      ><a name="739" href="AltArtemov.Derivation.Notation.Level2.html#739" class="Bound"
+      >t</a
+      ><a name="740"
+      > </a
+      ><a name="741" href="AltArtemov.Derivation.Notation.Level2.html#741" class="Bound"
+      >A</a
+      ><a name="742"
+      > </a
+      ><a name="743" href="AltArtemov.Derivation.Notation.Level2.html#743" class="Bound"
+      >&#915;</a
+      ><a name="744" class="Symbol"
+      >}</a
+      ><a name="745"
+      >
+    </a
+      ><a name="750" class="Symbol"
+      >&#8594;</a
+      ><a name="751"
+      > </a
+      ><a name="752" href="AltArtemov.Derivation.Notation.Level2.html#743" class="Bound"
+      >&#915;</a
+      ><a name="753"
+      > </a
+      ><a name="754" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="755"
+      > </a
+      ><a name="756" href="AltArtemov.Derivation.Notation.Level2.html#739" class="Bound"
+      >t</a
+      ><a name="757"
+      > </a
+      ><a name="758" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="759"
+      > </a
+      ><a name="760" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="761"
+      >
+    </a
+      ><a name="766" class="Symbol"
+      >&#8594;</a
+      ><a name="767"
+      > </a
+      ><a name="768" href="AltArtemov.Derivation.Notation.Level2.html#743" class="Bound"
+      >&#915;</a
+      ><a name="769"
+      > </a
+      ><a name="770" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="771"
+      > </a
+      ><a name="772" href="AltArtemov.Term.Notation.Level1.html#263" class="Function"
+      >BOOM</a
+      ><a name="776"
+      > </a
+      ><a name="777" href="AltArtemov.Derivation.Notation.Level2.html#739" class="Bound"
+      >t</a
+      ><a name="778"
+      > </a
+      ><a name="779" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="780"
+      > </a
+      ><a name="781" href="AltArtemov.Derivation.Notation.Level2.html#741" class="Bound"
+      >A</a
+      ><a name="782"
+      >
+</a
+      ><a name="783" href="AltArtemov.Derivation.Notation.Level2.html#728" class="Function"
+      >boom&#178;</a
+      ><a name="788"
+      > </a
+      ><a name="789" class="Symbol"
+      >{</a
+      ><a name="790" href="AltArtemov.Derivation.Notation.Level2.html#790" class="Bound"
+      >t</a
+      ><a name="791" class="Symbol"
+      >}</a
+      ><a name="792"
+      > </a
+      ><a name="793" class="Symbol"
+      >=</a
+      ><a name="794"
+      > </a
+      ><a name="795" href="AltArtemov.Derivation.Core.html#880" class="InductiveConstructor Operator"
+      >boom[</a
+      ><a name="800"
+      > </a
+      ><a name="801" class="Number"
+      >1</a
+      ><a name="802"
+      > </a
+      ><a name="803" href="AltArtemov.Derivation.Core.html#880" class="InductiveConstructor Operator"
+      >]</a
+      ><a name="804"
+      > </a
+      ><a name="805" class="Symbol"
+      >{</a
+      ><a name="806" class="Argument"
+      >ts</a
+      ><a name="808"
+      > </a
+      ><a name="809" class="Symbol"
+      >=</a
+      ><a name="810"
+      > </a
+      ><a name="811" href="AltArtemov.Derivation.Notation.Level2.html#790" class="Bound"
+      >t</a
+      ><a name="812"
+      > </a
+      ><a name="813" href="AltArtemov.TermVector.Core.html#182" class="InductiveConstructor Operator"
+      >&#8759;</a
+      ><a name="814"
+      > </a
+      ><a name="815" href="AltArtemov.TermVector.Core.html#166" class="InductiveConstructor"
+      >[]</a
+      ><a name="817" class="Symbol"
+      >}</a
+      ><a name="818"
+      >
+
+
+</a
+      ><a name="821" href="AltArtemov.Derivation.Notation.Level2.html#821" class="Function"
+      >v0&#178;</a
+      ><a name="824"
+      > </a
+      ><a name="825" class="Symbol"
+      >:</a
+      ><a name="826"
+      > </a
+      ><a name="827" class="Symbol"
+      >&#8704;</a
+      ><a name="828"
+      > </a
+      ><a name="829" class="Symbol"
+      >{</a
+      ><a name="830" href="AltArtemov.Derivation.Notation.Level2.html#830" class="Bound"
+      >&#915;</a
+      ><a name="831"
+      > </a
+      ><a name="832" href="AltArtemov.Derivation.Notation.Level2.html#832" class="Bound"
+      >A</a
+      ><a name="833" class="Symbol"
+      >}</a
+      ><a name="834"
+      > </a
+      ><a name="835" class="Symbol"
+      >&#8594;</a
+      ><a name="836"
+      > </a
+      ><a name="837" href="AltArtemov.Derivation.Notation.Level2.html#830" class="Bound"
+      >&#915;</a
+      ><a name="838"
+      > </a
+      ><a name="839" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="840"
+      > </a
+      ><a name="841" href="AltArtemov.Derivation.Notation.Level2.html#832" class="Bound"
+      >A</a
+      ><a name="842"
+      > </a
+      ><a name="843" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="844"
+      > </a
+      ><a name="845" href="AltArtemov.Term.Notation.Level1.html#302" class="Function"
+      >V0</a
+      ><a name="847"
+      > </a
+      ><a name="848" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="849"
+      > </a
+      ><a name="850" href="AltArtemov.Derivation.Notation.Level2.html#832" class="Bound"
+      >A</a
+      ><a name="851"
+      >
+</a
+      ><a name="852" href="AltArtemov.Derivation.Notation.Level2.html#821" class="Function"
+      >v0&#178;</a
+      ><a name="855"
+      > </a
+      ><a name="856" class="Symbol"
+      >=</a
+      ><a name="857"
+      > </a
+      ><a name="858" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="862"
+      > </a
+      ><a name="863" href="AltArtemov.Context.Notation.html#81" class="Function"
+      >ix0</a
+      ><a name="866"
+      >
+
+</a
+      ><a name="868" href="AltArtemov.Derivation.Notation.Level2.html#868" class="Function"
+      >v1&#178;</a
+      ><a name="871"
+      > </a
+      ><a name="872" class="Symbol"
+      >:</a
+      ><a name="873"
+      > </a
+      ><a name="874" class="Symbol"
+      >&#8704;</a
+      ><a name="875"
+      > </a
+      ><a name="876" class="Symbol"
+      >{</a
+      ><a name="877" href="AltArtemov.Derivation.Notation.Level2.html#877" class="Bound"
+      >&#915;</a
+      ><a name="878"
+      > </a
+      ><a name="879" href="AltArtemov.Derivation.Notation.Level2.html#879" class="Bound"
+      >A</a
+      ><a name="880"
+      > </a
+      ><a name="881" href="AltArtemov.Derivation.Notation.Level2.html#881" class="Bound"
+      >B</a
+      ><a name="882" class="Symbol"
+      >}</a
+      ><a name="883"
+      > </a
+      ><a name="884" class="Symbol"
+      >&#8594;</a
+      ><a name="885"
+      > </a
+      ><a name="886" href="AltArtemov.Derivation.Notation.Level2.html#877" class="Bound"
+      >&#915;</a
+      ><a name="887"
+      > </a
+      ><a name="888" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="889"
+      > </a
+      ><a name="890" href="AltArtemov.Derivation.Notation.Level2.html#879" class="Bound"
+      >A</a
+      ><a name="891"
+      > </a
+      ><a name="892" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="893"
+      > </a
+      ><a name="894" href="AltArtemov.Derivation.Notation.Level2.html#881" class="Bound"
+      >B</a
+      ><a name="895"
+      > </a
+      ><a name="896" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="897"
+      > </a
+      ><a name="898" href="AltArtemov.Term.Notation.Level1.html#322" class="Function"
+      >V1</a
+      ><a name="900"
+      > </a
+      ><a name="901" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="902"
+      > </a
+      ><a name="903" href="AltArtemov.Derivation.Notation.Level2.html#879" class="Bound"
+      >A</a
+      ><a name="904"
+      >
+</a
+      ><a name="905" href="AltArtemov.Derivation.Notation.Level2.html#868" class="Function"
+      >v1&#178;</a
+      ><a name="908"
+      > </a
+      ><a name="909" class="Symbol"
+      >=</a
+      ><a name="910"
+      > </a
+      ><a name="911" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="915"
+      > </a
+      ><a name="916" href="AltArtemov.Context.Notation.html#118" class="Function"
+      >ix1</a
+      ><a name="919"
+      >
+
+</a
+      ><a name="921" href="AltArtemov.Derivation.Notation.Level2.html#921" class="Function"
+      >v2&#178;</a
+      ><a name="924"
+      > </a
+      ><a name="925" class="Symbol"
+      >:</a
+      ><a name="926"
+      > </a
+      ><a name="927" class="Symbol"
+      >&#8704;</a
+      ><a name="928"
+      > </a
+      ><a name="929" class="Symbol"
+      >{</a
+      ><a name="930" href="AltArtemov.Derivation.Notation.Level2.html#930" class="Bound"
+      >&#915;</a
+      ><a name="931"
+      > </a
+      ><a name="932" href="AltArtemov.Derivation.Notation.Level2.html#932" class="Bound"
+      >A</a
+      ><a name="933"
+      > </a
+      ><a name="934" href="AltArtemov.Derivation.Notation.Level2.html#934" class="Bound"
+      >B</a
+      ><a name="935"
+      > </a
+      ><a name="936" href="AltArtemov.Derivation.Notation.Level2.html#936" class="Bound"
+      >C</a
+      ><a name="937" class="Symbol"
+      >}</a
+      ><a name="938"
+      > </a
+      ><a name="939" class="Symbol"
+      >&#8594;</a
+      ><a name="940"
+      > </a
+      ><a name="941" href="AltArtemov.Derivation.Notation.Level2.html#930" class="Bound"
+      >&#915;</a
+      ><a name="942"
+      > </a
+      ><a name="943" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="944"
+      > </a
+      ><a name="945" href="AltArtemov.Derivation.Notation.Level2.html#932" class="Bound"
+      >A</a
+      ><a name="946"
+      > </a
+      ><a name="947" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="948"
+      > </a
+      ><a name="949" href="AltArtemov.Derivation.Notation.Level2.html#934" class="Bound"
+      >B</a
+      ><a name="950"
+      > </a
+      ><a name="951" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="952"
+      > </a
+      ><a name="953" href="AltArtemov.Derivation.Notation.Level2.html#936" class="Bound"
+      >C</a
+      ><a name="954"
+      > </a
+      ><a name="955" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="956"
+      > </a
+      ><a name="957" href="AltArtemov.Term.Notation.Level1.html#342" class="Function"
+      >V2</a
+      ><a name="959"
+      > </a
+      ><a name="960" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="961"
+      > </a
+      ><a name="962" href="AltArtemov.Derivation.Notation.Level2.html#932" class="Bound"
+      >A</a
+      ><a name="963"
+      >
+</a
+      ><a name="964" href="AltArtemov.Derivation.Notation.Level2.html#921" class="Function"
+      >v2&#178;</a
+      ><a name="967"
+      > </a
+      ><a name="968" class="Symbol"
+      >=</a
+      ><a name="969"
+      > </a
+      ><a name="970" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="974"
+      > </a
+      ><a name="975" href="AltArtemov.Context.Notation.html#165" class="Function"
+      >ix2</a
+      ><a name="978"
+      >
+
+</a
+      ><a name="980" href="AltArtemov.Derivation.Notation.Level2.html#980" class="Function"
+      >v3&#178;</a
+      ><a name="983"
+      > </a
+      ><a name="984" class="Symbol"
+      >:</a
+      ><a name="985"
+      > </a
+      ><a name="986" class="Symbol"
+      >&#8704;</a
+      ><a name="987"
+      > </a
+      ><a name="988" class="Symbol"
+      >{</a
+      ><a name="989" href="AltArtemov.Derivation.Notation.Level2.html#989" class="Bound"
+      >&#915;</a
+      ><a name="990"
+      > </a
+      ><a name="991" href="AltArtemov.Derivation.Notation.Level2.html#991" class="Bound"
+      >A</a
+      ><a name="992"
+      > </a
+      ><a name="993" href="AltArtemov.Derivation.Notation.Level2.html#993" class="Bound"
+      >B</a
+      ><a name="994"
+      > </a
+      ><a name="995" href="AltArtemov.Derivation.Notation.Level2.html#995" class="Bound"
+      >C</a
+      ><a name="996"
+      > </a
+      ><a name="997" href="AltArtemov.Derivation.Notation.Level2.html#997" class="Bound"
+      >D</a
+      ><a name="998" class="Symbol"
+      >}</a
+      ><a name="999"
+      > </a
+      ><a name="1000" class="Symbol"
+      >&#8594;</a
+      ><a name="1001"
+      > </a
+      ><a name="1002" href="AltArtemov.Derivation.Notation.Level2.html#989" class="Bound"
+      >&#915;</a
+      ><a name="1003"
+      > </a
+      ><a name="1004" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1005"
+      > </a
+      ><a name="1006" href="AltArtemov.Derivation.Notation.Level2.html#991" class="Bound"
+      >A</a
+      ><a name="1007"
+      > </a
+      ><a name="1008" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1009"
+      > </a
+      ><a name="1010" href="AltArtemov.Derivation.Notation.Level2.html#993" class="Bound"
+      >B</a
+      ><a name="1011"
+      > </a
+      ><a name="1012" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1013"
+      > </a
+      ><a name="1014" href="AltArtemov.Derivation.Notation.Level2.html#995" class="Bound"
+      >C</a
+      ><a name="1015"
+      > </a
+      ><a name="1016" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1017"
+      > </a
+      ><a name="1018" href="AltArtemov.Derivation.Notation.Level2.html#997" class="Bound"
+      >D</a
+      ><a name="1019"
+      > </a
+      ><a name="1020" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="1021"
+      > </a
+      ><a name="1022" href="AltArtemov.Term.Notation.Level1.html#362" class="Function"
+      >V3</a
+      ><a name="1024"
+      > </a
+      ><a name="1025" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1026"
+      > </a
+      ><a name="1027" href="AltArtemov.Derivation.Notation.Level2.html#991" class="Bound"
+      >A</a
+      ><a name="1028"
+      >
+</a
+      ><a name="1029" href="AltArtemov.Derivation.Notation.Level2.html#980" class="Function"
+      >v3&#178;</a
+      ><a name="1032"
+      > </a
+      ><a name="1033" class="Symbol"
+      >=</a
+      ><a name="1034"
+      > </a
+      ><a name="1035" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="1039"
+      > </a
+      ><a name="1040" href="AltArtemov.Context.Notation.html#218" class="Function"
+      >ix3</a
+      ><a name="1043"
+      >
+
+</a
+      ><a name="1045" href="AltArtemov.Derivation.Notation.Level2.html#1045" class="Function"
+      >v4&#178;</a
+      ><a name="1048"
+      > </a
+      ><a name="1049" class="Symbol"
+      >:</a
+      ><a name="1050"
+      > </a
+      ><a name="1051" class="Symbol"
+      >&#8704;</a
+      ><a name="1052"
+      > </a
+      ><a name="1053" class="Symbol"
+      >{</a
+      ><a name="1054" href="AltArtemov.Derivation.Notation.Level2.html#1054" class="Bound"
+      >&#915;</a
+      ><a name="1055"
+      > </a
+      ><a name="1056" href="AltArtemov.Derivation.Notation.Level2.html#1056" class="Bound"
+      >A</a
+      ><a name="1057"
+      > </a
+      ><a name="1058" href="AltArtemov.Derivation.Notation.Level2.html#1058" class="Bound"
+      >B</a
+      ><a name="1059"
+      > </a
+      ><a name="1060" href="AltArtemov.Derivation.Notation.Level2.html#1060" class="Bound"
+      >C</a
+      ><a name="1061"
+      > </a
+      ><a name="1062" href="AltArtemov.Derivation.Notation.Level2.html#1062" class="Bound"
+      >D</a
+      ><a name="1063"
+      > </a
+      ><a name="1064" href="AltArtemov.Derivation.Notation.Level2.html#1064" class="Bound"
+      >E</a
+      ><a name="1065" class="Symbol"
+      >}</a
+      ><a name="1066"
+      > </a
+      ><a name="1067" class="Symbol"
+      >&#8594;</a
+      ><a name="1068"
+      > </a
+      ><a name="1069" href="AltArtemov.Derivation.Notation.Level2.html#1054" class="Bound"
+      >&#915;</a
+      ><a name="1070"
+      > </a
+      ><a name="1071" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1072"
+      > </a
+      ><a name="1073" href="AltArtemov.Derivation.Notation.Level2.html#1056" class="Bound"
+      >A</a
+      ><a name="1074"
+      > </a
+      ><a name="1075" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1076"
+      > </a
+      ><a name="1077" href="AltArtemov.Derivation.Notation.Level2.html#1058" class="Bound"
+      >B</a
+      ><a name="1078"
+      > </a
+      ><a name="1079" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1080"
+      > </a
+      ><a name="1081" href="AltArtemov.Derivation.Notation.Level2.html#1060" class="Bound"
+      >C</a
+      ><a name="1082"
+      > </a
+      ><a name="1083" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1084"
+      > </a
+      ><a name="1085" href="AltArtemov.Derivation.Notation.Level2.html#1062" class="Bound"
+      >D</a
+      ><a name="1086"
+      > </a
+      ><a name="1087" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1088"
+      > </a
+      ><a name="1089" href="AltArtemov.Derivation.Notation.Level2.html#1064" class="Bound"
+      >E</a
+      ><a name="1090"
+      > </a
+      ><a name="1091" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="1092"
+      > </a
+      ><a name="1093" href="AltArtemov.Term.Notation.Level1.html#382" class="Function"
+      >V4</a
+      ><a name="1095"
+      > </a
+      ><a name="1096" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1097"
+      > </a
+      ><a name="1098" href="AltArtemov.Derivation.Notation.Level2.html#1056" class="Bound"
+      >A</a
+      ><a name="1099"
+      >
+</a
+      ><a name="1100" href="AltArtemov.Derivation.Notation.Level2.html#1045" class="Function"
+      >v4&#178;</a
+      ><a name="1103"
+      > </a
+      ><a name="1104" class="Symbol"
+      >=</a
+      ><a name="1105"
+      > </a
+      ><a name="1106" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="1110"
+      > </a
+      ><a name="1111" href="AltArtemov.Context.Notation.html#277" class="Function"
+      >ix4</a
+      ><a name="1114"
+      >
+
+</a
+      ><a name="1116" href="AltArtemov.Derivation.Notation.Level2.html#1116" class="Function"
+      >v5&#178;</a
+      ><a name="1119"
+      > </a
+      ><a name="1120" class="Symbol"
+      >:</a
+      ><a name="1121"
+      > </a
+      ><a name="1122" class="Symbol"
+      >&#8704;</a
+      ><a name="1123"
+      > </a
+      ><a name="1124" class="Symbol"
+      >{</a
+      ><a name="1125" href="AltArtemov.Derivation.Notation.Level2.html#1125" class="Bound"
+      >&#915;</a
+      ><a name="1126"
+      > </a
+      ><a name="1127" href="AltArtemov.Derivation.Notation.Level2.html#1127" class="Bound"
+      >A</a
+      ><a name="1128"
+      > </a
+      ><a name="1129" href="AltArtemov.Derivation.Notation.Level2.html#1129" class="Bound"
+      >B</a
+      ><a name="1130"
+      > </a
+      ><a name="1131" href="AltArtemov.Derivation.Notation.Level2.html#1131" class="Bound"
+      >C</a
+      ><a name="1132"
+      > </a
+      ><a name="1133" href="AltArtemov.Derivation.Notation.Level2.html#1133" class="Bound"
+      >D</a
+      ><a name="1134"
+      > </a
+      ><a name="1135" href="AltArtemov.Derivation.Notation.Level2.html#1135" class="Bound"
+      >E</a
+      ><a name="1136"
+      > </a
+      ><a name="1137" href="AltArtemov.Derivation.Notation.Level2.html#1137" class="Bound"
+      >F</a
+      ><a name="1138" class="Symbol"
+      >}</a
+      ><a name="1139"
+      > </a
+      ><a name="1140" class="Symbol"
+      >&#8594;</a
+      ><a name="1141"
+      > </a
+      ><a name="1142" href="AltArtemov.Derivation.Notation.Level2.html#1125" class="Bound"
+      >&#915;</a
+      ><a name="1143"
+      > </a
+      ><a name="1144" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1145"
+      > </a
+      ><a name="1146" href="AltArtemov.Derivation.Notation.Level2.html#1127" class="Bound"
+      >A</a
+      ><a name="1147"
+      > </a
+      ><a name="1148" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1149"
+      > </a
+      ><a name="1150" href="AltArtemov.Derivation.Notation.Level2.html#1129" class="Bound"
+      >B</a
+      ><a name="1151"
+      > </a
+      ><a name="1152" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1153"
+      > </a
+      ><a name="1154" href="AltArtemov.Derivation.Notation.Level2.html#1131" class="Bound"
+      >C</a
+      ><a name="1155"
+      > </a
+      ><a name="1156" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1157"
+      > </a
+      ><a name="1158" href="AltArtemov.Derivation.Notation.Level2.html#1133" class="Bound"
+      >D</a
+      ><a name="1159"
+      > </a
+      ><a name="1160" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1161"
+      > </a
+      ><a name="1162" href="AltArtemov.Derivation.Notation.Level2.html#1135" class="Bound"
+      >E</a
+      ><a name="1163"
+      > </a
+      ><a name="1164" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1165"
+      > </a
+      ><a name="1166" href="AltArtemov.Derivation.Notation.Level2.html#1137" class="Bound"
+      >F</a
+      ><a name="1167"
+      > </a
+      ><a name="1168" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="1169"
+      > </a
+      ><a name="1170" href="AltArtemov.Term.Notation.Level1.html#402" class="Function"
+      >V5</a
+      ><a name="1172"
+      > </a
+      ><a name="1173" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1174"
+      > </a
+      ><a name="1175" href="AltArtemov.Derivation.Notation.Level2.html#1127" class="Bound"
+      >A</a
+      ><a name="1176"
+      >
+</a
+      ><a name="1177" href="AltArtemov.Derivation.Notation.Level2.html#1116" class="Function"
+      >v5&#178;</a
+      ><a name="1180"
+      > </a
+      ><a name="1181" class="Symbol"
+      >=</a
+      ><a name="1182"
+      > </a
+      ><a name="1183" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="1187"
+      > </a
+      ><a name="1188" href="AltArtemov.Context.Notation.html#342" class="Function"
+      >ix5</a
+      ><a name="1191"
+      >
+
+</a
+      ><a name="1193" href="AltArtemov.Derivation.Notation.Level2.html#1193" class="Function"
+      >v6&#178;</a
+      ><a name="1196"
+      > </a
+      ><a name="1197" class="Symbol"
+      >:</a
+      ><a name="1198"
+      > </a
+      ><a name="1199" class="Symbol"
+      >&#8704;</a
+      ><a name="1200"
+      > </a
+      ><a name="1201" class="Symbol"
+      >{</a
+      ><a name="1202" href="AltArtemov.Derivation.Notation.Level2.html#1202" class="Bound"
+      >&#915;</a
+      ><a name="1203"
+      > </a
+      ><a name="1204" href="AltArtemov.Derivation.Notation.Level2.html#1204" class="Bound"
+      >A</a
+      ><a name="1205"
+      > </a
+      ><a name="1206" href="AltArtemov.Derivation.Notation.Level2.html#1206" class="Bound"
+      >B</a
+      ><a name="1207"
+      > </a
+      ><a name="1208" href="AltArtemov.Derivation.Notation.Level2.html#1208" class="Bound"
+      >C</a
+      ><a name="1209"
+      > </a
+      ><a name="1210" href="AltArtemov.Derivation.Notation.Level2.html#1210" class="Bound"
+      >D</a
+      ><a name="1211"
+      > </a
+      ><a name="1212" href="AltArtemov.Derivation.Notation.Level2.html#1212" class="Bound"
+      >E</a
+      ><a name="1213"
+      > </a
+      ><a name="1214" href="AltArtemov.Derivation.Notation.Level2.html#1214" class="Bound"
+      >F</a
+      ><a name="1215"
+      > </a
+      ><a name="1216" href="AltArtemov.Derivation.Notation.Level2.html#1216" class="Bound"
+      >G</a
+      ><a name="1217" class="Symbol"
+      >}</a
+      ><a name="1218"
+      > </a
+      ><a name="1219" class="Symbol"
+      >&#8594;</a
+      ><a name="1220"
+      > </a
+      ><a name="1221" href="AltArtemov.Derivation.Notation.Level2.html#1202" class="Bound"
+      >&#915;</a
+      ><a name="1222"
+      > </a
+      ><a name="1223" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1224"
+      > </a
+      ><a name="1225" href="AltArtemov.Derivation.Notation.Level2.html#1204" class="Bound"
+      >A</a
+      ><a name="1226"
+      > </a
+      ><a name="1227" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1228"
+      > </a
+      ><a name="1229" href="AltArtemov.Derivation.Notation.Level2.html#1206" class="Bound"
+      >B</a
+      ><a name="1230"
+      > </a
+      ><a name="1231" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1232"
+      > </a
+      ><a name="1233" href="AltArtemov.Derivation.Notation.Level2.html#1208" class="Bound"
+      >C</a
+      ><a name="1234"
+      > </a
+      ><a name="1235" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1236"
+      > </a
+      ><a name="1237" href="AltArtemov.Derivation.Notation.Level2.html#1210" class="Bound"
+      >D</a
+      ><a name="1238"
+      > </a
+      ><a name="1239" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1240"
+      > </a
+      ><a name="1241" href="AltArtemov.Derivation.Notation.Level2.html#1212" class="Bound"
+      >E</a
+      ><a name="1242"
+      > </a
+      ><a name="1243" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1244"
+      > </a
+      ><a name="1245" href="AltArtemov.Derivation.Notation.Level2.html#1214" class="Bound"
+      >F</a
+      ><a name="1246"
+      > </a
+      ><a name="1247" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1248"
+      > </a
+      ><a name="1249" href="AltArtemov.Derivation.Notation.Level2.html#1216" class="Bound"
+      >G</a
+      ><a name="1250"
+      > </a
+      ><a name="1251" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="1252"
+      > </a
+      ><a name="1253" href="AltArtemov.Term.Notation.Level1.html#422" class="Function"
+      >V6</a
+      ><a name="1255"
+      > </a
+      ><a name="1256" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1257"
+      > </a
+      ><a name="1258" href="AltArtemov.Derivation.Notation.Level2.html#1204" class="Bound"
+      >A</a
+      ><a name="1259"
+      >
+</a
+      ><a name="1260" href="AltArtemov.Derivation.Notation.Level2.html#1193" class="Function"
+      >v6&#178;</a
+      ><a name="1263"
+      > </a
+      ><a name="1264" class="Symbol"
+      >=</a
+      ><a name="1265"
+      > </a
+      ><a name="1266" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="1270"
+      > </a
+      ><a name="1271" href="AltArtemov.Context.Notation.html#413" class="Function"
+      >ix6</a
+      ><a name="1274"
+      >
+
+</a
+      ><a name="1276" href="AltArtemov.Derivation.Notation.Level2.html#1276" class="Function"
+      >v7&#178;</a
+      ><a name="1279"
+      > </a
+      ><a name="1280" class="Symbol"
+      >:</a
+      ><a name="1281"
+      > </a
+      ><a name="1282" class="Symbol"
+      >&#8704;</a
+      ><a name="1283"
+      > </a
+      ><a name="1284" class="Symbol"
+      >{</a
+      ><a name="1285" href="AltArtemov.Derivation.Notation.Level2.html#1285" class="Bound"
+      >&#915;</a
+      ><a name="1286"
+      > </a
+      ><a name="1287" href="AltArtemov.Derivation.Notation.Level2.html#1287" class="Bound"
+      >A</a
+      ><a name="1288"
+      > </a
+      ><a name="1289" href="AltArtemov.Derivation.Notation.Level2.html#1289" class="Bound"
+      >B</a
+      ><a name="1290"
+      > </a
+      ><a name="1291" href="AltArtemov.Derivation.Notation.Level2.html#1291" class="Bound"
+      >C</a
+      ><a name="1292"
+      > </a
+      ><a name="1293" href="AltArtemov.Derivation.Notation.Level2.html#1293" class="Bound"
+      >D</a
+      ><a name="1294"
+      > </a
+      ><a name="1295" href="AltArtemov.Derivation.Notation.Level2.html#1295" class="Bound"
+      >E</a
+      ><a name="1296"
+      > </a
+      ><a name="1297" href="AltArtemov.Derivation.Notation.Level2.html#1297" class="Bound"
+      >F</a
+      ><a name="1298"
+      > </a
+      ><a name="1299" href="AltArtemov.Derivation.Notation.Level2.html#1299" class="Bound"
+      >G</a
+      ><a name="1300"
+      > </a
+      ><a name="1301" href="AltArtemov.Derivation.Notation.Level2.html#1301" class="Bound"
+      >H</a
+      ><a name="1302" class="Symbol"
+      >}</a
+      ><a name="1303"
+      > </a
+      ><a name="1304" class="Symbol"
+      >&#8594;</a
+      ><a name="1305"
+      > </a
+      ><a name="1306" href="AltArtemov.Derivation.Notation.Level2.html#1285" class="Bound"
+      >&#915;</a
+      ><a name="1307"
+      > </a
+      ><a name="1308" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1309"
+      > </a
+      ><a name="1310" href="AltArtemov.Derivation.Notation.Level2.html#1287" class="Bound"
+      >A</a
+      ><a name="1311"
+      > </a
+      ><a name="1312" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1313"
+      > </a
+      ><a name="1314" href="AltArtemov.Derivation.Notation.Level2.html#1289" class="Bound"
+      >B</a
+      ><a name="1315"
+      > </a
+      ><a name="1316" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1317"
+      > </a
+      ><a name="1318" href="AltArtemov.Derivation.Notation.Level2.html#1291" class="Bound"
+      >C</a
+      ><a name="1319"
+      > </a
+      ><a name="1320" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1321"
+      > </a
+      ><a name="1322" href="AltArtemov.Derivation.Notation.Level2.html#1293" class="Bound"
+      >D</a
+      ><a name="1323"
+      > </a
+      ><a name="1324" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1325"
+      > </a
+      ><a name="1326" href="AltArtemov.Derivation.Notation.Level2.html#1295" class="Bound"
+      >E</a
+      ><a name="1327"
+      > </a
+      ><a name="1328" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1329"
+      > </a
+      ><a name="1330" href="AltArtemov.Derivation.Notation.Level2.html#1297" class="Bound"
+      >F</a
+      ><a name="1331"
+      > </a
+      ><a name="1332" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1333"
+      > </a
+      ><a name="1334" href="AltArtemov.Derivation.Notation.Level2.html#1299" class="Bound"
+      >G</a
+      ><a name="1335"
+      > </a
+      ><a name="1336" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1337"
+      > </a
+      ><a name="1338" href="AltArtemov.Derivation.Notation.Level2.html#1301" class="Bound"
+      >H</a
+      ><a name="1339"
+      > </a
+      ><a name="1340" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="1341"
+      > </a
+      ><a name="1342" href="AltArtemov.Term.Notation.Level1.html#442" class="Function"
+      >V7</a
+      ><a name="1344"
+      > </a
+      ><a name="1345" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1346"
+      > </a
+      ><a name="1347" href="AltArtemov.Derivation.Notation.Level2.html#1287" class="Bound"
+      >A</a
+      ><a name="1348"
+      >
+</a
+      ><a name="1349" href="AltArtemov.Derivation.Notation.Level2.html#1276" class="Function"
+      >v7&#178;</a
+      ><a name="1352"
+      > </a
+      ><a name="1353" class="Symbol"
+      >=</a
+      ><a name="1354"
+      > </a
+      ><a name="1355" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="1359"
+      > </a
+      ><a name="1360" href="AltArtemov.Context.Notation.html#490" class="Function"
+      >ix7</a
+      ><a name="1363"
+      >
+
+</a
+      ><a name="1365" href="AltArtemov.Derivation.Notation.Level2.html#1365" class="Function"
+      >v8&#178;</a
+      ><a name="1368"
+      > </a
+      ><a name="1369" class="Symbol"
+      >:</a
+      ><a name="1370"
+      > </a
+      ><a name="1371" class="Symbol"
+      >&#8704;</a
+      ><a name="1372"
+      > </a
+      ><a name="1373" class="Symbol"
+      >{</a
+      ><a name="1374" href="AltArtemov.Derivation.Notation.Level2.html#1374" class="Bound"
+      >&#915;</a
+      ><a name="1375"
+      > </a
+      ><a name="1376" href="AltArtemov.Derivation.Notation.Level2.html#1376" class="Bound"
+      >A</a
+      ><a name="1377"
+      > </a
+      ><a name="1378" href="AltArtemov.Derivation.Notation.Level2.html#1378" class="Bound"
+      >B</a
+      ><a name="1379"
+      > </a
+      ><a name="1380" href="AltArtemov.Derivation.Notation.Level2.html#1380" class="Bound"
+      >C</a
+      ><a name="1381"
+      > </a
+      ><a name="1382" href="AltArtemov.Derivation.Notation.Level2.html#1382" class="Bound"
+      >D</a
+      ><a name="1383"
+      > </a
+      ><a name="1384" href="AltArtemov.Derivation.Notation.Level2.html#1384" class="Bound"
+      >E</a
+      ><a name="1385"
+      > </a
+      ><a name="1386" href="AltArtemov.Derivation.Notation.Level2.html#1386" class="Bound"
+      >F</a
+      ><a name="1387"
+      > </a
+      ><a name="1388" href="AltArtemov.Derivation.Notation.Level2.html#1388" class="Bound"
+      >G</a
+      ><a name="1389"
+      > </a
+      ><a name="1390" href="AltArtemov.Derivation.Notation.Level2.html#1390" class="Bound"
+      >H</a
+      ><a name="1391"
+      > </a
+      ><a name="1392" href="AltArtemov.Derivation.Notation.Level2.html#1392" class="Bound"
+      >I</a
+      ><a name="1393" class="Symbol"
+      >}</a
+      ><a name="1394"
+      > </a
+      ><a name="1395" class="Symbol"
+      >&#8594;</a
+      ><a name="1396"
+      > </a
+      ><a name="1397" href="AltArtemov.Derivation.Notation.Level2.html#1374" class="Bound"
+      >&#915;</a
+      ><a name="1398"
+      > </a
+      ><a name="1399" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1400"
+      > </a
+      ><a name="1401" href="AltArtemov.Derivation.Notation.Level2.html#1376" class="Bound"
+      >A</a
+      ><a name="1402"
+      > </a
+      ><a name="1403" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1404"
+      > </a
+      ><a name="1405" href="AltArtemov.Derivation.Notation.Level2.html#1378" class="Bound"
+      >B</a
+      ><a name="1406"
+      > </a
+      ><a name="1407" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1408"
+      > </a
+      ><a name="1409" href="AltArtemov.Derivation.Notation.Level2.html#1380" class="Bound"
+      >C</a
+      ><a name="1410"
+      > </a
+      ><a name="1411" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1412"
+      > </a
+      ><a name="1413" href="AltArtemov.Derivation.Notation.Level2.html#1382" class="Bound"
+      >D</a
+      ><a name="1414"
+      > </a
+      ><a name="1415" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1416"
+      > </a
+      ><a name="1417" href="AltArtemov.Derivation.Notation.Level2.html#1384" class="Bound"
+      >E</a
+      ><a name="1418"
+      > </a
+      ><a name="1419" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1420"
+      > </a
+      ><a name="1421" href="AltArtemov.Derivation.Notation.Level2.html#1386" class="Bound"
+      >F</a
+      ><a name="1422"
+      > </a
+      ><a name="1423" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1424"
+      > </a
+      ><a name="1425" href="AltArtemov.Derivation.Notation.Level2.html#1388" class="Bound"
+      >G</a
+      ><a name="1426"
+      > </a
+      ><a name="1427" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1428"
+      > </a
+      ><a name="1429" href="AltArtemov.Derivation.Notation.Level2.html#1390" class="Bound"
+      >H</a
+      ><a name="1430"
+      > </a
+      ><a name="1431" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1432"
+      > </a
+      ><a name="1433" href="AltArtemov.Derivation.Notation.Level2.html#1392" class="Bound"
+      >I</a
+      ><a name="1434"
+      > </a
+      ><a name="1435" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="1436"
+      > </a
+      ><a name="1437" href="AltArtemov.Term.Notation.Level1.html#462" class="Function"
+      >V8</a
+      ><a name="1439"
+      > </a
+      ><a name="1440" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1441"
+      > </a
+      ><a name="1442" href="AltArtemov.Derivation.Notation.Level2.html#1376" class="Bound"
+      >A</a
+      ><a name="1443"
+      >
+</a
+      ><a name="1444" href="AltArtemov.Derivation.Notation.Level2.html#1365" class="Function"
+      >v8&#178;</a
+      ><a name="1447"
+      > </a
+      ><a name="1448" class="Symbol"
+      >=</a
+      ><a name="1449"
+      > </a
+      ><a name="1450" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="1454"
+      > </a
+      ><a name="1455" href="AltArtemov.Context.Notation.html#573" class="Function"
+      >ix8</a
+      ><a name="1458"
+      >
+
+</a
+      ><a name="1460" href="AltArtemov.Derivation.Notation.Level2.html#1460" class="Function"
+      >v9&#178;</a
+      ><a name="1463"
+      > </a
+      ><a name="1464" class="Symbol"
+      >:</a
+      ><a name="1465"
+      > </a
+      ><a name="1466" class="Symbol"
+      >&#8704;</a
+      ><a name="1467"
+      > </a
+      ><a name="1468" class="Symbol"
+      >{</a
+      ><a name="1469" href="AltArtemov.Derivation.Notation.Level2.html#1469" class="Bound"
+      >&#915;</a
+      ><a name="1470"
+      > </a
+      ><a name="1471" href="AltArtemov.Derivation.Notation.Level2.html#1471" class="Bound"
+      >A</a
+      ><a name="1472"
+      > </a
+      ><a name="1473" href="AltArtemov.Derivation.Notation.Level2.html#1473" class="Bound"
+      >B</a
+      ><a name="1474"
+      > </a
+      ><a name="1475" href="AltArtemov.Derivation.Notation.Level2.html#1475" class="Bound"
+      >C</a
+      ><a name="1476"
+      > </a
+      ><a name="1477" href="AltArtemov.Derivation.Notation.Level2.html#1477" class="Bound"
+      >D</a
+      ><a name="1478"
+      > </a
+      ><a name="1479" href="AltArtemov.Derivation.Notation.Level2.html#1479" class="Bound"
+      >E</a
+      ><a name="1480"
+      > </a
+      ><a name="1481" href="AltArtemov.Derivation.Notation.Level2.html#1481" class="Bound"
+      >F</a
+      ><a name="1482"
+      > </a
+      ><a name="1483" href="AltArtemov.Derivation.Notation.Level2.html#1483" class="Bound"
+      >G</a
+      ><a name="1484"
+      > </a
+      ><a name="1485" href="AltArtemov.Derivation.Notation.Level2.html#1485" class="Bound"
+      >H</a
+      ><a name="1486"
+      > </a
+      ><a name="1487" href="AltArtemov.Derivation.Notation.Level2.html#1487" class="Bound"
+      >I</a
+      ><a name="1488"
+      > </a
+      ><a name="1489" href="AltArtemov.Derivation.Notation.Level2.html#1489" class="Bound"
+      >J</a
+      ><a name="1490" class="Symbol"
+      >}</a
+      ><a name="1491"
+      > </a
+      ><a name="1492" class="Symbol"
+      >&#8594;</a
+      ><a name="1493"
+      > </a
+      ><a name="1494" href="AltArtemov.Derivation.Notation.Level2.html#1469" class="Bound"
+      >&#915;</a
+      ><a name="1495"
+      > </a
+      ><a name="1496" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1497"
+      > </a
+      ><a name="1498" href="AltArtemov.Derivation.Notation.Level2.html#1471" class="Bound"
+      >A</a
+      ><a name="1499"
+      > </a
+      ><a name="1500" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1501"
+      > </a
+      ><a name="1502" href="AltArtemov.Derivation.Notation.Level2.html#1473" class="Bound"
+      >B</a
+      ><a name="1503"
+      > </a
+      ><a name="1504" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1505"
+      > </a
+      ><a name="1506" href="AltArtemov.Derivation.Notation.Level2.html#1475" class="Bound"
+      >C</a
+      ><a name="1507"
+      > </a
+      ><a name="1508" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1509"
+      > </a
+      ><a name="1510" href="AltArtemov.Derivation.Notation.Level2.html#1477" class="Bound"
+      >D</a
+      ><a name="1511"
+      > </a
+      ><a name="1512" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1513"
+      > </a
+      ><a name="1514" href="AltArtemov.Derivation.Notation.Level2.html#1479" class="Bound"
+      >E</a
+      ><a name="1515"
+      > </a
+      ><a name="1516" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1517"
+      > </a
+      ><a name="1518" href="AltArtemov.Derivation.Notation.Level2.html#1481" class="Bound"
+      >F</a
+      ><a name="1519"
+      > </a
+      ><a name="1520" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1521"
+      > </a
+      ><a name="1522" href="AltArtemov.Derivation.Notation.Level2.html#1483" class="Bound"
+      >G</a
+      ><a name="1523"
+      > </a
+      ><a name="1524" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1525"
+      > </a
+      ><a name="1526" href="AltArtemov.Derivation.Notation.Level2.html#1485" class="Bound"
+      >H</a
+      ><a name="1527"
+      > </a
+      ><a name="1528" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1529"
+      > </a
+      ><a name="1530" href="AltArtemov.Derivation.Notation.Level2.html#1487" class="Bound"
+      >I</a
+      ><a name="1531"
+      > </a
+      ><a name="1532" href="AltArtemov.Context.Core.html#136" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1533"
+      > </a
+      ><a name="1534" href="AltArtemov.Derivation.Notation.Level2.html#1489" class="Bound"
+      >J</a
+      ><a name="1535"
+      > </a
+      ><a name="1536" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="1537"
+      > </a
+      ><a name="1538" href="AltArtemov.Term.Notation.Level1.html#482" class="Function"
+      >V9</a
+      ><a name="1540"
+      > </a
+      ><a name="1541" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1542"
+      > </a
+      ><a name="1543" href="AltArtemov.Derivation.Notation.Level2.html#1471" class="Bound"
+      >A</a
+      ><a name="1544"
+      >
+</a
+      ><a name="1545" href="AltArtemov.Derivation.Notation.Level2.html#1460" class="Function"
+      >v9&#178;</a
+      ><a name="1548"
+      > </a
+      ><a name="1549" class="Symbol"
+      >=</a
+      ><a name="1550"
+      > </a
+      ><a name="1551" href="AltArtemov.Derivation.Notation.Level2.html#215" class="Function"
+      >var&#178;</a
+      ><a name="1555"
+      > </a
+      ><a name="1556" href="AltArtemov.Context.Notation.html#662" class="Function"
+      >ix9</a
+      ><a name="1559"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

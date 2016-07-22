@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >AltArtemov.Type.Inversions</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="AltArtemov.Type.Inversions.html#1" class="Module"
+      >AltArtemov.Type.Inversions</a
+      ><a name="34"
+      > </a
+      ><a name="35" class="Keyword"
+      >where</a
+      ><a name="40"
+      >
+
+</a
+      ><a name="42" class="Keyword"
+      >open</a
+      ><a name="46"
+      > </a
+      ><a name="47" class="Keyword"
+      >import</a
+      ><a name="53"
+      > </a
+      ><a name="54" href="Relation.Binary.PropositionalEquality.html#1" class="Module"
+      >Relation.Binary.PropositionalEquality</a
+      ><a name="91"
+      > </a
+      ><a name="92" class="Keyword"
+      >using</a
+      ><a name="97"
+      > </a
+      ><a name="98" class="Symbol"
+      >(</a
+      ><a name="99" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >_&#8801;_</a
+      ><a name="102"
+      > </a
+      ><a name="103" class="Symbol"
+      >;</a
+      ><a name="104"
+      > </a
+      ><a name="105" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="109" class="Symbol"
+      >)</a
+      ><a name="110"
+      >
+
+</a
+      ><a name="112" class="Keyword"
+      >open</a
+      ><a name="116"
+      > </a
+      ><a name="117" class="Keyword"
+      >import</a
+      ><a name="123"
+      > </a
+      ><a name="124" href="AltArtemov.Type.Core.html#1" class="Module"
+      >AltArtemov.Type.Core</a
+      ><a name="144"
+      >
+
+
+</a
+      ><a name="147" href="AltArtemov.Type.Inversions.html#147" class="Function"
+      >&#8835;-inv-A</a
+      ><a name="154"
+      > </a
+      ><a name="155" class="Symbol"
+      >:</a
+      ><a name="156"
+      > </a
+      ><a name="157" class="Symbol"
+      >&#8704;</a
+      ><a name="158"
+      > </a
+      ><a name="159" class="Symbol"
+      >{</a
+      ><a name="160" href="AltArtemov.Type.Inversions.html#160" class="Bound"
+      >A</a
+      ><a name="161"
+      > </a
+      ><a name="162" href="AltArtemov.Type.Inversions.html#162" class="Bound"
+      >B</a
+      ><a name="163"
+      > </a
+      ><a name="164" href="AltArtemov.Type.Inversions.html#164" class="Bound"
+      >A&#8242;</a
+      ><a name="166"
+      > </a
+      ><a name="167" href="AltArtemov.Type.Inversions.html#167" class="Bound"
+      >B&#8242;</a
+      ><a name="169" class="Symbol"
+      >}</a
+      ><a name="170"
+      > </a
+      ><a name="171" class="Symbol"
+      >&#8594;</a
+      ><a name="172"
+      > </a
+      ><a name="173" class="Symbol"
+      >(</a
+      ><a name="174" href="AltArtemov.Type.Inversions.html#160" class="Bound"
+      >A</a
+      ><a name="175"
+      > </a
+      ><a name="176" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="177"
+      > </a
+      ><a name="178" href="AltArtemov.Type.Inversions.html#162" class="Bound"
+      >B</a
+      ><a name="179" class="Symbol"
+      >)</a
+      ><a name="180"
+      > </a
+      ><a name="181" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="182"
+      > </a
+      ><a name="183" class="Symbol"
+      >(</a
+      ><a name="184" href="AltArtemov.Type.Inversions.html#164" class="Bound"
+      >A&#8242;</a
+      ><a name="186"
+      > </a
+      ><a name="187" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="188"
+      > </a
+      ><a name="189" href="AltArtemov.Type.Inversions.html#167" class="Bound"
+      >B&#8242;</a
+      ><a name="191" class="Symbol"
+      >)</a
+      ><a name="192"
+      > </a
+      ><a name="193" class="Symbol"
+      >&#8594;</a
+      ><a name="194"
+      > </a
+      ><a name="195" href="AltArtemov.Type.Inversions.html#160" class="Bound"
+      >A</a
+      ><a name="196"
+      > </a
+      ><a name="197" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="198"
+      > </a
+      ><a name="199" href="AltArtemov.Type.Inversions.html#164" class="Bound"
+      >A&#8242;</a
+      ><a name="201"
+      >
+</a
+      ><a name="202" href="AltArtemov.Type.Inversions.html#147" class="Function"
+      >&#8835;-inv-A</a
+      ><a name="209"
+      > </a
+      ><a name="210" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="214"
+      > </a
+      ><a name="215" class="Symbol"
+      >=</a
+      ><a name="216"
+      > </a
+      ><a name="217" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="221"
+      >
+
+</a
+      ><a name="223" href="AltArtemov.Type.Inversions.html#223" class="Function"
+      >&#8835;-inv-B</a
+      ><a name="230"
+      > </a
+      ><a name="231" class="Symbol"
+      >:</a
+      ><a name="232"
+      > </a
+      ><a name="233" class="Symbol"
+      >&#8704;</a
+      ><a name="234"
+      > </a
+      ><a name="235" class="Symbol"
+      >{</a
+      ><a name="236" href="AltArtemov.Type.Inversions.html#236" class="Bound"
+      >A</a
+      ><a name="237"
+      > </a
+      ><a name="238" href="AltArtemov.Type.Inversions.html#238" class="Bound"
+      >B</a
+      ><a name="239"
+      > </a
+      ><a name="240" href="AltArtemov.Type.Inversions.html#240" class="Bound"
+      >A&#8242;</a
+      ><a name="242"
+      > </a
+      ><a name="243" href="AltArtemov.Type.Inversions.html#243" class="Bound"
+      >B&#8242;</a
+      ><a name="245" class="Symbol"
+      >}</a
+      ><a name="246"
+      > </a
+      ><a name="247" class="Symbol"
+      >&#8594;</a
+      ><a name="248"
+      > </a
+      ><a name="249" class="Symbol"
+      >(</a
+      ><a name="250" href="AltArtemov.Type.Inversions.html#236" class="Bound"
+      >A</a
+      ><a name="251"
+      > </a
+      ><a name="252" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="253"
+      > </a
+      ><a name="254" href="AltArtemov.Type.Inversions.html#238" class="Bound"
+      >B</a
+      ><a name="255" class="Symbol"
+      >)</a
+      ><a name="256"
+      > </a
+      ><a name="257" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="258"
+      > </a
+      ><a name="259" class="Symbol"
+      >(</a
+      ><a name="260" href="AltArtemov.Type.Inversions.html#240" class="Bound"
+      >A&#8242;</a
+      ><a name="262"
+      > </a
+      ><a name="263" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="264"
+      > </a
+      ><a name="265" href="AltArtemov.Type.Inversions.html#243" class="Bound"
+      >B&#8242;</a
+      ><a name="267" class="Symbol"
+      >)</a
+      ><a name="268"
+      > </a
+      ><a name="269" class="Symbol"
+      >&#8594;</a
+      ><a name="270"
+      > </a
+      ><a name="271" href="AltArtemov.Type.Inversions.html#238" class="Bound"
+      >B</a
+      ><a name="272"
+      > </a
+      ><a name="273" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="274"
+      > </a
+      ><a name="275" href="AltArtemov.Type.Inversions.html#243" class="Bound"
+      >B&#8242;</a
+      ><a name="277"
+      >
+</a
+      ><a name="278" href="AltArtemov.Type.Inversions.html#223" class="Function"
+      >&#8835;-inv-B</a
+      ><a name="285"
+      > </a
+      ><a name="286" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="290"
+      > </a
+      ><a name="291" class="Symbol"
+      >=</a
+      ><a name="292"
+      > </a
+      ><a name="293" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="297"
+      >
+
+
+</a
+      ><a name="300" href="AltArtemov.Type.Inversions.html#300" class="Function"
+      >&#8758;-inv-t</a
+      ><a name="307"
+      > </a
+      ><a name="308" class="Symbol"
+      >:</a
+      ><a name="309"
+      > </a
+      ><a name="310" class="Symbol"
+      >&#8704;</a
+      ><a name="311"
+      > </a
+      ><a name="312" class="Symbol"
+      >{</a
+      ><a name="313" href="AltArtemov.Type.Inversions.html#313" class="Bound"
+      >t</a
+      ><a name="314"
+      > </a
+      ><a name="315" href="AltArtemov.Type.Inversions.html#315" class="Bound"
+      >A</a
+      ><a name="316"
+      > </a
+      ><a name="317" href="AltArtemov.Type.Inversions.html#317" class="Bound"
+      >t&#8242;</a
+      ><a name="319"
+      > </a
+      ><a name="320" href="AltArtemov.Type.Inversions.html#320" class="Bound"
+      >A&#8242;</a
+      ><a name="322" class="Symbol"
+      >}</a
+      ><a name="323"
+      > </a
+      ><a name="324" class="Symbol"
+      >&#8594;</a
+      ><a name="325"
+      > </a
+      ><a name="326" class="Symbol"
+      >(</a
+      ><a name="327" href="AltArtemov.Type.Inversions.html#313" class="Bound"
+      >t</a
+      ><a name="328"
+      > </a
+      ><a name="329" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="330"
+      > </a
+      ><a name="331" href="AltArtemov.Type.Inversions.html#315" class="Bound"
+      >A</a
+      ><a name="332" class="Symbol"
+      >)</a
+      ><a name="333"
+      > </a
+      ><a name="334" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="335"
+      > </a
+      ><a name="336" class="Symbol"
+      >(</a
+      ><a name="337" href="AltArtemov.Type.Inversions.html#317" class="Bound"
+      >t&#8242;</a
+      ><a name="339"
+      > </a
+      ><a name="340" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="341"
+      > </a
+      ><a name="342" href="AltArtemov.Type.Inversions.html#320" class="Bound"
+      >A&#8242;</a
+      ><a name="344" class="Symbol"
+      >)</a
+      ><a name="345"
+      > </a
+      ><a name="346" class="Symbol"
+      >&#8594;</a
+      ><a name="347"
+      > </a
+      ><a name="348" href="AltArtemov.Type.Inversions.html#313" class="Bound"
+      >t</a
+      ><a name="349"
+      > </a
+      ><a name="350" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="351"
+      > </a
+      ><a name="352" href="AltArtemov.Type.Inversions.html#317" class="Bound"
+      >t&#8242;</a
+      ><a name="354"
+      >
+</a
+      ><a name="355" href="AltArtemov.Type.Inversions.html#300" class="Function"
+      >&#8758;-inv-t</a
+      ><a name="362"
+      > </a
+      ><a name="363" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="367"
+      > </a
+      ><a name="368" class="Symbol"
+      >=</a
+      ><a name="369"
+      > </a
+      ><a name="370" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="374"
+      >
+
+</a
+      ><a name="376" href="AltArtemov.Type.Inversions.html#376" class="Function"
+      >&#8758;-inv-A</a
+      ><a name="383"
+      > </a
+      ><a name="384" class="Symbol"
+      >:</a
+      ><a name="385"
+      > </a
+      ><a name="386" class="Symbol"
+      >&#8704;</a
+      ><a name="387"
+      > </a
+      ><a name="388" class="Symbol"
+      >{</a
+      ><a name="389" href="AltArtemov.Type.Inversions.html#389" class="Bound"
+      >t</a
+      ><a name="390"
+      > </a
+      ><a name="391" href="AltArtemov.Type.Inversions.html#391" class="Bound"
+      >A</a
+      ><a name="392"
+      > </a
+      ><a name="393" href="AltArtemov.Type.Inversions.html#393" class="Bound"
+      >t&#8242;</a
+      ><a name="395"
+      > </a
+      ><a name="396" href="AltArtemov.Type.Inversions.html#396" class="Bound"
+      >A&#8242;</a
+      ><a name="398" class="Symbol"
+      >}</a
+      ><a name="399"
+      > </a
+      ><a name="400" class="Symbol"
+      >&#8594;</a
+      ><a name="401"
+      > </a
+      ><a name="402" class="Symbol"
+      >(</a
+      ><a name="403" href="AltArtemov.Type.Inversions.html#389" class="Bound"
+      >t</a
+      ><a name="404"
+      > </a
+      ><a name="405" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="406"
+      > </a
+      ><a name="407" href="AltArtemov.Type.Inversions.html#391" class="Bound"
+      >A</a
+      ><a name="408" class="Symbol"
+      >)</a
+      ><a name="409"
+      > </a
+      ><a name="410" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="411"
+      > </a
+      ><a name="412" class="Symbol"
+      >(</a
+      ><a name="413" href="AltArtemov.Type.Inversions.html#393" class="Bound"
+      >t&#8242;</a
+      ><a name="415"
+      > </a
+      ><a name="416" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="417"
+      > </a
+      ><a name="418" href="AltArtemov.Type.Inversions.html#396" class="Bound"
+      >A&#8242;</a
+      ><a name="420" class="Symbol"
+      >)</a
+      ><a name="421"
+      > </a
+      ><a name="422" class="Symbol"
+      >&#8594;</a
+      ><a name="423"
+      > </a
+      ><a name="424" href="AltArtemov.Type.Inversions.html#391" class="Bound"
+      >A</a
+      ><a name="425"
+      > </a
+      ><a name="426" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="427"
+      > </a
+      ><a name="428" href="AltArtemov.Type.Inversions.html#396" class="Bound"
+      >A&#8242;</a
+      ><a name="430"
+      >
+</a
+      ><a name="431" href="AltArtemov.Type.Inversions.html#376" class="Function"
+      >&#8758;-inv-A</a
+      ><a name="438"
+      > </a
+      ><a name="439" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="443"
+      > </a
+      ><a name="444" class="Symbol"
+      >=</a
+      ><a name="445"
+      > </a
+      ><a name="446" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="450"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

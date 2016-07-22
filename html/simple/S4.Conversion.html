@@ -1,0 +1,1457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >S4.Conversion</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="S4.Conversion.html#1" class="Module"
+      >S4.Conversion</a
+      ><a name="21"
+      > </a
+      ><a name="22" class="Keyword"
+      >where</a
+      ><a name="27"
+      >
+
+</a
+      ><a name="29" class="Keyword"
+      >open</a
+      ><a name="33"
+      > </a
+      ><a name="34" class="Keyword"
+      >import</a
+      ><a name="40"
+      > </a
+      ><a name="41" href="S4.Substitution.html#1" class="Module"
+      >S4.Substitution</a
+      ><a name="56"
+      > </a
+      ><a name="57" class="Keyword"
+      >public</a
+      ><a name="63"
+      >
+
+
+</a
+      ><a name="66" class="Keyword"
+      >data</a
+      ><a name="70"
+      > </a
+      ><a name="71" href="S4.Conversion.html#71" class="Datatype Operator"
+      >_&#8660;_</a
+      ><a name="74"
+      > </a
+      ><a name="75" class="Symbol"
+      >{</a
+      ><a name="76" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="77"
+      > </a
+      ><a name="78" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="79" class="Symbol"
+      >}</a
+      ><a name="80"
+      > </a
+      ><a name="81" class="Symbol"
+      >:</a
+      ><a name="82"
+      > </a
+      ><a name="83" class="Symbol"
+      >&#8704;</a
+      ><a name="84"
+      > </a
+      ><a name="85" class="Symbol"
+      >{</a
+      ><a name="86" href="S4.Conversion.html#86" class="Bound"
+      >A</a
+      ><a name="87" class="Symbol"
+      >}</a
+      ><a name="88"
+      > </a
+      ><a name="89" class="Symbol"
+      >&#8594;</a
+      ><a name="90"
+      > </a
+      ><a name="91" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="93"
+      > </a
+      ><a name="94" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="95"
+      > </a
+      ><a name="96" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="97"
+      > </a
+      ><a name="98" href="S4.Conversion.html#86" class="Bound"
+      >A</a
+      ><a name="99"
+      > </a
+      ><a name="100" class="Symbol"
+      >&#8594;</a
+      ><a name="101"
+      > </a
+      ><a name="102" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="104"
+      > </a
+      ><a name="105" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="106"
+      > </a
+      ><a name="107" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="108"
+      > </a
+      ><a name="109" href="S4.Conversion.html#86" class="Bound"
+      >A</a
+      ><a name="110"
+      > </a
+      ><a name="111" class="Symbol"
+      >&#8594;</a
+      ><a name="112"
+      > </a
+      ><a name="113" class="PrimitiveType"
+      >Set</a
+      ><a name="116"
+      > </a
+      ><a name="117" class="Keyword"
+      >where</a
+      ><a name="122"
+      >
+  </a
+      ><a name="125" href="S4.Conversion.html#125" class="InductiveConstructor"
+      >&#8660;refl</a
+      ><a name="130"
+      >      </a
+      ><a name="136" class="Symbol"
+      >:</a
+      ><a name="137"
+      > </a
+      ><a name="138" class="Symbol"
+      >&#8704;</a
+      ><a name="139"
+      > </a
+      ><a name="140" class="Symbol"
+      >{</a
+      ><a name="141" href="S4.Conversion.html#141" class="Bound"
+      >A</a
+      ><a name="142" class="Symbol"
+      >}</a
+      ><a name="143"
+      > </a
+      ><a name="144" class="Symbol"
+      >{</a
+      ><a name="145" href="S4.Conversion.html#145" class="Bound"
+      >t</a
+      ><a name="146"
+      > </a
+      ><a name="147" class="Symbol"
+      >:</a
+      ><a name="148"
+      > </a
+      ><a name="149" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="151"
+      > </a
+      ><a name="152" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="153"
+      > </a
+      ><a name="154" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="155"
+      > </a
+      ><a name="156" href="S4.Conversion.html#141" class="Bound"
+      >A</a
+      ><a name="157" class="Symbol"
+      >}</a
+      ><a name="158"
+      > </a
+      ><a name="159" class="Symbol"
+      >&#8594;</a
+      ><a name="160"
+      >
+                </a
+      ><a name="177" href="S4.Conversion.html#145" class="Bound"
+      >t</a
+      ><a name="178"
+      > </a
+      ><a name="179" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="180"
+      > </a
+      ><a name="181" href="S4.Conversion.html#145" class="Bound"
+      >t</a
+      ><a name="182"
+      >
+  </a
+      ><a name="185" href="S4.Conversion.html#185" class="InductiveConstructor"
+      >&#8660;sym</a
+      ><a name="189"
+      >       </a
+      ><a name="196" class="Symbol"
+      >:</a
+      ><a name="197"
+      > </a
+      ><a name="198" class="Symbol"
+      >&#8704;</a
+      ><a name="199"
+      > </a
+      ><a name="200" class="Symbol"
+      >{</a
+      ><a name="201" href="S4.Conversion.html#201" class="Bound"
+      >A</a
+      ><a name="202" class="Symbol"
+      >}</a
+      ><a name="203"
+      > </a
+      ><a name="204" class="Symbol"
+      >{</a
+      ><a name="205" href="S4.Conversion.html#205" class="Bound"
+      >t</a
+      ><a name="206"
+      > </a
+      ><a name="207" href="S4.Conversion.html#207" class="Bound"
+      >t&#8242;</a
+      ><a name="209"
+      > </a
+      ><a name="210" class="Symbol"
+      >:</a
+      ><a name="211"
+      > </a
+      ><a name="212" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="214"
+      > </a
+      ><a name="215" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="216"
+      > </a
+      ><a name="217" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="218"
+      > </a
+      ><a name="219" href="S4.Conversion.html#201" class="Bound"
+      >A</a
+      ><a name="220" class="Symbol"
+      >}</a
+      ><a name="221"
+      > </a
+      ><a name="222" class="Symbol"
+      >&#8594;</a
+      ><a name="223"
+      >
+                </a
+      ><a name="240" href="S4.Conversion.html#205" class="Bound"
+      >t</a
+      ><a name="241"
+      > </a
+      ><a name="242" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="243"
+      > </a
+      ><a name="244" href="S4.Conversion.html#207" class="Bound"
+      >t&#8242;</a
+      ><a name="246"
+      > </a
+      ><a name="247" class="Symbol"
+      >&#8594;</a
+      ><a name="248"
+      > </a
+      ><a name="249" href="S4.Conversion.html#207" class="Bound"
+      >t&#8242;</a
+      ><a name="251"
+      > </a
+      ><a name="252" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="253"
+      > </a
+      ><a name="254" href="S4.Conversion.html#205" class="Bound"
+      >t</a
+      ><a name="255"
+      >
+  </a
+      ><a name="258" href="S4.Conversion.html#258" class="InductiveConstructor"
+      >&#8660;trans</a
+      ><a name="264"
+      >     </a
+      ><a name="269" class="Symbol"
+      >:</a
+      ><a name="270"
+      > </a
+      ><a name="271" class="Symbol"
+      >&#8704;</a
+      ><a name="272"
+      > </a
+      ><a name="273" class="Symbol"
+      >{</a
+      ><a name="274" href="S4.Conversion.html#274" class="Bound"
+      >A</a
+      ><a name="275" class="Symbol"
+      >}</a
+      ><a name="276"
+      > </a
+      ><a name="277" class="Symbol"
+      >{</a
+      ><a name="278" href="S4.Conversion.html#278" class="Bound"
+      >t</a
+      ><a name="279"
+      > </a
+      ><a name="280" href="S4.Conversion.html#280" class="Bound"
+      >t&#8242;</a
+      ><a name="282"
+      > </a
+      ><a name="283" href="S4.Conversion.html#283" class="Bound"
+      >t&#8243;</a
+      ><a name="285"
+      > </a
+      ><a name="286" class="Symbol"
+      >:</a
+      ><a name="287"
+      > </a
+      ><a name="288" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="290"
+      > </a
+      ><a name="291" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="292"
+      > </a
+      ><a name="293" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="294"
+      > </a
+      ><a name="295" href="S4.Conversion.html#274" class="Bound"
+      >A</a
+      ><a name="296" class="Symbol"
+      >}</a
+      ><a name="297"
+      > </a
+      ><a name="298" class="Symbol"
+      >&#8594;</a
+      ><a name="299"
+      >
+                </a
+      ><a name="316" href="S4.Conversion.html#278" class="Bound"
+      >t</a
+      ><a name="317"
+      > </a
+      ><a name="318" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="319"
+      > </a
+      ><a name="320" href="S4.Conversion.html#280" class="Bound"
+      >t&#8242;</a
+      ><a name="322"
+      > </a
+      ><a name="323" class="Symbol"
+      >&#8594;</a
+      ><a name="324"
+      > </a
+      ><a name="325" href="S4.Conversion.html#280" class="Bound"
+      >t&#8242;</a
+      ><a name="327"
+      > </a
+      ><a name="328" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="329"
+      > </a
+      ><a name="330" href="S4.Conversion.html#283" class="Bound"
+      >t&#8243;</a
+      ><a name="332"
+      > </a
+      ><a name="333" class="Symbol"
+      >&#8594;</a
+      ><a name="334"
+      > </a
+      ><a name="335" href="S4.Conversion.html#278" class="Bound"
+      >t</a
+      ><a name="336"
+      > </a
+      ><a name="337" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="338"
+      > </a
+      ><a name="339" href="S4.Conversion.html#283" class="Bound"
+      >t&#8243;</a
+      ><a name="341"
+      >
+  </a
+      ><a name="344" href="S4.Conversion.html#344" class="InductiveConstructor"
+      >&#8660;cong-lam</a
+      ><a name="353"
+      >  </a
+      ><a name="355" class="Symbol"
+      >:</a
+      ><a name="356"
+      > </a
+      ><a name="357" class="Symbol"
+      >&#8704;</a
+      ><a name="358"
+      > </a
+      ><a name="359" class="Symbol"
+      >{</a
+      ><a name="360" href="S4.Conversion.html#360" class="Bound"
+      >A</a
+      ><a name="361"
+      > </a
+      ><a name="362" href="S4.Conversion.html#362" class="Bound"
+      >B</a
+      ><a name="363" class="Symbol"
+      >}</a
+      ><a name="364"
+      > </a
+      ><a name="365" class="Symbol"
+      >{</a
+      ><a name="366" href="S4.Conversion.html#366" class="Bound"
+      >t</a
+      ><a name="367"
+      > </a
+      ><a name="368" href="S4.Conversion.html#368" class="Bound"
+      >t&#8242;</a
+      ><a name="370"
+      > </a
+      ><a name="371" class="Symbol"
+      >:</a
+      ><a name="372"
+      > </a
+      ><a name="373" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="375"
+      > </a
+      ><a name="376" class="Symbol"
+      >(</a
+      ><a name="377" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="378"
+      > </a
+      ><a name="379" href="Common.Context.html#108" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="380"
+      > </a
+      ><a name="381" href="S4.Conversion.html#360" class="Bound"
+      >A</a
+      ><a name="382" class="Symbol"
+      >)</a
+      ><a name="383"
+      > </a
+      ><a name="384" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="385"
+      > </a
+      ><a name="386" href="S4.Conversion.html#362" class="Bound"
+      >B</a
+      ><a name="387" class="Symbol"
+      >}</a
+      ><a name="388"
+      > </a
+      ><a name="389" class="Symbol"
+      >&#8594;</a
+      ><a name="390"
+      >
+                </a
+      ><a name="407" href="S4.Conversion.html#366" class="Bound"
+      >t</a
+      ><a name="408"
+      > </a
+      ><a name="409" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="410"
+      > </a
+      ><a name="411" href="S4.Conversion.html#368" class="Bound"
+      >t&#8242;</a
+      ><a name="413"
+      > </a
+      ><a name="414" class="Symbol"
+      >&#8594;</a
+      ><a name="415"
+      > </a
+      ><a name="416" href="S4.Core.html#229" class="InductiveConstructor"
+      >lam</a
+      ><a name="419"
+      > </a
+      ><a name="420" href="S4.Conversion.html#366" class="Bound"
+      >t</a
+      ><a name="421"
+      > </a
+      ><a name="422" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="423"
+      > </a
+      ><a name="424" href="S4.Core.html#229" class="InductiveConstructor"
+      >lam</a
+      ><a name="427"
+      > </a
+      ><a name="428" href="S4.Conversion.html#368" class="Bound"
+      >t&#8242;</a
+      ><a name="430"
+      >
+  </a
+      ><a name="433" href="S4.Conversion.html#433" class="InductiveConstructor"
+      >&#8660;cong-app</a
+      ><a name="442"
+      >  </a
+      ><a name="444" class="Symbol"
+      >:</a
+      ><a name="445"
+      > </a
+      ><a name="446" class="Symbol"
+      >&#8704;</a
+      ><a name="447"
+      > </a
+      ><a name="448" class="Symbol"
+      >{</a
+      ><a name="449" href="S4.Conversion.html#449" class="Bound"
+      >A</a
+      ><a name="450"
+      > </a
+      ><a name="451" href="S4.Conversion.html#451" class="Bound"
+      >B</a
+      ><a name="452" class="Symbol"
+      >}</a
+      ><a name="453"
+      > </a
+      ><a name="454" class="Symbol"
+      >{</a
+      ><a name="455" href="S4.Conversion.html#455" class="Bound"
+      >t&#8321;</a
+      ><a name="457"
+      > </a
+      ><a name="458" href="S4.Conversion.html#458" class="Bound"
+      >t&#8321;&#8242;</a
+      ><a name="461"
+      > </a
+      ><a name="462" class="Symbol"
+      >:</a
+      ><a name="463"
+      > </a
+      ><a name="464" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="466"
+      > </a
+      ><a name="467" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="468"
+      > </a
+      ><a name="469" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="470"
+      > </a
+      ><a name="471" class="Symbol"
+      >(</a
+      ><a name="472" href="S4.Conversion.html#449" class="Bound"
+      >A</a
+      ><a name="473"
+      > </a
+      ><a name="474" href="S4.Core.html#108" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="475"
+      > </a
+      ><a name="476" href="S4.Conversion.html#451" class="Bound"
+      >B</a
+      ><a name="477" class="Symbol"
+      >)}</a
+      ><a name="479"
+      > </a
+      ><a name="480" class="Symbol"
+      >{</a
+      ><a name="481" href="S4.Conversion.html#481" class="Bound"
+      >t&#8322;</a
+      ><a name="483"
+      > </a
+      ><a name="484" href="S4.Conversion.html#484" class="Bound"
+      >t&#8322;&#8242;</a
+      ><a name="487"
+      > </a
+      ><a name="488" class="Symbol"
+      >:</a
+      ><a name="489"
+      > </a
+      ><a name="490" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="492"
+      > </a
+      ><a name="493" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="494"
+      > </a
+      ><a name="495" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="496"
+      > </a
+      ><a name="497" href="S4.Conversion.html#449" class="Bound"
+      >A</a
+      ><a name="498" class="Symbol"
+      >}</a
+      ><a name="499"
+      > </a
+      ><a name="500" class="Symbol"
+      >&#8594;</a
+      ><a name="501"
+      >
+                </a
+      ><a name="518" href="S4.Conversion.html#455" class="Bound"
+      >t&#8321;</a
+      ><a name="520"
+      > </a
+      ><a name="521" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="522"
+      > </a
+      ><a name="523" href="S4.Conversion.html#458" class="Bound"
+      >t&#8321;&#8242;</a
+      ><a name="526"
+      > </a
+      ><a name="527" class="Symbol"
+      >&#8594;</a
+      ><a name="528"
+      > </a
+      ><a name="529" href="S4.Conversion.html#481" class="Bound"
+      >t&#8322;</a
+      ><a name="531"
+      > </a
+      ><a name="532" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="533"
+      > </a
+      ><a name="534" href="S4.Conversion.html#484" class="Bound"
+      >t&#8322;&#8242;</a
+      ><a name="537"
+      > </a
+      ><a name="538" class="Symbol"
+      >&#8594;</a
+      ><a name="539"
+      > </a
+      ><a name="540" href="S4.Core.html#280" class="InductiveConstructor"
+      >app</a
+      ><a name="543"
+      > </a
+      ><a name="544" href="S4.Conversion.html#455" class="Bound"
+      >t&#8321;</a
+      ><a name="546"
+      > </a
+      ><a name="547" href="S4.Conversion.html#481" class="Bound"
+      >t&#8322;</a
+      ><a name="549"
+      > </a
+      ><a name="550" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="551"
+      > </a
+      ><a name="552" href="S4.Core.html#280" class="InductiveConstructor"
+      >app</a
+      ><a name="555"
+      > </a
+      ><a name="556" href="S4.Conversion.html#458" class="Bound"
+      >t&#8321;&#8242;</a
+      ><a name="559"
+      > </a
+      ><a name="560" href="S4.Conversion.html#484" class="Bound"
+      >t&#8322;&#8242;</a
+      ><a name="563"
+      >
+  </a
+      ><a name="566" href="S4.Conversion.html#566" class="InductiveConstructor"
+      >&#8660;cong-down</a
+      ><a name="576"
+      > </a
+      ><a name="577" class="Symbol"
+      >:</a
+      ><a name="578"
+      > </a
+      ><a name="579" class="Symbol"
+      >&#8704;</a
+      ><a name="580"
+      > </a
+      ><a name="581" class="Symbol"
+      >{</a
+      ><a name="582" href="S4.Conversion.html#582" class="Bound"
+      >A</a
+      ><a name="583"
+      > </a
+      ><a name="584" href="S4.Conversion.html#584" class="Bound"
+      >C</a
+      ><a name="585" class="Symbol"
+      >}</a
+      ><a name="586"
+      > </a
+      ><a name="587" class="Symbol"
+      >{</a
+      ><a name="588" href="S4.Conversion.html#588" class="Bound"
+      >t&#8321;</a
+      ><a name="590"
+      > </a
+      ><a name="591" href="S4.Conversion.html#591" class="Bound"
+      >t&#8321;&#8242;</a
+      ><a name="594"
+      > </a
+      ><a name="595" class="Symbol"
+      >:</a
+      ><a name="596"
+      > </a
+      ><a name="597" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="599"
+      > </a
+      ><a name="600" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="601"
+      > </a
+      ><a name="602" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="603"
+      > </a
+      ><a name="604" class="Symbol"
+      >(</a
+      ><a name="605" href="S4.Core.html#92" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="606"
+      > </a
+      ><a name="607" href="S4.Conversion.html#582" class="Bound"
+      >A</a
+      ><a name="608" class="Symbol"
+      >)}</a
+      ><a name="610"
+      > </a
+      ><a name="611" class="Symbol"
+      >{</a
+      ><a name="612" href="S4.Conversion.html#612" class="Bound"
+      >t&#8322;</a
+      ><a name="614"
+      > </a
+      ><a name="615" href="S4.Conversion.html#615" class="Bound"
+      >t&#8322;&#8242;</a
+      ><a name="618"
+      > </a
+      ><a name="619" class="Symbol"
+      >:</a
+      ><a name="620"
+      > </a
+      ><a name="621" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="623"
+      > </a
+      ><a name="624" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="625"
+      > </a
+      ><a name="626" class="Symbol"
+      >(</a
+      ><a name="627" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="628"
+      > </a
+      ><a name="629" href="Common.Context.html#108" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="630"
+      > </a
+      ><a name="631" href="S4.Conversion.html#582" class="Bound"
+      >A</a
+      ><a name="632" class="Symbol"
+      >)</a
+      ><a name="633"
+      > </a
+      ><a name="634" href="S4.Conversion.html#584" class="Bound"
+      >C</a
+      ><a name="635" class="Symbol"
+      >}</a
+      ><a name="636"
+      > </a
+      ><a name="637" class="Symbol"
+      >&#8594;</a
+      ><a name="638"
+      >
+                </a
+      ><a name="655" href="S4.Conversion.html#588" class="Bound"
+      >t&#8321;</a
+      ><a name="657"
+      > </a
+      ><a name="658" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="659"
+      > </a
+      ><a name="660" href="S4.Conversion.html#591" class="Bound"
+      >t&#8321;&#8242;</a
+      ><a name="663"
+      > </a
+      ><a name="664" class="Symbol"
+      >&#8594;</a
+      ><a name="665"
+      > </a
+      ><a name="666" href="S4.Conversion.html#612" class="Bound"
+      >t&#8322;</a
+      ><a name="668"
+      > </a
+      ><a name="669" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="670"
+      > </a
+      ><a name="671" href="S4.Conversion.html#615" class="Bound"
+      >t&#8322;&#8242;</a
+      ><a name="674"
+      > </a
+      ><a name="675" class="Symbol"
+      >&#8594;</a
+      ><a name="676"
+      > </a
+      ><a name="677" href="S4.Core.html#416" class="InductiveConstructor"
+      >down</a
+      ><a name="681"
+      > </a
+      ><a name="682" href="S4.Conversion.html#588" class="Bound"
+      >t&#8321;</a
+      ><a name="684"
+      > </a
+      ><a name="685" href="S4.Conversion.html#612" class="Bound"
+      >t&#8322;</a
+      ><a name="687"
+      > </a
+      ><a name="688" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="689"
+      > </a
+      ><a name="690" href="S4.Core.html#416" class="InductiveConstructor"
+      >down</a
+      ><a name="694"
+      > </a
+      ><a name="695" href="S4.Conversion.html#591" class="Bound"
+      >t&#8321;&#8242;</a
+      ><a name="698"
+      > </a
+      ><a name="699" href="S4.Conversion.html#615" class="Bound"
+      >t&#8322;&#8242;</a
+      ><a name="702"
+      >
+  </a
+      ><a name="705" href="S4.Conversion.html#705" class="InductiveConstructor"
+      >&#8660;cong-pair</a
+      ><a name="715"
+      > </a
+      ><a name="716" class="Symbol"
+      >:</a
+      ><a name="717"
+      > </a
+      ><a name="718" class="Symbol"
+      >&#8704;</a
+      ><a name="719"
+      > </a
+      ><a name="720" class="Symbol"
+      >{</a
+      ><a name="721" href="S4.Conversion.html#721" class="Bound"
+      >A</a
+      ><a name="722"
+      > </a
+      ><a name="723" href="S4.Conversion.html#723" class="Bound"
+      >B</a
+      ><a name="724" class="Symbol"
+      >}</a
+      ><a name="725"
+      > </a
+      ><a name="726" class="Symbol"
+      >{</a
+      ><a name="727" href="S4.Conversion.html#727" class="Bound"
+      >t&#8321;</a
+      ><a name="729"
+      > </a
+      ><a name="730" href="S4.Conversion.html#730" class="Bound"
+      >t&#8321;&#8242;</a
+      ><a name="733"
+      > </a
+      ><a name="734" class="Symbol"
+      >:</a
+      ><a name="735"
+      > </a
+      ><a name="736" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="738"
+      > </a
+      ><a name="739" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="740"
+      > </a
+      ><a name="741" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="742"
+      > </a
+      ><a name="743" href="S4.Conversion.html#721" class="Bound"
+      >A</a
+      ><a name="744" class="Symbol"
+      >}</a
+      ><a name="745"
+      > </a
+      ><a name="746" class="Symbol"
+      >{</a
+      ><a name="747" href="S4.Conversion.html#747" class="Bound"
+      >t&#8322;</a
+      ><a name="749"
+      > </a
+      ><a name="750" href="S4.Conversion.html#750" class="Bound"
+      >t&#8322;&#8242;</a
+      ><a name="753"
+      > </a
+      ><a name="754" class="Symbol"
+      >:</a
+      ><a name="755"
+      > </a
+      ><a name="756" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="758"
+      > </a
+      ><a name="759" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="760"
+      > </a
+      ><a name="761" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="762"
+      > </a
+      ><a name="763" href="S4.Conversion.html#723" class="Bound"
+      >B</a
+      ><a name="764" class="Symbol"
+      >}</a
+      ><a name="765"
+      > </a
+      ><a name="766" class="Symbol"
+      >&#8594;</a
+      ><a name="767"
+      >
+                </a
+      ><a name="784" href="S4.Conversion.html#727" class="Bound"
+      >t&#8321;</a
+      ><a name="786"
+      > </a
+      ><a name="787" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="788"
+      > </a
+      ><a name="789" href="S4.Conversion.html#730" class="Bound"
+      >t&#8321;&#8242;</a
+      ><a name="792"
+      > </a
+      ><a name="793" class="Symbol"
+      >&#8594;</a
+      ><a name="794"
+      > </a
+      ><a name="795" href="S4.Conversion.html#747" class="Bound"
+      >t&#8322;</a
+      ><a name="797"
+      > </a
+      ><a name="798" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="799"
+      > </a
+      ><a name="800" href="S4.Conversion.html#750" class="Bound"
+      >t&#8322;&#8242;</a
+      ><a name="803"
+      > </a
+      ><a name="804" class="Symbol"
+      >&#8594;</a
+      ><a name="805"
+      > </a
+      ><a name="806" href="S4.Core.html#476" class="InductiveConstructor"
+      >pair</a
+      ><a name="810"
+      > </a
+      ><a name="811" href="S4.Conversion.html#727" class="Bound"
+      >t&#8321;</a
+      ><a name="813"
+      > </a
+      ><a name="814" href="S4.Conversion.html#747" class="Bound"
+      >t&#8322;</a
+      ><a name="816"
+      > </a
+      ><a name="817" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="818"
+      > </a
+      ><a name="819" href="S4.Core.html#476" class="InductiveConstructor"
+      >pair</a
+      ><a name="823"
+      > </a
+      ><a name="824" href="S4.Conversion.html#730" class="Bound"
+      >t&#8321;&#8242;</a
+      ><a name="827"
+      > </a
+      ><a name="828" href="S4.Conversion.html#750" class="Bound"
+      >t&#8322;&#8242;</a
+      ><a name="831"
+      >
+  </a
+      ><a name="834" href="S4.Conversion.html#834" class="InductiveConstructor"
+      >&#8660;cong-fst</a
+      ><a name="843"
+      >  </a
+      ><a name="845" class="Symbol"
+      >:</a
+      ><a name="846"
+      > </a
+      ><a name="847" class="Symbol"
+      >&#8704;</a
+      ><a name="848"
+      > </a
+      ><a name="849" class="Symbol"
+      >{</a
+      ><a name="850" href="S4.Conversion.html#850" class="Bound"
+      >A</a
+      ><a name="851"
+      > </a
+      ><a name="852" href="S4.Conversion.html#852" class="Bound"
+      >B</a
+      ><a name="853" class="Symbol"
+      >}</a
+      ><a name="854"
+      > </a
+      ><a name="855" class="Symbol"
+      >{</a
+      ><a name="856" href="S4.Conversion.html#856" class="Bound"
+      >t</a
+      ><a name="857"
+      > </a
+      ><a name="858" href="S4.Conversion.html#858" class="Bound"
+      >t&#8242;</a
+      ><a name="860"
+      > </a
+      ><a name="861" class="Symbol"
+      >:</a
+      ><a name="862"
+      > </a
+      ><a name="863" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="865"
+      > </a
+      ><a name="866" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="867"
+      > </a
+      ><a name="868" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="869"
+      > </a
+      ><a name="870" class="Symbol"
+      >(</a
+      ><a name="871" href="S4.Conversion.html#850" class="Bound"
+      >A</a
+      ><a name="872"
+      > </a
+      ><a name="873" href="S4.Core.html#129" class="InductiveConstructor Operator"
+      >&#8743;</a
+      ><a name="874"
+      > </a
+      ><a name="875" href="S4.Conversion.html#852" class="Bound"
+      >B</a
+      ><a name="876" class="Symbol"
+      >)}</a
+      ><a name="878"
+      > </a
+      ><a name="879" class="Symbol"
+      >&#8594;</a
+      ><a name="880"
+      >
+                </a
+      ><a name="897" href="S4.Conversion.html#856" class="Bound"
+      >t</a
+      ><a name="898"
+      > </a
+      ><a name="899" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="900"
+      > </a
+      ><a name="901" href="S4.Conversion.html#858" class="Bound"
+      >t&#8242;</a
+      ><a name="903"
+      > </a
+      ><a name="904" class="Symbol"
+      >&#8594;</a
+      ><a name="905"
+      > </a
+      ><a name="906" href="S4.Core.html#532" class="InductiveConstructor"
+      >fst</a
+      ><a name="909"
+      > </a
+      ><a name="910" href="S4.Conversion.html#856" class="Bound"
+      >t</a
+      ><a name="911"
+      > </a
+      ><a name="912" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="913"
+      > </a
+      ><a name="914" href="S4.Core.html#532" class="InductiveConstructor"
+      >fst</a
+      ><a name="917"
+      > </a
+      ><a name="918" href="S4.Conversion.html#858" class="Bound"
+      >t&#8242;</a
+      ><a name="920"
+      >
+  </a
+      ><a name="923" href="S4.Conversion.html#923" class="InductiveConstructor"
+      >&#8660;cong-snd</a
+      ><a name="932"
+      >  </a
+      ><a name="934" class="Symbol"
+      >:</a
+      ><a name="935"
+      > </a
+      ><a name="936" class="Symbol"
+      >&#8704;</a
+      ><a name="937"
+      > </a
+      ><a name="938" class="Symbol"
+      >{</a
+      ><a name="939" href="S4.Conversion.html#939" class="Bound"
+      >A</a
+      ><a name="940"
+      > </a
+      ><a name="941" href="S4.Conversion.html#941" class="Bound"
+      >B</a
+      ><a name="942" class="Symbol"
+      >}</a
+      ><a name="943"
+      > </a
+      ><a name="944" class="Symbol"
+      >{</a
+      ><a name="945" href="S4.Conversion.html#945" class="Bound"
+      >t</a
+      ><a name="946"
+      > </a
+      ><a name="947" href="S4.Conversion.html#947" class="Bound"
+      >t&#8242;</a
+      ><a name="949"
+      > </a
+      ><a name="950" class="Symbol"
+      >:</a
+      ><a name="951"
+      > </a
+      ><a name="952" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="954"
+      > </a
+      ><a name="955" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="956"
+      > </a
+      ><a name="957" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="958"
+      > </a
+      ><a name="959" class="Symbol"
+      >(</a
+      ><a name="960" href="S4.Conversion.html#939" class="Bound"
+      >A</a
+      ><a name="961"
+      > </a
+      ><a name="962" href="S4.Core.html#129" class="InductiveConstructor Operator"
+      >&#8743;</a
+      ><a name="963"
+      > </a
+      ><a name="964" href="S4.Conversion.html#941" class="Bound"
+      >B</a
+      ><a name="965" class="Symbol"
+      >)}</a
+      ><a name="967"
+      > </a
+      ><a name="968" class="Symbol"
+      >&#8594;</a
+      ><a name="969"
+      >
+                </a
+      ><a name="986" href="S4.Conversion.html#945" class="Bound"
+      >t</a
+      ><a name="987"
+      > </a
+      ><a name="988" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="989"
+      > </a
+      ><a name="990" href="S4.Conversion.html#947" class="Bound"
+      >t&#8242;</a
+      ><a name="992"
+      > </a
+      ><a name="993" class="Symbol"
+      >&#8594;</a
+      ><a name="994"
+      > </a
+      ><a name="995" href="S4.Core.html#577" class="InductiveConstructor"
+      >snd</a
+      ><a name="998"
+      > </a
+      ><a name="999" href="S4.Conversion.html#945" class="Bound"
+      >t</a
+      ><a name="1000"
+      > </a
+      ><a name="1001" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="1002"
+      > </a
+      ><a name="1003" href="S4.Core.html#577" class="InductiveConstructor"
+      >snd</a
+      ><a name="1006"
+      > </a
+      ><a name="1007" href="S4.Conversion.html#947" class="Bound"
+      >t&#8242;</a
+      ><a name="1009"
+      >
+  </a
+      ><a name="1012" href="S4.Conversion.html#1012" class="InductiveConstructor"
+      >&#8660;beta</a
+      ><a name="1017"
+      >      </a
+      ><a name="1023" class="Symbol"
+      >:</a
+      ><a name="1024"
+      > </a
+      ><a name="1025" class="Symbol"
+      >&#8704;</a
+      ><a name="1026"
+      > </a
+      ><a name="1027" class="Symbol"
+      >{</a
+      ><a name="1028" href="S4.Conversion.html#1028" class="Bound"
+      >A</a
+      ><a name="1029"
+      > </a
+      ><a name="1030" href="S4.Conversion.html#1030" class="Bound"
+      >B</a
+      ><a name="1031" class="Symbol"
+      >}</a
+      ><a name="1032"
+      > </a
+      ><a name="1033" class="Symbol"
+      >{</a
+      ><a name="1034" href="S4.Conversion.html#1034" class="Bound"
+      >t&#8321;</a
+      ><a name="1036"
+      > </a
+      ><a name="1037" class="Symbol"
+      >:</a
+      ><a name="1038"
+      > </a
+      ><a name="1039" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="1041"
+      > </a
+      ><a name="1042" class="Symbol"
+      >(</a
+      ><a name="1043" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="1044"
+      > </a
+      ><a name="1045" href="Common.Context.html#108" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1046"
+      > </a
+      ><a name="1047" href="S4.Conversion.html#1028" class="Bound"
+      >A</a
+      ><a name="1048" class="Symbol"
+      >)</a
+      ><a name="1049"
+      > </a
+      ><a name="1050" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="1051"
+      > </a
+      ><a name="1052" href="S4.Conversion.html#1030" class="Bound"
+      >B</a
+      ><a name="1053" class="Symbol"
+      >}</a
+      ><a name="1054"
+      > </a
+      ><a name="1055" class="Symbol"
+      >{</a
+      ><a name="1056" href="S4.Conversion.html#1056" class="Bound"
+      >t&#8322;</a
+      ><a name="1058"
+      > </a
+      ><a name="1059" class="Symbol"
+      >:</a
+      ><a name="1060"
+      > </a
+      ><a name="1061" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="1063"
+      > </a
+      ><a name="1064" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="1065"
+      > </a
+      ><a name="1066" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="1067"
+      > </a
+      ><a name="1068" href="S4.Conversion.html#1028" class="Bound"
+      >A</a
+      ><a name="1069" class="Symbol"
+      >}</a
+      ><a name="1070"
+      > </a
+      ><a name="1071" class="Symbol"
+      >&#8594;</a
+      ><a name="1072"
+      >
+                </a
+      ><a name="1089" href="S4.Core.html#280" class="InductiveConstructor"
+      >app</a
+      ><a name="1092"
+      > </a
+      ><a name="1093" class="Symbol"
+      >(</a
+      ><a name="1094" href="S4.Core.html#229" class="InductiveConstructor"
+      >lam</a
+      ><a name="1097"
+      > </a
+      ><a name="1098" href="S4.Conversion.html#1034" class="Bound"
+      >t&#8321;</a
+      ><a name="1100" class="Symbol"
+      >)</a
+      ><a name="1101"
+      > </a
+      ><a name="1102" href="S4.Conversion.html#1056" class="Bound"
+      >t&#8322;</a
+      ><a name="1104"
+      > </a
+      ><a name="1105" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="1106"
+      > </a
+      ><a name="1107" href="S4.Substitution.html#614" class="Function"
+      >subst-tm&#8315;</a
+      ><a name="1116"
+      > </a
+      ><a name="1117" href="S4.Conversion.html#1034" class="Bound"
+      >t&#8321;</a
+      ><a name="1119"
+      > </a
+      ><a name="1120" href="Common.Variable.html#128" class="InductiveConstructor"
+      >top</a
+      ><a name="1123"
+      > </a
+      ><a name="1124" href="S4.Conversion.html#1056" class="Bound"
+      >t&#8322;</a
+      ><a name="1126"
+      >
+  </a
+      ><a name="1129" href="S4.Conversion.html#1129" class="InductiveConstructor"
+      >&#8660;eta</a
+      ><a name="1133"
+      >       </a
+      ><a name="1140" class="Symbol"
+      >:</a
+      ><a name="1141"
+      > </a
+      ><a name="1142" class="Symbol"
+      >&#8704;</a
+      ><a name="1143"
+      > </a
+      ><a name="1144" class="Symbol"
+      >{</a
+      ><a name="1145" href="S4.Conversion.html#1145" class="Bound"
+      >A</a
+      ><a name="1146"
+      > </a
+      ><a name="1147" href="S4.Conversion.html#1147" class="Bound"
+      >B</a
+      ><a name="1148" class="Symbol"
+      >}</a
+      ><a name="1149"
+      > </a
+      ><a name="1150" class="Symbol"
+      >{</a
+      ><a name="1151" href="S4.Conversion.html#1151" class="Bound"
+      >t</a
+      ><a name="1152"
+      > </a
+      ><a name="1153" class="Symbol"
+      >:</a
+      ><a name="1154"
+      > </a
+      ><a name="1155" href="S4.Core.html#154" class="Datatype"
+      >Tm</a
+      ><a name="1157"
+      > </a
+      ><a name="1158" href="S4.Conversion.html#76" class="Bound"
+      >&#915;</a
+      ><a name="1159"
+      > </a
+      ><a name="1160" href="S4.Conversion.html#78" class="Bound"
+      >&#916;</a
+      ><a name="1161"
+      > </a
+      ><a name="1162" class="Symbol"
+      >(</a
+      ><a name="1163" href="S4.Conversion.html#1145" class="Bound"
+      >A</a
+      ><a name="1164"
+      > </a
+      ><a name="1165" href="S4.Core.html#108" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1166"
+      > </a
+      ><a name="1167" href="S4.Conversion.html#1147" class="Bound"
+      >B</a
+      ><a name="1168" class="Symbol"
+      >)}</a
+      ><a name="1170"
+      > </a
+      ><a name="1171" class="Symbol"
+      >&#8594;</a
+      ><a name="1172"
+      >
+                </a
+      ><a name="1189" href="S4.Core.html#229" class="InductiveConstructor"
+      >lam</a
+      ><a name="1192"
+      > </a
+      ><a name="1193" class="Symbol"
+      >(</a
+      ><a name="1194" href="S4.Core.html#280" class="InductiveConstructor"
+      >app</a
+      ><a name="1197"
+      > </a
+      ><a name="1198" class="Symbol"
+      >(</a
+      ><a name="1199" href="S4.Weakening.html#57" class="Function"
+      >wk-tm&#8315;</a
+      ><a name="1205"
+      > </a
+      ><a name="1206" href="Common.Variable.html#128" class="InductiveConstructor"
+      >top</a
+      ><a name="1209"
+      > </a
+      ><a name="1210" href="S4.Conversion.html#1151" class="Bound"
+      >t</a
+      ><a name="1211" class="Symbol"
+      >)</a
+      ><a name="1212"
+      > </a
+      ><a name="1213" href="S4.Core.html#650" class="Function"
+      >v&#8320;</a
+      ><a name="1215" class="Symbol"
+      >)</a
+      ><a name="1216"
+      > </a
+      ><a name="1217" href="S4.Conversion.html#71" class="Datatype Operator"
+      >&#8660;</a
+      ><a name="1218"
+      > </a
+      ><a name="1219" href="S4.Conversion.html#1151" class="Bound"
+      >t</a
+      ><a name="1220"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

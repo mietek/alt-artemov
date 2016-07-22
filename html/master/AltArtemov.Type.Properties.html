@@ -1,0 +1,2175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >AltArtemov.Type.Properties</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="AltArtemov.Type.Properties.html#1" class="Module"
+      >AltArtemov.Type.Properties</a
+      ><a name="34"
+      > </a
+      ><a name="35" class="Keyword"
+      >where</a
+      ><a name="40"
+      >
+
+</a
+      ><a name="42" class="Keyword"
+      >open</a
+      ><a name="46"
+      > </a
+      ><a name="47" class="Keyword"
+      >import</a
+      ><a name="53"
+      > </a
+      ><a name="54" href="Data.Empty.html#1" class="Module"
+      >Data.Empty</a
+      ><a name="64"
+      > </a
+      ><a name="65" class="Keyword"
+      >using</a
+      ><a name="70"
+      > </a
+      ><a name="71" class="Symbol"
+      >()</a
+      ><a name="73"
+      > </a
+      ><a name="74" class="Keyword"
+      >renaming</a
+      ><a name="82"
+      > </a
+      ><a name="83" class="Symbol"
+      >(</a
+      ><a name="84" href="Data.Empty.html#243" class="Datatype"
+      >&#8869;</a
+      ><a name="85"
+      > </a
+      ><a name="86" class="Symbol"
+      >to</a
+      ><a name="88"
+      > </a
+      ><a name="89" href="Data.Empty.html#243" class="Datatype"
+      >Empty</a
+      ><a name="94" class="Symbol"
+      >)</a
+      ><a name="95"
+      >
+</a
+      ><a name="96" class="Keyword"
+      >open</a
+      ><a name="100"
+      > </a
+      ><a name="101" class="Keyword"
+      >import</a
+      ><a name="107"
+      > </a
+      ><a name="108" href="Data.Nat.html#1" class="Module"
+      >Data.Nat</a
+      ><a name="116"
+      > </a
+      ><a name="117" class="Keyword"
+      >using</a
+      ><a name="122"
+      > </a
+      ><a name="123" class="Symbol"
+      >(</a
+      ><a name="124" href="Agda.Builtin.Nat.html#69" class="Datatype"
+      >&#8469;</a
+      ><a name="125"
+      > </a
+      ><a name="126" class="Symbol"
+      >;</a
+      ><a name="127"
+      > </a
+      ><a name="128" href="Agda.Builtin.Nat.html#87" class="InductiveConstructor"
+      >zero</a
+      ><a name="132"
+      > </a
+      ><a name="133" class="Symbol"
+      >;</a
+      ><a name="134"
+      > </a
+      ><a name="135" href="Agda.Builtin.Nat.html#100" class="InductiveConstructor"
+      >suc</a
+      ><a name="138"
+      > </a
+      ><a name="139" class="Symbol"
+      >;</a
+      ><a name="140"
+      > </a
+      ><a name="141" href="Data.Nat.Base.html#1469" class="Function Operator"
+      >_&lt;&#8242;_</a
+      ><a name="145" class="Symbol"
+      >)</a
+      ><a name="146"
+      > </a
+      ><a name="147" class="Keyword"
+      >renaming</a
+      ><a name="155"
+      > </a
+      ><a name="156" class="Symbol"
+      >(</a
+      ><a name="157" href="Data.Nat.Base.html#3199" class="Function Operator"
+      >_&#8799;_</a
+      ><a name="160"
+      > </a
+      ><a name="161" class="Symbol"
+      >to</a
+      ><a name="163"
+      > </a
+      ><a name="164" href="Data.Nat.Base.html#3199" class="Function Operator"
+      >_&#8469;&#8799;_</a
+      ><a name="168" class="Symbol"
+      >)</a
+      ><a name="169"
+      >
+</a
+      ><a name="170" class="Keyword"
+      >open</a
+      ><a name="174"
+      > </a
+      ><a name="175" class="Keyword"
+      >import</a
+      ><a name="181"
+      > </a
+      ><a name="182" href="Data.Maybe.html#1" class="Module"
+      >Data.Maybe</a
+      ><a name="192"
+      > </a
+      ><a name="193" class="Keyword"
+      >using</a
+      ><a name="198"
+      > </a
+      ><a name="199" class="Symbol"
+      >(</a
+      ><a name="200" href="Data.Maybe.Base.html#335" class="Datatype"
+      >Maybe</a
+      ><a name="205"
+      > </a
+      ><a name="206" class="Symbol"
+      >;</a
+      ><a name="207"
+      > </a
+      ><a name="208" href="Data.Maybe.html#1588" class="InductiveConstructor"
+      >nothing</a
+      ><a name="215"
+      > </a
+      ><a name="216" class="Symbol"
+      >;</a
+      ><a name="217"
+      > </a
+      ><a name="218" href="Data.Maybe.html#1527" class="InductiveConstructor"
+      >just</a
+      ><a name="222" class="Symbol"
+      >)</a
+      ><a name="223"
+      >
+</a
+      ><a name="224" class="Keyword"
+      >open</a
+      ><a name="228"
+      > </a
+      ><a name="229" class="Keyword"
+      >import</a
+      ><a name="235"
+      > </a
+      ><a name="236" href="Data.Unit.html#1" class="Module"
+      >Data.Unit</a
+      ><a name="245"
+      > </a
+      ><a name="246" class="Keyword"
+      >using</a
+      ><a name="251"
+      > </a
+      ><a name="252" class="Symbol"
+      >()</a
+      ><a name="254"
+      > </a
+      ><a name="255" class="Keyword"
+      >renaming</a
+      ><a name="263"
+      > </a
+      ><a name="264" class="Symbol"
+      >(</a
+      ><a name="265" href="Agda.Builtin.Unit.html#41" class="Record"
+      >&#8868;</a
+      ><a name="266"
+      > </a
+      ><a name="267" class="Symbol"
+      >to</a
+      ><a name="269"
+      > </a
+      ><a name="270" href="Agda.Builtin.Unit.html#41" class="Record"
+      >Unit</a
+      ><a name="274" class="Symbol"
+      >)</a
+      ><a name="275"
+      >
+</a
+      ><a name="276" class="Keyword"
+      >open</a
+      ><a name="280"
+      > </a
+      ><a name="281" class="Keyword"
+      >import</a
+      ><a name="287"
+      > </a
+      ><a name="288" href="Function.html#1" class="Module"
+      >Function</a
+      ><a name="296"
+      > </a
+      ><a name="297" class="Keyword"
+      >using</a
+      ><a name="302"
+      > </a
+      ><a name="303" class="Symbol"
+      >(</a
+      ><a name="304" href="Function.html#713" class="Function Operator"
+      >_&#8728;_</a
+      ><a name="307" class="Symbol"
+      >)</a
+      ><a name="308"
+      >
+</a
+      ><a name="309" class="Keyword"
+      >open</a
+      ><a name="313"
+      > </a
+      ><a name="314" class="Keyword"
+      >import</a
+      ><a name="320"
+      > </a
+      ><a name="321" href="Relation.Binary.html#1" class="Module"
+      >Relation.Binary</a
+      ><a name="336"
+      > </a
+      ><a name="337" class="Keyword"
+      >using</a
+      ><a name="342"
+      > </a
+      ><a name="343" class="Symbol"
+      >(</a
+      ><a name="344" href="Relation.Binary.Core.html#3490" class="Function"
+      >Decidable</a
+      ><a name="353" class="Symbol"
+      >)</a
+      ><a name="354"
+      >
+</a
+      ><a name="355" class="Keyword"
+      >open</a
+      ><a name="359"
+      > </a
+      ><a name="360" class="Keyword"
+      >import</a
+      ><a name="366"
+      > </a
+      ><a name="367" href="Relation.Binary.PropositionalEquality.html#1" class="Module"
+      >Relation.Binary.PropositionalEquality</a
+      ><a name="404"
+      > </a
+      ><a name="405" class="Keyword"
+      >using</a
+      ><a name="410"
+      > </a
+      ><a name="411" class="Symbol"
+      >(</a
+      ><a name="412" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >_&#8801;_</a
+      ><a name="415"
+      > </a
+      ><a name="416" class="Symbol"
+      >;</a
+      ><a name="417"
+      > </a
+      ><a name="418" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="422" class="Symbol"
+      >)</a
+      ><a name="423"
+      >
+</a
+      ><a name="424" class="Keyword"
+      >open</a
+      ><a name="428"
+      > </a
+      ><a name="429" class="Keyword"
+      >import</a
+      ><a name="435"
+      > </a
+      ><a name="436" href="Relation.Nullary.html#1" class="Module"
+      >Relation.Nullary</a
+      ><a name="452"
+      > </a
+      ><a name="453" class="Keyword"
+      >using</a
+      ><a name="458"
+      > </a
+      ><a name="459" class="Symbol"
+      >(</a
+      ><a name="460" href="Relation.Nullary.html#520" class="InductiveConstructor"
+      >yes</a
+      ><a name="463"
+      > </a
+      ><a name="464" class="Symbol"
+      >;</a
+      ><a name="465"
+      > </a
+      ><a name="466" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="468" class="Symbol"
+      >)</a
+      ><a name="469"
+      >
+
+</a
+      ><a name="471" class="Keyword"
+      >open</a
+      ><a name="475"
+      > </a
+      ><a name="476" class="Keyword"
+      >import</a
+      ><a name="482"
+      > </a
+      ><a name="483" href="AltArtemov.Term.html#1" class="Module"
+      >AltArtemov.Term</a
+      ><a name="498"
+      >
+</a
+      ><a name="499" class="Keyword"
+      >open</a
+      ><a name="503"
+      > </a
+      ><a name="504" class="Keyword"
+      >import</a
+      ><a name="510"
+      > </a
+      ><a name="511" href="AltArtemov.Type.Core.html#1" class="Module"
+      >AltArtemov.Type.Core</a
+      ><a name="531"
+      >
+</a
+      ><a name="532" class="Keyword"
+      >open</a
+      ><a name="536"
+      > </a
+      ><a name="537" class="Keyword"
+      >import</a
+      ><a name="543"
+      > </a
+      ><a name="544" href="AltArtemov.Type.Inversions.html#1" class="Module"
+      >AltArtemov.Type.Inversions</a
+      ><a name="570"
+      >
+</a
+      ><a name="571" class="Keyword"
+      >open</a
+      ><a name="575"
+      > </a
+      ><a name="576" class="Keyword"
+      >import</a
+      ><a name="582"
+      > </a
+      ><a name="583" href="Data.Nat.Missing.html#1" class="Module"
+      >Data.Nat.Missing</a
+      ><a name="599"
+      >
+
+
+</a
+      ><a name="602" class="Comment"
+      >-- Types have levels.</a
+      ><a name="623"
+      >
+</a
+      ><a name="624" href="AltArtemov.Type.Properties.html#624" class="Function"
+      >lev</a
+      ><a name="627"
+      > </a
+      ><a name="628" class="Symbol"
+      >:</a
+      ><a name="629"
+      > </a
+      ><a name="630" class="Symbol"
+      >&#8704;</a
+      ><a name="631"
+      > </a
+      ><a name="632" href="AltArtemov.Type.Properties.html#632" class="Bound"
+      >A</a
+      ><a name="633"
+      > </a
+      ><a name="634" class="Symbol"
+      >&#8594;</a
+      ><a name="635"
+      > </a
+      ><a name="636" href="Agda.Builtin.Nat.html#69" class="Datatype"
+      >&#8469;</a
+      ><a name="637"
+      >
+</a
+      ><a name="638" href="AltArtemov.Type.Properties.html#624" class="Function"
+      >lev</a
+      ><a name="641"
+      > </a
+      ><a name="642" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="643"
+      >      </a
+      ><a name="649" class="Symbol"
+      >=</a
+      ><a name="650"
+      > </a
+      ><a name="651" class="Number"
+      >0</a
+      ><a name="652"
+      >
+</a
+      ><a name="653" href="AltArtemov.Type.Properties.html#624" class="Function"
+      >lev</a
+      ><a name="656"
+      > </a
+      ><a name="657" class="Symbol"
+      >(</a
+      ><a name="658" href="AltArtemov.Type.Properties.html#658" class="Bound"
+      >A</a
+      ><a name="659"
+      > </a
+      ><a name="660" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="661"
+      > </a
+      ><a name="662" href="AltArtemov.Type.Properties.html#662" class="Bound"
+      >B</a
+      ><a name="663" class="Symbol"
+      >)</a
+      ><a name="664"
+      > </a
+      ><a name="665" class="Symbol"
+      >=</a
+      ><a name="666"
+      > </a
+      ><a name="667" class="Number"
+      >0</a
+      ><a name="668"
+      >
+</a
+      ><a name="669" href="AltArtemov.Type.Properties.html#624" class="Function"
+      >lev</a
+      ><a name="672"
+      > </a
+      ><a name="673" class="Symbol"
+      >(</a
+      ><a name="674" href="AltArtemov.Type.Properties.html#674" class="Bound"
+      >t</a
+      ><a name="675"
+      > </a
+      ><a name="676" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="677"
+      > </a
+      ><a name="678" href="AltArtemov.Type.Properties.html#678" class="Bound"
+      >A</a
+      ><a name="679" class="Symbol"
+      >)</a
+      ><a name="680"
+      > </a
+      ><a name="681" class="Symbol"
+      >=</a
+      ><a name="682"
+      > </a
+      ><a name="683" href="Agda.Builtin.Nat.html#100" class="InductiveConstructor"
+      >suc</a
+      ><a name="686"
+      > </a
+      ><a name="687" class="Symbol"
+      >(</a
+      ><a name="688" href="AltArtemov.Type.Properties.html#624" class="Function"
+      >lev</a
+      ><a name="691"
+      > </a
+      ><a name="692" href="AltArtemov.Type.Properties.html#678" class="Bound"
+      >A</a
+      ><a name="693" class="Symbol"
+      >)</a
+      ><a name="694"
+      >
+
+
+</a
+      ><a name="697" class="Comment"
+      >-- Asserting a type increments its level.</a
+      ><a name="738"
+      >
+</a
+      ><a name="739" href="AltArtemov.Type.Properties.html#739" class="Function"
+      >lev-t&#8758;A&#8801;suc-lev-A</a
+      ><a name="756"
+      > </a
+      ><a name="757" class="Symbol"
+      >:</a
+      ><a name="758"
+      > </a
+      ><a name="759" class="Symbol"
+      >&#8704;</a
+      ><a name="760"
+      > </a
+      ><a name="761" href="AltArtemov.Type.Properties.html#761" class="Bound"
+      >t</a
+      ><a name="762"
+      > </a
+      ><a name="763" href="AltArtemov.Type.Properties.html#763" class="Bound"
+      >A</a
+      ><a name="764"
+      > </a
+      ><a name="765" class="Symbol"
+      >&#8594;</a
+      ><a name="766"
+      > </a
+      ><a name="767" href="AltArtemov.Type.Properties.html#624" class="Function"
+      >lev</a
+      ><a name="770"
+      > </a
+      ><a name="771" class="Symbol"
+      >(</a
+      ><a name="772" href="AltArtemov.Type.Properties.html#761" class="Bound"
+      >t</a
+      ><a name="773"
+      > </a
+      ><a name="774" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="775"
+      > </a
+      ><a name="776" href="AltArtemov.Type.Properties.html#763" class="Bound"
+      >A</a
+      ><a name="777" class="Symbol"
+      >)</a
+      ><a name="778"
+      > </a
+      ><a name="779" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="780"
+      > </a
+      ><a name="781" href="Agda.Builtin.Nat.html#100" class="InductiveConstructor"
+      >suc</a
+      ><a name="784"
+      > </a
+      ><a name="785" class="Symbol"
+      >(</a
+      ><a name="786" href="AltArtemov.Type.Properties.html#624" class="Function"
+      >lev</a
+      ><a name="789"
+      > </a
+      ><a name="790" href="AltArtemov.Type.Properties.html#763" class="Bound"
+      >A</a
+      ><a name="791" class="Symbol"
+      >)</a
+      ><a name="792"
+      >
+</a
+      ><a name="793" href="AltArtemov.Type.Properties.html#739" class="Function"
+      >lev-t&#8758;A&#8801;suc-lev-A</a
+      ><a name="810"
+      > </a
+      ><a name="811" href="AltArtemov.Type.Properties.html#811" class="Bound"
+      >t</a
+      ><a name="812"
+      > </a
+      ><a name="813" href="AltArtemov.Type.Properties.html#813" class="Bound"
+      >A</a
+      ><a name="814"
+      > </a
+      ><a name="815" class="Symbol"
+      >=</a
+      ><a name="816"
+      > </a
+      ><a name="817" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="821"
+      >
+
+
+</a
+      ><a name="824" class="Comment"
+      >-- The level of a type assertion is greater than 0.</a
+      ><a name="875"
+      >
+</a
+      ><a name="876" href="AltArtemov.Type.Properties.html#876" class="Function"
+      >z&lt;&#8242;lev-t&#8758;A</a
+      ><a name="886"
+      > </a
+      ><a name="887" class="Symbol"
+      >:</a
+      ><a name="888"
+      > </a
+      ><a name="889" class="Symbol"
+      >&#8704;</a
+      ><a name="890"
+      > </a
+      ><a name="891" href="AltArtemov.Type.Properties.html#891" class="Bound"
+      >t</a
+      ><a name="892"
+      > </a
+      ><a name="893" href="AltArtemov.Type.Properties.html#893" class="Bound"
+      >A</a
+      ><a name="894"
+      > </a
+      ><a name="895" class="Symbol"
+      >&#8594;</a
+      ><a name="896"
+      > </a
+      ><a name="897" href="Agda.Builtin.Nat.html#87" class="InductiveConstructor"
+      >zero</a
+      ><a name="901"
+      > </a
+      ><a name="902" href="Data.Nat.Base.html#1469" class="Function Operator"
+      >&lt;&#8242;</a
+      ><a name="904"
+      > </a
+      ><a name="905" href="AltArtemov.Type.Properties.html#624" class="Function"
+      >lev</a
+      ><a name="908"
+      > </a
+      ><a name="909" class="Symbol"
+      >(</a
+      ><a name="910" href="AltArtemov.Type.Properties.html#891" class="Bound"
+      >t</a
+      ><a name="911"
+      > </a
+      ><a name="912" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="913"
+      > </a
+      ><a name="914" href="AltArtemov.Type.Properties.html#893" class="Bound"
+      >A</a
+      ><a name="915" class="Symbol"
+      >)</a
+      ><a name="916"
+      >
+</a
+      ><a name="917" href="AltArtemov.Type.Properties.html#876" class="Function"
+      >z&lt;&#8242;lev-t&#8758;A</a
+      ><a name="927"
+      > </a
+      ><a name="928" href="AltArtemov.Type.Properties.html#928" class="Bound"
+      >t</a
+      ><a name="929"
+      > </a
+      ><a name="930" href="AltArtemov.Type.Properties.html#930" class="Bound"
+      >A</a
+      ><a name="931"
+      > </a
+      ><a name="932" class="Symbol"
+      >=</a
+      ><a name="933"
+      > </a
+      ><a name="934" href="Data.Nat.Missing.html#1618" class="Function"
+      >z&lt;&#8242;sn</a
+      ><a name="939"
+      >
+
+
+</a
+      ><a name="942" class="Comment"
+      >-- Types of level greater than 0 can be lowered.</a
+      ><a name="990"
+      >
+</a
+      ><a name="991" href="AltArtemov.Type.Properties.html#991" class="Function"
+      >lower</a
+      ><a name="996"
+      > </a
+      ><a name="997" class="Symbol"
+      >:</a
+      ><a name="998"
+      > </a
+      ><a name="999" class="Symbol"
+      >&#8704;</a
+      ><a name="1000"
+      > </a
+      ><a name="1001" href="AltArtemov.Type.Properties.html#1001" class="Bound"
+      >A</a
+      ><a name="1002"
+      > </a
+      ><a name="1003" class="Symbol"
+      >(</a
+      ><a name="1004" href="AltArtemov.Type.Properties.html#1004" class="Bound"
+      >z&lt;&#8242;l</a
+      ><a name="1008"
+      > </a
+      ><a name="1009" class="Symbol"
+      >:</a
+      ><a name="1010"
+      > </a
+      ><a name="1011" href="Agda.Builtin.Nat.html#87" class="InductiveConstructor"
+      >zero</a
+      ><a name="1015"
+      > </a
+      ><a name="1016" href="Data.Nat.Base.html#1469" class="Function Operator"
+      >&lt;&#8242;</a
+      ><a name="1018"
+      > </a
+      ><a name="1019" href="AltArtemov.Type.Properties.html#624" class="Function"
+      >lev</a
+      ><a name="1022"
+      > </a
+      ><a name="1023" href="AltArtemov.Type.Properties.html#1001" class="Bound"
+      >A</a
+      ><a name="1024" class="Symbol"
+      >)</a
+      ><a name="1025"
+      > </a
+      ><a name="1026" class="Symbol"
+      >&#8594;</a
+      ><a name="1027"
+      > </a
+      ><a name="1028" href="AltArtemov.Type.Core.html#98" class="Datatype"
+      >Ty</a
+      ><a name="1030"
+      >
+</a
+      ><a name="1031" href="AltArtemov.Type.Properties.html#991" class="Function"
+      >lower</a
+      ><a name="1036"
+      > </a
+      ><a name="1037" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="1038"
+      >      </a
+      ><a name="1044" class="Symbol"
+      >()</a
+      ><a name="1046"
+      >
+</a
+      ><a name="1047" href="AltArtemov.Type.Properties.html#991" class="Function"
+      >lower</a
+      ><a name="1052"
+      > </a
+      ><a name="1053" class="Symbol"
+      >(</a
+      ><a name="1054" href="AltArtemov.Type.Properties.html#1054" class="Bound"
+      >A</a
+      ><a name="1055"
+      > </a
+      ><a name="1056" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1057"
+      > </a
+      ><a name="1058" href="AltArtemov.Type.Properties.html#1058" class="Bound"
+      >B</a
+      ><a name="1059" class="Symbol"
+      >)</a
+      ><a name="1060"
+      > </a
+      ><a name="1061" class="Symbol"
+      >()</a
+      ><a name="1063"
+      >
+</a
+      ><a name="1064" href="AltArtemov.Type.Properties.html#991" class="Function"
+      >lower</a
+      ><a name="1069"
+      > </a
+      ><a name="1070" class="Symbol"
+      >(</a
+      ><a name="1071" href="AltArtemov.Type.Properties.html#1071" class="Bound"
+      >t</a
+      ><a name="1072"
+      > </a
+      ><a name="1073" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1074"
+      > </a
+      ><a name="1075" href="AltArtemov.Type.Properties.html#1075" class="Bound"
+      >A</a
+      ><a name="1076" class="Symbol"
+      >)</a
+      ><a name="1077"
+      > </a
+      ><a name="1078" href="AltArtemov.Type.Properties.html#1078" class="Bound"
+      >z&lt;&#8242;l</a
+      ><a name="1082"
+      > </a
+      ><a name="1083" class="Symbol"
+      >=</a
+      ><a name="1084"
+      > </a
+      ><a name="1085" href="AltArtemov.Type.Properties.html#1075" class="Bound"
+      >A</a
+      ><a name="1086"
+      >
+
+
+</a
+      ><a name="1089" class="Comment"
+      >-- Lowering a type assertion gives the asserted type.</a
+      ><a name="1142"
+      >
+</a
+      ><a name="1143" href="AltArtemov.Type.Properties.html#1143" class="Function"
+      >lower-t&#8758;A&#8801;A</a
+      ><a name="1154"
+      > </a
+      ><a name="1155" class="Symbol"
+      >:</a
+      ><a name="1156"
+      > </a
+      ><a name="1157" class="Symbol"
+      >&#8704;</a
+      ><a name="1158"
+      > </a
+      ><a name="1159" href="AltArtemov.Type.Properties.html#1159" class="Bound"
+      >t</a
+      ><a name="1160"
+      > </a
+      ><a name="1161" href="AltArtemov.Type.Properties.html#1161" class="Bound"
+      >A</a
+      ><a name="1162"
+      > </a
+      ><a name="1163" class="Symbol"
+      >&#8594;</a
+      ><a name="1164"
+      > </a
+      ><a name="1165" href="AltArtemov.Type.Properties.html#991" class="Function"
+      >lower</a
+      ><a name="1170"
+      > </a
+      ><a name="1171" class="Symbol"
+      >(</a
+      ><a name="1172" href="AltArtemov.Type.Properties.html#1159" class="Bound"
+      >t</a
+      ><a name="1173"
+      > </a
+      ><a name="1174" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1175"
+      > </a
+      ><a name="1176" href="AltArtemov.Type.Properties.html#1161" class="Bound"
+      >A</a
+      ><a name="1177" class="Symbol"
+      >)</a
+      ><a name="1178"
+      > </a
+      ><a name="1179" class="Symbol"
+      >(</a
+      ><a name="1180" href="AltArtemov.Type.Properties.html#876" class="Function"
+      >z&lt;&#8242;lev-t&#8758;A</a
+      ><a name="1190"
+      > </a
+      ><a name="1191" href="AltArtemov.Type.Properties.html#1159" class="Bound"
+      >t</a
+      ><a name="1192"
+      > </a
+      ><a name="1193" href="AltArtemov.Type.Properties.html#1161" class="Bound"
+      >A</a
+      ><a name="1194" class="Symbol"
+      >)</a
+      ><a name="1195"
+      > </a
+      ><a name="1196" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="1197"
+      > </a
+      ><a name="1198" href="AltArtemov.Type.Properties.html#1161" class="Bound"
+      >A</a
+      ><a name="1199"
+      >
+</a
+      ><a name="1200" href="AltArtemov.Type.Properties.html#1143" class="Function"
+      >lower-t&#8758;A&#8801;A</a
+      ><a name="1211"
+      > </a
+      ><a name="1212" href="AltArtemov.Type.Properties.html#1212" class="Bound"
+      >t</a
+      ><a name="1213"
+      > </a
+      ><a name="1214" href="AltArtemov.Type.Properties.html#1214" class="Bound"
+      >A</a
+      ><a name="1215"
+      > </a
+      ><a name="1216" class="Symbol"
+      >=</a
+      ><a name="1217"
+      > </a
+      ><a name="1218" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1222"
+      >
+
+
+</a
+      ><a name="1225" class="Comment"
+      >-- Types of level greater than 0 have terms.</a
+      ><a name="1269"
+      >
+</a
+      ><a name="1270" href="AltArtemov.Type.Properties.html#1270" class="Function"
+      >tm</a
+      ><a name="1272"
+      > </a
+      ><a name="1273" class="Symbol"
+      >:</a
+      ><a name="1274"
+      > </a
+      ><a name="1275" class="Symbol"
+      >&#8704;</a
+      ><a name="1276"
+      > </a
+      ><a name="1277" href="AltArtemov.Type.Properties.html#1277" class="Bound"
+      >A</a
+      ><a name="1278"
+      > </a
+      ><a name="1279" class="Symbol"
+      >(</a
+      ><a name="1280" href="AltArtemov.Type.Properties.html#1280" class="Bound"
+      >z&lt;&#8242;l</a
+      ><a name="1284"
+      > </a
+      ><a name="1285" class="Symbol"
+      >:</a
+      ><a name="1286"
+      > </a
+      ><a name="1287" href="Agda.Builtin.Nat.html#87" class="InductiveConstructor"
+      >zero</a
+      ><a name="1291"
+      > </a
+      ><a name="1292" href="Data.Nat.Base.html#1469" class="Function Operator"
+      >&lt;&#8242;</a
+      ><a name="1294"
+      > </a
+      ><a name="1295" href="AltArtemov.Type.Properties.html#624" class="Function"
+      >lev</a
+      ><a name="1298"
+      > </a
+      ><a name="1299" href="AltArtemov.Type.Properties.html#1277" class="Bound"
+      >A</a
+      ><a name="1300" class="Symbol"
+      >)</a
+      ><a name="1301"
+      > </a
+      ><a name="1302" class="Symbol"
+      >&#8594;</a
+      ><a name="1303"
+      > </a
+      ><a name="1304" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="1306"
+      >
+</a
+      ><a name="1307" href="AltArtemov.Type.Properties.html#1270" class="Function"
+      >tm</a
+      ><a name="1309"
+      > </a
+      ><a name="1310" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="1311"
+      >      </a
+      ><a name="1317" class="Symbol"
+      >()</a
+      ><a name="1319"
+      >
+</a
+      ><a name="1320" href="AltArtemov.Type.Properties.html#1270" class="Function"
+      >tm</a
+      ><a name="1322"
+      > </a
+      ><a name="1323" class="Symbol"
+      >(</a
+      ><a name="1324" href="AltArtemov.Type.Properties.html#1324" class="Bound"
+      >A</a
+      ><a name="1325"
+      > </a
+      ><a name="1326" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1327"
+      > </a
+      ><a name="1328" href="AltArtemov.Type.Properties.html#1328" class="Bound"
+      >B</a
+      ><a name="1329" class="Symbol"
+      >)</a
+      ><a name="1330"
+      > </a
+      ><a name="1331" class="Symbol"
+      >()</a
+      ><a name="1333"
+      >
+</a
+      ><a name="1334" href="AltArtemov.Type.Properties.html#1270" class="Function"
+      >tm</a
+      ><a name="1336"
+      > </a
+      ><a name="1337" class="Symbol"
+      >(</a
+      ><a name="1338" href="AltArtemov.Type.Properties.html#1338" class="Bound"
+      >t</a
+      ><a name="1339"
+      > </a
+      ><a name="1340" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1341"
+      > </a
+      ><a name="1342" href="AltArtemov.Type.Properties.html#1342" class="Bound"
+      >A</a
+      ><a name="1343" class="Symbol"
+      >)</a
+      ><a name="1344"
+      > </a
+      ><a name="1345" href="AltArtemov.Type.Properties.html#1345" class="Bound"
+      >z&lt;&#8242;l</a
+      ><a name="1349"
+      > </a
+      ><a name="1350" class="Symbol"
+      >=</a
+      ><a name="1351"
+      > </a
+      ><a name="1352" href="AltArtemov.Type.Properties.html#1338" class="Bound"
+      >t</a
+      ><a name="1353"
+      >
+
+
+</a
+      ><a name="1356" class="Comment"
+      >-- Type equality is decidable.</a
+      ><a name="1386"
+      >
+</a
+      ><a name="1387" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >_&#8799;_</a
+      ><a name="1390"
+      > </a
+      ><a name="1391" class="Symbol"
+      >:</a
+      ><a name="1392"
+      > </a
+      ><a name="1393" href="Relation.Binary.Core.html#3490" class="Function"
+      >Decidable</a
+      ><a name="1402"
+      > </a
+      ><a name="1403" class="Symbol"
+      >{</a
+      ><a name="1404" class="Argument"
+      >A</a
+      ><a name="1405"
+      > </a
+      ><a name="1406" class="Symbol"
+      >=</a
+      ><a name="1407"
+      > </a
+      ><a name="1408" href="AltArtemov.Type.Core.html#98" class="Datatype"
+      >Ty</a
+      ><a name="1410" class="Symbol"
+      >}</a
+      ><a name="1411"
+      > </a
+      ><a name="1412" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >_&#8801;_</a
+      ><a name="1415"
+      >
+</a
+      ><a name="1416" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="1417"
+      >      </a
+      ><a name="1423" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1424"
+      > </a
+      ><a name="1425" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="1426"
+      >        </a
+      ><a name="1434" class="Symbol"
+      >=</a
+      ><a name="1435"
+      > </a
+      ><a name="1436" href="Relation.Nullary.html#520" class="InductiveConstructor"
+      >yes</a
+      ><a name="1439"
+      > </a
+      ><a name="1440" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1444"
+      >
+</a
+      ><a name="1445" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="1446"
+      >      </a
+      ><a name="1452" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1453"
+      > </a
+      ><a name="1454" class="Symbol"
+      >(_</a
+      ><a name="1456"
+      > </a
+      ><a name="1457" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1458"
+      > </a
+      ><a name="1459" class="Symbol"
+      >_)</a
+      ><a name="1461"
+      >   </a
+      ><a name="1464" class="Symbol"
+      >=</a
+      ><a name="1465"
+      > </a
+      ><a name="1466" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1468"
+      > </a
+      ><a name="1469" class="Symbol"
+      >&#955;</a
+      ><a name="1470"
+      > </a
+      ><a name="1471" class="Symbol"
+      >()</a
+      ><a name="1473"
+      >
+</a
+      ><a name="1474" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="1475"
+      >      </a
+      ><a name="1481" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1482"
+      > </a
+      ><a name="1483" class="Symbol"
+      >(_</a
+      ><a name="1485"
+      > </a
+      ><a name="1486" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1487"
+      > </a
+      ><a name="1488" class="Symbol"
+      >_)</a
+      ><a name="1490"
+      >   </a
+      ><a name="1493" class="Symbol"
+      >=</a
+      ><a name="1494"
+      > </a
+      ><a name="1495" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1497"
+      > </a
+      ><a name="1498" class="Symbol"
+      >&#955;</a
+      ><a name="1499"
+      > </a
+      ><a name="1500" class="Symbol"
+      >()</a
+      ><a name="1502"
+      >
+</a
+      ><a name="1503" class="Symbol"
+      >(_</a
+      ><a name="1505"
+      > </a
+      ><a name="1506" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1507"
+      > </a
+      ><a name="1508" class="Symbol"
+      >_)</a
+      ><a name="1510"
+      > </a
+      ><a name="1511" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1512"
+      > </a
+      ><a name="1513" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="1514"
+      >        </a
+      ><a name="1522" class="Symbol"
+      >=</a
+      ><a name="1523"
+      > </a
+      ><a name="1524" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1526"
+      > </a
+      ><a name="1527" class="Symbol"
+      >&#955;</a
+      ><a name="1528"
+      > </a
+      ><a name="1529" class="Symbol"
+      >()</a
+      ><a name="1531"
+      >
+</a
+      ><a name="1532" class="Symbol"
+      >(</a
+      ><a name="1533" href="AltArtemov.Type.Properties.html#1533" class="Bound"
+      >A</a
+      ><a name="1534"
+      > </a
+      ><a name="1535" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1536"
+      > </a
+      ><a name="1537" href="AltArtemov.Type.Properties.html#1537" class="Bound"
+      >B</a
+      ><a name="1538" class="Symbol"
+      >)</a
+      ><a name="1539"
+      > </a
+      ><a name="1540" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1541"
+      > </a
+      ><a name="1542" class="Symbol"
+      >(</a
+      ><a name="1543" href="AltArtemov.Type.Properties.html#1543" class="Bound"
+      >A&#8242;</a
+      ><a name="1545"
+      > </a
+      ><a name="1546" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1547"
+      > </a
+      ><a name="1548" href="AltArtemov.Type.Properties.html#1548" class="Bound"
+      >B&#8242;</a
+      ><a name="1550" class="Symbol"
+      >)</a
+      ><a name="1551"
+      > </a
+      ><a name="1552" class="Keyword"
+      >with</a
+      ><a name="1556"
+      > </a
+      ><a name="1557" href="AltArtemov.Type.Properties.html#1533" class="Bound"
+      >A</a
+      ><a name="1558"
+      > </a
+      ><a name="1559" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1560"
+      > </a
+      ><a name="1561" href="AltArtemov.Type.Properties.html#1543" class="Bound"
+      >A&#8242;</a
+      ><a name="1563"
+      > </a
+      ><a name="1564" class="Symbol"
+      >|</a
+      ><a name="1565"
+      > </a
+      ><a name="1566" href="AltArtemov.Type.Properties.html#1537" class="Bound"
+      >B</a
+      ><a name="1567"
+      > </a
+      ><a name="1568" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1569"
+      > </a
+      ><a name="1570" href="AltArtemov.Type.Properties.html#1548" class="Bound"
+      >B&#8242;</a
+      ><a name="1572"
+      >
+</a
+      ><a name="1573" class="Symbol"
+      >(</a
+      ><a name="1574" href="AltArtemov.Type.Properties.html#1574" class="Bound"
+      >A</a
+      ><a name="1575"
+      > </a
+      ><a name="1576" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1577"
+      > </a
+      ><a name="1578" href="AltArtemov.Type.Properties.html#1578" class="Bound"
+      >B</a
+      ><a name="1579" class="Symbol"
+      >)</a
+      ><a name="1580"
+      > </a
+      ><a name="1581" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1582"
+      > </a
+      ><a name="1583" class="Symbol"
+      >(</a
+      ><a name="1584" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1585" href="AltArtemov.Type.Properties.html#1574" class="DottedPattern Bound"
+      >A</a
+      ><a name="1586"
+      > </a
+      ><a name="1587" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1588"
+      > </a
+      ><a name="1589" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1590" href="AltArtemov.Type.Properties.html#1578" class="DottedPattern Bound"
+      >B</a
+      ><a name="1591" class="Symbol"
+      >)</a
+      ><a name="1592"
+      > </a
+      ><a name="1593" class="Symbol"
+      >|</a
+      ><a name="1594"
+      > </a
+      ><a name="1595" href="Relation.Nullary.html#520" class="InductiveConstructor"
+      >yes</a
+      ><a name="1598"
+      > </a
+      ><a name="1599" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1603"
+      > </a
+      ><a name="1604" class="Symbol"
+      >|</a
+      ><a name="1605"
+      > </a
+      ><a name="1606" href="Relation.Nullary.html#520" class="InductiveConstructor"
+      >yes</a
+      ><a name="1609"
+      > </a
+      ><a name="1610" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1614"
+      > </a
+      ><a name="1615" class="Symbol"
+      >=</a
+      ><a name="1616"
+      > </a
+      ><a name="1617" href="Relation.Nullary.html#520" class="InductiveConstructor"
+      >yes</a
+      ><a name="1620"
+      > </a
+      ><a name="1621" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1625"
+      >
+</a
+      ><a name="1626" class="Symbol"
+      >...</a
+      ><a name="1629"
+      >                 </a
+      ><a name="1646" class="Symbol"
+      >|</a
+      ><a name="1647"
+      > </a
+      ><a name="1648" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1650"
+      >  </a
+      ><a name="1652" href="AltArtemov.Type.Properties.html#1652" class="Bound"
+      >A&#8802;A&#8242;</a
+      ><a name="1656"
+      > </a
+      ><a name="1657" class="Symbol"
+      >|</a
+      ><a name="1658"
+      > </a
+      ><a name="1659" class="Symbol"
+      >_</a
+      ><a name="1660"
+      >        </a
+      ><a name="1668" class="Symbol"
+      >=</a
+      ><a name="1669"
+      > </a
+      ><a name="1670" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1672"
+      > </a
+      ><a name="1673" class="Symbol"
+      >(</a
+      ><a name="1674" href="AltArtemov.Type.Properties.html#1652" class="Bound"
+      >A&#8802;A&#8242;</a
+      ><a name="1678"
+      > </a
+      ><a name="1679" href="Function.html#713" class="Function Operator"
+      >&#8728;</a
+      ><a name="1680"
+      > </a
+      ><a name="1681" href="AltArtemov.Type.Inversions.html#147" class="Function"
+      >&#8835;-inv-A</a
+      ><a name="1688" class="Symbol"
+      >)</a
+      ><a name="1689"
+      >
+</a
+      ><a name="1690" class="Symbol"
+      >...</a
+      ><a name="1693"
+      >                 </a
+      ><a name="1710" class="Symbol"
+      >|</a
+      ><a name="1711"
+      > </a
+      ><a name="1712" class="Symbol"
+      >_</a
+      ><a name="1713"
+      >        </a
+      ><a name="1721" class="Symbol"
+      >|</a
+      ><a name="1722"
+      > </a
+      ><a name="1723" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1725"
+      >  </a
+      ><a name="1727" href="AltArtemov.Type.Properties.html#1727" class="Bound"
+      >B&#8802;B&#8242;</a
+      ><a name="1731"
+      > </a
+      ><a name="1732" class="Symbol"
+      >=</a
+      ><a name="1733"
+      > </a
+      ><a name="1734" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1736"
+      > </a
+      ><a name="1737" class="Symbol"
+      >(</a
+      ><a name="1738" href="AltArtemov.Type.Properties.html#1727" class="Bound"
+      >B&#8802;B&#8242;</a
+      ><a name="1742"
+      > </a
+      ><a name="1743" href="Function.html#713" class="Function Operator"
+      >&#8728;</a
+      ><a name="1744"
+      > </a
+      ><a name="1745" href="AltArtemov.Type.Inversions.html#223" class="Function"
+      >&#8835;-inv-B</a
+      ><a name="1752" class="Symbol"
+      >)</a
+      ><a name="1753"
+      >
+</a
+      ><a name="1754" class="Symbol"
+      >(_</a
+      ><a name="1756"
+      > </a
+      ><a name="1757" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1758"
+      > </a
+      ><a name="1759" class="Symbol"
+      >_)</a
+      ><a name="1761"
+      > </a
+      ><a name="1762" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1763"
+      > </a
+      ><a name="1764" class="Symbol"
+      >(_</a
+      ><a name="1766"
+      > </a
+      ><a name="1767" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1768"
+      > </a
+      ><a name="1769" class="Symbol"
+      >_)</a
+      ><a name="1771"
+      >   </a
+      ><a name="1774" class="Symbol"
+      >=</a
+      ><a name="1775"
+      > </a
+      ><a name="1776" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1778"
+      > </a
+      ><a name="1779" class="Symbol"
+      >&#955;</a
+      ><a name="1780"
+      > </a
+      ><a name="1781" class="Symbol"
+      >()</a
+      ><a name="1783"
+      >
+</a
+      ><a name="1784" class="Symbol"
+      >(_</a
+      ><a name="1786"
+      > </a
+      ><a name="1787" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1788"
+      > </a
+      ><a name="1789" class="Symbol"
+      >_)</a
+      ><a name="1791"
+      > </a
+      ><a name="1792" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1793"
+      > </a
+      ><a name="1794" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="1795"
+      >        </a
+      ><a name="1803" class="Symbol"
+      >=</a
+      ><a name="1804"
+      > </a
+      ><a name="1805" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1807"
+      > </a
+      ><a name="1808" class="Symbol"
+      >&#955;</a
+      ><a name="1809"
+      > </a
+      ><a name="1810" class="Symbol"
+      >()</a
+      ><a name="1812"
+      >
+</a
+      ><a name="1813" class="Symbol"
+      >(_</a
+      ><a name="1815"
+      > </a
+      ><a name="1816" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1817"
+      > </a
+      ><a name="1818" class="Symbol"
+      >_)</a
+      ><a name="1820"
+      > </a
+      ><a name="1821" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1822"
+      > </a
+      ><a name="1823" class="Symbol"
+      >(_</a
+      ><a name="1825"
+      > </a
+      ><a name="1826" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="1827"
+      > </a
+      ><a name="1828" class="Symbol"
+      >_)</a
+      ><a name="1830"
+      >   </a
+      ><a name="1833" class="Symbol"
+      >=</a
+      ><a name="1834"
+      > </a
+      ><a name="1835" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1837"
+      > </a
+      ><a name="1838" class="Symbol"
+      >&#955;</a
+      ><a name="1839"
+      > </a
+      ><a name="1840" class="Symbol"
+      >()</a
+      ><a name="1842"
+      >
+</a
+      ><a name="1843" class="Symbol"
+      >(</a
+      ><a name="1844" href="AltArtemov.Type.Properties.html#1844" class="Bound"
+      >t</a
+      ><a name="1845"
+      > </a
+      ><a name="1846" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1847"
+      > </a
+      ><a name="1848" href="AltArtemov.Type.Properties.html#1848" class="Bound"
+      >A</a
+      ><a name="1849" class="Symbol"
+      >)</a
+      ><a name="1850"
+      > </a
+      ><a name="1851" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1852"
+      > </a
+      ><a name="1853" class="Symbol"
+      >(</a
+      ><a name="1854" href="AltArtemov.Type.Properties.html#1854" class="Bound"
+      >t&#8242;</a
+      ><a name="1856"
+      > </a
+      ><a name="1857" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1858"
+      > </a
+      ><a name="1859" href="AltArtemov.Type.Properties.html#1859" class="Bound"
+      >A&#8242;</a
+      ><a name="1861" class="Symbol"
+      >)</a
+      ><a name="1862"
+      > </a
+      ><a name="1863" class="Keyword"
+      >with</a
+      ><a name="1867"
+      > </a
+      ><a name="1868" href="AltArtemov.Type.Properties.html#1844" class="Bound"
+      >t</a
+      ><a name="1869"
+      > </a
+      ><a name="1870" href="AltArtemov.Term.Properties.html#5744" class="Function Operator"
+      >Tm&#8799;</a
+      ><a name="1873"
+      > </a
+      ><a name="1874" href="AltArtemov.Type.Properties.html#1854" class="Bound"
+      >t&#8242;</a
+      ><a name="1876"
+      > </a
+      ><a name="1877" class="Symbol"
+      >|</a
+      ><a name="1878"
+      > </a
+      ><a name="1879" href="AltArtemov.Type.Properties.html#1848" class="Bound"
+      >A</a
+      ><a name="1880"
+      > </a
+      ><a name="1881" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1882"
+      > </a
+      ><a name="1883" href="AltArtemov.Type.Properties.html#1859" class="Bound"
+      >A&#8242;</a
+      ><a name="1885"
+      >
+</a
+      ><a name="1886" class="Symbol"
+      >(</a
+      ><a name="1887" href="AltArtemov.Type.Properties.html#1887" class="Bound"
+      >t</a
+      ><a name="1888"
+      > </a
+      ><a name="1889" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1890"
+      > </a
+      ><a name="1891" href="AltArtemov.Type.Properties.html#1891" class="Bound"
+      >A</a
+      ><a name="1892" class="Symbol"
+      >)</a
+      ><a name="1893"
+      > </a
+      ><a name="1894" href="AltArtemov.Type.Properties.html#1387" class="Function Operator"
+      >&#8799;</a
+      ><a name="1895"
+      > </a
+      ><a name="1896" class="Symbol"
+      >(</a
+      ><a name="1897" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1898" href="AltArtemov.Type.Properties.html#1887" class="DottedPattern Bound"
+      >t</a
+      ><a name="1899"
+      > </a
+      ><a name="1900" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="1901"
+      > </a
+      ><a name="1902" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1903" href="AltArtemov.Type.Properties.html#1891" class="DottedPattern Bound"
+      >A</a
+      ><a name="1904" class="Symbol"
+      >)</a
+      ><a name="1905"
+      > </a
+      ><a name="1906" class="Symbol"
+      >|</a
+      ><a name="1907"
+      > </a
+      ><a name="1908" href="Relation.Nullary.html#520" class="InductiveConstructor"
+      >yes</a
+      ><a name="1911"
+      > </a
+      ><a name="1912" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1916"
+      > </a
+      ><a name="1917" class="Symbol"
+      >|</a
+      ><a name="1918"
+      > </a
+      ><a name="1919" href="Relation.Nullary.html#520" class="InductiveConstructor"
+      >yes</a
+      ><a name="1922"
+      > </a
+      ><a name="1923" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1927"
+      > </a
+      ><a name="1928" class="Symbol"
+      >=</a
+      ><a name="1929"
+      > </a
+      ><a name="1930" href="Relation.Nullary.html#520" class="InductiveConstructor"
+      >yes</a
+      ><a name="1933"
+      > </a
+      ><a name="1934" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1938"
+      >
+</a
+      ><a name="1939" class="Symbol"
+      >...</a
+      ><a name="1942"
+      >                 </a
+      ><a name="1959" class="Symbol"
+      >|</a
+      ><a name="1960"
+      > </a
+      ><a name="1961" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1963"
+      >  </a
+      ><a name="1965" href="AltArtemov.Type.Properties.html#1965" class="Bound"
+      >t&#8802;t&#8242;</a
+      ><a name="1969"
+      > </a
+      ><a name="1970" class="Symbol"
+      >|</a
+      ><a name="1971"
+      > </a
+      ><a name="1972" class="Symbol"
+      >_</a
+      ><a name="1973"
+      >        </a
+      ><a name="1981" class="Symbol"
+      >=</a
+      ><a name="1982"
+      > </a
+      ><a name="1983" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="1985"
+      > </a
+      ><a name="1986" class="Symbol"
+      >(</a
+      ><a name="1987" href="AltArtemov.Type.Properties.html#1965" class="Bound"
+      >t&#8802;t&#8242;</a
+      ><a name="1991"
+      > </a
+      ><a name="1992" href="Function.html#713" class="Function Operator"
+      >&#8728;</a
+      ><a name="1993"
+      > </a
+      ><a name="1994" href="AltArtemov.Type.Inversions.html#300" class="Function"
+      >&#8758;-inv-t</a
+      ><a name="2001" class="Symbol"
+      >)</a
+      ><a name="2002"
+      >
+</a
+      ><a name="2003" class="Symbol"
+      >...</a
+      ><a name="2006"
+      >                 </a
+      ><a name="2023" class="Symbol"
+      >|</a
+      ><a name="2024"
+      > </a
+      ><a name="2025" class="Symbol"
+      >_</a
+      ><a name="2026"
+      >        </a
+      ><a name="2034" class="Symbol"
+      >|</a
+      ><a name="2035"
+      > </a
+      ><a name="2036" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="2038"
+      >  </a
+      ><a name="2040" href="AltArtemov.Type.Properties.html#2040" class="Bound"
+      >A&#8802;A&#8242;</a
+      ><a name="2044"
+      > </a
+      ><a name="2045" class="Symbol"
+      >=</a
+      ><a name="2046"
+      > </a
+      ><a name="2047" href="Relation.Nullary.html#547" class="InductiveConstructor"
+      >no</a
+      ><a name="2049"
+      > </a
+      ><a name="2050" class="Symbol"
+      >(</a
+      ><a name="2051" href="AltArtemov.Type.Properties.html#2040" class="Bound"
+      >A&#8802;A&#8242;</a
+      ><a name="2055"
+      > </a
+      ><a name="2056" href="Function.html#713" class="Function Operator"
+      >&#8728;</a
+      ><a name="2057"
+      > </a
+      ><a name="2058" href="AltArtemov.Type.Inversions.html#376" class="Function"
+      >&#8758;-inv-A</a
+      ><a name="2065" class="Symbol"
+      >)</a
+      ><a name="2066"
+      >
+
+
+</a
+      ><a name="2069" class="Comment"
+      >-- TODO</a
+      ><a name="2076"
+      >
+
+</a
+      ><a name="2078" href="AltArtemov.Type.Properties.html#2078" class="Function"
+      >can-lower</a
+      ><a name="2087"
+      > </a
+      ><a name="2088" class="Symbol"
+      >:</a
+      ><a name="2089"
+      > </a
+      ><a name="2090" class="Symbol"
+      >&#8704;</a
+      ><a name="2091"
+      > </a
+      ><a name="2092" href="AltArtemov.Type.Properties.html#2092" class="Bound"
+      >A</a
+      ><a name="2093"
+      > </a
+      ><a name="2094" class="Symbol"
+      >&#8594;</a
+      ><a name="2095"
+      > </a
+      ><a name="2096" href="Data.Maybe.Base.html#335" class="Datatype"
+      >Maybe</a
+      ><a name="2101"
+      > </a
+      ><a name="2102" href="AltArtemov.Type.Core.html#98" class="Datatype"
+      >Ty</a
+      ><a name="2104"
+      >
+</a
+      ><a name="2105" href="AltArtemov.Type.Properties.html#2078" class="Function"
+      >can-lower</a
+      ><a name="2114"
+      > </a
+      ><a name="2115" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="2116"
+      >      </a
+      ><a name="2122" class="Symbol"
+      >=</a
+      ><a name="2123"
+      > </a
+      ><a name="2124" href="Data.Maybe.Base.html#403" class="InductiveConstructor"
+      >nothing</a
+      ><a name="2131"
+      >
+</a
+      ><a name="2132" href="AltArtemov.Type.Properties.html#2078" class="Function"
+      >can-lower</a
+      ><a name="2141"
+      > </a
+      ><a name="2142" class="Symbol"
+      >(</a
+      ><a name="2143" href="AltArtemov.Type.Properties.html#2143" class="Bound"
+      >A</a
+      ><a name="2144"
+      > </a
+      ><a name="2145" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="2146"
+      > </a
+      ><a name="2147" href="AltArtemov.Type.Properties.html#2147" class="Bound"
+      >B</a
+      ><a name="2148" class="Symbol"
+      >)</a
+      ><a name="2149"
+      > </a
+      ><a name="2150" class="Symbol"
+      >=</a
+      ><a name="2151"
+      > </a
+      ><a name="2152" href="Data.Maybe.Base.html#403" class="InductiveConstructor"
+      >nothing</a
+      ><a name="2159"
+      >
+</a
+      ><a name="2160" href="AltArtemov.Type.Properties.html#2078" class="Function"
+      >can-lower</a
+      ><a name="2169"
+      > </a
+      ><a name="2170" class="Symbol"
+      >(</a
+      ><a name="2171" href="AltArtemov.Type.Properties.html#2171" class="Bound"
+      >t</a
+      ><a name="2172"
+      > </a
+      ><a name="2173" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="2174"
+      > </a
+      ><a name="2175" href="AltArtemov.Type.Properties.html#2175" class="Bound"
+      >A</a
+      ><a name="2176" class="Symbol"
+      >)</a
+      ><a name="2177"
+      > </a
+      ><a name="2178" class="Symbol"
+      >=</a
+      ><a name="2179"
+      > </a
+      ><a name="2180" href="Data.Maybe.Base.html#373" class="InductiveConstructor"
+      >just</a
+      ><a name="2184"
+      > </a
+      ><a name="2185" href="AltArtemov.Type.Properties.html#2175" class="Bound"
+      >A</a
+      ><a name="2186"
+      >
+
+</a
+      ><a name="2188" href="AltArtemov.Type.Properties.html#2188" class="Function"
+      >HighTy</a
+      ><a name="2194"
+      > </a
+      ><a name="2195" class="Symbol"
+      >:</a
+      ><a name="2196"
+      > </a
+      ><a name="2197" class="Symbol"
+      >&#8704;</a
+      ><a name="2198"
+      > </a
+      ><a name="2199" href="AltArtemov.Type.Properties.html#2199" class="Bound"
+      >A</a
+      ><a name="2200"
+      > </a
+      ><a name="2201" class="Symbol"
+      >&#8594;</a
+      ><a name="2202"
+      > </a
+      ><a name="2203" class="PrimitiveType"
+      >Set</a
+      ><a name="2206"
+      >
+</a
+      ><a name="2207" href="AltArtemov.Type.Properties.html#2188" class="Function"
+      >HighTy</a
+      ><a name="2213"
+      > </a
+      ><a name="2214" href="AltArtemov.Type.Properties.html#2214" class="Bound"
+      >A</a
+      ><a name="2215"
+      > </a
+      ><a name="2216" class="Keyword"
+      >with</a
+      ><a name="2220"
+      > </a
+      ><a name="2221" href="AltArtemov.Type.Properties.html#2078" class="Function"
+      >can-lower</a
+      ><a name="2230"
+      > </a
+      ><a name="2231" href="AltArtemov.Type.Properties.html#2214" class="Bound"
+      >A</a
+      ><a name="2232"
+      >
+</a
+      ><a name="2233" class="Symbol"
+      >...</a
+      ><a name="2236"
+      >      </a
+      ><a name="2242" class="Symbol"
+      >|</a
+      ><a name="2243"
+      > </a
+      ><a name="2244" href="Data.Maybe.Base.html#373" class="InductiveConstructor"
+      >just</a
+      ><a name="2248"
+      > </a
+      ><a name="2249" href="AltArtemov.Type.Properties.html#2249" class="Bound"
+      >A&#8242;</a
+      ><a name="2251"
+      > </a
+      ><a name="2252" class="Symbol"
+      >=</a
+      ><a name="2253"
+      > </a
+      ><a name="2254" href="Agda.Builtin.Unit.html#41" class="Record"
+      >Unit</a
+      ><a name="2258"
+      >
+</a
+      ><a name="2259" class="Symbol"
+      >...</a
+      ><a name="2262"
+      >      </a
+      ><a name="2268" class="Symbol"
+      >|</a
+      ><a name="2269"
+      > </a
+      ><a name="2270" class="Symbol"
+      >_</a
+      ><a name="2271"
+      >       </a
+      ><a name="2278" class="Symbol"
+      >=</a
+      ><a name="2279"
+      > </a
+      ><a name="2280" href="Data.Empty.html#243" class="Datatype"
+      >Empty</a
+      ><a name="2285"
+      >
+
+</a
+      ><a name="2287" href="AltArtemov.Type.Properties.html#2287" class="Function"
+      >lower&#8242;</a
+      ><a name="2293"
+      > </a
+      ><a name="2294" class="Symbol"
+      >:</a
+      ><a name="2295"
+      > </a
+      ><a name="2296" class="Symbol"
+      >&#8704;</a
+      ><a name="2297"
+      > </a
+      ><a name="2298" href="AltArtemov.Type.Properties.html#2298" class="Bound"
+      >A</a
+      ><a name="2299"
+      > </a
+      ><a name="2300" class="Symbol"
+      >{</a
+      ><a name="2301" href="AltArtemov.Type.Properties.html#2301" class="Bound"
+      >HA</a
+      ><a name="2303"
+      > </a
+      ><a name="2304" class="Symbol"
+      >:</a
+      ><a name="2305"
+      > </a
+      ><a name="2306" href="AltArtemov.Type.Properties.html#2188" class="Function"
+      >HighTy</a
+      ><a name="2312"
+      > </a
+      ><a name="2313" href="AltArtemov.Type.Properties.html#2298" class="Bound"
+      >A</a
+      ><a name="2314" class="Symbol"
+      >}</a
+      ><a name="2315"
+      > </a
+      ><a name="2316" class="Symbol"
+      >&#8594;</a
+      ><a name="2317"
+      > </a
+      ><a name="2318" href="AltArtemov.Type.Core.html#98" class="Datatype"
+      >Ty</a
+      ><a name="2320"
+      >
+</a
+      ><a name="2321" href="AltArtemov.Type.Properties.html#2287" class="Function"
+      >lower&#8242;</a
+      ><a name="2327"
+      > </a
+      ><a name="2328" href="AltArtemov.Type.Properties.html#2328" class="Bound"
+      >A</a
+      ><a name="2329"
+      > </a
+      ><a name="2330" class="Symbol"
+      >{</a
+      ><a name="2331" href="AltArtemov.Type.Properties.html#2331" class="Bound"
+      >HA</a
+      ><a name="2333" class="Symbol"
+      >}</a
+      ><a name="2334"
+      > </a
+      ><a name="2335" class="Keyword"
+      >with</a
+      ><a name="2339"
+      > </a
+      ><a name="2340" href="AltArtemov.Type.Properties.html#2078" class="Function"
+      >can-lower</a
+      ><a name="2349"
+      > </a
+      ><a name="2350" href="AltArtemov.Type.Properties.html#2328" class="Bound"
+      >A</a
+      ><a name="2351"
+      >
+</a
+      ><a name="2352" href="AltArtemov.Type.Properties.html#2287" class="Function"
+      >lower&#8242;</a
+      ><a name="2358"
+      > </a
+      ><a name="2359" href="AltArtemov.Type.Properties.html#2359" class="Bound"
+      >A</a
+      ><a name="2360"
+      > </a
+      ><a name="2361" class="Symbol"
+      >{</a
+      ><a name="2362" href="AltArtemov.Type.Properties.html#2362" class="Bound"
+      >HA</a
+      ><a name="2364" class="Symbol"
+      >}</a
+      ><a name="2365"
+      > </a
+      ><a name="2366" class="Symbol"
+      >|</a
+      ><a name="2367"
+      > </a
+      ><a name="2368" href="Data.Maybe.Base.html#373" class="InductiveConstructor"
+      >just</a
+      ><a name="2372"
+      > </a
+      ><a name="2373" href="AltArtemov.Type.Properties.html#2373" class="Bound"
+      >A&#8242;</a
+      ><a name="2375"
+      > </a
+      ><a name="2376" class="Symbol"
+      >=</a
+      ><a name="2377"
+      > </a
+      ><a name="2378" href="AltArtemov.Type.Properties.html#2373" class="Bound"
+      >A&#8242;</a
+      ><a name="2380"
+      >
+</a
+      ><a name="2381" href="AltArtemov.Type.Properties.html#2287" class="Function"
+      >lower&#8242;</a
+      ><a name="2387"
+      > </a
+      ><a name="2388" href="AltArtemov.Type.Properties.html#2388" class="Bound"
+      >A</a
+      ><a name="2389"
+      > </a
+      ><a name="2390" class="Symbol"
+      >{()}</a
+      ><a name="2394"
+      > </a
+      ><a name="2395" class="Symbol"
+      >|</a
+      ><a name="2396"
+      > </a
+      ><a name="2397" href="Data.Maybe.Base.html#403" class="InductiveConstructor"
+      >nothing</a
+      ><a name="2404"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

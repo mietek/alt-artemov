@@ -1,0 +1,1276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >LP.DenotationalSemantics</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="LP.DenotationalSemantics.html#1" class="Module"
+      >LP.DenotationalSemantics</a
+      ><a name="32"
+      > </a
+      ><a name="33" class="Keyword"
+      >where</a
+      ><a name="38"
+      >
+
+</a
+      ><a name="40" class="Keyword"
+      >open</a
+      ><a name="44"
+      > </a
+      ><a name="45" class="Keyword"
+      >import</a
+      ><a name="51"
+      > </a
+      ><a name="52" href="LP.Core.html#1" class="Module"
+      >LP.Core</a
+      ><a name="59"
+      > </a
+      ><a name="60" class="Keyword"
+      >public</a
+      ><a name="66"
+      >
+
+
+</a
+      ><a name="69" class="Keyword"
+      >mutual</a
+      ><a name="75"
+      >
+  </a
+      ><a name="78" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;_&#10215;&#7468;</a
+      ><a name="82"
+      > </a
+      ><a name="83" class="Symbol"
+      >:</a
+      ><a name="84"
+      > </a
+      ><a name="85" href="LP.Core.html#74" class="Datatype"
+      >Ty</a
+      ><a name="87"
+      > </a
+      ><a name="88" class="Symbol"
+      >&#8594;</a
+      ><a name="89"
+      > </a
+      ><a name="90" class="PrimitiveType"
+      >Set</a
+      ><a name="93"
+      >
+  </a
+      ><a name="96" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="97"
+      > </a
+      ><a name="98" href="LP.Core.html#93" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="99"
+      > </a
+      ><a name="100" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="102"
+      >    </a
+      ><a name="106" class="Symbol"
+      >=</a
+      ><a name="107"
+      > </a
+      ><a name="108" href="Data.Empty.html#243" class="Datatype"
+      >Empty</a
+      ><a name="113"
+      >
+  </a
+      ><a name="116" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="117"
+      > </a
+      ><a name="118" href="LP.DenotationalSemantics.html#118" class="Bound"
+      >A</a
+      ><a name="119"
+      > </a
+      ><a name="120" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="121"
+      > </a
+      ><a name="122" href="LP.DenotationalSemantics.html#122" class="Bound"
+      >B</a
+      ><a name="123"
+      > </a
+      ><a name="124" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="126"
+      > </a
+      ><a name="127" class="Symbol"
+      >=</a
+      ><a name="128"
+      > </a
+      ><a name="129" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="130"
+      > </a
+      ><a name="131" href="LP.DenotationalSemantics.html#118" class="Bound"
+      >A</a
+      ><a name="132"
+      > </a
+      ><a name="133" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="135"
+      > </a
+      ><a name="136" class="Symbol"
+      >&#8594;</a
+      ><a name="137"
+      > </a
+      ><a name="138" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="139"
+      > </a
+      ><a name="140" href="LP.DenotationalSemantics.html#122" class="Bound"
+      >B</a
+      ><a name="141"
+      > </a
+      ><a name="142" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="144"
+      >
+  </a
+      ><a name="147" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="148"
+      > </a
+      ><a name="149" href="LP.DenotationalSemantics.html#149" class="Bound"
+      >A</a
+      ><a name="150"
+      > </a
+      ><a name="151" href="LP.Core.html#167" class="InductiveConstructor Operator"
+      >&#8743;</a
+      ><a name="152"
+      > </a
+      ><a name="153" href="LP.DenotationalSemantics.html#153" class="Bound"
+      >B</a
+      ><a name="154"
+      > </a
+      ><a name="155" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="157"
+      > </a
+      ><a name="158" class="Symbol"
+      >=</a
+      ><a name="159"
+      > </a
+      ><a name="160" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="161"
+      > </a
+      ><a name="162" href="LP.DenotationalSemantics.html#149" class="Bound"
+      >A</a
+      ><a name="163"
+      > </a
+      ><a name="164" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="166"
+      > </a
+      ><a name="167" href="Data.Product.html#1073" class="Function Operator"
+      >&#215;</a
+      ><a name="168"
+      > </a
+      ><a name="169" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="170"
+      > </a
+      ><a name="171" href="LP.DenotationalSemantics.html#153" class="Bound"
+      >B</a
+      ><a name="172"
+      > </a
+      ><a name="173" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="175"
+      >
+  </a
+      ><a name="178" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="179"
+      > </a
+      ><a name="180" href="LP.DenotationalSemantics.html#180" class="Bound"
+      >t</a
+      ><a name="181"
+      > </a
+      ><a name="182" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="183"
+      > </a
+      ><a name="184" href="LP.DenotationalSemantics.html#184" class="Bound"
+      >A</a
+      ><a name="185"
+      > </a
+      ><a name="186" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="188"
+      > </a
+      ><a name="189" class="Symbol"
+      >=</a
+      ><a name="190"
+      > </a
+      ><a name="191" href="Data.Product.html#823" class="Function"
+      >&#8707;</a
+      ><a name="192"
+      > </a
+      ><a name="193" class="Symbol"
+      >(&#955;</a
+      ><a name="195"
+      > </a
+      ><a name="196" href="LP.DenotationalSemantics.html#196" class="Bound"
+      >t&#8242;</a
+      ><a name="198"
+      > </a
+      ><a name="199" class="Symbol"
+      >&#8594;</a
+      ><a name="200"
+      > </a
+      ><a name="201" href="LP.DenotationalSemantics.html#180" class="Bound"
+      >t</a
+      ><a name="202"
+      > </a
+      ><a name="203" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="204"
+      > </a
+      ><a name="205" href="LP.DenotationalSemantics.html#196" class="Bound"
+      >t&#8242;</a
+      ><a name="207" class="Symbol"
+      >)</a
+      ><a name="208"
+      > </a
+      ><a name="209" href="Data.Product.html#1073" class="Function Operator"
+      >&#215;</a
+      ><a name="210"
+      > </a
+      ><a name="211" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="212"
+      > </a
+      ><a name="213" href="LP.DenotationalSemantics.html#184" class="Bound"
+      >A</a
+      ><a name="214"
+      > </a
+      ><a name="215" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="217"
+      >
+
+  </a
+      ><a name="221" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10214;_&#10215;&#7475;</a
+      ><a name="225"
+      > </a
+      ><a name="226" class="Symbol"
+      >:</a
+      ><a name="227"
+      > </a
+      ><a name="228" href="Common.Context.html#68" class="Datatype"
+      >Cx</a
+      ><a name="230"
+      > </a
+      ><a name="231" href="LP.Core.html#74" class="Datatype"
+      >Ty</a
+      ><a name="233"
+      > </a
+      ><a name="234" class="Symbol"
+      >&#8594;</a
+      ><a name="235"
+      > </a
+      ><a name="236" class="PrimitiveType"
+      >Set</a
+      ><a name="239"
+      >
+  </a
+      ><a name="242" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10214;</a
+      ><a name="243"
+      > </a
+      ><a name="244" href="Common.Context.html#95" class="InductiveConstructor"
+      >&#8709;</a
+      ><a name="245"
+      > </a
+      ><a name="246" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10215;&#7475;</a
+      ><a name="248"
+      >       </a
+      ><a name="255" class="Symbol"
+      >=</a
+      ><a name="256"
+      > </a
+      ><a name="257" href="Agda.Builtin.Unit.html#41" class="Record"
+      >Unit</a
+      ><a name="261"
+      >
+  </a
+      ><a name="264" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10214;</a
+      ><a name="265"
+      > </a
+      ><a name="266" class="Symbol"
+      >(</a
+      ><a name="267" href="LP.DenotationalSemantics.html#267" class="Bound"
+      >&#915;</a
+      ><a name="268"
+      > </a
+      ><a name="269" href="Common.Context.html#108" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="270"
+      > </a
+      ><a name="271" href="LP.DenotationalSemantics.html#271" class="Bound"
+      >A</a
+      ><a name="272" class="Symbol"
+      >)</a
+      ><a name="273"
+      > </a
+      ><a name="274" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10215;&#7475;</a
+      ><a name="276"
+      > </a
+      ><a name="277" class="Symbol"
+      >=</a
+      ><a name="278"
+      > </a
+      ><a name="279" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10214;</a
+      ><a name="280"
+      > </a
+      ><a name="281" href="LP.DenotationalSemantics.html#267" class="Bound"
+      >&#915;</a
+      ><a name="282"
+      > </a
+      ><a name="283" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10215;&#7475;</a
+      ><a name="285"
+      > </a
+      ><a name="286" href="Data.Product.html#1073" class="Function Operator"
+      >&#215;</a
+      ><a name="287"
+      > </a
+      ><a name="288" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="289"
+      > </a
+      ><a name="290" href="LP.DenotationalSemantics.html#271" class="Bound"
+      >A</a
+      ><a name="291"
+      > </a
+      ><a name="292" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="294"
+      >
+
+  </a
+      ><a name="298" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10214;_&#10215;&#739;</a
+      ><a name="302"
+      > </a
+      ><a name="303" class="Symbol"
+      >:</a
+      ><a name="304"
+      > </a
+      ><a name="305" class="Symbol"
+      >&#8704;</a
+      ><a name="306"
+      > </a
+      ><a name="307" class="Symbol"
+      >{</a
+      ><a name="308" href="LP.DenotationalSemantics.html#308" class="Bound"
+      >&#915;</a
+      ><a name="309"
+      > </a
+      ><a name="310" href="LP.DenotationalSemantics.html#310" class="Bound"
+      >A</a
+      ><a name="311" class="Symbol"
+      >}</a
+      ><a name="312"
+      > </a
+      ><a name="313" class="Symbol"
+      >&#8594;</a
+      ><a name="314"
+      > </a
+      ><a name="315" href="Common.Variable.html#89" class="Datatype"
+      >Var</a
+      ><a name="318"
+      > </a
+      ><a name="319" href="LP.Core.html#74" class="Datatype"
+      >Ty</a
+      ><a name="321"
+      > </a
+      ><a name="322" href="LP.DenotationalSemantics.html#308" class="Bound"
+      >&#915;</a
+      ><a name="323"
+      > </a
+      ><a name="324" href="LP.DenotationalSemantics.html#310" class="Bound"
+      >A</a
+      ><a name="325"
+      > </a
+      ><a name="326" class="Symbol"
+      >&#8594;</a
+      ><a name="327"
+      > </a
+      ><a name="328" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10214;</a
+      ><a name="329"
+      > </a
+      ><a name="330" href="LP.DenotationalSemantics.html#308" class="Bound"
+      >&#915;</a
+      ><a name="331"
+      > </a
+      ><a name="332" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10215;&#7475;</a
+      ><a name="334"
+      > </a
+      ><a name="335" class="Symbol"
+      >&#8594;</a
+      ><a name="336"
+      > </a
+      ><a name="337" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="338"
+      > </a
+      ><a name="339" href="LP.DenotationalSemantics.html#310" class="Bound"
+      >A</a
+      ><a name="340"
+      > </a
+      ><a name="341" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="343"
+      >
+  </a
+      ><a name="346" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10214;</a
+      ><a name="347"
+      > </a
+      ><a name="348" href="Common.Variable.html#128" class="InductiveConstructor"
+      >top</a
+      ><a name="351"
+      > </a
+      ><a name="352" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10215;&#739;</a
+      ><a name="354"
+      >   </a
+      ><a name="357" class="Symbol"
+      >(</a
+      ><a name="358" href="LP.DenotationalSemantics.html#358" class="Bound"
+      >&#947;</a
+      ><a name="359"
+      > </a
+      ><a name="360" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="361"
+      > </a
+      ><a name="362" href="LP.DenotationalSemantics.html#362" class="Bound"
+      >a</a
+      ><a name="363" class="Symbol"
+      >)</a
+      ><a name="364"
+      > </a
+      ><a name="365" class="Symbol"
+      >=</a
+      ><a name="366"
+      > </a
+      ><a name="367" href="LP.DenotationalSemantics.html#362" class="Bound"
+      >a</a
+      ><a name="368"
+      >
+  </a
+      ><a name="371" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10214;</a
+      ><a name="372"
+      > </a
+      ><a name="373" href="Common.Variable.html#162" class="InductiveConstructor"
+      >pop</a
+      ><a name="376"
+      > </a
+      ><a name="377" href="LP.DenotationalSemantics.html#377" class="Bound"
+      >x</a
+      ><a name="378"
+      > </a
+      ><a name="379" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10215;&#739;</a
+      ><a name="381"
+      > </a
+      ><a name="382" class="Symbol"
+      >(</a
+      ><a name="383" href="LP.DenotationalSemantics.html#383" class="Bound"
+      >&#947;</a
+      ><a name="384"
+      > </a
+      ><a name="385" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="386"
+      > </a
+      ><a name="387" href="LP.DenotationalSemantics.html#387" class="Bound"
+      >b</a
+      ><a name="388" class="Symbol"
+      >)</a
+      ><a name="389"
+      > </a
+      ><a name="390" class="Symbol"
+      >=</a
+      ><a name="391"
+      > </a
+      ><a name="392" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10214;</a
+      ><a name="393"
+      > </a
+      ><a name="394" href="LP.DenotationalSemantics.html#377" class="Bound"
+      >x</a
+      ><a name="395"
+      > </a
+      ><a name="396" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10215;&#739;</a
+      ><a name="398"
+      > </a
+      ><a name="399" href="LP.DenotationalSemantics.html#383" class="Bound"
+      >&#947;</a
+      ><a name="400"
+      >
+
+  </a
+      ><a name="404" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;_&#10215;</a
+      ><a name="407"
+      > </a
+      ><a name="408" class="Symbol"
+      >:</a
+      ><a name="409"
+      > </a
+      ><a name="410" class="Symbol"
+      >&#8704;</a
+      ><a name="411"
+      > </a
+      ><a name="412" class="Symbol"
+      >{</a
+      ><a name="413" href="LP.DenotationalSemantics.html#413" class="Bound"
+      >&#915;</a
+      ><a name="414"
+      > </a
+      ><a name="415" href="LP.DenotationalSemantics.html#415" class="Bound"
+      >&#916;</a
+      ><a name="416"
+      > </a
+      ><a name="417" href="LP.DenotationalSemantics.html#417" class="Bound"
+      >A</a
+      ><a name="418" class="Symbol"
+      >}</a
+      ><a name="419"
+      > </a
+      ><a name="420" class="Symbol"
+      >&#8594;</a
+      ><a name="421"
+      > </a
+      ><a name="422" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="424"
+      > </a
+      ><a name="425" href="LP.DenotationalSemantics.html#413" class="Bound"
+      >&#915;</a
+      ><a name="426"
+      > </a
+      ><a name="427" href="LP.DenotationalSemantics.html#415" class="Bound"
+      >&#916;</a
+      ><a name="428"
+      > </a
+      ><a name="429" href="LP.DenotationalSemantics.html#417" class="Bound"
+      >A</a
+      ><a name="430"
+      > </a
+      ><a name="431" class="Symbol"
+      >&#8594;</a
+      ><a name="432"
+      > </a
+      ><a name="433" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10214;</a
+      ><a name="434"
+      > </a
+      ><a name="435" href="LP.DenotationalSemantics.html#413" class="Bound"
+      >&#915;</a
+      ><a name="436"
+      > </a
+      ><a name="437" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10215;&#7475;</a
+      ><a name="439"
+      > </a
+      ><a name="440" class="Symbol"
+      >&#8594;</a
+      ><a name="441"
+      > </a
+      ><a name="442" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10214;</a
+      ><a name="443"
+      > </a
+      ><a name="444" href="LP.DenotationalSemantics.html#415" class="Bound"
+      >&#916;</a
+      ><a name="445"
+      > </a
+      ><a name="446" href="LP.DenotationalSemantics.html#221" class="Function Operator"
+      >&#10215;&#7475;</a
+      ><a name="448"
+      > </a
+      ><a name="449" class="Symbol"
+      >&#8594;</a
+      ><a name="450"
+      > </a
+      ><a name="451" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10214;</a
+      ><a name="452"
+      > </a
+      ><a name="453" href="LP.DenotationalSemantics.html#417" class="Bound"
+      >A</a
+      ><a name="454"
+      > </a
+      ><a name="455" href="LP.DenotationalSemantics.html#78" class="Function Operator"
+      >&#10215;&#7468;</a
+      ><a name="457"
+      >
+  </a
+      ><a name="460" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="461"
+      > </a
+      ><a name="462" href="LP.Core.html#232" class="InductiveConstructor"
+      >var</a
+      ><a name="465"
+      > </a
+      ><a name="466" href="LP.DenotationalSemantics.html#466" class="Bound"
+      >x</a
+      ><a name="467"
+      > </a
+      ><a name="468" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="469"
+      >      </a
+      ><a name="475" href="LP.DenotationalSemantics.html#475" class="Bound"
+      >&#947;</a
+      ><a name="476"
+      > </a
+      ><a name="477" href="LP.DenotationalSemantics.html#477" class="Bound"
+      >&#948;</a
+      ><a name="478"
+      > </a
+      ><a name="479" class="Symbol"
+      >=</a
+      ><a name="480"
+      > </a
+      ><a name="481" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10214;</a
+      ><a name="482"
+      > </a
+      ><a name="483" href="LP.DenotationalSemantics.html#466" class="Bound"
+      >x</a
+      ><a name="484"
+      > </a
+      ><a name="485" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10215;&#739;</a
+      ><a name="487"
+      > </a
+      ><a name="488" href="LP.DenotationalSemantics.html#475" class="Bound"
+      >&#947;</a
+      ><a name="489"
+      >
+  </a
+      ><a name="492" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="493"
+      > </a
+      ><a name="494" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="497"
+      > </a
+      ><a name="498" href="LP.DenotationalSemantics.html#498" class="Bound"
+      >t</a
+      ><a name="499"
+      > </a
+      ><a name="500" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="501"
+      >      </a
+      ><a name="507" href="LP.DenotationalSemantics.html#507" class="Bound"
+      >&#947;</a
+      ><a name="508"
+      > </a
+      ><a name="509" href="LP.DenotationalSemantics.html#509" class="Bound"
+      >&#948;</a
+      ><a name="510"
+      > </a
+      ><a name="511" class="Symbol"
+      >=</a
+      ><a name="512"
+      > </a
+      ><a name="513" class="Symbol"
+      >&#955;</a
+      ><a name="514"
+      > </a
+      ><a name="515" href="LP.DenotationalSemantics.html#515" class="Bound"
+      >a</a
+      ><a name="516"
+      > </a
+      ><a name="517" class="Symbol"
+      >&#8594;</a
+      ><a name="518"
+      > </a
+      ><a name="519" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="520"
+      > </a
+      ><a name="521" href="LP.DenotationalSemantics.html#498" class="Bound"
+      >t</a
+      ><a name="522"
+      > </a
+      ><a name="523" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="524"
+      > </a
+      ><a name="525" class="Symbol"
+      >(</a
+      ><a name="526" href="LP.DenotationalSemantics.html#507" class="Bound"
+      >&#947;</a
+      ><a name="527"
+      > </a
+      ><a name="528" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="529"
+      > </a
+      ><a name="530" href="LP.DenotationalSemantics.html#515" class="Bound"
+      >a</a
+      ><a name="531" class="Symbol"
+      >)</a
+      ><a name="532"
+      > </a
+      ><a name="533" href="LP.DenotationalSemantics.html#509" class="Bound"
+      >&#948;</a
+      ><a name="534"
+      >
+  </a
+      ><a name="537" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="538"
+      > </a
+      ><a name="539" href="LP.Core.html#326" class="InductiveConstructor"
+      >app</a
+      ><a name="542"
+      > </a
+      ><a name="543" href="LP.DenotationalSemantics.html#543" class="Bound"
+      >t&#8321;</a
+      ><a name="545"
+      > </a
+      ><a name="546" href="LP.DenotationalSemantics.html#546" class="Bound"
+      >t&#8322;</a
+      ><a name="548"
+      > </a
+      ><a name="549" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="550"
+      >  </a
+      ><a name="552" href="LP.DenotationalSemantics.html#552" class="Bound"
+      >&#947;</a
+      ><a name="553"
+      > </a
+      ><a name="554" href="LP.DenotationalSemantics.html#554" class="Bound"
+      >&#948;</a
+      ><a name="555"
+      > </a
+      ><a name="556" class="Symbol"
+      >=</a
+      ><a name="557"
+      > </a
+      ><a name="558" class="Symbol"
+      >(</a
+      ><a name="559" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="560"
+      > </a
+      ><a name="561" href="LP.DenotationalSemantics.html#543" class="Bound"
+      >t&#8321;</a
+      ><a name="563"
+      > </a
+      ><a name="564" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="565"
+      > </a
+      ><a name="566" href="LP.DenotationalSemantics.html#552" class="Bound"
+      >&#947;</a
+      ><a name="567"
+      > </a
+      ><a name="568" href="LP.DenotationalSemantics.html#554" class="Bound"
+      >&#948;</a
+      ><a name="569" class="Symbol"
+      >)</a
+      ><a name="570"
+      > </a
+      ><a name="571" class="Symbol"
+      >(</a
+      ><a name="572" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="573"
+      > </a
+      ><a name="574" href="LP.DenotationalSemantics.html#546" class="Bound"
+      >t&#8322;</a
+      ><a name="576"
+      > </a
+      ><a name="577" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="578"
+      > </a
+      ><a name="579" href="LP.DenotationalSemantics.html#552" class="Bound"
+      >&#947;</a
+      ><a name="580"
+      > </a
+      ><a name="581" href="LP.DenotationalSemantics.html#554" class="Bound"
+      >&#948;</a
+      ><a name="582" class="Symbol"
+      >)</a
+      ><a name="583"
+      >
+  </a
+      ><a name="586" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="587"
+      > </a
+      ><a name="588" href="LP.Core.html#384" class="InductiveConstructor"
+      >*var</a
+      ><a name="592"
+      > </a
+      ><a name="593" href="LP.DenotationalSemantics.html#593" class="Bound"
+      >x</a
+      ><a name="594"
+      > </a
+      ><a name="595" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="596"
+      >     </a
+      ><a name="601" href="LP.DenotationalSemantics.html#601" class="Bound"
+      >&#947;</a
+      ><a name="602"
+      > </a
+      ><a name="603" href="LP.DenotationalSemantics.html#603" class="Bound"
+      >&#948;</a
+      ><a name="604"
+      > </a
+      ><a name="605" class="Symbol"
+      >=</a
+      ><a name="606"
+      > </a
+      ><a name="607" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10214;</a
+      ><a name="608"
+      > </a
+      ><a name="609" href="LP.DenotationalSemantics.html#593" class="Bound"
+      >x</a
+      ><a name="610"
+      > </a
+      ><a name="611" href="LP.DenotationalSemantics.html#298" class="Function Operator"
+      >&#10215;&#739;</a
+      ><a name="613"
+      > </a
+      ><a name="614" href="LP.DenotationalSemantics.html#603" class="Bound"
+      >&#948;</a
+      ><a name="615"
+      >
+  </a
+      ><a name="618" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="619"
+      > </a
+      ><a name="620" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="622"
+      > </a
+      ><a name="623" href="LP.DenotationalSemantics.html#623" class="Bound"
+      >t</a
+      ><a name="624"
+      > </a
+      ><a name="625" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="626"
+      >       </a
+      ><a name="633" href="LP.DenotationalSemantics.html#633" class="Bound"
+      >&#947;</a
+      ><a name="634"
+      > </a
+      ><a name="635" href="LP.DenotationalSemantics.html#635" class="Bound"
+      >&#948;</a
+      ><a name="636"
+      > </a
+      ><a name="637" class="Symbol"
+      >=</a
+      ><a name="638"
+      > </a
+      ><a name="639" class="Symbol"
+      >((</a
+      ><a name="641" href="LP.DenotationalSemantics.html#623" class="Bound"
+      >t</a
+      ><a name="642"
+      > </a
+      ><a name="643" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="644"
+      > </a
+      ><a name="645" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="649" class="Symbol"
+      >)</a
+      ><a name="650"
+      > </a
+      ><a name="651" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="652"
+      > </a
+      ><a name="653" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="654"
+      > </a
+      ><a name="655" href="LP.DenotationalSemantics.html#623" class="Bound"
+      >t</a
+      ><a name="656"
+      > </a
+      ><a name="657" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="658"
+      > </a
+      ><a name="659" href="Agda.Builtin.Unit.html#78" class="InductiveConstructor"
+      >unit</a
+      ><a name="663"
+      > </a
+      ><a name="664" href="LP.DenotationalSemantics.html#635" class="Bound"
+      >&#948;</a
+      ><a name="665" class="Symbol"
+      >)</a
+      ><a name="666"
+      >
+  </a
+      ><a name="669" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="670"
+      > </a
+      ><a name="671" href="LP.Core.html#476" class="InductiveConstructor"
+      >down</a
+      ><a name="675"
+      > </a
+      ><a name="676" href="LP.DenotationalSemantics.html#676" class="Bound"
+      >t&#8321;</a
+      ><a name="678"
+      > </a
+      ><a name="679" href="LP.DenotationalSemantics.html#679" class="Bound"
+      >t&#8322;</a
+      ><a name="681"
+      > </a
+      ><a name="682" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="683"
+      > </a
+      ><a name="684" href="LP.DenotationalSemantics.html#684" class="Bound"
+      >&#947;</a
+      ><a name="685"
+      > </a
+      ><a name="686" href="LP.DenotationalSemantics.html#686" class="Bound"
+      >&#948;</a
+      ><a name="687"
+      > </a
+      ><a name="688" class="Keyword"
+      >with</a
+      ><a name="692"
+      > </a
+      ><a name="693" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="694"
+      > </a
+      ><a name="695" href="LP.DenotationalSemantics.html#676" class="Bound"
+      >t&#8321;</a
+      ><a name="697"
+      > </a
+      ><a name="698" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="699"
+      > </a
+      ><a name="700" href="LP.DenotationalSemantics.html#684" class="Bound"
+      >&#947;</a
+      ><a name="701"
+      > </a
+      ><a name="702" href="LP.DenotationalSemantics.html#686" class="Bound"
+      >&#948;</a
+      ><a name="703"
+      >
+  </a
+      ><a name="706" class="Symbol"
+      >&#8230;</a
+      ><a name="707"
+      >                 </a
+      ><a name="724" class="Symbol"
+      >|</a
+      ><a name="725"
+      > </a
+      ><a name="726" class="Symbol"
+      >((</a
+      ><a name="728" href="LP.DenotationalSemantics.html#728" class="Bound"
+      >t</a
+      ><a name="729"
+      > </a
+      ><a name="730" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="731"
+      > </a
+      ><a name="732" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="736" class="Symbol"
+      >)</a
+      ><a name="737"
+      > </a
+      ><a name="738" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="739"
+      > </a
+      ><a name="740" href="LP.DenotationalSemantics.html#740" class="Bound"
+      >*a</a
+      ><a name="742" class="Symbol"
+      >)</a
+      ><a name="743"
+      > </a
+      ><a name="744" class="Symbol"
+      >=</a
+      ><a name="745"
+      > </a
+      ><a name="746" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="747"
+      > </a
+      ><a name="748" href="LP.DenotationalSemantics.html#679" class="Bound"
+      >t&#8322;</a
+      ><a name="750"
+      > </a
+      ><a name="751" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="752"
+      > </a
+      ><a name="753" href="LP.DenotationalSemantics.html#684" class="Bound"
+      >&#947;</a
+      ><a name="754"
+      > </a
+      ><a name="755" class="Symbol"
+      >(</a
+      ><a name="756" href="LP.DenotationalSemantics.html#686" class="Bound"
+      >&#948;</a
+      ><a name="757"
+      > </a
+      ><a name="758" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="759"
+      > </a
+      ><a name="760" href="LP.DenotationalSemantics.html#740" class="Bound"
+      >*a</a
+      ><a name="762" class="Symbol"
+      >)</a
+      ><a name="763"
+      >
+  </a
+      ><a name="766" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="767"
+      > </a
+      ><a name="768" href="LP.Core.html#557" class="InductiveConstructor"
+      >pair</a
+      ><a name="772"
+      > </a
+      ><a name="773" href="LP.DenotationalSemantics.html#773" class="Bound"
+      >t&#8321;</a
+      ><a name="775"
+      > </a
+      ><a name="776" href="LP.DenotationalSemantics.html#776" class="Bound"
+      >t&#8322;</a
+      ><a name="778"
+      > </a
+      ><a name="779" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="780"
+      > </a
+      ><a name="781" href="LP.DenotationalSemantics.html#781" class="Bound"
+      >&#947;</a
+      ><a name="782"
+      > </a
+      ><a name="783" href="LP.DenotationalSemantics.html#783" class="Bound"
+      >&#948;</a
+      ><a name="784"
+      > </a
+      ><a name="785" class="Symbol"
+      >=</a
+      ><a name="786"
+      > </a
+      ><a name="787" class="Symbol"
+      >(</a
+      ><a name="788" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="789"
+      > </a
+      ><a name="790" href="LP.DenotationalSemantics.html#773" class="Bound"
+      >t&#8321;</a
+      ><a name="792"
+      > </a
+      ><a name="793" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="794"
+      > </a
+      ><a name="795" href="LP.DenotationalSemantics.html#781" class="Bound"
+      >&#947;</a
+      ><a name="796"
+      > </a
+      ><a name="797" href="LP.DenotationalSemantics.html#783" class="Bound"
+      >&#948;</a
+      ><a name="798"
+      > </a
+      ><a name="799" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="800"
+      > </a
+      ><a name="801" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="802"
+      > </a
+      ><a name="803" href="LP.DenotationalSemantics.html#776" class="Bound"
+      >t&#8322;</a
+      ><a name="805"
+      > </a
+      ><a name="806" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="807"
+      > </a
+      ><a name="808" href="LP.DenotationalSemantics.html#781" class="Bound"
+      >&#947;</a
+      ><a name="809"
+      > </a
+      ><a name="810" href="LP.DenotationalSemantics.html#783" class="Bound"
+      >&#948;</a
+      ><a name="811" class="Symbol"
+      >)</a
+      ><a name="812"
+      >
+  </a
+      ><a name="815" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="816"
+      > </a
+      ><a name="817" href="LP.Core.html#615" class="InductiveConstructor"
+      >fst</a
+      ><a name="820"
+      > </a
+      ><a name="821" href="LP.DenotationalSemantics.html#821" class="Bound"
+      >t</a
+      ><a name="822"
+      > </a
+      ><a name="823" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="824"
+      >      </a
+      ><a name="830" href="LP.DenotationalSemantics.html#830" class="Bound"
+      >&#947;</a
+      ><a name="831"
+      > </a
+      ><a name="832" href="LP.DenotationalSemantics.html#832" class="Bound"
+      >&#948;</a
+      ><a name="833"
+      > </a
+      ><a name="834" class="Symbol"
+      >=</a
+      ><a name="835"
+      > </a
+      ><a name="836" href="Data.Product.html#525" class="Field"
+      >proj&#8321;</a
+      ><a name="841"
+      > </a
+      ><a name="842" class="Symbol"
+      >(</a
+      ><a name="843" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="844"
+      > </a
+      ><a name="845" href="LP.DenotationalSemantics.html#821" class="Bound"
+      >t</a
+      ><a name="846"
+      > </a
+      ><a name="847" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="848"
+      > </a
+      ><a name="849" href="LP.DenotationalSemantics.html#830" class="Bound"
+      >&#947;</a
+      ><a name="850"
+      > </a
+      ><a name="851" href="LP.DenotationalSemantics.html#832" class="Bound"
+      >&#948;</a
+      ><a name="852" class="Symbol"
+      >)</a
+      ><a name="853"
+      >
+  </a
+      ><a name="856" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="857"
+      > </a
+      ><a name="858" href="LP.Core.html#662" class="InductiveConstructor"
+      >snd</a
+      ><a name="861"
+      > </a
+      ><a name="862" href="LP.DenotationalSemantics.html#862" class="Bound"
+      >t</a
+      ><a name="863"
+      > </a
+      ><a name="864" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="865"
+      >      </a
+      ><a name="871" href="LP.DenotationalSemantics.html#871" class="Bound"
+      >&#947;</a
+      ><a name="872"
+      > </a
+      ><a name="873" href="LP.DenotationalSemantics.html#873" class="Bound"
+      >&#948;</a
+      ><a name="874"
+      > </a
+      ><a name="875" class="Symbol"
+      >=</a
+      ><a name="876"
+      > </a
+      ><a name="877" href="Data.Product.html#539" class="Field"
+      >proj&#8322;</a
+      ><a name="882"
+      > </a
+      ><a name="883" class="Symbol"
+      >(</a
+      ><a name="884" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10214;</a
+      ><a name="885"
+      > </a
+      ><a name="886" href="LP.DenotationalSemantics.html#862" class="Bound"
+      >t</a
+      ><a name="887"
+      > </a
+      ><a name="888" href="LP.DenotationalSemantics.html#404" class="Function Operator"
+      >&#10215;</a
+      ><a name="889"
+      > </a
+      ><a name="890" href="LP.DenotationalSemantics.html#871" class="Bound"
+      >&#947;</a
+      ><a name="891"
+      > </a
+      ><a name="892" href="LP.DenotationalSemantics.html#873" class="Bound"
+      >&#948;</a
+      ><a name="893" class="Symbol"
+      >)</a
+      ><a name="894"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

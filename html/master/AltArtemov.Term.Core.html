@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >AltArtemov.Term.Core</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="AltArtemov.Term.Core.html#1" class="Module"
+      >AltArtemov.Term.Core</a
+      ><a name="28"
+      > </a
+      ><a name="29" class="Keyword"
+      >where</a
+      ><a name="34"
+      >
+
+</a
+      ><a name="36" class="Keyword"
+      >open</a
+      ><a name="40"
+      > </a
+      ><a name="41" class="Keyword"
+      >import</a
+      ><a name="47"
+      > </a
+      ><a name="48" href="Data.Nat.html#1" class="Module"
+      >Data.Nat</a
+      ><a name="56"
+      > </a
+      ><a name="57" class="Keyword"
+      >using</a
+      ><a name="62"
+      > </a
+      ><a name="63" class="Symbol"
+      >(</a
+      ><a name="64" href="Agda.Builtin.Nat.html#69" class="Datatype"
+      >&#8469;</a
+      ><a name="65" class="Symbol"
+      >)</a
+      ><a name="66"
+      >
+
+
+</a
+      ><a name="69" class="Keyword"
+      >data</a
+      ><a name="73"
+      > </a
+      ><a name="74" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="76"
+      > </a
+      ><a name="77" class="Symbol"
+      >:</a
+      ><a name="78"
+      > </a
+      ><a name="79" class="PrimitiveType"
+      >Set</a
+      ><a name="82"
+      > </a
+      ><a name="83" class="Keyword"
+      >where</a
+      ><a name="88"
+      >
+  </a
+      ><a name="91" class="Comment"
+      >-- Variable reference.</a
+      ><a name="113"
+      >
+  </a
+      ><a name="116" href="AltArtemov.Term.Core.html#116" class="InductiveConstructor Operator"
+      >VAR[_]</a
+      ><a name="122"
+      > </a
+      ><a name="123" class="Symbol"
+      >:</a
+      ><a name="124"
+      > </a
+      ><a name="125" class="Symbol"
+      >&#8704;</a
+      ><a name="126"
+      > </a
+      ><a name="127" class="Symbol"
+      >(</a
+      ><a name="128" href="AltArtemov.Term.Core.html#128" class="Bound"
+      >n</a
+      ><a name="129"
+      > </a
+      ><a name="130" href="AltArtemov.Term.Core.html#130" class="Bound"
+      >i</a
+      ><a name="131"
+      > </a
+      ><a name="132" class="Symbol"
+      >:</a
+      ><a name="133"
+      > </a
+      ><a name="134" href="Agda.Builtin.Nat.html#69" class="Datatype"
+      >&#8469;</a
+      ><a name="135" class="Symbol"
+      >)</a
+      ><a name="136"
+      > </a
+      ><a name="137" class="Symbol"
+      >&#8594;</a
+      ><a name="138"
+      > </a
+      ><a name="139" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="141"
+      >
+
+  </a
+      ><a name="145" class="Comment"
+      >-- Lambda abstraction. (&#8835;I)</a
+      ><a name="172"
+      >
+  </a
+      ><a name="175" href="AltArtemov.Term.Core.html#175" class="InductiveConstructor Operator"
+      >LAM[_]</a
+      ><a name="181"
+      > </a
+      ><a name="182" class="Symbol"
+      >:</a
+      ><a name="183"
+      > </a
+      ><a name="184" class="Symbol"
+      >&#8704;</a
+      ><a name="185"
+      > </a
+      ><a name="186" class="Symbol"
+      >(</a
+      ><a name="187" href="AltArtemov.Term.Core.html#187" class="Bound"
+      >n</a
+      ><a name="188"
+      > </a
+      ><a name="189" class="Symbol"
+      >:</a
+      ><a name="190"
+      > </a
+      ><a name="191" href="Agda.Builtin.Nat.html#69" class="Datatype"
+      >&#8469;</a
+      ><a name="192" class="Symbol"
+      >)</a
+      ><a name="193"
+      > </a
+      ><a name="194" class="Symbol"
+      >(</a
+      ><a name="195" href="AltArtemov.Term.Core.html#195" class="Bound"
+      >t</a
+      ><a name="196"
+      > </a
+      ><a name="197" class="Symbol"
+      >:</a
+      ><a name="198"
+      > </a
+      ><a name="199" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="201" class="Symbol"
+      >)</a
+      ><a name="202"
+      > </a
+      ><a name="203" class="Symbol"
+      >&#8594;</a
+      ><a name="204"
+      > </a
+      ><a name="205" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="207"
+      >
+
+  </a
+      ><a name="211" class="Comment"
+      >-- Function application. (&#8835;E)</a
+      ><a name="240"
+      >
+  </a
+      ><a name="243" href="AltArtemov.Term.Core.html#243" class="InductiveConstructor Operator"
+      >APP[_]</a
+      ><a name="249"
+      > </a
+      ><a name="250" class="Symbol"
+      >:</a
+      ><a name="251"
+      > </a
+      ><a name="252" class="Symbol"
+      >&#8704;</a
+      ><a name="253"
+      > </a
+      ><a name="254" class="Symbol"
+      >(</a
+      ><a name="255" href="AltArtemov.Term.Core.html#255" class="Bound"
+      >n</a
+      ><a name="256"
+      > </a
+      ><a name="257" class="Symbol"
+      >:</a
+      ><a name="258"
+      > </a
+      ><a name="259" href="Agda.Builtin.Nat.html#69" class="Datatype"
+      >&#8469;</a
+      ><a name="260" class="Symbol"
+      >)</a
+      ><a name="261"
+      > </a
+      ><a name="262" class="Symbol"
+      >(</a
+      ><a name="263" href="AltArtemov.Term.Core.html#263" class="Bound"
+      >t</a
+      ><a name="264"
+      > </a
+      ><a name="265" href="AltArtemov.Term.Core.html#265" class="Bound"
+      >s</a
+      ><a name="266"
+      > </a
+      ><a name="267" class="Symbol"
+      >:</a
+      ><a name="268"
+      > </a
+      ><a name="269" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="271" class="Symbol"
+      >)</a
+      ><a name="272"
+      > </a
+      ><a name="273" class="Symbol"
+      >&#8594;</a
+      ><a name="274"
+      > </a
+      ><a name="275" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="277"
+      >
+
+  </a
+      ><a name="281" class="Comment"
+      >-- Reification.</a
+      ><a name="296"
+      >
+  </a
+      ><a name="299" href="AltArtemov.Term.Core.html#299" class="InductiveConstructor Operator"
+      >UP[_]</a
+      ><a name="304"
+      > </a
+      ><a name="305" class="Symbol"
+      >:</a
+      ><a name="306"
+      > </a
+      ><a name="307" class="Symbol"
+      >&#8704;</a
+      ><a name="308"
+      > </a
+      ><a name="309" class="Symbol"
+      >(</a
+      ><a name="310" href="AltArtemov.Term.Core.html#310" class="Bound"
+      >n</a
+      ><a name="311"
+      > </a
+      ><a name="312" class="Symbol"
+      >:</a
+      ><a name="313"
+      > </a
+      ><a name="314" href="Agda.Builtin.Nat.html#69" class="Datatype"
+      >&#8469;</a
+      ><a name="315" class="Symbol"
+      >)</a
+      ><a name="316"
+      > </a
+      ><a name="317" class="Symbol"
+      >(</a
+      ><a name="318" href="AltArtemov.Term.Core.html#318" class="Bound"
+      >t</a
+      ><a name="319"
+      > </a
+      ><a name="320" class="Symbol"
+      >:</a
+      ><a name="321"
+      > </a
+      ><a name="322" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="324" class="Symbol"
+      >)</a
+      ><a name="325"
+      > </a
+      ><a name="326" class="Symbol"
+      >&#8594;</a
+      ><a name="327"
+      > </a
+      ><a name="328" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="330"
+      >
+
+  </a
+      ><a name="334" class="Comment"
+      >-- Reflection.</a
+      ><a name="348"
+      >
+  </a
+      ><a name="351" href="AltArtemov.Term.Core.html#351" class="InductiveConstructor Operator"
+      >DOWN[_]</a
+      ><a name="358"
+      > </a
+      ><a name="359" class="Symbol"
+      >:</a
+      ><a name="360"
+      > </a
+      ><a name="361" class="Symbol"
+      >&#8704;</a
+      ><a name="362"
+      > </a
+      ><a name="363" class="Symbol"
+      >(</a
+      ><a name="364" href="AltArtemov.Term.Core.html#364" class="Bound"
+      >n</a
+      ><a name="365"
+      > </a
+      ><a name="366" class="Symbol"
+      >:</a
+      ><a name="367"
+      > </a
+      ><a name="368" href="Agda.Builtin.Nat.html#69" class="Datatype"
+      >&#8469;</a
+      ><a name="369" class="Symbol"
+      >)</a
+      ><a name="370"
+      > </a
+      ><a name="371" class="Symbol"
+      >(</a
+      ><a name="372" href="AltArtemov.Term.Core.html#372" class="Bound"
+      >t</a
+      ><a name="373"
+      > </a
+      ><a name="374" class="Symbol"
+      >:</a
+      ><a name="375"
+      > </a
+      ><a name="376" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="378" class="Symbol"
+      >)</a
+      ><a name="379"
+      > </a
+      ><a name="380" class="Symbol"
+      >&#8594;</a
+      ><a name="381"
+      > </a
+      ><a name="382" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="384"
+      >
+
+  </a
+      ><a name="388" class="Comment"
+      >-- Explosion. (&#8869;E)</a
+      ><a name="406"
+      >
+  </a
+      ><a name="409" href="AltArtemov.Term.Core.html#409" class="InductiveConstructor Operator"
+      >BOOM[_]</a
+      ><a name="416"
+      > </a
+      ><a name="417" class="Symbol"
+      >:</a
+      ><a name="418"
+      > </a
+      ><a name="419" class="Symbol"
+      >&#8704;</a
+      ><a name="420"
+      > </a
+      ><a name="421" class="Symbol"
+      >(</a
+      ><a name="422" href="AltArtemov.Term.Core.html#422" class="Bound"
+      >n</a
+      ><a name="423"
+      > </a
+      ><a name="424" class="Symbol"
+      >:</a
+      ><a name="425"
+      > </a
+      ><a name="426" href="Agda.Builtin.Nat.html#69" class="Datatype"
+      >&#8469;</a
+      ><a name="427" class="Symbol"
+      >)</a
+      ><a name="428"
+      > </a
+      ><a name="429" class="Symbol"
+      >(</a
+      ><a name="430" href="AltArtemov.Term.Core.html#430" class="Bound"
+      >t</a
+      ><a name="431"
+      > </a
+      ><a name="432" class="Symbol"
+      >:</a
+      ><a name="433"
+      > </a
+      ><a name="434" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="436" class="Symbol"
+      >)</a
+      ><a name="437"
+      > </a
+      ><a name="438" class="Symbol"
+      >&#8594;</a
+      ><a name="439"
+      > </a
+      ><a name="440" href="AltArtemov.Term.Core.html#74" class="Datatype"
+      >Tm</a
+      ><a name="442"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

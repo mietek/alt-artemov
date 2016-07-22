@@ -1,0 +1,722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >Examples.Negation</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="Examples.Negation.html#1" class="Module"
+      >Examples.Negation</a
+      ><a name="25"
+      > </a
+      ><a name="26" class="Keyword"
+      >where</a
+      ><a name="31"
+      >
+
+</a
+      ><a name="33" class="Keyword"
+      >open</a
+      ><a name="37"
+      > </a
+      ><a name="38" class="Keyword"
+      >import</a
+      ><a name="44"
+      > </a
+      ><a name="45" href="AltArtemov.html#1" class="Module"
+      >AltArtemov</a
+      ><a name="55"
+      >
+
+
+</a
+      ><a name="58" class="Comment"
+      >-- Some examples of reasoning with negation and principle of explosion.</a
+      ><a name="129"
+      >
+
+</a
+      ><a name="131" href="Examples.Negation.html#131" class="Function"
+      >X0</a
+      ><a name="133"
+      > </a
+      ><a name="134" class="Symbol"
+      >:</a
+      ><a name="135"
+      > </a
+      ><a name="136" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="137"
+      > </a
+      ><a name="138" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="139"
+      > </a
+      ><a name="140" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="141"
+      > </a
+      ><a name="142" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="143"
+      >
+</a
+      ><a name="144" href="Examples.Negation.html#131" class="Function"
+      >X0</a
+      ><a name="146"
+      > </a
+      ><a name="147" class="Symbol"
+      >=</a
+      ><a name="148"
+      > </a
+      ><a name="149" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="152"
+      > </a
+      ><a name="153" href="AltArtemov.Derivation.Notation.Level1.html#658" class="Function"
+      >v0</a
+      ><a name="155"
+      >
+
+</a
+      ><a name="157" href="Examples.Negation.html#157" class="Function"
+      >X1</a
+      ><a name="159"
+      > </a
+      ><a name="160" class="Symbol"
+      >:</a
+      ><a name="161"
+      > </a
+      ><a name="162" class="Symbol"
+      >&#8704;</a
+      ><a name="163"
+      > </a
+      ><a name="164" class="Symbol"
+      >{</a
+      ><a name="165" href="Examples.Negation.html#165" class="Bound"
+      >A</a
+      ><a name="166" class="Symbol"
+      >}</a
+      ><a name="167"
+      > </a
+      ><a name="168" class="Symbol"
+      >&#8594;</a
+      ><a name="169"
+      > </a
+      ><a name="170" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="171"
+      > </a
+      ><a name="172" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="173"
+      > </a
+      ><a name="174" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="175"
+      > </a
+      ><a name="176" href="Examples.Negation.html#165" class="Bound"
+      >A</a
+      ><a name="177"
+      >
+</a
+      ><a name="178" href="Examples.Negation.html#157" class="Function"
+      >X1</a
+      ><a name="180"
+      > </a
+      ><a name="181" class="Symbol"
+      >=</a
+      ><a name="182"
+      > </a
+      ><a name="183" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="186"
+      > </a
+      ><a name="187" class="Symbol"
+      >(</a
+      ><a name="188" href="AltArtemov.Derivation.Notation.Level1.html#590" class="Function"
+      >boom</a
+      ><a name="192"
+      > </a
+      ><a name="193" href="AltArtemov.Derivation.Notation.Level1.html#658" class="Function"
+      >v0</a
+      ><a name="195" class="Symbol"
+      >)</a
+      ><a name="196"
+      >
+
+</a
+      ><a name="198" href="Examples.Negation.html#198" class="Function"
+      >X1&#178;</a
+      ><a name="201"
+      > </a
+      ><a name="202" class="Symbol"
+      >:</a
+      ><a name="203"
+      > </a
+      ><a name="204" class="Symbol"
+      >&#8704;</a
+      ><a name="205"
+      > </a
+      ><a name="206" class="Symbol"
+      >{</a
+      ><a name="207" href="Examples.Negation.html#207" class="Bound"
+      >A</a
+      ><a name="208" class="Symbol"
+      >}</a
+      ><a name="209"
+      > </a
+      ><a name="210" class="Symbol"
+      >&#8594;</a
+      ><a name="211"
+      > </a
+      ><a name="212" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="213"
+      > </a
+      ><a name="214" href="AltArtemov.Term.Notation.Level1.html#117" class="Function"
+      >LAM</a
+      ><a name="217"
+      > </a
+      ><a name="218" class="Symbol"
+      >(</a
+      ><a name="219" href="AltArtemov.Term.Notation.Level1.html#263" class="Function"
+      >BOOM</a
+      ><a name="223"
+      > </a
+      ><a name="224" href="AltArtemov.Term.Notation.Level1.html#302" class="Function"
+      >V0</a
+      ><a name="226" class="Symbol"
+      >)</a
+      ><a name="227"
+      > </a
+      ><a name="228" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="229"
+      > </a
+      ><a name="230" class="Symbol"
+      >(</a
+      ><a name="231" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="232"
+      > </a
+      ><a name="233" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="234"
+      > </a
+      ><a name="235" href="Examples.Negation.html#207" class="Bound"
+      >A</a
+      ><a name="236" class="Symbol"
+      >)</a
+      ><a name="237"
+      >
+</a
+      ><a name="238" href="Examples.Negation.html#198" class="Function"
+      >X1&#178;</a
+      ><a name="241"
+      > </a
+      ><a name="242" class="Symbol"
+      >=</a
+      ><a name="243"
+      > </a
+      ><a name="244" href="AltArtemov.Derivation.Properties.html#3022" class="Function"
+      >nec</a
+      ><a name="247"
+      > </a
+      ><a name="248" href="Examples.Negation.html#157" class="Function"
+      >X1</a
+      ><a name="250"
+      >
+
+</a
+      ><a name="252" href="Examples.Negation.html#252" class="Function"
+      >X2</a
+      ><a name="254"
+      > </a
+      ><a name="255" class="Symbol"
+      >:</a
+      ><a name="256"
+      > </a
+      ><a name="257" class="Symbol"
+      >&#8704;</a
+      ><a name="258"
+      > </a
+      ><a name="259" class="Symbol"
+      >{</a
+      ><a name="260" href="Examples.Negation.html#260" class="Bound"
+      >x</a
+      ><a name="261"
+      > </a
+      ><a name="262" href="Examples.Negation.html#262" class="Bound"
+      >A</a
+      ><a name="263" class="Symbol"
+      >}</a
+      ><a name="264"
+      > </a
+      ><a name="265" class="Symbol"
+      >&#8594;</a
+      ><a name="266"
+      > </a
+      ><a name="267" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="268"
+      > </a
+      ><a name="269" href="Examples.Negation.html#260" class="Bound"
+      >x</a
+      ><a name="270"
+      > </a
+      ><a name="271" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="272"
+      > </a
+      ><a name="273" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="274"
+      > </a
+      ><a name="275" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="276"
+      > </a
+      ><a name="277" href="AltArtemov.Term.Notation.Level1.html#263" class="Function"
+      >BOOM</a
+      ><a name="281"
+      > </a
+      ><a name="282" href="Examples.Negation.html#260" class="Bound"
+      >x</a
+      ><a name="283"
+      > </a
+      ><a name="284" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="285"
+      > </a
+      ><a name="286" href="Examples.Negation.html#262" class="Bound"
+      >A</a
+      ><a name="287"
+      >
+</a
+      ><a name="288" href="Examples.Negation.html#252" class="Function"
+      >X2</a
+      ><a name="290"
+      > </a
+      ><a name="291" class="Symbol"
+      >=</a
+      ><a name="292"
+      > </a
+      ><a name="293" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="296"
+      > </a
+      ><a name="297" class="Symbol"
+      >(</a
+      ><a name="298" href="AltArtemov.Derivation.Notation.Level2.html#728" class="Function"
+      >boom&#178;</a
+      ><a name="303"
+      > </a
+      ><a name="304" href="AltArtemov.Derivation.Notation.Level1.html#658" class="Function"
+      >v0</a
+      ><a name="306" class="Symbol"
+      >)</a
+      ><a name="307"
+      >
+
+</a
+      ><a name="309" href="Examples.Negation.html#309" class="Function"
+      >X3</a
+      ><a name="311"
+      > </a
+      ><a name="312" class="Symbol"
+      >:</a
+      ><a name="313"
+      > </a
+      ><a name="314" class="Symbol"
+      >&#8704;</a
+      ><a name="315"
+      > </a
+      ><a name="316" class="Symbol"
+      >{</a
+      ><a name="317" href="Examples.Negation.html#317" class="Bound"
+      >A</a
+      ><a name="318" class="Symbol"
+      >}</a
+      ><a name="319"
+      > </a
+      ><a name="320" class="Symbol"
+      >&#8594;</a
+      ><a name="321"
+      > </a
+      ><a name="322" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="323"
+      > </a
+      ><a name="324" href="AltArtemov.Type.Core.html#251" class="Function Operator"
+      >&#172;</a
+      ><a name="325"
+      > </a
+      ><a name="326" href="Examples.Negation.html#317" class="Bound"
+      >A</a
+      ><a name="327"
+      > </a
+      ><a name="328" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="329"
+      > </a
+      ><a name="330" href="Examples.Negation.html#317" class="Bound"
+      >A</a
+      ><a name="331"
+      > </a
+      ><a name="332" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="333"
+      > </a
+      ><a name="334" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="335"
+      >
+</a
+      ><a name="336" href="Examples.Negation.html#309" class="Function"
+      >X3</a
+      ><a name="338"
+      > </a
+      ><a name="339" class="Symbol"
+      >=</a
+      ><a name="340"
+      > </a
+      ><a name="341" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="344"
+      > </a
+      ><a name="345" class="Symbol"
+      >(</a
+      ><a name="346" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="349"
+      > </a
+      ><a name="350" class="Symbol"
+      >(</a
+      ><a name="351" href="AltArtemov.Derivation.Notation.Level1.html#347" class="Function"
+      >app</a
+      ><a name="354"
+      > </a
+      ><a name="355" href="AltArtemov.Derivation.Notation.Level1.html#697" class="Function"
+      >v1</a
+      ><a name="357"
+      > </a
+      ><a name="358" href="AltArtemov.Derivation.Notation.Level1.html#658" class="Function"
+      >v0</a
+      ><a name="360" class="Symbol"
+      >))</a
+      ><a name="362"
+      >
+
+</a
+      ><a name="364" href="Examples.Negation.html#364" class="Function"
+      >X4</a
+      ><a name="366"
+      > </a
+      ><a name="367" class="Symbol"
+      >:</a
+      ><a name="368"
+      > </a
+      ><a name="369" class="Symbol"
+      >&#8704;</a
+      ><a name="370"
+      > </a
+      ><a name="371" class="Symbol"
+      >{</a
+      ><a name="372" href="Examples.Negation.html#372" class="Bound"
+      >x</a
+      ><a name="373"
+      > </a
+      ><a name="374" href="Examples.Negation.html#374" class="Bound"
+      >y</a
+      ><a name="375"
+      > </a
+      ><a name="376" href="Examples.Negation.html#376" class="Bound"
+      >A</a
+      ><a name="377" class="Symbol"
+      >}</a
+      ><a name="378"
+      > </a
+      ><a name="379" class="Symbol"
+      >&#8594;</a
+      ><a name="380"
+      > </a
+      ><a name="381" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="382"
+      > </a
+      ><a name="383" href="Examples.Negation.html#372" class="Bound"
+      >x</a
+      ><a name="384"
+      > </a
+      ><a name="385" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="386"
+      > </a
+      ><a name="387" href="AltArtemov.Type.Core.html#251" class="Function Operator"
+      >&#172;</a
+      ><a name="388"
+      > </a
+      ><a name="389" href="Examples.Negation.html#376" class="Bound"
+      >A</a
+      ><a name="390"
+      > </a
+      ><a name="391" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="392"
+      > </a
+      ><a name="393" href="Examples.Negation.html#374" class="Bound"
+      >y</a
+      ><a name="394"
+      > </a
+      ><a name="395" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="396"
+      > </a
+      ><a name="397" href="Examples.Negation.html#376" class="Bound"
+      >A</a
+      ><a name="398"
+      > </a
+      ><a name="399" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="400"
+      > </a
+      ><a name="401" href="AltArtemov.Term.Notation.Level1.html#152" class="Function"
+      >APP</a
+      ><a name="404"
+      > </a
+      ><a name="405" href="Examples.Negation.html#372" class="Bound"
+      >x</a
+      ><a name="406"
+      > </a
+      ><a name="407" href="Examples.Negation.html#374" class="Bound"
+      >y</a
+      ><a name="408"
+      > </a
+      ><a name="409" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="410"
+      > </a
+      ><a name="411" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="412"
+      >
+</a
+      ><a name="413" href="Examples.Negation.html#364" class="Function"
+      >X4</a
+      ><a name="415"
+      > </a
+      ><a name="416" class="Symbol"
+      >=</a
+      ><a name="417"
+      > </a
+      ><a name="418" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="421"
+      > </a
+      ><a name="422" class="Symbol"
+      >(</a
+      ><a name="423" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="426"
+      > </a
+      ><a name="427" class="Symbol"
+      >(</a
+      ><a name="428" href="AltArtemov.Derivation.Notation.Level2.html#394" class="Function"
+      >app&#178;</a
+      ><a name="432"
+      > </a
+      ><a name="433" href="AltArtemov.Derivation.Notation.Level1.html#697" class="Function"
+      >v1</a
+      ><a name="435"
+      > </a
+      ><a name="436" href="AltArtemov.Derivation.Notation.Level1.html#658" class="Function"
+      >v0</a
+      ><a name="438" class="Symbol"
+      >))</a
+      ><a name="440"
+      >
+
+</a
+      ><a name="442" href="Examples.Negation.html#442" class="Function"
+      >X5</a
+      ><a name="444"
+      > </a
+      ><a name="445" class="Symbol"
+      >:</a
+      ><a name="446"
+      > </a
+      ><a name="447" class="Symbol"
+      >&#8704;</a
+      ><a name="448"
+      > </a
+      ><a name="449" class="Symbol"
+      >{</a
+      ><a name="450" href="Examples.Negation.html#450" class="Bound"
+      >x</a
+      ><a name="451"
+      > </a
+      ><a name="452" href="Examples.Negation.html#452" class="Bound"
+      >y</a
+      ><a name="453"
+      > </a
+      ><a name="454" href="Examples.Negation.html#454" class="Bound"
+      >A</a
+      ><a name="455" class="Symbol"
+      >}</a
+      ><a name="456"
+      > </a
+      ><a name="457" class="Symbol"
+      >&#8594;</a
+      ><a name="458"
+      > </a
+      ><a name="459" href="AltArtemov.Derivation.Core.html#985" class="Function Operator"
+      >&#8873;</a
+      ><a name="460"
+      > </a
+      ><a name="461" href="Examples.Negation.html#450" class="Bound"
+      >x</a
+      ><a name="462"
+      > </a
+      ><a name="463" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="464"
+      > </a
+      ><a name="465" href="AltArtemov.Type.Core.html#251" class="Function Operator"
+      >&#172;</a
+      ><a name="466"
+      > </a
+      ><a name="467" href="Examples.Negation.html#454" class="Bound"
+      >A</a
+      ><a name="468"
+      > </a
+      ><a name="469" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="470"
+      > </a
+      ><a name="471" href="Examples.Negation.html#452" class="Bound"
+      >y</a
+      ><a name="472"
+      > </a
+      ><a name="473" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="474"
+      > </a
+      ><a name="475" href="Examples.Negation.html#454" class="Bound"
+      >A</a
+      ><a name="476"
+      > </a
+      ><a name="477" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="478"
+      > </a
+      ><a name="479" href="AltArtemov.Term.Properties.html#843" class="Function"
+      >quo</a
+      ><a name="482"
+      > </a
+      ><a name="483" class="Symbol"
+      >(</a
+      ><a name="484" href="AltArtemov.Term.Notation.Level1.html#152" class="Function"
+      >APP</a
+      ><a name="487"
+      > </a
+      ><a name="488" href="Examples.Negation.html#450" class="Bound"
+      >x</a
+      ><a name="489"
+      > </a
+      ><a name="490" href="Examples.Negation.html#452" class="Bound"
+      >y</a
+      ><a name="491" class="Symbol"
+      >)</a
+      ><a name="492"
+      > </a
+      ><a name="493" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="494"
+      > </a
+      ><a name="495" href="AltArtemov.Term.Notation.Level1.html#152" class="Function"
+      >APP</a
+      ><a name="498"
+      > </a
+      ><a name="499" href="Examples.Negation.html#450" class="Bound"
+      >x</a
+      ><a name="500"
+      > </a
+      ><a name="501" href="Examples.Negation.html#452" class="Bound"
+      >y</a
+      ><a name="502"
+      > </a
+      ><a name="503" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="504"
+      > </a
+      ><a name="505" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="506"
+      >
+</a
+      ><a name="507" href="Examples.Negation.html#442" class="Function"
+      >X5</a
+      ><a name="509"
+      > </a
+      ><a name="510" class="Symbol"
+      >=</a
+      ><a name="511"
+      > </a
+      ><a name="512" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="515"
+      > </a
+      ><a name="516" class="Symbol"
+      >(</a
+      ><a name="517" href="AltArtemov.Derivation.Notation.Level1.html#273" class="Function"
+      >lam</a
+      ><a name="520"
+      > </a
+      ><a name="521" class="Symbol"
+      >(</a
+      ><a name="522" href="AltArtemov.Derivation.Notation.Level1.html#438" class="Function"
+      >up</a
+      ><a name="524"
+      > </a
+      ><a name="525" class="Symbol"
+      >(</a
+      ><a name="526" href="AltArtemov.Derivation.Notation.Level2.html#394" class="Function"
+      >app&#178;</a
+      ><a name="530"
+      > </a
+      ><a name="531" href="AltArtemov.Derivation.Notation.Level1.html#697" class="Function"
+      >v1</a
+      ><a name="533"
+      > </a
+      ><a name="534" href="AltArtemov.Derivation.Notation.Level1.html#658" class="Function"
+      >v0</a
+      ><a name="536" class="Symbol"
+      >)))</a
+      ><a name="539"
+      >
+
+
+</a
+      ><a name="542" class="Comment"
+      >--meta : &#8704; {A B} &#8594; &#8873; (LAM V0 &#8758; (A &#8835; B &#8835; A)) &#8835; &#8869;</a
+      ><a name="589"
+      >
+</a
+      ><a name="590" class="Comment"
+      >--meta = lam {!!}</a
+      ><a name="607"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

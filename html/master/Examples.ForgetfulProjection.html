@@ -1,0 +1,1831 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >Examples.ForgetfulProjection</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="Examples.ForgetfulProjection.html#1" class="Module"
+      >Examples.ForgetfulProjection</a
+      ><a name="36"
+      > </a
+      ><a name="37" class="Keyword"
+      >where</a
+      ><a name="42"
+      >
+
+</a
+      ><a name="44" class="Keyword"
+      >open</a
+      ><a name="48"
+      > </a
+      ><a name="49" class="Keyword"
+      >import</a
+      ><a name="55"
+      > </a
+      ><a name="56" href="Relation.Binary.PropositionalEquality.html#1" class="Module"
+      >Relation.Binary.PropositionalEquality</a
+      ><a name="93"
+      > </a
+      ><a name="94" class="Keyword"
+      >using</a
+      ><a name="99"
+      > </a
+      ><a name="100" class="Symbol"
+      >(</a
+      ><a name="101" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >_&#8801;_</a
+      ><a name="104"
+      > </a
+      ><a name="105" class="Symbol"
+      >;</a
+      ><a name="106"
+      > </a
+      ><a name="107" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="111" class="Symbol"
+      >)</a
+      ><a name="112"
+      >
+
+</a
+      ><a name="114" class="Keyword"
+      >open</a
+      ><a name="118"
+      > </a
+      ><a name="119" class="Keyword"
+      >import</a
+      ><a name="125"
+      > </a
+      ><a name="126" href="AltArtemov.html#1" class="Module"
+      >AltArtemov</a
+      ><a name="136"
+      >
+</a
+      ><a name="137" class="Keyword"
+      >open</a
+      ><a name="141"
+      > </a
+      ><a name="142" class="Keyword"
+      >import</a
+      ><a name="148"
+      > </a
+      ><a name="149" href="Examples.AltArtemov.html#1" class="Module"
+      >Examples.AltArtemov</a
+      ><a name="168"
+      >
+</a
+      ><a name="169" class="Keyword"
+      >open</a
+      ><a name="173"
+      > </a
+      ><a name="174" class="Keyword"
+      >import</a
+      ><a name="180"
+      > </a
+      ><a name="181" href="S4.html#1" class="Module"
+      >S4</a
+      ><a name="183"
+      > </a
+      ><a name="184" class="Keyword"
+      >using</a
+      ><a name="189"
+      > </a
+      ><a name="190" class="Symbol"
+      >(</a
+      ><a name="191" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >_&#8729;_&#8866;_</a
+      ><a name="196" class="Symbol"
+      >)</a
+      ><a name="197"
+      >
+</a
+      ><a name="198" class="Keyword"
+      >import</a
+      ><a name="204"
+      > </a
+      ><a name="205" href="Examples.S4.html#1" class="Module"
+      >Examples.S4</a
+      ><a name="216"
+      > </a
+      ><a name="217" class="Symbol"
+      >as</a
+      ><a name="219"
+      > </a
+      ><a name="220" class="Module"
+      >S4</a
+      ><a name="222"
+      >
+
+
+</a
+      ><a name="225" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >&#176;[_]</a
+      ><a name="229"
+      > </a
+      ><a name="230" class="Symbol"
+      >:</a
+      ><a name="231"
+      > </a
+      ><a name="232" class="Symbol"
+      >&#8704;</a
+      ><a name="233"
+      > </a
+      ><a name="234" href="Examples.ForgetfulProjection.html#234" class="Bound"
+      >A</a
+      ><a name="235"
+      > </a
+      ><a name="236" class="Symbol"
+      >&#8594;</a
+      ><a name="237"
+      > </a
+      ><a name="238" href="S4.Type.html#43" class="Datatype"
+      >S4.Ty</a
+      ><a name="243"
+      >
+</a
+      ><a name="244" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >&#176;[</a
+      ><a name="246"
+      > </a
+      ><a name="247" href="AltArtemov.Type.Core.html#131" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="248"
+      > </a
+      ><a name="249" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >]</a
+      ><a name="250"
+      >    </a
+      ><a name="254" class="Symbol"
+      >=</a
+      ><a name="255"
+      > </a
+      ><a name="256" href="S4.Type.html#76" class="InductiveConstructor"
+      >S4.&#8869;</a
+      ><a name="260"
+      >
+</a
+      ><a name="261" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >&#176;[</a
+      ><a name="263"
+      > </a
+      ><a name="264" href="Examples.ForgetfulProjection.html#264" class="Bound"
+      >A</a
+      ><a name="265"
+      > </a
+      ><a name="266" href="AltArtemov.Type.Core.html#159" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="267"
+      > </a
+      ><a name="268" href="Examples.ForgetfulProjection.html#268" class="Bound"
+      >B</a
+      ><a name="269"
+      > </a
+      ><a name="270" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >]</a
+      ><a name="271"
+      > </a
+      ><a name="272" class="Symbol"
+      >=</a
+      ><a name="273"
+      > </a
+      ><a name="274" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >&#176;[</a
+      ><a name="276"
+      > </a
+      ><a name="277" href="Examples.ForgetfulProjection.html#264" class="Bound"
+      >A</a
+      ><a name="278"
+      > </a
+      ><a name="279" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >]</a
+      ><a name="280"
+      > </a
+      ><a name="281" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >S4.&#8835;</a
+      ><a name="285"
+      > </a
+      ><a name="286" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >&#176;[</a
+      ><a name="288"
+      > </a
+      ><a name="289" href="Examples.ForgetfulProjection.html#268" class="Bound"
+      >B</a
+      ><a name="290"
+      > </a
+      ><a name="291" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >]</a
+      ><a name="292"
+      >
+</a
+      ><a name="293" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >&#176;[</a
+      ><a name="295"
+      > </a
+      ><a name="296" href="Examples.ForgetfulProjection.html#296" class="Bound"
+      >t</a
+      ><a name="297"
+      > </a
+      ><a name="298" href="AltArtemov.Type.Core.html#205" class="InductiveConstructor Operator"
+      >&#8758;</a
+      ><a name="299"
+      > </a
+      ><a name="300" href="Examples.ForgetfulProjection.html#300" class="Bound"
+      >A</a
+      ><a name="301"
+      > </a
+      ><a name="302" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >]</a
+      ><a name="303"
+      > </a
+      ><a name="304" class="Symbol"
+      >=</a
+      ><a name="305"
+      > </a
+      ><a name="306" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >S4.&#9633;</a
+      ><a name="310"
+      > </a
+      ><a name="311" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >&#176;[</a
+      ><a name="313"
+      > </a
+      ><a name="314" href="Examples.ForgetfulProjection.html#300" class="Bound"
+      >A</a
+      ><a name="315"
+      > </a
+      ><a name="316" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >]</a
+      ><a name="317"
+      >
+
+</a
+      ><a name="319" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >_&#176;&#8801;_</a
+      ><a name="323"
+      > </a
+      ><a name="324" class="Symbol"
+      >:</a
+      ><a name="325"
+      > </a
+      ><a name="326" class="Symbol"
+      >&#8704;</a
+      ><a name="327"
+      > </a
+      ><a name="328" class="Symbol"
+      >{{</a
+      ><a name="330" href="Examples.ForgetfulProjection.html#330" class="Bound"
+      >&#915;</a
+      ><a name="331"
+      > </a
+      ><a name="332" href="Examples.ForgetfulProjection.html#332" class="Bound"
+      >&#916;&#8242;</a
+      ><a name="334"
+      > </a
+      ><a name="335" href="Examples.ForgetfulProjection.html#335" class="Bound"
+      >&#915;&#8242;</a
+      ><a name="337" class="Symbol"
+      >}}</a
+      ><a name="339"
+      > </a
+      ><a name="340" class="Symbol"
+      >{</a
+      ><a name="341" href="Examples.ForgetfulProjection.html#341" class="Bound"
+      >A</a
+      ><a name="342"
+      > </a
+      ><a name="343" href="Examples.ForgetfulProjection.html#343" class="Bound"
+      >A&#8242;</a
+      ><a name="345" class="Symbol"
+      >}</a
+      ><a name="346"
+      > </a
+      ><a name="347" class="Symbol"
+      >(</a
+      ><a name="348" href="Examples.ForgetfulProjection.html#348" class="Bound"
+      >d</a
+      ><a name="349"
+      > </a
+      ><a name="350" class="Symbol"
+      >:</a
+      ><a name="351"
+      > </a
+      ><a name="352" href="Examples.ForgetfulProjection.html#330" class="Bound"
+      >&#915;</a
+      ><a name="353"
+      > </a
+      ><a name="354" href="AltArtemov.Derivation.Core.html#184" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="355"
+      > </a
+      ><a name="356" href="Examples.ForgetfulProjection.html#341" class="Bound"
+      >A</a
+      ><a name="357" class="Symbol"
+      >)</a
+      ><a name="358"
+      > </a
+      ><a name="359" class="Symbol"
+      >(</a
+      ><a name="360" href="Examples.ForgetfulProjection.html#360" class="Bound"
+      >d&#8242;</a
+      ><a name="362"
+      > </a
+      ><a name="363" class="Symbol"
+      >:</a
+      ><a name="364"
+      > </a
+      ><a name="365" href="Examples.ForgetfulProjection.html#332" class="Bound"
+      >&#916;&#8242;</a
+      ><a name="367"
+      > </a
+      ><a name="368" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="369"
+      > </a
+      ><a name="370" href="Examples.ForgetfulProjection.html#335" class="Bound"
+      >&#915;&#8242;</a
+      ><a name="372"
+      > </a
+      ><a name="373" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="374"
+      > </a
+      ><a name="375" href="Examples.ForgetfulProjection.html#343" class="Bound"
+      >A&#8242;</a
+      ><a name="377" class="Symbol"
+      >)</a
+      ><a name="378"
+      > </a
+      ><a name="379" class="Symbol"
+      >&#8594;</a
+      ><a name="380"
+      > </a
+      ><a name="381" class="PrimitiveType"
+      >Set</a
+      ><a name="384"
+      >
+</a
+      ><a name="385" href="Examples.ForgetfulProjection.html#385" class="Bound"
+      >d</a
+      ><a name="386"
+      > </a
+      ><a name="387" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="389"
+      > </a
+      ><a name="390" href="Examples.ForgetfulProjection.html#390" class="Bound"
+      >d&#8242;</a
+      ><a name="392"
+      > </a
+      ><a name="393" class="Symbol"
+      >=</a
+      ><a name="394"
+      > </a
+      ><a name="395" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >&#176;[</a
+      ><a name="397"
+      > </a
+      ><a name="398" href="AltArtemov.Derivation.Properties.html#636" class="Function"
+      >ty</a
+      ><a name="400"
+      > </a
+      ><a name="401" href="Examples.ForgetfulProjection.html#385" class="Bound"
+      >d</a
+      ><a name="402"
+      > </a
+      ><a name="403" href="Examples.ForgetfulProjection.html#225" class="Function Operator"
+      >]</a
+      ><a name="404"
+      > </a
+      ><a name="405" href="Agda.Builtin.Equality.html#55" class="Datatype Operator"
+      >&#8801;</a
+      ><a name="406"
+      > </a
+      ><a name="407" href="S4.Derivation.Core.html#801" class="Function"
+      >S4.ty</a
+      ><a name="412"
+      > </a
+      ><a name="413" href="Examples.ForgetfulProjection.html#390" class="Bound"
+      >d&#8242;</a
+      ><a name="415"
+      >
+
+
+</a
+      ><a name="418" class="Comment"
+      >-- Forgetful projection of some theorems of propositional logic.</a
+      ><a name="482"
+      >
+
+</a
+      ><a name="484" href="Examples.ForgetfulProjection.html#484" class="Function"
+      >I&#176;&#8801;I</a
+      ><a name="488"
+      > </a
+      ><a name="489" class="Symbol"
+      >:</a
+      ><a name="490"
+      > </a
+      ><a name="491" class="Symbol"
+      >&#8704;</a
+      ><a name="492"
+      > </a
+      ><a name="493" class="Symbol"
+      >{</a
+      ><a name="494" href="Examples.ForgetfulProjection.html#494" class="Bound"
+      >A</a
+      ><a name="495" class="Symbol"
+      >}</a
+      ><a name="496"
+      > </a
+      ><a name="497" class="Symbol"
+      >&#8594;</a
+      ><a name="498"
+      > </a
+      ><a name="499" href="Examples.AltArtemov.html#102" class="Function"
+      >I</a
+      ><a name="500"
+      > </a
+      ><a name="501" class="Symbol"
+      >{</a
+      ><a name="502" href="Examples.ForgetfulProjection.html#494" class="Bound"
+      >A</a
+      ><a name="503" class="Symbol"
+      >}</a
+      ><a name="504"
+      > </a
+      ><a name="505" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="507"
+      > </a
+      ><a name="508" href="Examples.S4.html#86" class="Function"
+      >S4.I</a
+      ><a name="512"
+      >
+</a
+      ><a name="513" href="Examples.ForgetfulProjection.html#484" class="Function"
+      >I&#176;&#8801;I</a
+      ><a name="517"
+      > </a
+      ><a name="518" class="Symbol"
+      >=</a
+      ><a name="519"
+      > </a
+      ><a name="520" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="524"
+      >
+
+</a
+      ><a name="526" href="Examples.ForgetfulProjection.html#526" class="Function"
+      >K&#176;&#8801;K</a
+      ><a name="530"
+      > </a
+      ><a name="531" class="Symbol"
+      >:</a
+      ><a name="532"
+      > </a
+      ><a name="533" class="Symbol"
+      >&#8704;</a
+      ><a name="534"
+      > </a
+      ><a name="535" class="Symbol"
+      >{</a
+      ><a name="536" href="Examples.ForgetfulProjection.html#536" class="Bound"
+      >A</a
+      ><a name="537"
+      > </a
+      ><a name="538" href="Examples.ForgetfulProjection.html#538" class="Bound"
+      >B</a
+      ><a name="539" class="Symbol"
+      >}</a
+      ><a name="540"
+      > </a
+      ><a name="541" class="Symbol"
+      >&#8594;</a
+      ><a name="542"
+      > </a
+      ><a name="543" href="Examples.AltArtemov.html#134" class="Function"
+      >K</a
+      ><a name="544"
+      > </a
+      ><a name="545" class="Symbol"
+      >{</a
+      ><a name="546" href="Examples.ForgetfulProjection.html#536" class="Bound"
+      >A</a
+      ><a name="547" class="Symbol"
+      >}</a
+      ><a name="548"
+      > </a
+      ><a name="549" class="Symbol"
+      >{</a
+      ><a name="550" href="Examples.ForgetfulProjection.html#538" class="Bound"
+      >B</a
+      ><a name="551" class="Symbol"
+      >}</a
+      ><a name="552"
+      > </a
+      ><a name="553" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="555"
+      > </a
+      ><a name="556" href="Examples.S4.html#118" class="Function"
+      >S4.K</a
+      ><a name="560"
+      >
+</a
+      ><a name="561" href="Examples.ForgetfulProjection.html#526" class="Function"
+      >K&#176;&#8801;K</a
+      ><a name="565"
+      > </a
+      ><a name="566" class="Symbol"
+      >=</a
+      ><a name="567"
+      > </a
+      ><a name="568" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="572"
+      >
+
+</a
+      ><a name="574" href="Examples.ForgetfulProjection.html#574" class="Function"
+      >S&#176;&#8801;S</a
+      ><a name="578"
+      > </a
+      ><a name="579" class="Symbol"
+      >:</a
+      ><a name="580"
+      > </a
+      ><a name="581" class="Symbol"
+      >&#8704;</a
+      ><a name="582"
+      > </a
+      ><a name="583" class="Symbol"
+      >{</a
+      ><a name="584" href="Examples.ForgetfulProjection.html#584" class="Bound"
+      >A</a
+      ><a name="585"
+      > </a
+      ><a name="586" href="Examples.ForgetfulProjection.html#586" class="Bound"
+      >B</a
+      ><a name="587"
+      > </a
+      ><a name="588" href="Examples.ForgetfulProjection.html#588" class="Bound"
+      >C</a
+      ><a name="589" class="Symbol"
+      >}</a
+      ><a name="590"
+      > </a
+      ><a name="591" class="Symbol"
+      >&#8594;</a
+      ><a name="592"
+      > </a
+      ><a name="593" href="Examples.AltArtemov.html#178" class="Function"
+      >S</a
+      ><a name="594"
+      > </a
+      ><a name="595" class="Symbol"
+      >{</a
+      ><a name="596" href="Examples.ForgetfulProjection.html#584" class="Bound"
+      >A</a
+      ><a name="597" class="Symbol"
+      >}</a
+      ><a name="598"
+      > </a
+      ><a name="599" class="Symbol"
+      >{</a
+      ><a name="600" href="Examples.ForgetfulProjection.html#586" class="Bound"
+      >B</a
+      ><a name="601" class="Symbol"
+      >}</a
+      ><a name="602"
+      > </a
+      ><a name="603" class="Symbol"
+      >{</a
+      ><a name="604" href="Examples.ForgetfulProjection.html#588" class="Bound"
+      >C</a
+      ><a name="605" class="Symbol"
+      >}</a
+      ><a name="606"
+      > </a
+      ><a name="607" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="609"
+      > </a
+      ><a name="610" href="Examples.S4.html#162" class="Function"
+      >S4.S</a
+      ><a name="614"
+      >
+</a
+      ><a name="615" href="Examples.ForgetfulProjection.html#574" class="Function"
+      >S&#176;&#8801;S</a
+      ><a name="619"
+      > </a
+      ><a name="620" class="Symbol"
+      >=</a
+      ><a name="621"
+      > </a
+      ><a name="622" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="626"
+      >
+
+
+</a
+      ><a name="629" class="Comment"
+      >-- Forgetful projection of some theorems of the &#955;-calculus.</a
+      ><a name="688"
+      >
+
+</a
+      ><a name="690" href="Examples.ForgetfulProjection.html#690" class="Function"
+      >I&#178;&#176;&#8801;&#9633;I</a
+      ><a name="696"
+      > </a
+      ><a name="697" class="Symbol"
+      >:</a
+      ><a name="698"
+      > </a
+      ><a name="699" class="Symbol"
+      >&#8704;</a
+      ><a name="700"
+      > </a
+      ><a name="701" class="Symbol"
+      >{</a
+      ><a name="702" href="Examples.ForgetfulProjection.html#702" class="Bound"
+      >A</a
+      ><a name="703" class="Symbol"
+      >}</a
+      ><a name="704"
+      > </a
+      ><a name="705" class="Symbol"
+      >&#8594;</a
+      ><a name="706"
+      > </a
+      ><a name="707" href="Examples.AltArtemov.html#315" class="Function"
+      >I&#178;</a
+      ><a name="709"
+      > </a
+      ><a name="710" class="Symbol"
+      >{</a
+      ><a name="711" href="Examples.ForgetfulProjection.html#702" class="Bound"
+      >A</a
+      ><a name="712" class="Symbol"
+      >}</a
+      ><a name="713"
+      > </a
+      ><a name="714" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="716"
+      > </a
+      ><a name="717" href="Examples.S4.html#314" class="Function"
+      >S4.&#9633;I</a
+      ><a name="722"
+      >
+</a
+      ><a name="723" href="Examples.ForgetfulProjection.html#690" class="Function"
+      >I&#178;&#176;&#8801;&#9633;I</a
+      ><a name="729"
+      > </a
+      ><a name="730" class="Symbol"
+      >=</a
+      ><a name="731"
+      > </a
+      ><a name="732" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="736"
+      >
+
+</a
+      ><a name="738" href="Examples.ForgetfulProjection.html#738" class="Function"
+      >K&#178;&#176;&#8801;&#9633;K</a
+      ><a name="744"
+      > </a
+      ><a name="745" class="Symbol"
+      >:</a
+      ><a name="746"
+      > </a
+      ><a name="747" class="Symbol"
+      >&#8704;</a
+      ><a name="748"
+      > </a
+      ><a name="749" class="Symbol"
+      >{</a
+      ><a name="750" href="Examples.ForgetfulProjection.html#750" class="Bound"
+      >A</a
+      ><a name="751"
+      > </a
+      ><a name="752" href="Examples.ForgetfulProjection.html#752" class="Bound"
+      >B</a
+      ><a name="753" class="Symbol"
+      >}</a
+      ><a name="754"
+      > </a
+      ><a name="755" class="Symbol"
+      >&#8594;</a
+      ><a name="756"
+      > </a
+      ><a name="757" href="Examples.AltArtemov.html#362" class="Function"
+      >K&#178;</a
+      ><a name="759"
+      > </a
+      ><a name="760" class="Symbol"
+      >{</a
+      ><a name="761" href="Examples.ForgetfulProjection.html#750" class="Bound"
+      >A</a
+      ><a name="762" class="Symbol"
+      >}</a
+      ><a name="763"
+      > </a
+      ><a name="764" class="Symbol"
+      >{</a
+      ><a name="765" href="Examples.ForgetfulProjection.html#752" class="Bound"
+      >B</a
+      ><a name="766" class="Symbol"
+      >}</a
+      ><a name="767"
+      > </a
+      ><a name="768" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="770"
+      > </a
+      ><a name="771" href="Examples.S4.html#358" class="Function"
+      >S4.&#9633;K</a
+      ><a name="776"
+      >
+</a
+      ><a name="777" href="Examples.ForgetfulProjection.html#738" class="Function"
+      >K&#178;&#176;&#8801;&#9633;K</a
+      ><a name="783"
+      > </a
+      ><a name="784" class="Symbol"
+      >=</a
+      ><a name="785"
+      > </a
+      ><a name="786" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="790"
+      >
+
+</a
+      ><a name="792" href="Examples.ForgetfulProjection.html#792" class="Function"
+      >S&#178;&#176;&#8801;&#9633;S</a
+      ><a name="798"
+      > </a
+      ><a name="799" class="Symbol"
+      >:</a
+      ><a name="800"
+      > </a
+      ><a name="801" class="Symbol"
+      >&#8704;</a
+      ><a name="802"
+      > </a
+      ><a name="803" class="Symbol"
+      >{</a
+      ><a name="804" href="Examples.ForgetfulProjection.html#804" class="Bound"
+      >A</a
+      ><a name="805"
+      > </a
+      ><a name="806" href="Examples.ForgetfulProjection.html#806" class="Bound"
+      >B</a
+      ><a name="807"
+      > </a
+      ><a name="808" href="Examples.ForgetfulProjection.html#808" class="Bound"
+      >C</a
+      ><a name="809" class="Symbol"
+      >}</a
+      ><a name="810"
+      > </a
+      ><a name="811" class="Symbol"
+      >&#8594;</a
+      ><a name="812"
+      > </a
+      ><a name="813" href="Examples.AltArtemov.html#428" class="Function"
+      >S&#178;</a
+      ><a name="815"
+      > </a
+      ><a name="816" class="Symbol"
+      >{</a
+      ><a name="817" href="Examples.ForgetfulProjection.html#804" class="Bound"
+      >A</a
+      ><a name="818" class="Symbol"
+      >}</a
+      ><a name="819"
+      > </a
+      ><a name="820" class="Symbol"
+      >{</a
+      ><a name="821" href="Examples.ForgetfulProjection.html#806" class="Bound"
+      >B</a
+      ><a name="822" class="Symbol"
+      >}</a
+      ><a name="823"
+      > </a
+      ><a name="824" class="Symbol"
+      >{</a
+      ><a name="825" href="Examples.ForgetfulProjection.html#808" class="Bound"
+      >C</a
+      ><a name="826" class="Symbol"
+      >}</a
+      ><a name="827"
+      > </a
+      ><a name="828" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="830"
+      > </a
+      ><a name="831" href="Examples.S4.html#414" class="Function"
+      >S4.&#9633;S</a
+      ><a name="836"
+      >
+</a
+      ><a name="837" href="Examples.ForgetfulProjection.html#792" class="Function"
+      >S&#178;&#176;&#8801;&#9633;S</a
+      ><a name="843"
+      > </a
+      ><a name="844" class="Symbol"
+      >=</a
+      ><a name="845"
+      > </a
+      ><a name="846" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="850"
+      >
+
+
+</a
+      ><a name="853" class="Comment"
+      >-- Forgetful projection of some theorems of third-level logic.</a
+      ><a name="915"
+      >
+
+</a
+      ><a name="917" href="Examples.ForgetfulProjection.html#917" class="Function"
+      >I&#179;&#176;&#8801;&#9633;&#9633;I</a
+      ><a name="924"
+      > </a
+      ><a name="925" class="Symbol"
+      >:</a
+      ><a name="926"
+      > </a
+      ><a name="927" class="Symbol"
+      >&#8704;</a
+      ><a name="928"
+      > </a
+      ><a name="929" class="Symbol"
+      >{</a
+      ><a name="930" href="Examples.ForgetfulProjection.html#930" class="Bound"
+      >A</a
+      ><a name="931" class="Symbol"
+      >}</a
+      ><a name="932"
+      > </a
+      ><a name="933" class="Symbol"
+      >&#8594;</a
+      ><a name="934"
+      > </a
+      ><a name="935" href="Examples.AltArtemov.html#630" class="Function"
+      >I&#179;</a
+      ><a name="937"
+      > </a
+      ><a name="938" class="Symbol"
+      >{</a
+      ><a name="939" href="Examples.ForgetfulProjection.html#930" class="Bound"
+      >A</a
+      ><a name="940" class="Symbol"
+      >}</a
+      ><a name="941"
+      > </a
+      ><a name="942" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="944"
+      > </a
+      ><a name="945" href="Examples.S4.html#584" class="Function"
+      >S4.&#9633;&#9633;I</a
+      ><a name="951"
+      >
+</a
+      ><a name="952" href="Examples.ForgetfulProjection.html#917" class="Function"
+      >I&#179;&#176;&#8801;&#9633;&#9633;I</a
+      ><a name="959"
+      > </a
+      ><a name="960" class="Symbol"
+      >=</a
+      ><a name="961"
+      > </a
+      ><a name="962" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="966"
+      >
+
+</a
+      ><a name="968" href="Examples.ForgetfulProjection.html#968" class="Function"
+      >K&#179;&#176;&#8801;&#9633;&#9633;K</a
+      ><a name="975"
+      > </a
+      ><a name="976" class="Symbol"
+      >:</a
+      ><a name="977"
+      > </a
+      ><a name="978" class="Symbol"
+      >&#8704;</a
+      ><a name="979"
+      > </a
+      ><a name="980" class="Symbol"
+      >{</a
+      ><a name="981" href="Examples.ForgetfulProjection.html#981" class="Bound"
+      >A</a
+      ><a name="982"
+      > </a
+      ><a name="983" href="Examples.ForgetfulProjection.html#983" class="Bound"
+      >B</a
+      ><a name="984" class="Symbol"
+      >}</a
+      ><a name="985"
+      > </a
+      ><a name="986" class="Symbol"
+      >&#8594;</a
+      ><a name="987"
+      > </a
+      ><a name="988" href="Examples.AltArtemov.html#688" class="Function"
+      >K&#179;</a
+      ><a name="990"
+      > </a
+      ><a name="991" class="Symbol"
+      >{</a
+      ><a name="992" href="Examples.ForgetfulProjection.html#981" class="Bound"
+      >A</a
+      ><a name="993" class="Symbol"
+      >}</a
+      ><a name="994"
+      > </a
+      ><a name="995" class="Symbol"
+      >{</a
+      ><a name="996" href="Examples.ForgetfulProjection.html#983" class="Bound"
+      >B</a
+      ><a name="997" class="Symbol"
+      >}</a
+      ><a name="998"
+      > </a
+      ><a name="999" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1001"
+      > </a
+      ><a name="1002" href="Examples.S4.html#638" class="Function"
+      >S4.&#9633;&#9633;K</a
+      ><a name="1008"
+      >
+</a
+      ><a name="1009" href="Examples.ForgetfulProjection.html#968" class="Function"
+      >K&#179;&#176;&#8801;&#9633;&#9633;K</a
+      ><a name="1016"
+      > </a
+      ><a name="1017" class="Symbol"
+      >=</a
+      ><a name="1018"
+      > </a
+      ><a name="1019" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1023"
+      >
+
+</a
+      ><a name="1025" href="Examples.ForgetfulProjection.html#1025" class="Function"
+      >S&#179;&#176;&#8801;&#9633;&#9633;S</a
+      ><a name="1032"
+      > </a
+      ><a name="1033" class="Symbol"
+      >:</a
+      ><a name="1034"
+      > </a
+      ><a name="1035" class="Symbol"
+      >&#8704;</a
+      ><a name="1036"
+      > </a
+      ><a name="1037" class="Symbol"
+      >{</a
+      ><a name="1038" href="Examples.ForgetfulProjection.html#1038" class="Bound"
+      >A</a
+      ><a name="1039"
+      > </a
+      ><a name="1040" href="Examples.ForgetfulProjection.html#1040" class="Bound"
+      >B</a
+      ><a name="1041"
+      > </a
+      ><a name="1042" href="Examples.ForgetfulProjection.html#1042" class="Bound"
+      >C</a
+      ><a name="1043" class="Symbol"
+      >}</a
+      ><a name="1044"
+      > </a
+      ><a name="1045" class="Symbol"
+      >&#8594;</a
+      ><a name="1046"
+      > </a
+      ><a name="1047" href="Examples.AltArtemov.html#772" class="Function"
+      >S&#179;</a
+      ><a name="1049"
+      > </a
+      ><a name="1050" class="Symbol"
+      >{</a
+      ><a name="1051" href="Examples.ForgetfulProjection.html#1038" class="Bound"
+      >A</a
+      ><a name="1052" class="Symbol"
+      >}</a
+      ><a name="1053"
+      > </a
+      ><a name="1054" class="Symbol"
+      >{</a
+      ><a name="1055" href="Examples.ForgetfulProjection.html#1040" class="Bound"
+      >B</a
+      ><a name="1056" class="Symbol"
+      >}</a
+      ><a name="1057"
+      > </a
+      ><a name="1058" class="Symbol"
+      >{</a
+      ><a name="1059" href="Examples.ForgetfulProjection.html#1042" class="Bound"
+      >C</a
+      ><a name="1060" class="Symbol"
+      >}</a
+      ><a name="1061"
+      > </a
+      ><a name="1062" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1064"
+      > </a
+      ><a name="1065" href="Examples.S4.html#704" class="Function"
+      >S4.&#9633;&#9633;S</a
+      ><a name="1071"
+      >
+</a
+      ><a name="1072" href="Examples.ForgetfulProjection.html#1025" class="Function"
+      >S&#179;&#176;&#8801;&#9633;&#9633;S</a
+      ><a name="1079"
+      > </a
+      ><a name="1080" class="Symbol"
+      >=</a
+      ><a name="1081"
+      > </a
+      ><a name="1082" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1086"
+      >
+
+
+</a
+      ><a name="1089" class="Comment"
+      >-- Forgetful projection of some first-level realisations of theorems of the</a
+      ><a name="1164"
+      >
+</a
+      ><a name="1165" class="Comment"
+      >-- modal logic S4.</a
+      ><a name="1183"
+      >
+
+</a
+      ><a name="1185" href="Examples.ForgetfulProjection.html#1185" class="Function"
+      >D&#176;&#8801;D</a
+      ><a name="1189"
+      > </a
+      ><a name="1190" class="Symbol"
+      >:</a
+      ><a name="1191"
+      > </a
+      ><a name="1192" class="Symbol"
+      >&#8704;</a
+      ><a name="1193"
+      > </a
+      ><a name="1194" class="Symbol"
+      >{</a
+      ><a name="1195" href="Examples.ForgetfulProjection.html#1195" class="Bound"
+      >f</a
+      ><a name="1196"
+      > </a
+      ><a name="1197" href="Examples.ForgetfulProjection.html#1197" class="Bound"
+      >x</a
+      ><a name="1198"
+      > </a
+      ><a name="1199" href="Examples.ForgetfulProjection.html#1199" class="Bound"
+      >A</a
+      ><a name="1200"
+      > </a
+      ><a name="1201" href="Examples.ForgetfulProjection.html#1201" class="Bound"
+      >B</a
+      ><a name="1202" class="Symbol"
+      >}</a
+      ><a name="1203"
+      > </a
+      ><a name="1204" class="Symbol"
+      >&#8594;</a
+      ><a name="1205"
+      > </a
+      ><a name="1206" href="Examples.AltArtemov.html#1061" class="Function"
+      >D</a
+      ><a name="1207"
+      > </a
+      ><a name="1208" class="Symbol"
+      >{</a
+      ><a name="1209" href="Examples.ForgetfulProjection.html#1195" class="Bound"
+      >f</a
+      ><a name="1210" class="Symbol"
+      >}</a
+      ><a name="1211"
+      > </a
+      ><a name="1212" class="Symbol"
+      >{</a
+      ><a name="1213" href="Examples.ForgetfulProjection.html#1197" class="Bound"
+      >x</a
+      ><a name="1214" class="Symbol"
+      >}</a
+      ><a name="1215"
+      > </a
+      ><a name="1216" class="Symbol"
+      >{</a
+      ><a name="1217" href="Examples.ForgetfulProjection.html#1199" class="Bound"
+      >A</a
+      ><a name="1218" class="Symbol"
+      >}</a
+      ><a name="1219"
+      > </a
+      ><a name="1220" class="Symbol"
+      >{</a
+      ><a name="1221" href="Examples.ForgetfulProjection.html#1201" class="Bound"
+      >B</a
+      ><a name="1222" class="Symbol"
+      >}</a
+      ><a name="1223"
+      > </a
+      ><a name="1224" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1226"
+      > </a
+      ><a name="1227" href="Examples.S4.html#867" class="Function"
+      >S4.D</a
+      ><a name="1231"
+      >
+</a
+      ><a name="1232" href="Examples.ForgetfulProjection.html#1185" class="Function"
+      >D&#176;&#8801;D</a
+      ><a name="1236"
+      > </a
+      ><a name="1237" class="Symbol"
+      >=</a
+      ><a name="1238"
+      > </a
+      ><a name="1239" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1243"
+      >
+
+</a
+      ><a name="1245" href="Examples.ForgetfulProjection.html#1245" class="Function"
+      >T&#176;&#8801;T</a
+      ><a name="1249"
+      > </a
+      ><a name="1250" class="Symbol"
+      >:</a
+      ><a name="1251"
+      > </a
+      ><a name="1252" class="Symbol"
+      >&#8704;</a
+      ><a name="1253"
+      > </a
+      ><a name="1254" class="Symbol"
+      >{</a
+      ><a name="1255" href="Examples.ForgetfulProjection.html#1255" class="Bound"
+      >x</a
+      ><a name="1256"
+      > </a
+      ><a name="1257" href="Examples.ForgetfulProjection.html#1257" class="Bound"
+      >A</a
+      ><a name="1258" class="Symbol"
+      >}</a
+      ><a name="1259"
+      > </a
+      ><a name="1260" class="Symbol"
+      >&#8594;</a
+      ><a name="1261"
+      > </a
+      ><a name="1262" href="Examples.AltArtemov.html#1143" class="Function"
+      >T</a
+      ><a name="1263"
+      > </a
+      ><a name="1264" class="Symbol"
+      >{</a
+      ><a name="1265" href="Examples.ForgetfulProjection.html#1255" class="Bound"
+      >x</a
+      ><a name="1266" class="Symbol"
+      >}</a
+      ><a name="1267"
+      > </a
+      ><a name="1268" class="Symbol"
+      >{</a
+      ><a name="1269" href="Examples.ForgetfulProjection.html#1257" class="Bound"
+      >A</a
+      ><a name="1270" class="Symbol"
+      >}</a
+      ><a name="1271"
+      > </a
+      ><a name="1272" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1274"
+      > </a
+      ><a name="1275" href="Examples.S4.html#962" class="Function"
+      >S4.T</a
+      ><a name="1279"
+      >
+</a
+      ><a name="1280" href="Examples.ForgetfulProjection.html#1245" class="Function"
+      >T&#176;&#8801;T</a
+      ><a name="1284"
+      > </a
+      ><a name="1285" class="Symbol"
+      >=</a
+      ><a name="1286"
+      > </a
+      ><a name="1287" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1291"
+      >
+
+</a
+      ><a name="1293" href="Examples.ForgetfulProjection.html#1293" class="Function"
+      >#4&#176;&#8801;#4</a
+      ><a name="1299"
+      > </a
+      ><a name="1300" class="Symbol"
+      >:</a
+      ><a name="1301"
+      > </a
+      ><a name="1302" class="Symbol"
+      >&#8704;</a
+      ><a name="1303"
+      > </a
+      ><a name="1304" class="Symbol"
+      >{</a
+      ><a name="1305" href="Examples.ForgetfulProjection.html#1305" class="Bound"
+      >x</a
+      ><a name="1306"
+      > </a
+      ><a name="1307" href="Examples.ForgetfulProjection.html#1307" class="Bound"
+      >A</a
+      ><a name="1308" class="Symbol"
+      >}</a
+      ><a name="1309"
+      > </a
+      ><a name="1310" class="Symbol"
+      >&#8594;</a
+      ><a name="1311"
+      > </a
+      ><a name="1312" href="Examples.AltArtemov.html#1188" class="Function"
+      >#4</a
+      ><a name="1314"
+      > </a
+      ><a name="1315" class="Symbol"
+      >{</a
+      ><a name="1316" href="Examples.ForgetfulProjection.html#1305" class="Bound"
+      >x</a
+      ><a name="1317" class="Symbol"
+      >}</a
+      ><a name="1318"
+      > </a
+      ><a name="1319" class="Symbol"
+      >{</a
+      ><a name="1320" href="Examples.ForgetfulProjection.html#1307" class="Bound"
+      >A</a
+      ><a name="1321" class="Symbol"
+      >}</a
+      ><a name="1322"
+      > </a
+      ><a name="1323" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1325"
+      > </a
+      ><a name="1326" href="Examples.S4.html#1008" class="Function"
+      >S4.#4</a
+      ><a name="1331"
+      >
+</a
+      ><a name="1332" href="Examples.ForgetfulProjection.html#1293" class="Function"
+      >#4&#176;&#8801;#4</a
+      ><a name="1338"
+      > </a
+      ><a name="1339" class="Symbol"
+      >=</a
+      ><a name="1340"
+      > </a
+      ><a name="1341" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1345"
+      >
+
+
+</a
+      ><a name="1348" class="Comment"
+      >-- Forgetful projection of some second-level realisations of theorems of the</a
+      ><a name="1424"
+      >
+</a
+      ><a name="1425" class="Comment"
+      >-- modal logic S4.</a
+      ><a name="1443"
+      >
+
+</a
+      ><a name="1445" href="Examples.ForgetfulProjection.html#1445" class="Function"
+      >D&#178;&#176;&#8801;&#9633;D</a
+      ><a name="1451"
+      > </a
+      ><a name="1452" class="Symbol"
+      >:</a
+      ><a name="1453"
+      > </a
+      ><a name="1454" class="Symbol"
+      >&#8704;</a
+      ><a name="1455"
+      > </a
+      ><a name="1456" class="Symbol"
+      >{</a
+      ><a name="1457" href="Examples.ForgetfulProjection.html#1457" class="Bound"
+      >f</a
+      ><a name="1458"
+      > </a
+      ><a name="1459" href="Examples.ForgetfulProjection.html#1459" class="Bound"
+      >x</a
+      ><a name="1460"
+      > </a
+      ><a name="1461" href="Examples.ForgetfulProjection.html#1461" class="Bound"
+      >A</a
+      ><a name="1462"
+      > </a
+      ><a name="1463" href="Examples.ForgetfulProjection.html#1463" class="Bound"
+      >B</a
+      ><a name="1464" class="Symbol"
+      >}</a
+      ><a name="1465"
+      > </a
+      ><a name="1466" class="Symbol"
+      >&#8594;</a
+      ><a name="1467"
+      > </a
+      ><a name="1468" href="Examples.AltArtemov.html#1316" class="Function"
+      >D&#178;</a
+      ><a name="1470"
+      > </a
+      ><a name="1471" class="Symbol"
+      >{</a
+      ><a name="1472" href="Examples.ForgetfulProjection.html#1457" class="Bound"
+      >f</a
+      ><a name="1473" class="Symbol"
+      >}</a
+      ><a name="1474"
+      > </a
+      ><a name="1475" class="Symbol"
+      >{</a
+      ><a name="1476" href="Examples.ForgetfulProjection.html#1459" class="Bound"
+      >x</a
+      ><a name="1477" class="Symbol"
+      >}</a
+      ><a name="1478"
+      > </a
+      ><a name="1479" class="Symbol"
+      >{</a
+      ><a name="1480" href="Examples.ForgetfulProjection.html#1461" class="Bound"
+      >A</a
+      ><a name="1481" class="Symbol"
+      >}</a
+      ><a name="1482"
+      > </a
+      ><a name="1483" class="Symbol"
+      >{</a
+      ><a name="1484" href="Examples.ForgetfulProjection.html#1463" class="Bound"
+      >B</a
+      ><a name="1485" class="Symbol"
+      >}</a
+      ><a name="1486"
+      > </a
+      ><a name="1487" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1489"
+      > </a
+      ><a name="1490" href="Examples.S4.html#1124" class="Function"
+      >S4.&#9633;D</a
+      ><a name="1495"
+      >
+</a
+      ><a name="1496" href="Examples.ForgetfulProjection.html#1445" class="Function"
+      >D&#178;&#176;&#8801;&#9633;D</a
+      ><a name="1502"
+      > </a
+      ><a name="1503" class="Symbol"
+      >=</a
+      ><a name="1504"
+      > </a
+      ><a name="1505" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1509"
+      >
+
+</a
+      ><a name="1511" href="Examples.ForgetfulProjection.html#1511" class="Function"
+      >T&#178;&#176;&#8801;&#9633;T</a
+      ><a name="1517"
+      > </a
+      ><a name="1518" class="Symbol"
+      >:</a
+      ><a name="1519"
+      > </a
+      ><a name="1520" class="Symbol"
+      >&#8704;</a
+      ><a name="1521"
+      > </a
+      ><a name="1522" class="Symbol"
+      >{</a
+      ><a name="1523" href="Examples.ForgetfulProjection.html#1523" class="Bound"
+      >x</a
+      ><a name="1524"
+      > </a
+      ><a name="1525" href="Examples.ForgetfulProjection.html#1525" class="Bound"
+      >A</a
+      ><a name="1526" class="Symbol"
+      >}</a
+      ><a name="1527"
+      > </a
+      ><a name="1528" class="Symbol"
+      >&#8594;</a
+      ><a name="1529"
+      > </a
+      ><a name="1530" href="Examples.AltArtemov.html#1431" class="Function"
+      >T&#178;</a
+      ><a name="1532"
+      > </a
+      ><a name="1533" class="Symbol"
+      >{</a
+      ><a name="1534" href="Examples.ForgetfulProjection.html#1523" class="Bound"
+      >x</a
+      ><a name="1535" class="Symbol"
+      >}</a
+      ><a name="1536"
+      > </a
+      ><a name="1537" class="Symbol"
+      >{</a
+      ><a name="1538" href="Examples.ForgetfulProjection.html#1525" class="Bound"
+      >A</a
+      ><a name="1539" class="Symbol"
+      >}</a
+      ><a name="1540"
+      > </a
+      ><a name="1541" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1543"
+      > </a
+      ><a name="1544" href="Examples.S4.html#1231" class="Function"
+      >S4.&#9633;T</a
+      ><a name="1549"
+      >
+</a
+      ><a name="1550" href="Examples.ForgetfulProjection.html#1511" class="Function"
+      >T&#178;&#176;&#8801;&#9633;T</a
+      ><a name="1556"
+      > </a
+      ><a name="1557" class="Symbol"
+      >=</a
+      ><a name="1558"
+      > </a
+      ><a name="1559" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1563"
+      >
+
+</a
+      ><a name="1565" href="Examples.ForgetfulProjection.html#1565" class="Function"
+      >#4&#178;&#176;&#8801;&#9633;#T</a
+      ><a name="1573"
+      > </a
+      ><a name="1574" class="Symbol"
+      >:</a
+      ><a name="1575"
+      > </a
+      ><a name="1576" class="Symbol"
+      >&#8704;</a
+      ><a name="1577"
+      > </a
+      ><a name="1578" class="Symbol"
+      >{</a
+      ><a name="1579" href="Examples.ForgetfulProjection.html#1579" class="Bound"
+      >x</a
+      ><a name="1580"
+      > </a
+      ><a name="1581" href="Examples.ForgetfulProjection.html#1581" class="Bound"
+      >A</a
+      ><a name="1582" class="Symbol"
+      >}</a
+      ><a name="1583"
+      > </a
+      ><a name="1584" class="Symbol"
+      >&#8594;</a
+      ><a name="1585"
+      > </a
+      ><a name="1586" href="Examples.AltArtemov.html#1499" class="Function"
+      >#4&#178;</a
+      ><a name="1589"
+      > </a
+      ><a name="1590" class="Symbol"
+      >{</a
+      ><a name="1591" href="Examples.ForgetfulProjection.html#1579" class="Bound"
+      >x</a
+      ><a name="1592" class="Symbol"
+      >}</a
+      ><a name="1593"
+      > </a
+      ><a name="1594" class="Symbol"
+      >{</a
+      ><a name="1595" href="Examples.ForgetfulProjection.html#1581" class="Bound"
+      >A</a
+      ><a name="1596" class="Symbol"
+      >}</a
+      ><a name="1597"
+      > </a
+      ><a name="1598" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1600"
+      > </a
+      ><a name="1601" href="Examples.S4.html#1289" class="Function"
+      >S4.&#9633;#4</a
+      ><a name="1607"
+      >
+</a
+      ><a name="1608" href="Examples.ForgetfulProjection.html#1565" class="Function"
+      >#4&#178;&#176;&#8801;&#9633;#T</a
+      ><a name="1616"
+      > </a
+      ><a name="1617" class="Symbol"
+      >=</a
+      ><a name="1618"
+      > </a
+      ><a name="1619" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1623"
+      >
+
+
+</a
+      ><a name="1626" class="Comment"
+      >-- Forgetful projection of some third-level realisations of theorems of the</a
+      ><a name="1701"
+      >
+</a
+      ><a name="1702" class="Comment"
+      >-- modal logic S4.</a
+      ><a name="1720"
+      >
+
+</a
+      ><a name="1722" href="Examples.ForgetfulProjection.html#1722" class="Function"
+      >D&#179;&#176;&#8801;&#9633;&#9633;D</a
+      ><a name="1729"
+      > </a
+      ><a name="1730" class="Symbol"
+      >:</a
+      ><a name="1731"
+      > </a
+      ><a name="1732" class="Symbol"
+      >&#8704;</a
+      ><a name="1733"
+      > </a
+      ><a name="1734" class="Symbol"
+      >{</a
+      ><a name="1735" href="Examples.ForgetfulProjection.html#1735" class="Bound"
+      >f</a
+      ><a name="1736"
+      > </a
+      ><a name="1737" href="Examples.ForgetfulProjection.html#1737" class="Bound"
+      >x</a
+      ><a name="1738"
+      > </a
+      ><a name="1739" href="Examples.ForgetfulProjection.html#1739" class="Bound"
+      >A</a
+      ><a name="1740"
+      > </a
+      ><a name="1741" href="Examples.ForgetfulProjection.html#1741" class="Bound"
+      >B</a
+      ><a name="1742" class="Symbol"
+      >}</a
+      ><a name="1743"
+      > </a
+      ><a name="1744" class="Symbol"
+      >&#8594;</a
+      ><a name="1745"
+      > </a
+      ><a name="1746" href="Examples.AltArtemov.html#1647" class="Function"
+      >D&#179;</a
+      ><a name="1748"
+      > </a
+      ><a name="1749" class="Symbol"
+      >{</a
+      ><a name="1750" href="Examples.ForgetfulProjection.html#1735" class="Bound"
+      >f</a
+      ><a name="1751" class="Symbol"
+      >}</a
+      ><a name="1752"
+      > </a
+      ><a name="1753" class="Symbol"
+      >{</a
+      ><a name="1754" href="Examples.ForgetfulProjection.html#1737" class="Bound"
+      >x</a
+      ><a name="1755" class="Symbol"
+      >}</a
+      ><a name="1756"
+      > </a
+      ><a name="1757" class="Symbol"
+      >{</a
+      ><a name="1758" href="Examples.ForgetfulProjection.html#1739" class="Bound"
+      >A</a
+      ><a name="1759" class="Symbol"
+      >}</a
+      ><a name="1760"
+      > </a
+      ><a name="1761" class="Symbol"
+      >{</a
+      ><a name="1762" href="Examples.ForgetfulProjection.html#1741" class="Bound"
+      >B</a
+      ><a name="1763" class="Symbol"
+      >}</a
+      ><a name="1764"
+      > </a
+      ><a name="1765" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1767"
+      > </a
+      ><a name="1768" href="Examples.S4.html#1423" class="Function"
+      >S4.&#9633;&#9633;D</a
+      ><a name="1774"
+      >
+</a
+      ><a name="1775" href="Examples.ForgetfulProjection.html#1722" class="Function"
+      >D&#179;&#176;&#8801;&#9633;&#9633;D</a
+      ><a name="1782"
+      > </a
+      ><a name="1783" class="Symbol"
+      >=</a
+      ><a name="1784"
+      > </a
+      ><a name="1785" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1789"
+      >
+
+</a
+      ><a name="1791" href="Examples.ForgetfulProjection.html#1791" class="Function"
+      >T&#179;&#176;&#8801;&#9633;&#9633;T</a
+      ><a name="1798"
+      > </a
+      ><a name="1799" class="Symbol"
+      >:</a
+      ><a name="1800"
+      > </a
+      ><a name="1801" class="Symbol"
+      >&#8704;</a
+      ><a name="1802"
+      > </a
+      ><a name="1803" class="Symbol"
+      >{</a
+      ><a name="1804" href="Examples.ForgetfulProjection.html#1804" class="Bound"
+      >x</a
+      ><a name="1805"
+      > </a
+      ><a name="1806" href="Examples.ForgetfulProjection.html#1806" class="Bound"
+      >A</a
+      ><a name="1807" class="Symbol"
+      >}</a
+      ><a name="1808"
+      > </a
+      ><a name="1809" class="Symbol"
+      >&#8594;</a
+      ><a name="1810"
+      > </a
+      ><a name="1811" href="Examples.AltArtemov.html#1791" class="Function"
+      >T&#179;</a
+      ><a name="1813"
+      > </a
+      ><a name="1814" class="Symbol"
+      >{</a
+      ><a name="1815" href="Examples.ForgetfulProjection.html#1804" class="Bound"
+      >x</a
+      ><a name="1816" class="Symbol"
+      >}</a
+      ><a name="1817"
+      > </a
+      ><a name="1818" class="Symbol"
+      >{</a
+      ><a name="1819" href="Examples.ForgetfulProjection.html#1806" class="Bound"
+      >A</a
+      ><a name="1820" class="Symbol"
+      >}</a
+      ><a name="1821"
+      > </a
+      ><a name="1822" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1824"
+      > </a
+      ><a name="1825" href="Examples.S4.html#1540" class="Function"
+      >S4.&#9633;&#9633;T</a
+      ><a name="1831"
+      >
+</a
+      ><a name="1832" href="Examples.ForgetfulProjection.html#1791" class="Function"
+      >T&#179;&#176;&#8801;&#9633;&#9633;T</a
+      ><a name="1839"
+      > </a
+      ><a name="1840" class="Symbol"
+      >=</a
+      ><a name="1841"
+      > </a
+      ><a name="1842" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1846"
+      >
+
+</a
+      ><a name="1848" href="Examples.ForgetfulProjection.html#1848" class="Function"
+      >#4&#179;&#176;&#8801;&#9633;&#9633;#T</a
+      ><a name="1857"
+      > </a
+      ><a name="1858" class="Symbol"
+      >:</a
+      ><a name="1859"
+      > </a
+      ><a name="1860" class="Symbol"
+      >&#8704;</a
+      ><a name="1861"
+      > </a
+      ><a name="1862" class="Symbol"
+      >{</a
+      ><a name="1863" href="Examples.ForgetfulProjection.html#1863" class="Bound"
+      >x</a
+      ><a name="1864"
+      > </a
+      ><a name="1865" href="Examples.ForgetfulProjection.html#1865" class="Bound"
+      >A</a
+      ><a name="1866" class="Symbol"
+      >}</a
+      ><a name="1867"
+      > </a
+      ><a name="1868" class="Symbol"
+      >&#8594;</a
+      ><a name="1869"
+      > </a
+      ><a name="1870" href="Examples.AltArtemov.html#1878" class="Function"
+      >#4&#179;</a
+      ><a name="1873"
+      > </a
+      ><a name="1874" class="Symbol"
+      >{</a
+      ><a name="1875" href="Examples.ForgetfulProjection.html#1863" class="Bound"
+      >x</a
+      ><a name="1876" class="Symbol"
+      >}</a
+      ><a name="1877"
+      > </a
+      ><a name="1878" class="Symbol"
+      >{</a
+      ><a name="1879" href="Examples.ForgetfulProjection.html#1865" class="Bound"
+      >A</a
+      ><a name="1880" class="Symbol"
+      >}</a
+      ><a name="1881"
+      > </a
+      ><a name="1882" href="Examples.ForgetfulProjection.html#319" class="Function Operator"
+      >&#176;&#8801;</a
+      ><a name="1884"
+      > </a
+      ><a name="1885" href="Examples.S4.html#1608" class="Function"
+      >S4.&#9633;&#9633;#4</a
+      ><a name="1892"
+      >
+</a
+      ><a name="1893" href="Examples.ForgetfulProjection.html#1848" class="Function"
+      >#4&#179;&#176;&#8801;&#9633;&#9633;#T</a
+      ><a name="1902"
+      > </a
+      ><a name="1903" class="Symbol"
+      >=</a
+      ><a name="1904"
+      > </a
+      ><a name="1905" href="Agda.Builtin.Equality.html#112" class="InductiveConstructor"
+      >refl</a
+      ><a name="1909"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

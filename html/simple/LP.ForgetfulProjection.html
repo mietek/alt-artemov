@@ -1,0 +1,981 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >LP.ForgetfulProjection</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="LP.ForgetfulProjection.html#1" class="Module"
+      >LP.ForgetfulProjection</a
+      ><a name="30"
+      > </a
+      ><a name="31" class="Keyword"
+      >where</a
+      ><a name="36"
+      >
+
+</a
+      ><a name="38" class="Keyword"
+      >open</a
+      ><a name="42"
+      > </a
+      ><a name="43" class="Keyword"
+      >import</a
+      ><a name="49"
+      > </a
+      ><a name="50" href="LP.Core.html#1" class="Module"
+      >LP.Core</a
+      ><a name="57"
+      > </a
+      ><a name="58" class="Keyword"
+      >public</a
+      ><a name="64"
+      >
+</a
+      ><a name="65" class="Keyword"
+      >import</a
+      ><a name="71"
+      > </a
+      ><a name="72" href="S4.Core.html#1" class="Module"
+      >S4.Core</a
+      ><a name="79"
+      > </a
+      ><a name="80" class="Symbol"
+      >as</a
+      ><a name="82"
+      > </a
+      ><a name="83" class="Module"
+      >S4</a
+      ><a name="85"
+      >
+
+
+</a
+      ><a name="88" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;_&#8971;&#7468;</a
+      ><a name="92"
+      > </a
+      ><a name="93" class="Symbol"
+      >:</a
+      ><a name="94"
+      > </a
+      ><a name="95" href="LP.Core.html#74" class="Datatype"
+      >Ty</a
+      ><a name="97"
+      > </a
+      ><a name="98" class="Symbol"
+      >&#8594;</a
+      ><a name="99"
+      > </a
+      ><a name="100" href="S4.Core.html#65" class="Datatype"
+      >S4.Ty</a
+      ><a name="105"
+      >
+</a
+      ><a name="106" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="107"
+      > </a
+      ><a name="108" href="LP.Core.html#93" class="InductiveConstructor"
+      >&#8869;</a
+      ><a name="109"
+      > </a
+      ><a name="110" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="112"
+      >    </a
+      ><a name="116" class="Symbol"
+      >=</a
+      ><a name="117"
+      > </a
+      ><a name="118" href="S4.Core.html#82" class="InductiveConstructor"
+      >S4.&#8869;</a
+      ><a name="122"
+      >
+</a
+      ><a name="123" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="124"
+      > </a
+      ><a name="125" href="LP.ForgetfulProjection.html#125" class="Bound"
+      >A</a
+      ><a name="126"
+      > </a
+      ><a name="127" href="LP.Core.html#144" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="128"
+      > </a
+      ><a name="129" href="LP.ForgetfulProjection.html#129" class="Bound"
+      >B</a
+      ><a name="130"
+      > </a
+      ><a name="131" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="133"
+      > </a
+      ><a name="134" class="Symbol"
+      >=</a
+      ><a name="135"
+      > </a
+      ><a name="136" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="137"
+      > </a
+      ><a name="138" href="LP.ForgetfulProjection.html#125" class="Bound"
+      >A</a
+      ><a name="139"
+      > </a
+      ><a name="140" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="142"
+      > </a
+      ><a name="143" href="S4.Core.html#108" class="InductiveConstructor Operator"
+      >S4.&#8835;</a
+      ><a name="147"
+      > </a
+      ><a name="148" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="149"
+      > </a
+      ><a name="150" href="LP.ForgetfulProjection.html#129" class="Bound"
+      >B</a
+      ><a name="151"
+      > </a
+      ><a name="152" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="154"
+      >
+</a
+      ><a name="155" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="156"
+      > </a
+      ><a name="157" href="LP.ForgetfulProjection.html#157" class="Bound"
+      >A</a
+      ><a name="158"
+      > </a
+      ><a name="159" href="LP.Core.html#167" class="InductiveConstructor Operator"
+      >&#8743;</a
+      ><a name="160"
+      > </a
+      ><a name="161" href="LP.ForgetfulProjection.html#161" class="Bound"
+      >B</a
+      ><a name="162"
+      > </a
+      ><a name="163" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="165"
+      > </a
+      ><a name="166" class="Symbol"
+      >=</a
+      ><a name="167"
+      > </a
+      ><a name="168" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="169"
+      > </a
+      ><a name="170" href="LP.ForgetfulProjection.html#157" class="Bound"
+      >A</a
+      ><a name="171"
+      > </a
+      ><a name="172" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="174"
+      > </a
+      ><a name="175" href="S4.Core.html#129" class="InductiveConstructor Operator"
+      >S4.&#8743;</a
+      ><a name="179"
+      > </a
+      ><a name="180" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="181"
+      > </a
+      ><a name="182" href="LP.ForgetfulProjection.html#161" class="Bound"
+      >B</a
+      ><a name="183"
+      > </a
+      ><a name="184" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="186"
+      >
+</a
+      ><a name="187" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="188"
+      > </a
+      ><a name="189" href="LP.ForgetfulProjection.html#189" class="Bound"
+      >t</a
+      ><a name="190"
+      > </a
+      ><a name="191" href="LP.Core.html#105" class="InductiveConstructor Operator"
+      >&#8756;</a
+      ><a name="192"
+      > </a
+      ><a name="193" href="LP.ForgetfulProjection.html#193" class="Bound"
+      >A</a
+      ><a name="194"
+      > </a
+      ><a name="195" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="197"
+      > </a
+      ><a name="198" class="Symbol"
+      >=</a
+      ><a name="199"
+      > </a
+      ><a name="200" href="S4.Core.html#92" class="InductiveConstructor Operator"
+      >S4.&#9633;</a
+      ><a name="204"
+      > </a
+      ><a name="205" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="206"
+      > </a
+      ><a name="207" href="LP.ForgetfulProjection.html#193" class="Bound"
+      >A</a
+      ><a name="208"
+      > </a
+      ><a name="209" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="211"
+      >
+
+</a
+      ><a name="213" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8970;_&#8971;&#7475;</a
+      ><a name="217"
+      > </a
+      ><a name="218" class="Symbol"
+      >:</a
+      ><a name="219"
+      > </a
+      ><a name="220" href="Common.Context.html#68" class="Datatype"
+      >Cx</a
+      ><a name="222"
+      > </a
+      ><a name="223" href="LP.Core.html#74" class="Datatype"
+      >Ty</a
+      ><a name="225"
+      > </a
+      ><a name="226" class="Symbol"
+      >&#8594;</a
+      ><a name="227"
+      > </a
+      ><a name="228" href="Common.Context.html#68" class="Datatype"
+      >Cx</a
+      ><a name="230"
+      > </a
+      ><a name="231" href="S4.Core.html#65" class="Datatype"
+      >S4.Ty</a
+      ><a name="236"
+      >
+</a
+      ><a name="237" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8970;</a
+      ><a name="238"
+      > </a
+      ><a name="239" href="Common.Context.html#95" class="InductiveConstructor"
+      >&#8709;</a
+      ><a name="240"
+      > </a
+      ><a name="241" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8971;&#7475;</a
+      ><a name="243"
+      >       </a
+      ><a name="250" class="Symbol"
+      >=</a
+      ><a name="251"
+      > </a
+      ><a name="252" href="Common.Context.html#95" class="InductiveConstructor"
+      >&#8709;</a
+      ><a name="253"
+      >
+</a
+      ><a name="254" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8970;</a
+      ><a name="255"
+      > </a
+      ><a name="256" class="Symbol"
+      >(</a
+      ><a name="257" href="LP.ForgetfulProjection.html#257" class="Bound"
+      >&#915;</a
+      ><a name="258"
+      > </a
+      ><a name="259" href="Common.Context.html#108" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="260"
+      > </a
+      ><a name="261" href="LP.ForgetfulProjection.html#261" class="Bound"
+      >A</a
+      ><a name="262" class="Symbol"
+      >)</a
+      ><a name="263"
+      > </a
+      ><a name="264" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8971;&#7475;</a
+      ><a name="266"
+      > </a
+      ><a name="267" class="Symbol"
+      >=</a
+      ><a name="268"
+      > </a
+      ><a name="269" class="Symbol"
+      >(</a
+      ><a name="270" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8970;</a
+      ><a name="271"
+      > </a
+      ><a name="272" href="LP.ForgetfulProjection.html#257" class="Bound"
+      >&#915;</a
+      ><a name="273"
+      > </a
+      ><a name="274" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8971;&#7475;</a
+      ><a name="276"
+      > </a
+      ><a name="277" href="Common.Context.html#108" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="278"
+      > </a
+      ><a name="279" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="280"
+      > </a
+      ><a name="281" href="LP.ForgetfulProjection.html#261" class="Bound"
+      >A</a
+      ><a name="282"
+      > </a
+      ><a name="283" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="285" class="Symbol"
+      >)</a
+      ><a name="286"
+      >
+
+</a
+      ><a name="288" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8970;_&#8971;&#739;</a
+      ><a name="292"
+      > </a
+      ><a name="293" class="Symbol"
+      >:</a
+      ><a name="294"
+      > </a
+      ><a name="295" class="Symbol"
+      >&#8704;</a
+      ><a name="296"
+      > </a
+      ><a name="297" class="Symbol"
+      >{</a
+      ><a name="298" href="LP.ForgetfulProjection.html#298" class="Bound"
+      >&#915;</a
+      ><a name="299"
+      > </a
+      ><a name="300" href="LP.ForgetfulProjection.html#300" class="Bound"
+      >A</a
+      ><a name="301" class="Symbol"
+      >}</a
+      ><a name="302"
+      > </a
+      ><a name="303" class="Symbol"
+      >&#8594;</a
+      ><a name="304"
+      > </a
+      ><a name="305" href="Common.Variable.html#89" class="Datatype"
+      >Var</a
+      ><a name="308"
+      > </a
+      ><a name="309" href="LP.Core.html#74" class="Datatype"
+      >Ty</a
+      ><a name="311"
+      > </a
+      ><a name="312" href="LP.ForgetfulProjection.html#298" class="Bound"
+      >&#915;</a
+      ><a name="313"
+      > </a
+      ><a name="314" href="LP.ForgetfulProjection.html#300" class="Bound"
+      >A</a
+      ><a name="315"
+      > </a
+      ><a name="316" class="Symbol"
+      >&#8594;</a
+      ><a name="317"
+      > </a
+      ><a name="318" href="Common.Variable.html#89" class="Datatype"
+      >Var</a
+      ><a name="321"
+      > </a
+      ><a name="322" href="S4.Core.html#65" class="Datatype"
+      >S4.Ty</a
+      ><a name="327"
+      > </a
+      ><a name="328" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8970;</a
+      ><a name="329"
+      > </a
+      ><a name="330" href="LP.ForgetfulProjection.html#298" class="Bound"
+      >&#915;</a
+      ><a name="331"
+      > </a
+      ><a name="332" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8971;&#7475;</a
+      ><a name="334"
+      > </a
+      ><a name="335" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="336"
+      > </a
+      ><a name="337" href="LP.ForgetfulProjection.html#300" class="Bound"
+      >A</a
+      ><a name="338"
+      > </a
+      ><a name="339" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="341"
+      >
+</a
+      ><a name="342" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8970;</a
+      ><a name="343"
+      > </a
+      ><a name="344" href="Common.Variable.html#128" class="InductiveConstructor"
+      >top</a
+      ><a name="347"
+      > </a
+      ><a name="348" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8971;&#739;</a
+      ><a name="350"
+      >   </a
+      ><a name="353" class="Symbol"
+      >=</a
+      ><a name="354"
+      > </a
+      ><a name="355" href="Common.Variable.html#128" class="InductiveConstructor"
+      >top</a
+      ><a name="358"
+      >
+</a
+      ><a name="359" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8970;</a
+      ><a name="360"
+      > </a
+      ><a name="361" href="Common.Variable.html#162" class="InductiveConstructor"
+      >pop</a
+      ><a name="364"
+      > </a
+      ><a name="365" href="LP.ForgetfulProjection.html#365" class="Bound"
+      >x</a
+      ><a name="366"
+      > </a
+      ><a name="367" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8971;&#739;</a
+      ><a name="369"
+      > </a
+      ><a name="370" class="Symbol"
+      >=</a
+      ><a name="371"
+      > </a
+      ><a name="372" href="Common.Variable.html#162" class="InductiveConstructor"
+      >pop</a
+      ><a name="375"
+      > </a
+      ><a name="376" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8970;</a
+      ><a name="377"
+      > </a
+      ><a name="378" href="LP.ForgetfulProjection.html#365" class="Bound"
+      >x</a
+      ><a name="379"
+      > </a
+      ><a name="380" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8971;&#739;</a
+      ><a name="382"
+      >
+
+</a
+      ><a name="384" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;_&#8971;</a
+      ><a name="387"
+      > </a
+      ><a name="388" class="Symbol"
+      >:</a
+      ><a name="389"
+      > </a
+      ><a name="390" class="Symbol"
+      >&#8704;</a
+      ><a name="391"
+      > </a
+      ><a name="392" class="Symbol"
+      >{</a
+      ><a name="393" href="LP.ForgetfulProjection.html#393" class="Bound"
+      >&#915;</a
+      ><a name="394"
+      > </a
+      ><a name="395" href="LP.ForgetfulProjection.html#395" class="Bound"
+      >&#916;</a
+      ><a name="396"
+      > </a
+      ><a name="397" href="LP.ForgetfulProjection.html#397" class="Bound"
+      >A</a
+      ><a name="398" class="Symbol"
+      >}</a
+      ><a name="399"
+      > </a
+      ><a name="400" class="Symbol"
+      >&#8594;</a
+      ><a name="401"
+      > </a
+      ><a name="402" href="LP.Core.html#194" class="Datatype"
+      >Tm</a
+      ><a name="404"
+      > </a
+      ><a name="405" href="LP.ForgetfulProjection.html#393" class="Bound"
+      >&#915;</a
+      ><a name="406"
+      > </a
+      ><a name="407" href="LP.ForgetfulProjection.html#395" class="Bound"
+      >&#916;</a
+      ><a name="408"
+      > </a
+      ><a name="409" href="LP.ForgetfulProjection.html#397" class="Bound"
+      >A</a
+      ><a name="410"
+      > </a
+      ><a name="411" class="Symbol"
+      >&#8594;</a
+      ><a name="412"
+      > </a
+      ><a name="413" href="S4.Core.html#154" class="Datatype"
+      >S4.Tm</a
+      ><a name="418"
+      > </a
+      ><a name="419" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8970;</a
+      ><a name="420"
+      > </a
+      ><a name="421" href="LP.ForgetfulProjection.html#393" class="Bound"
+      >&#915;</a
+      ><a name="422"
+      > </a
+      ><a name="423" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8971;&#7475;</a
+      ><a name="425"
+      > </a
+      ><a name="426" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8970;</a
+      ><a name="427"
+      > </a
+      ><a name="428" href="LP.ForgetfulProjection.html#395" class="Bound"
+      >&#916;</a
+      ><a name="429"
+      > </a
+      ><a name="430" href="LP.ForgetfulProjection.html#213" class="Function Operator"
+      >&#8971;&#7475;</a
+      ><a name="432"
+      > </a
+      ><a name="433" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8970;</a
+      ><a name="434"
+      > </a
+      ><a name="435" href="LP.ForgetfulProjection.html#397" class="Bound"
+      >A</a
+      ><a name="436"
+      > </a
+      ><a name="437" href="LP.ForgetfulProjection.html#88" class="Function Operator"
+      >&#8971;&#7468;</a
+      ><a name="439"
+      >
+</a
+      ><a name="440" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="441"
+      > </a
+      ><a name="442" href="LP.Core.html#232" class="InductiveConstructor"
+      >var</a
+      ><a name="445"
+      > </a
+      ><a name="446" href="LP.ForgetfulProjection.html#446" class="Bound"
+      >x</a
+      ><a name="447"
+      > </a
+      ><a name="448" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="449"
+      >      </a
+      ><a name="455" class="Symbol"
+      >=</a
+      ><a name="456"
+      > </a
+      ><a name="457" href="S4.Core.html#190" class="InductiveConstructor"
+      >S4.var</a
+      ><a name="463"
+      > </a
+      ><a name="464" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8970;</a
+      ><a name="465"
+      > </a
+      ><a name="466" href="LP.ForgetfulProjection.html#446" class="Bound"
+      >x</a
+      ><a name="467"
+      > </a
+      ><a name="468" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8971;&#739;</a
+      ><a name="470"
+      >
+</a
+      ><a name="471" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="472"
+      > </a
+      ><a name="473" href="LP.Core.html#273" class="InductiveConstructor"
+      >lam</a
+      ><a name="476"
+      > </a
+      ><a name="477" href="LP.ForgetfulProjection.html#477" class="Bound"
+      >t</a
+      ><a name="478"
+      > </a
+      ><a name="479" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="480"
+      >      </a
+      ><a name="486" class="Symbol"
+      >=</a
+      ><a name="487"
+      > </a
+      ><a name="488" href="S4.Core.html#229" class="InductiveConstructor"
+      >S4.lam</a
+      ><a name="494"
+      > </a
+      ><a name="495" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="496"
+      > </a
+      ><a name="497" href="LP.ForgetfulProjection.html#477" class="Bound"
+      >t</a
+      ><a name="498"
+      > </a
+      ><a name="499" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="500"
+      >
+</a
+      ><a name="501" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="502"
+      > </a
+      ><a name="503" href="LP.Core.html#326" class="InductiveConstructor"
+      >app</a
+      ><a name="506"
+      > </a
+      ><a name="507" href="LP.ForgetfulProjection.html#507" class="Bound"
+      >t&#8321;</a
+      ><a name="509"
+      > </a
+      ><a name="510" href="LP.ForgetfulProjection.html#510" class="Bound"
+      >t&#8322;</a
+      ><a name="512"
+      > </a
+      ><a name="513" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="514"
+      >  </a
+      ><a name="516" class="Symbol"
+      >=</a
+      ><a name="517"
+      > </a
+      ><a name="518" href="S4.Core.html#280" class="InductiveConstructor"
+      >S4.app</a
+      ><a name="524"
+      > </a
+      ><a name="525" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="526"
+      > </a
+      ><a name="527" href="LP.ForgetfulProjection.html#507" class="Bound"
+      >t&#8321;</a
+      ><a name="529"
+      > </a
+      ><a name="530" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="531"
+      > </a
+      ><a name="532" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="533"
+      > </a
+      ><a name="534" href="LP.ForgetfulProjection.html#510" class="Bound"
+      >t&#8322;</a
+      ><a name="536"
+      > </a
+      ><a name="537" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="538"
+      >
+</a
+      ><a name="539" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="540"
+      > </a
+      ><a name="541" href="LP.Core.html#384" class="InductiveConstructor"
+      >*var</a
+      ><a name="545"
+      > </a
+      ><a name="546" href="LP.ForgetfulProjection.html#546" class="Bound"
+      >x</a
+      ><a name="547"
+      > </a
+      ><a name="548" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="549"
+      >     </a
+      ><a name="554" class="Symbol"
+      >=</a
+      ><a name="555"
+      > </a
+      ><a name="556" href="S4.Core.html#336" class="InductiveConstructor"
+      >S4.*var</a
+      ><a name="563"
+      > </a
+      ><a name="564" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8970;</a
+      ><a name="565"
+      > </a
+      ><a name="566" href="LP.ForgetfulProjection.html#546" class="Bound"
+      >x</a
+      ><a name="567"
+      > </a
+      ><a name="568" href="LP.ForgetfulProjection.html#288" class="Function Operator"
+      >&#8971;&#739;</a
+      ><a name="570"
+      >
+</a
+      ><a name="571" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="572"
+      > </a
+      ><a name="573" href="LP.Core.html#425" class="InductiveConstructor"
+      >up</a
+      ><a name="575"
+      > </a
+      ><a name="576" href="LP.ForgetfulProjection.html#576" class="Bound"
+      >t</a
+      ><a name="577"
+      > </a
+      ><a name="578" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="579"
+      >       </a
+      ><a name="586" class="Symbol"
+      >=</a
+      ><a name="587"
+      > </a
+      ><a name="588" href="S4.Core.html#375" class="InductiveConstructor"
+      >S4.up</a
+      ><a name="593"
+      > </a
+      ><a name="594" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="595"
+      > </a
+      ><a name="596" href="LP.ForgetfulProjection.html#576" class="Bound"
+      >t</a
+      ><a name="597"
+      > </a
+      ><a name="598" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="599"
+      >
+</a
+      ><a name="600" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="601"
+      > </a
+      ><a name="602" href="LP.Core.html#476" class="InductiveConstructor"
+      >down</a
+      ><a name="606"
+      > </a
+      ><a name="607" href="LP.ForgetfulProjection.html#607" class="Bound"
+      >t&#8321;</a
+      ><a name="609"
+      > </a
+      ><a name="610" href="LP.ForgetfulProjection.html#610" class="Bound"
+      >t&#8322;</a
+      ><a name="612"
+      > </a
+      ><a name="613" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="614"
+      > </a
+      ><a name="615" class="Symbol"
+      >=</a
+      ><a name="616"
+      > </a
+      ><a name="617" href="S4.Core.html#416" class="InductiveConstructor"
+      >S4.down</a
+      ><a name="624"
+      > </a
+      ><a name="625" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="626"
+      > </a
+      ><a name="627" href="LP.ForgetfulProjection.html#607" class="Bound"
+      >t&#8321;</a
+      ><a name="629"
+      > </a
+      ><a name="630" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="631"
+      > </a
+      ><a name="632" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="633"
+      > </a
+      ><a name="634" href="LP.ForgetfulProjection.html#610" class="Bound"
+      >t&#8322;</a
+      ><a name="636"
+      > </a
+      ><a name="637" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="638"
+      >
+</a
+      ><a name="639" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="640"
+      > </a
+      ><a name="641" href="LP.Core.html#557" class="InductiveConstructor"
+      >pair</a
+      ><a name="645"
+      > </a
+      ><a name="646" href="LP.ForgetfulProjection.html#646" class="Bound"
+      >t&#8321;</a
+      ><a name="648"
+      > </a
+      ><a name="649" href="LP.ForgetfulProjection.html#649" class="Bound"
+      >t&#8322;</a
+      ><a name="651"
+      > </a
+      ><a name="652" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="653"
+      > </a
+      ><a name="654" class="Symbol"
+      >=</a
+      ><a name="655"
+      > </a
+      ><a name="656" href="S4.Core.html#476" class="InductiveConstructor"
+      >S4.pair</a
+      ><a name="663"
+      > </a
+      ><a name="664" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="665"
+      > </a
+      ><a name="666" href="LP.ForgetfulProjection.html#646" class="Bound"
+      >t&#8321;</a
+      ><a name="668"
+      > </a
+      ><a name="669" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="670"
+      > </a
+      ><a name="671" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="672"
+      > </a
+      ><a name="673" href="LP.ForgetfulProjection.html#649" class="Bound"
+      >t&#8322;</a
+      ><a name="675"
+      > </a
+      ><a name="676" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="677"
+      >
+</a
+      ><a name="678" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="679"
+      > </a
+      ><a name="680" href="LP.Core.html#615" class="InductiveConstructor"
+      >fst</a
+      ><a name="683"
+      > </a
+      ><a name="684" href="LP.ForgetfulProjection.html#684" class="Bound"
+      >t</a
+      ><a name="685"
+      > </a
+      ><a name="686" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="687"
+      >      </a
+      ><a name="693" class="Symbol"
+      >=</a
+      ><a name="694"
+      > </a
+      ><a name="695" href="S4.Core.html#532" class="InductiveConstructor"
+      >S4.fst</a
+      ><a name="701"
+      > </a
+      ><a name="702" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="703"
+      > </a
+      ><a name="704" href="LP.ForgetfulProjection.html#684" class="Bound"
+      >t</a
+      ><a name="705"
+      > </a
+      ><a name="706" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="707"
+      >
+</a
+      ><a name="708" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="709"
+      > </a
+      ><a name="710" href="LP.Core.html#662" class="InductiveConstructor"
+      >snd</a
+      ><a name="713"
+      > </a
+      ><a name="714" href="LP.ForgetfulProjection.html#714" class="Bound"
+      >t</a
+      ><a name="715"
+      > </a
+      ><a name="716" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="717"
+      >      </a
+      ><a name="723" class="Symbol"
+      >=</a
+      ><a name="724"
+      > </a
+      ><a name="725" href="S4.Core.html#577" class="InductiveConstructor"
+      >S4.snd</a
+      ><a name="731"
+      > </a
+      ><a name="732" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8970;</a
+      ><a name="733"
+      > </a
+      ><a name="734" href="LP.ForgetfulProjection.html#714" class="Bound"
+      >t</a
+      ><a name="735"
+      > </a
+      ><a name="736" href="LP.ForgetfulProjection.html#384" class="Function Operator"
+      >&#8971;</a
+      ><a name="737"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

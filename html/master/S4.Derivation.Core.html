@@ -1,0 +1,987 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >S4.Derivation.Core</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="S4.Derivation.Core.html#1" class="Module"
+      >S4.Derivation.Core</a
+      ><a name="26"
+      > </a
+      ><a name="27" class="Keyword"
+      >where</a
+      ><a name="32"
+      >
+
+</a
+      ><a name="34" class="Keyword"
+      >open</a
+      ><a name="38"
+      > </a
+      ><a name="39" class="Keyword"
+      >import</a
+      ><a name="45"
+      > </a
+      ><a name="46" href="S4.Context.html#1" class="Module"
+      >S4.Context</a
+      ><a name="56"
+      >
+</a
+      ><a name="57" class="Keyword"
+      >open</a
+      ><a name="61"
+      > </a
+      ><a name="62" class="Keyword"
+      >import</a
+      ><a name="68"
+      > </a
+      ><a name="69" href="S4.Type.html#1" class="Module"
+      >S4.Type</a
+      ><a name="76"
+      >
+
+
+</a
+      ><a name="79" class="Keyword"
+      >infixr</a
+      ><a name="85"
+      > </a
+      ><a name="86" class="Number"
+      >0</a
+      ><a name="87"
+      > _&#8729;_&#8866;_
+
+</a
+      ><a name="95" class="Keyword"
+      >data</a
+      ><a name="99"
+      > </a
+      ><a name="100" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >_&#8729;_&#8866;_</a
+      ><a name="105"
+      > </a
+      ><a name="106" class="Symbol"
+      >(</a
+      ><a name="107" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="108"
+      > </a
+      ><a name="109" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="110"
+      > </a
+      ><a name="111" class="Symbol"
+      >:</a
+      ><a name="112"
+      > </a
+      ><a name="113" href="S4.Context.Core.html#130" class="Datatype"
+      >Cx</a
+      ><a name="115" class="Symbol"
+      >)</a
+      ><a name="116"
+      > </a
+      ><a name="117" class="Symbol"
+      >:</a
+      ><a name="118"
+      > </a
+      ><a name="119" class="Symbol"
+      >&#8704;</a
+      ><a name="120"
+      > </a
+      ><a name="121" class="Symbol"
+      >(</a
+      ><a name="122" href="S4.Derivation.Core.html#122" class="Bound"
+      >A</a
+      ><a name="123"
+      > </a
+      ><a name="124" class="Symbol"
+      >:</a
+      ><a name="125"
+      > </a
+      ><a name="126" href="S4.Type.html#43" class="Datatype"
+      >Ty</a
+      ><a name="128" class="Symbol"
+      >)</a
+      ><a name="129"
+      > </a
+      ><a name="130" class="Symbol"
+      >&#8594;</a
+      ><a name="131"
+      > </a
+      ><a name="132" class="PrimitiveType"
+      >Set</a
+      ><a name="135"
+      > </a
+      ><a name="136" class="Keyword"
+      >where</a
+      ><a name="141"
+      >
+  </a
+      ><a name="144" class="Comment"
+      >-- Variable reference.</a
+      ><a name="166"
+      >
+  </a
+      ><a name="169" href="S4.Derivation.Core.html#169" class="InductiveConstructor"
+      >var</a
+      ><a name="172"
+      > </a
+      ><a name="173" class="Symbol"
+      >:</a
+      ><a name="174"
+      > </a
+      ><a name="175" class="Symbol"
+      >&#8704;</a
+      ><a name="176"
+      > </a
+      ><a name="177" class="Symbol"
+      >{</a
+      ><a name="178" href="S4.Derivation.Core.html#178" class="Bound"
+      >A</a
+      ><a name="179" class="Symbol"
+      >}</a
+      ><a name="180"
+      >
+      </a
+      ><a name="187" class="Symbol"
+      >&#8594;</a
+      ><a name="188"
+      > </a
+      ><a name="189" class="Symbol"
+      >(</a
+      ><a name="190" href="S4.Derivation.Core.html#190" class="Bound"
+      >i</a
+      ><a name="191"
+      > </a
+      ><a name="192" class="Symbol"
+      >:</a
+      ><a name="193"
+      > </a
+      ><a name="194" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="195"
+      > </a
+      ><a name="196" href="S4.Context.Core.html#202" class="Datatype Operator"
+      >&#8715;</a
+      ><a name="197"
+      > </a
+      ><a name="198" href="S4.Derivation.Core.html#178" class="Bound"
+      >A</a
+      ><a name="199" class="Symbol"
+      >)</a
+      ><a name="200"
+      >
+      </a
+      ><a name="207" class="Symbol"
+      >&#8594;</a
+      ><a name="208"
+      > </a
+      ><a name="209" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="210"
+      > </a
+      ><a name="211" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="212"
+      > </a
+      ><a name="213" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="214"
+      > </a
+      ><a name="215" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="216"
+      > </a
+      ><a name="217" href="S4.Derivation.Core.html#178" class="Bound"
+      >A</a
+      ><a name="218"
+      >
+
+  </a
+      ><a name="222" class="Comment"
+      >-- Lambda abstraction. (&#8835;I)</a
+      ><a name="249"
+      >
+  </a
+      ><a name="252" href="S4.Derivation.Core.html#252" class="InductiveConstructor"
+      >lam</a
+      ><a name="255"
+      > </a
+      ><a name="256" class="Symbol"
+      >:</a
+      ><a name="257"
+      > </a
+      ><a name="258" class="Symbol"
+      >&#8704;</a
+      ><a name="259"
+      > </a
+      ><a name="260" class="Symbol"
+      >{</a
+      ><a name="261" href="S4.Derivation.Core.html#261" class="Bound"
+      >A</a
+      ><a name="262"
+      > </a
+      ><a name="263" href="S4.Derivation.Core.html#263" class="Bound"
+      >B</a
+      ><a name="264" class="Symbol"
+      >}</a
+      ><a name="265"
+      >
+      </a
+      ><a name="272" class="Symbol"
+      >&#8594;</a
+      ><a name="273"
+      > </a
+      ><a name="274" class="Symbol"
+      >(</a
+      ><a name="275" href="S4.Derivation.Core.html#275" class="Bound"
+      >d</a
+      ><a name="276"
+      > </a
+      ><a name="277" class="Symbol"
+      >:</a
+      ><a name="278"
+      > </a
+      ><a name="279" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="280"
+      > </a
+      ><a name="281" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="282"
+      > </a
+      ><a name="283" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="284"
+      > </a
+      ><a name="285" href="S4.Context.Core.html#165" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="286"
+      > </a
+      ><a name="287" href="S4.Derivation.Core.html#261" class="Bound"
+      >A</a
+      ><a name="288"
+      > </a
+      ><a name="289" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="290"
+      > </a
+      ><a name="291" href="S4.Derivation.Core.html#263" class="Bound"
+      >B</a
+      ><a name="292" class="Symbol"
+      >)</a
+      ><a name="293"
+      >
+      </a
+      ><a name="300" class="Symbol"
+      >&#8594;</a
+      ><a name="301"
+      > </a
+      ><a name="302" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="303"
+      > </a
+      ><a name="304" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="305"
+      > </a
+      ><a name="306" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="307"
+      > </a
+      ><a name="308" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="309"
+      > </a
+      ><a name="310" href="S4.Derivation.Core.html#261" class="Bound"
+      >A</a
+      ><a name="311"
+      > </a
+      ><a name="312" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="313"
+      > </a
+      ><a name="314" href="S4.Derivation.Core.html#263" class="Bound"
+      >B</a
+      ><a name="315"
+      >
+
+  </a
+      ><a name="319" class="Comment"
+      >-- Function application. (&#8835;E)</a
+      ><a name="348"
+      >
+  </a
+      ><a name="351" href="S4.Derivation.Core.html#351" class="InductiveConstructor"
+      >app</a
+      ><a name="354"
+      > </a
+      ><a name="355" class="Symbol"
+      >:</a
+      ><a name="356"
+      > </a
+      ><a name="357" class="Symbol"
+      >&#8704;</a
+      ><a name="358"
+      > </a
+      ><a name="359" class="Symbol"
+      >{</a
+      ><a name="360" href="S4.Derivation.Core.html#360" class="Bound"
+      >A</a
+      ><a name="361"
+      > </a
+      ><a name="362" href="S4.Derivation.Core.html#362" class="Bound"
+      >B</a
+      ><a name="363" class="Symbol"
+      >}</a
+      ><a name="364"
+      >
+      </a
+      ><a name="371" class="Symbol"
+      >&#8594;</a
+      ><a name="372"
+      > </a
+      ><a name="373" class="Symbol"
+      >(</a
+      ><a name="374" href="S4.Derivation.Core.html#374" class="Bound"
+      >d</a
+      ><a name="375"
+      > </a
+      ><a name="376" class="Symbol"
+      >:</a
+      ><a name="377"
+      > </a
+      ><a name="378" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="379"
+      > </a
+      ><a name="380" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="381"
+      > </a
+      ><a name="382" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="383"
+      > </a
+      ><a name="384" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="385"
+      > </a
+      ><a name="386" href="S4.Derivation.Core.html#360" class="Bound"
+      >A</a
+      ><a name="387"
+      > </a
+      ><a name="388" href="S4.Type.html#104" class="InductiveConstructor Operator"
+      >&#8835;</a
+      ><a name="389"
+      > </a
+      ><a name="390" href="S4.Derivation.Core.html#362" class="Bound"
+      >B</a
+      ><a name="391" class="Symbol"
+      >)</a
+      ><a name="392"
+      >    </a
+      ><a name="396" class="Symbol"
+      >&#8594;</a
+      ><a name="397"
+      > </a
+      ><a name="398" class="Symbol"
+      >(</a
+      ><a name="399" href="S4.Derivation.Core.html#399" class="Bound"
+      >c</a
+      ><a name="400"
+      > </a
+      ><a name="401" class="Symbol"
+      >:</a
+      ><a name="402"
+      > </a
+      ><a name="403" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="404"
+      > </a
+      ><a name="405" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="406"
+      > </a
+      ><a name="407" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="408"
+      > </a
+      ><a name="409" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="410"
+      > </a
+      ><a name="411" href="S4.Derivation.Core.html#360" class="Bound"
+      >A</a
+      ><a name="412" class="Symbol"
+      >)</a
+      ><a name="413"
+      >
+      </a
+      ><a name="420" class="Symbol"
+      >&#8594;</a
+      ><a name="421"
+      > </a
+      ><a name="422" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="423"
+      > </a
+      ><a name="424" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="425"
+      > </a
+      ><a name="426" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="427"
+      > </a
+      ><a name="428" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="429"
+      > </a
+      ><a name="430" href="S4.Derivation.Core.html#362" class="Bound"
+      >B</a
+      ><a name="431"
+      >
+
+  </a
+      ><a name="435" class="Comment"
+      >-- Modal variable reference.</a
+      ><a name="463"
+      >
+  </a
+      ><a name="466" href="S4.Derivation.Core.html#466" class="InductiveConstructor"
+      >var*</a
+      ><a name="470"
+      > </a
+      ><a name="471" class="Symbol"
+      >:</a
+      ><a name="472"
+      > </a
+      ><a name="473" class="Symbol"
+      >&#8704;</a
+      ><a name="474"
+      > </a
+      ><a name="475" class="Symbol"
+      >{</a
+      ><a name="476" href="S4.Derivation.Core.html#476" class="Bound"
+      >A</a
+      ><a name="477" class="Symbol"
+      >}</a
+      ><a name="478"
+      >
+      </a
+      ><a name="485" class="Symbol"
+      >&#8594;</a
+      ><a name="486"
+      > </a
+      ><a name="487" class="Symbol"
+      >(</a
+      ><a name="488" href="S4.Derivation.Core.html#488" class="Bound"
+      >i</a
+      ><a name="489"
+      > </a
+      ><a name="490" class="Symbol"
+      >:</a
+      ><a name="491"
+      > </a
+      ><a name="492" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="493"
+      > </a
+      ><a name="494" href="S4.Context.Core.html#202" class="Datatype Operator"
+      >&#8715;</a
+      ><a name="495"
+      > </a
+      ><a name="496" href="S4.Derivation.Core.html#476" class="Bound"
+      >A</a
+      ><a name="497" class="Symbol"
+      >)</a
+      ><a name="498"
+      >
+      </a
+      ><a name="505" class="Symbol"
+      >&#8594;</a
+      ><a name="506"
+      > </a
+      ><a name="507" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="508"
+      > </a
+      ><a name="509" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="510"
+      > </a
+      ><a name="511" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="512"
+      > </a
+      ><a name="513" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="514"
+      > </a
+      ><a name="515" href="S4.Derivation.Core.html#476" class="Bound"
+      >A</a
+      ><a name="516"
+      >
+
+  </a
+      ><a name="520" class="Comment"
+      >-- Modality introduction. (&#9633;I)</a
+      ><a name="550"
+      >
+  </a
+      ><a name="553" href="S4.Derivation.Core.html#553" class="InductiveConstructor"
+      >box</a
+      ><a name="556"
+      > </a
+      ><a name="557" class="Symbol"
+      >:</a
+      ><a name="558"
+      > </a
+      ><a name="559" class="Symbol"
+      >&#8704;</a
+      ><a name="560"
+      > </a
+      ><a name="561" class="Symbol"
+      >{</a
+      ><a name="562" href="S4.Derivation.Core.html#562" class="Bound"
+      >A</a
+      ><a name="563" class="Symbol"
+      >}</a
+      ><a name="564"
+      >
+      </a
+      ><a name="571" class="Symbol"
+      >&#8594;</a
+      ><a name="572"
+      > </a
+      ><a name="573" class="Symbol"
+      >(</a
+      ><a name="574" href="S4.Derivation.Core.html#574" class="Bound"
+      >d</a
+      ><a name="575"
+      > </a
+      ><a name="576" class="Symbol"
+      >:</a
+      ><a name="577"
+      > </a
+      ><a name="578" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="579"
+      > </a
+      ><a name="580" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="581"
+      > </a
+      ><a name="582" href="S4.Context.Core.html#156" class="InductiveConstructor"
+      >&#8709;</a
+      ><a name="583"
+      > </a
+      ><a name="584" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="585"
+      > </a
+      ><a name="586" href="S4.Derivation.Core.html#562" class="Bound"
+      >A</a
+      ><a name="587" class="Symbol"
+      >)</a
+      ><a name="588"
+      >
+      </a
+      ><a name="595" class="Symbol"
+      >&#8594;</a
+      ><a name="596"
+      > </a
+      ><a name="597" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="598"
+      > </a
+      ><a name="599" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="600"
+      > </a
+      ><a name="601" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="602"
+      > </a
+      ><a name="603" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="604"
+      > </a
+      ><a name="605" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="606"
+      > </a
+      ><a name="607" href="S4.Derivation.Core.html#562" class="Bound"
+      >A</a
+      ><a name="608"
+      >
+
+  </a
+      ><a name="612" class="Comment"
+      >-- Modality elimination. (&#9633;E)</a
+      ><a name="641"
+      >
+  </a
+      ><a name="644" href="S4.Derivation.Core.html#644" class="InductiveConstructor"
+      >unbox</a
+      ><a name="649"
+      > </a
+      ><a name="650" class="Symbol"
+      >:</a
+      ><a name="651"
+      > </a
+      ><a name="652" class="Symbol"
+      >&#8704;</a
+      ><a name="653"
+      > </a
+      ><a name="654" class="Symbol"
+      >{</a
+      ><a name="655" href="S4.Derivation.Core.html#655" class="Bound"
+      >A</a
+      ><a name="656"
+      > </a
+      ><a name="657" href="S4.Derivation.Core.html#657" class="Bound"
+      >C</a
+      ><a name="658" class="Symbol"
+      >}</a
+      ><a name="659"
+      >
+      </a
+      ><a name="666" class="Symbol"
+      >&#8594;</a
+      ><a name="667"
+      > </a
+      ><a name="668" class="Symbol"
+      >(</a
+      ><a name="669" href="S4.Derivation.Core.html#669" class="Bound"
+      >d</a
+      ><a name="670"
+      > </a
+      ><a name="671" class="Symbol"
+      >:</a
+      ><a name="672"
+      > </a
+      ><a name="673" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="674"
+      > </a
+      ><a name="675" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="676"
+      > </a
+      ><a name="677" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="678"
+      > </a
+      ><a name="679" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="680"
+      > </a
+      ><a name="681" href="S4.Type.html#144" class="InductiveConstructor Operator"
+      >&#9633;</a
+      ><a name="682"
+      > </a
+      ><a name="683" href="S4.Derivation.Core.html#655" class="Bound"
+      >A</a
+      ><a name="684" class="Symbol"
+      >)</a
+      ><a name="685"
+      >    </a
+      ><a name="689" class="Symbol"
+      >&#8594;</a
+      ><a name="690"
+      > </a
+      ><a name="691" class="Symbol"
+      >(</a
+      ><a name="692" href="S4.Derivation.Core.html#692" class="Bound"
+      >c</a
+      ><a name="693"
+      > </a
+      ><a name="694" class="Symbol"
+      >:</a
+      ><a name="695"
+      > </a
+      ><a name="696" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="697"
+      > </a
+      ><a name="698" href="S4.Context.Core.html#165" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="699"
+      > </a
+      ><a name="700" href="S4.Derivation.Core.html#655" class="Bound"
+      >A</a
+      ><a name="701"
+      > </a
+      ><a name="702" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="703"
+      > </a
+      ><a name="704" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="705"
+      > </a
+      ><a name="706" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="707"
+      > </a
+      ><a name="708" href="S4.Derivation.Core.html#657" class="Bound"
+      >C</a
+      ><a name="709" class="Symbol"
+      >)</a
+      ><a name="710"
+      >
+      </a
+      ><a name="717" class="Symbol"
+      >&#8594;</a
+      ><a name="718"
+      > </a
+      ><a name="719" href="S4.Derivation.Core.html#107" class="Bound"
+      >&#916;</a
+      ><a name="720"
+      > </a
+      ><a name="721" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="722"
+      > </a
+      ><a name="723" href="S4.Derivation.Core.html#109" class="Bound"
+      >&#915;</a
+      ><a name="724"
+      > </a
+      ><a name="725" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="726"
+      > </a
+      ><a name="727" href="S4.Derivation.Core.html#657" class="Bound"
+      >C</a
+      ><a name="728"
+      >
+
+
+</a
+      ><a name="731" class="Keyword"
+      >infixr</a
+      ><a name="737"
+      > </a
+      ><a name="738" class="Number"
+      >0</a
+      ><a name="739"
+      > &#8873;_
+
+</a
+      ><a name="744" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;_</a
+      ><a name="746"
+      > </a
+      ><a name="747" class="Symbol"
+      >:</a
+      ><a name="748"
+      > </a
+      ><a name="749" class="Symbol"
+      >&#8704;</a
+      ><a name="750"
+      > </a
+      ><a name="751" class="Symbol"
+      >(</a
+      ><a name="752" href="S4.Derivation.Core.html#752" class="Bound"
+      >A</a
+      ><a name="753"
+      > </a
+      ><a name="754" class="Symbol"
+      >:</a
+      ><a name="755"
+      > </a
+      ><a name="756" href="S4.Type.html#43" class="Datatype"
+      >Ty</a
+      ><a name="758" class="Symbol"
+      >)</a
+      ><a name="759"
+      > </a
+      ><a name="760" class="Symbol"
+      >&#8594;</a
+      ><a name="761"
+      > </a
+      ><a name="762" class="PrimitiveType"
+      >Set</a
+      ><a name="765"
+      >
+</a
+      ><a name="766" href="S4.Derivation.Core.html#744" class="Function Operator"
+      >&#8873;</a
+      ><a name="767"
+      > </a
+      ><a name="768" href="S4.Derivation.Core.html#768" class="Bound"
+      >A</a
+      ><a name="769"
+      > </a
+      ><a name="770" class="Symbol"
+      >=</a
+      ><a name="771"
+      > </a
+      ><a name="772" class="Symbol"
+      >&#8704;</a
+      ><a name="773"
+      > </a
+      ><a name="774" class="Symbol"
+      >{{</a
+      ><a name="776" href="S4.Derivation.Core.html#776" class="Bound"
+      >&#916;</a
+      ><a name="777"
+      > </a
+      ><a name="778" href="S4.Derivation.Core.html#778" class="Bound"
+      >&#915;</a
+      ><a name="779"
+      > </a
+      ><a name="780" class="Symbol"
+      >:</a
+      ><a name="781"
+      > </a
+      ><a name="782" href="S4.Context.Core.html#130" class="Datatype"
+      >Cx</a
+      ><a name="784" class="Symbol"
+      >}}</a
+      ><a name="786"
+      > </a
+      ><a name="787" class="Symbol"
+      >&#8594;</a
+      ><a name="788"
+      > </a
+      ><a name="789" href="S4.Derivation.Core.html#776" class="Bound"
+      >&#916;</a
+      ><a name="790"
+      > </a
+      ><a name="791" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="792"
+      > </a
+      ><a name="793" href="S4.Derivation.Core.html#778" class="Bound"
+      >&#915;</a
+      ><a name="794"
+      > </a
+      ><a name="795" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="796"
+      > </a
+      ><a name="797" href="S4.Derivation.Core.html#768" class="Bound"
+      >A</a
+      ><a name="798"
+      >
+
+
+</a
+      ><a name="801" href="S4.Derivation.Core.html#801" class="Function"
+      >ty</a
+      ><a name="803"
+      > </a
+      ><a name="804" class="Symbol"
+      >:</a
+      ><a name="805"
+      > </a
+      ><a name="806" class="Symbol"
+      >&#8704;</a
+      ><a name="807"
+      > </a
+      ><a name="808" class="Symbol"
+      >{</a
+      ><a name="809" href="S4.Derivation.Core.html#809" class="Bound"
+      >&#916;</a
+      ><a name="810"
+      > </a
+      ><a name="811" href="S4.Derivation.Core.html#811" class="Bound"
+      >&#915;</a
+      ><a name="812"
+      > </a
+      ><a name="813" href="S4.Derivation.Core.html#813" class="Bound"
+      >A</a
+      ><a name="814" class="Symbol"
+      >}</a
+      ><a name="815"
+      > </a
+      ><a name="816" class="Symbol"
+      >(</a
+      ><a name="817" href="S4.Derivation.Core.html#817" class="Bound"
+      >d</a
+      ><a name="818"
+      > </a
+      ><a name="819" class="Symbol"
+      >:</a
+      ><a name="820"
+      > </a
+      ><a name="821" href="S4.Derivation.Core.html#809" class="Bound"
+      >&#916;</a
+      ><a name="822"
+      > </a
+      ><a name="823" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8729;</a
+      ><a name="824"
+      > </a
+      ><a name="825" href="S4.Derivation.Core.html#811" class="Bound"
+      >&#915;</a
+      ><a name="826"
+      > </a
+      ><a name="827" href="S4.Derivation.Core.html#100" class="Datatype Operator"
+      >&#8866;</a
+      ><a name="828"
+      > </a
+      ><a name="829" href="S4.Derivation.Core.html#813" class="Bound"
+      >A</a
+      ><a name="830" class="Symbol"
+      >)</a
+      ><a name="831"
+      > </a
+      ><a name="832" class="Symbol"
+      >&#8594;</a
+      ><a name="833"
+      > </a
+      ><a name="834" href="S4.Type.html#43" class="Datatype"
+      >Ty</a
+      ><a name="836"
+      >
+</a
+      ><a name="837" href="S4.Derivation.Core.html#801" class="Function"
+      >ty</a
+      ><a name="839"
+      > </a
+      ><a name="840" class="Symbol"
+      >{</a
+      ><a name="841" class="Argument"
+      >A</a
+      ><a name="842"
+      > </a
+      ><a name="843" class="Symbol"
+      >=</a
+      ><a name="844"
+      > </a
+      ><a name="845" href="S4.Derivation.Core.html#845" class="Bound"
+      >A</a
+      ><a name="846" class="Symbol"
+      >}</a
+      ><a name="847"
+      > </a
+      ><a name="848" href="S4.Derivation.Core.html#848" class="Bound"
+      >d</a
+      ><a name="849"
+      > </a
+      ><a name="850" class="Symbol"
+      >=</a
+      ><a name="851"
+      > </a
+      ><a name="852" href="S4.Derivation.Core.html#845" class="Bound"
+      >A</a
+      ><a name="853"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>
